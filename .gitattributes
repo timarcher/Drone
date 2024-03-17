@@ -1,0 +1,3 @@
+# Prevent automatic converting LF to CRLF for scripts.
+* text=auto
+*.sh text eol=lf
