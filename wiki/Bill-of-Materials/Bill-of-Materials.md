@@ -1,4 +1,4 @@
-This page contains the overall bill of materials/component list that was used to construct the drone. Parts availability may change over time and so you may have to find alternatives as this site ages.
+This page contains the overall bill of materials/component list that was used to construct the drone. Parts availability may change over time and so you may have to find alternatives as this site ages. Costs are as of 2024, and are rounded to nearest dollar. Shipping and tax is generally not included in the costs below.
 
 # Frame and Motors
 |Component|Source|Unit Cost|Quantity|Total Cost|
