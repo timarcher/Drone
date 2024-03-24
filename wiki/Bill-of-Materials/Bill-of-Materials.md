@@ -1,4 +1,4 @@
-Here is the listing of all components in the Drone.
+This page contains the overall bill of materials/component list that was used to construct the drone. Parts availability may change over time and so you may have to find alternatives as this site ages.
 
 # Frame and Motors
 |Component|Source|Unit Cost|Quantity|Total Cost|
