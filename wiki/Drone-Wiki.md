@@ -16,3 +16,6 @@ Use the list below to follow my build journey step by step.
 # Flight Training
 - [RealFlight Simulator](https://www.realflight.com/) - Awesome flight simulator software you can use to learn to safely fly on your computer.
 - [How to Fly a Drone A Beginner's Guide to Multirotor Systems & Flight Proficiency by UAV Coach](https://uavcoach.com/how-to-fly-a-quadcopter-guide/) - Need to learn some of the basics of flying? Start with UAV Coach. The information and videos here will give you basic exercises you can practice to improve your flying skills.
+
+# Other Resources
+- [eCalc](https://ecalc.ch/) - Services to simulate, calculate, evaluate and design electric brushless motor drives for RC pilots of airplane, multi rotor, UAV, helicopter and EDF jets.

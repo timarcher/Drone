@@ -10,6 +10,8 @@ This page contains the overall bill of materials/component list that was used to
 |Hobbywing XRotor X6 Plus system - CounterClockwise CCW Motors|[Hobbywing](https://www.hobbywingdirect.com/products/xrotor-x6-plus?variant=40960661127283)|$170|3|$510|
 |100ft - 1/4 inch PET Expandable Braided Sleeving|[Amazon](https://www.amazon.com/gp/product/B074GM1PK1/ref=ox_sc_act_title_1?smid=A2N7NRZ9X3BHHN&psc=1)|$14|1|$14|
 |Loctite Threadlocker Blue 242|[Amazon](https://www.amazon.com/gp/product/B000I1RSNS/ref=ox_sc_act_title_3?smid=ATVPDKIKX0DER&th=1)|$8|1|$8|
+|Small Bubble Levels|[Amazon](https://www.amazon.com/gp/product/B098CWYPZC/)|$6|1|$6|
+
 
 # Battery
 |Component|Source|Unit Cost|Quantity|Total Cost|
@@ -30,8 +32,12 @@ This page contains the overall bill of materials/component list that was used to
 |Cube Orange+ Standard Set ADS-B|[IR-Lock](https://irlock.com/products/cube-orange-standard-set?variant=40910825979955)|$350|1|$350|
 |Here iStand|[IR-Lock](https://irlock.com/products/here-istand?variant=40234969432115)|$20|1|$20|
 |Herelink Air Unit (V1.1) Ethernet Cable|[IR-Lock](https://irlock.com/products/herelink-air-unit-v1-1-ethernet-cable?variant=41185288880179)|$7|1|$7|
+|Strobon V2 Cree Edition - Navigation Strobe Lights|[Flytron](https://store.flytron.com/collections/led-light-systems/products/strobon-v2-cree-edition-navigation-strobe-lights)|$13|3|$13|
 |Component|[Source](https:URL)|$XXX|1|$XXX|
 |Component|[Source](https:URL)|$XXX|1|$XXX|
+
+
+
 
 
 # Electronics - Ground Station
