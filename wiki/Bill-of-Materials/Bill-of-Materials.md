@@ -18,13 +18,38 @@ This page contains the overall bill of materials/component list that was used to
 |Component|[Source](https:URL)|$XXX|1|$XXX|
 |Component|[Source](https:URL)|$XXX|1|$XXX|
 
-# Electronics
+# Electronics - Onboard Drone
 |Component|Source|Unit Cost|Quantity|Total Cost|
 |---|---|---|---|---|
 |Raspberry Pi 4b 8GB|[Amazon](https://www.amazon.com/gp/product/B08DJ9MLHV/)|$95|1|$95|
+|Herelink Antenna Upgrade Kit|[IR-Lock]([https:URL](https://irlock.com/products/herelink-antenna-upgrade-kit?variant=32628365000755))|$35|1|$35|
+|Kore Carrier Board|[IR-Lock](https://irlock.com/products/the-cube-kore-without-cube?variant=12823641718835)|$300|1|$300|
+|Herelink HDMI Cable|[IR-Lock](https://irlock.com/products/herelink-hdmi-cable?variant=41104510615603)|$10|1|$10|
+|Herelink HD Video Transmission System (V1.1)|[IR-Lock](https://irlock.com/products/herelink-hd-video-transmission-system-_?variant=40682840719411)|$899|1|$899|
+|Here4 Multiband RTK GNSS|[IR-Lock](https://irlock.com/products/here4-multiband-rtk-gnss?variant=41312937639987)|$225|1|$225|
+|Cube Orange+ Standard Set ADS-B|[IR-Lock](https://irlock.com/products/cube-orange-standard-set?variant=40910825979955)|$350|1|$350|
+|Here iStand|[IR-Lock](https://irlock.com/products/here-istand?variant=40234969432115)|$20|1|$20|
+|Herelink Air Unit (V1.1) Ethernet Cable|[IR-Lock](https://irlock.com/products/herelink-air-unit-v1-1-ethernet-cable?variant=41185288880179)|$7|1|$7|
 |Component|[Source](https:URL)|$XXX|1|$XXX|
 |Component|[Source](https:URL)|$XXX|1|$XXX|
+
+
+# Electronics - Ground Station
+|Component|Source|Unit Cost|Quantity|Total Cost|
+|---|---|---|---|---|
+|GNSS Multi-Band L1/L2/L5 Surveying Antenna - TNC (SPK6618H)|[Sparkfun](https://www.sparkfun.com/products/21801)|$125|1|$125|
+|Here4 Base|[IR-Lock](https://irlock.com/products/here4-base?variant=41465686491187)|$150|1|$150|
+|TNC Male to SMA Male RF Coaxial Adapter|[Amazon](https://www.amazon.com/DGZZI-2-Pack-Coaxial-Adapter-Connector/dp/B06ZZGGWBS)|$9|1|$9|
+|Antenna Thread Adapter - 1/4in. to 5/8in.|[Sparkfun](https://www.sparkfun.com/products/17546)|$6|1|$6|
+|SMA Male to SMA Female Bulkhead Cable 33ft RG58 Coaxial Cable 50 Ohm|[Amazon](https://www.amazon.com/SUPERBAT-Coaxial-Adapter-Enhancer-Wireless/dp/B086JJF5ZC/ref=sr_1_8)|$20|1|$20|
+|Amazon Basics Lightweight Mini Tripod|[Amazon](https://www.amazon.com/gp/product/B00M78G2VO/ref=ppx_yo_dt_b_search_asin_title)|$11|1|$11|
 |Component|[Source](https:URL)|$XXX|1|$XXX|
+|Component|[Source](https:URL)|$XXX|1|$XXX|
+
+
+
+# Laptop
+- You will need a Windows based laptop to be able to run the appropriate utilities and ground control software.
 
 # Miscellaneous
 You need some additional tools and items to complete the build as well:
