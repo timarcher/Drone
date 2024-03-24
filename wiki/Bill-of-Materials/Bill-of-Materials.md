@@ -27,10 +27,16 @@ Here is the listing of all components in the Drone.
 |Component|[Source](https:URL)|$XXX|1|$XXX|
 
 # Miscellaneous
-You need some additional items to 
+You need some additional tools and items to complete the build as well:
 |Component|Source|Unit Cost|Quantity|Total Cost|
 |---|---|---|---|---|
 |Component|[Source](https:URL)|$XXX|1|$XXX|
 |Component|[Source](https:URL)|$XXX|1|$XXX|
 |Component|[Source](https:URL)|$XXX|1|$XXX|
+
+Other components not linked, I already had these in my Hobby toolbox:
+- Allen wrenches
+- Nut drivers
+- Wire cutters/strippers
+- Soldering iron and solder
 

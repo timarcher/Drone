@@ -1,14 +1,14 @@
 This wiki space contains documentation and information on how the custom drone was created. You can follow these steps to replicate my build.
 
 # Preparation
-- [Prep Work](Prep.md) - Prior to building and flying your drone, complete this prep work around knowledge, safety, and compliance.
+- [Prep Work](Preparation/Preparation.md) - Prior to building and flying your drone, complete this prep work around knowledge, safety, and compliance.
 
 # Bill of Materials
-- [Overall BOM](BOM.md) - This page is updated as we build to contain the overall bill of materials/component list that was used to construct the drone.
+- [Overall BOM](Bill-of-Materials/Bill-of-Materials.md) - This page is updated as we build to contain the overall bill of materials/component list that was used to construct the drone.
 
 # Step by Step Build Process
 Use the list below to follow my build journey step by step.
-- [Frame and Motors](Frame.md)
+- [Frame and Motors](Frame/Frame.md)
 - [Battery](Battery.md)
 - [Electronics](Electronics.md)
 - [Ardupilot Config](Arudpilot.md)
