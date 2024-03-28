@@ -6,4 +6,5 @@ This page contains details about building the frame used for the Drone.
 
 
 # Pictures
-![image.png](/.attachments/image-944001d8-eb7e-410c-90ce-1cd2a264c695.png)
+![Frame](./images/frame1.jpg)
+![Frame Battery Tray](./images/frame-battery-tray.jpg)
