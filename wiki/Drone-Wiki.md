@@ -9,7 +9,8 @@ Welcome to the Hexacopter Build Project! Follow along as I embark on a journey t
 
 # Step by Step Build Process
 Use the list below to follow my build journey step by step.
-- [Frame and Motors](Frame/Frame.md)
+- [Frame](Frame/Frame.md)
+- [Motors](Motors/Motors.md)
 - [Battery](Battery.md)
 - [Electronics](Electronics.md)
 - [Ardupilot Config](Arudpilot.md)
