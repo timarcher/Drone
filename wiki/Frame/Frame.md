@@ -1,5 +1,8 @@
 This page contains details about building the frame used for the Drone.
 
+# YouTube Video
+
+# Build Notes
 1. Build the RJX1300mm 6-Axis Carbon Fiber Umbrella Folding Hexacopter Frame without motor mounts kit from RJX Hobby. Be sure to also request the optional top battery platform from Kenny. Attach the two GPS mounts to the 30mm carbon fiber tuber, and the AS150U battery connection mount holder to the landing gear.
    1. Important Build Orientation Notes - On the main body/shell, the side with the hole in it is the front of the frame. Additionally, the battery tray slides out to the rear of the frame.
    2. Order of operations:
