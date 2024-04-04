@@ -25,6 +25,7 @@ This page contains the overall bill of materials/component list that was used to
 |3pcs Male XT-60 to Female XT-30 Connector Adapter for Turnigy Drone XT30 XT60 FPV Cable 16awg|[Amazon](https://www.amazon.com/gp/product/B073Z77473/)|$10|1|$10|
 |M3 x 40mm Hex Socket Head Cap Bolts|[Amazon](https://www.amazon.com/gp/product/B07VPGQ1RZ/)|$12|1|$12|
 |M3 x 0.5mm Nylon Inserted Self Locking Nuts|[Amazon](https://www.amazon.com/gp/product/B07MXVZJYG/)|$7|1|$7|
+|20 Pairs Gold-Plated 5MM 5.0MM Banana Plug Bullet Male Female Connector Adapter for RC Lipo Battery ESC Motors 5.0MM|[Amazon](https://www.amazon.com/gp/product/B096DSBBZQ/)|$13|1|$13|
 
 <!--
 |Component|[Source](https:URL)|$XXX|1|$XXX|
