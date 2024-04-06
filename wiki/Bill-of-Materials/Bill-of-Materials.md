@@ -69,7 +69,7 @@ This page contains the overall bill of materials/component list that was used to
 |TNC Male to SMA Male RF Coaxial Adapter|[Amazon](https://www.amazon.com/DGZZI-2-Pack-Coaxial-Adapter-Connector/dp/B06ZZGGWBS)|$9|1|$9|
 |Antenna Thread Adapter - 1/4in. to 5/8in.|[Sparkfun](https://www.sparkfun.com/products/17546)|$6|1|$6|
 |SMA Male to SMA Female Bulkhead Cable 33ft RG58 Coaxial Cable 50 Ohm|[Amazon](https://www.amazon.com/SUPERBAT-Coaxial-Adapter-Enhancer-Wireless/dp/B086JJF5ZC/ref=sr_1_8)|$20|1|$20|
-|Amazon Basics Lightweight Mini Tripod|[Amazon](https://www.amazon.com/gp/product/B00M78G2VO/ref=ppx_yo_dt_b_search_asin_title)|$11|1|$11|
+|Amazon Basics 50-inch Lightweight Camera Mount Tripod Stand With Bag, Black/Brown|[Amazon](https://www.amazon.com/gp/product/B00XI87KV8/)|$16|1|$16|
 <!--
 |Component|[Source](https:URL)|$XXX|1|$XXX|
 |Component|[Source](https:URL)|$XXX|1|$XXX|
