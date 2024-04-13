@@ -11,8 +11,8 @@ Welcome to the Hexacopter Build Project! Follow along as I embark on a journey t
 Use the list below to follow my build journey step by step.
 - [Frame](Frame/Frame.md)
 - [Motors](Motors/Motors.md)
+- [Electronics](Electronics/Electronics.md)
 - [Battery](Battery.md)
-- [Electronics](Electronics.md)
 - [Ardupilot Config](Arudpilot.md)
  
 # Flight Training

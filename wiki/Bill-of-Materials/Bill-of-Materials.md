@@ -55,7 +55,7 @@ This page contains the overall bill of materials/component list that was used to
 |Cube Orange+ Standard Set ADS-B|[IR-Lock](https://irlock.com/products/cube-orange-standard-set?variant=40910825979955)|$350|1|$350|
 |Here iStand|[IR-Lock](https://irlock.com/products/here-istand?variant=40234969432115)|$20|1|$20|
 |Herelink Air Unit (V1.1) Ethernet Cable|[IR-Lock](https://irlock.com/products/herelink-air-unit-v1-1-ethernet-cable?variant=41185288880179)|$7|1|$7|
-|Strobon V2 Cree Edition - Navigation Strobe Lights|[Flytron](https://store.flytron.com/collections/led-light-systems/products/strobon-v2-cree-edition-navigation-strobe-lights)|$13|3|$13|
+|Strobon V2 Cree Edition - Navigation Strobe Lights|[Flytron](https://store.flytron.com/collections/led-light-systems/products/strobon-v2-cree-edition-navigation-strobe-lights)|$13|1|$13|
 <!--
 |Component|[Source](https:URL)|$XXX|1|$XXX|
 |Component|[Source](https:URL)|$XXX|1|$XXX|
@@ -81,19 +81,26 @@ This page contains the overall bill of materials/component list that was used to
 
 
 # Miscellaneous
-You need some additional tools and items to complete the build as well:
-
-<!--
-|Component|Source|Unit Cost|Quantity|Total Cost|
-|---|---|---|---|---|
-|Component|[Source](https:URL)|$XXX|1|$XXX|
-|Component|[Source](https:URL)|$XXX|1|$XXX|
-|Component|[Source](https:URL)|$XXX|1|$XXX|
--->
-Other components not linked, I already had these in my Hobby toolbox:
+You need some additional tools and items to complete the build as well such as:
+- Screw drivers
 - Allen wrenches
 - Nut drivers
 - Wire cutters/strippers
 - Small pliers
 - Soldering iron and solder
+- Razor knife
+- 3d printer
 
+Here are links to some of the tools I bought are below. Feel free to substitute as needed, these are just many of the items I have bought:
+|Component|Source|Unit Cost|Quantity|Total Cost|
+|---|---|---|---|---|
+|Soldering Station Digital Display Soldering Iron Station 392℉-896℉ Temperature Adjustable|[Amazon](https://www.amazon.com/gp/product/B07Z3KCVCL/)|$46|1|$46|
+|900M Soldering Iron Tips|[Amazon](https://www.amazon.com/gp/product/B077V1VND5/)|$10|1|$10|
+|63-37 Tin Lead Rosin Core Solder Wire for Electrical Soldering (0.8mm 100g)|[Amazon](https://www.amazon.com/gp/product/B076QF1Y85/)|$12|1|$12|
+|SRA #312 Soldering Flux Pen Low-Solids, No-Clean|[Amazon](https://www.amazon.com/gp/product/B008OC0E5M/)|$10|1|$10|
+|3 in 1 Automatic Self Adjusting Wire Stripper/ Cutter/ Crimper, 8 Inch Multi Pliers For Electrical Wire Stripping, Cable Cutting, Crimping Tool from 8 AWG to 30 AWG|[Amazon](https://www.amazon.com/gp/product/B08W44T2XJ/)|$28|1|$28|
+<!--
+|Component|[Source](https:URL)|$XXX|1|$XXX|
+|Component|[Source](https:URL)|$XXX|1|$XXX|
+|Component|[Source](https:URL)|$XXX|1|$XXX|
+-->
