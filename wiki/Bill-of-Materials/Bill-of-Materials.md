@@ -46,7 +46,8 @@ This page contains the overall bill of materials/component list that was used to
 # Electronics - Onboard Drone
 |Component|Source|Unit Cost|Quantity|Total Cost|
 |---|---|---|---|---|
-|Raspberry Pi 4b 8GB|[Amazon](https://www.amazon.com/gp/product/B08DJ9MLHV/)|$95|1|$95|
+|Raspberry Pi 5 8GB|[Adafruit](https://www.adafruit.com/product/5813)|$80|1|$80|
+|Official Raspberry Pi 5 Active Cooler|[Adafruit](https://www.adafruit.com/product/5815)|$5|1|$5|
 |Herelink Antenna Upgrade Kit|[IR-Lock](https://irlock.com/products/herelink-antenna-upgrade-kit?variant=32628365000755)|$35|1|$35|
 |Kore Carrier Board|[IR-Lock](https://irlock.com/products/the-cube-kore-without-cube?variant=12823641718835)|$300|1|$300|
 |Herelink HDMI Cable|[IR-Lock](https://irlock.com/products/herelink-hdmi-cable?variant=41104510615603)|$10|1|$10|
