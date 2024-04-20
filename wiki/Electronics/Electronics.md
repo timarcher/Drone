@@ -12,4 +12,4 @@ Coming soon.
 - You down download STL files to 3d print a case for the board [from here](https://www.spektreworks.com/products/multi-rotor-pixhawk21-carrier-board).
 
 # Pictures
-None yet.
+![Parts](./images/electronic-parts1.jpg)

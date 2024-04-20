@@ -7,6 +7,7 @@ This page contains the overall bill of materials/component list that was used to
 |RJX 1pcs RC Drone GPS Bracket Holder Mount Suitable for 30mm/40mm/50mm Tube Agriculture Plant UAV - 30mm variant|[RJX Hobby](https://www.rjxhobby.com/rjx-1pcs-rc-drone-gps-bracket-holder-mount-suitable-for-30mm-35mm-40mm-tube-agriculture-plant-uav)|$15|2|$30|
 |RJX 1PCS RC Agriculture UAV Frame AS150U Plug Fixed Seat Male Connector Mount Holder Support Base for 20mm 25mm Carbon Tube - 20mm variant|[RJX Hobby](https://www.rjxhobby.com/rjx-1pcs-rc-agriculture-uav-frame-as150u-plug-fixed-seat-male-connector-mount-holder-support-base-for-20mm-25mm-carbon-tube)|$12|1|$12|
 |Small Bubble Levels|[Amazon](https://www.amazon.com/gp/product/B098CWYPZC/)|$6|1|$6|
+|Loctite Threadlocker Blue 242|[Amazon](https://www.amazon.com/gp/product/B000I1RSNS/ref=ox_sc_act_title_3?smid=ATVPDKIKX0DER&th=1)|$8|1|$8|
 <!--
 |Component|[Source](https:URL)|$XXX|1|$XXX|
 -->
@@ -21,7 +22,6 @@ This page contains the overall bill of materials/component list that was used to
 |Hobbywing Xrotor 2480 Propeller - CounterClockwise|[Hobbywing](https://www.hobbywingdirect.com/products/xrotor-2480-propeller?variant=40989998940275)|$22|3|$66|
 |Hobbywing Data Link V2|[Hobbywing](https://www.hobbywingdirect.com/products/data-link-v2)|$70|1|$70|
 |25ft x 1/4 inch & 25ft x 1/2 inch PET Expandable Braided Sleeving Braided Cable Sleeve|[Amazon](https://www.amazon.com/gp/product/B07RZXSJBM/)|$10|1|$10|
-|Loctite Threadlocker Blue 242|[Amazon](https://www.amazon.com/gp/product/B000I1RSNS/ref=ox_sc_act_title_3?smid=ATVPDKIKX0DER&th=1)|$8|1|$8|
 |3pcs Male XT-60 to Female XT-30 Connector Adapter for Turnigy Drone XT30 XT60 FPV Cable 16awg|[Amazon](https://www.amazon.com/gp/product/B073Z77473/)|$10|1|$10|
 |M3 x 40mm Hex Socket Head Cap Bolts|[Amazon](https://www.amazon.com/gp/product/B07VPGQ1RZ/)|$12|1|$12|
 |M3 x 0.5mm Nylon Inserted Self Locking Nuts|[Amazon](https://www.amazon.com/gp/product/B07MXVZJYG/)|$7|1|$7|
@@ -48,6 +48,10 @@ This page contains the overall bill of materials/component list that was used to
 |---|---|---|---|---|
 |Raspberry Pi 5 8GB|[Adafruit](https://www.adafruit.com/product/5813)|$80|1|$80|
 |Official Raspberry Pi 5 Active Cooler|[Adafruit](https://www.adafruit.com/product/5815)|$5|1|$5|
+|Coral USB Edge TPU ML Accelerator|[Amazon](https://www.amazon.com/gp/product/B07R53D12W/)|$75|1|$75|
+|Intel RealSense Depth Camera D435|[Amazon](https://www.amazon.com/gp/product/B07BLS5477/)|$303|1|$303|
+|SanDisk 128GB Extreme microSDXC UHS-I Memory Card - for Raspberry Pi|[Amazon](https://www.amazon.com/gp/product/B09X7BK27V/)|$19|1|$19|
+|SanDisk 64GB 2-Pack Ultra microSDXC UHS-I Memory Card (2x64GB) - for herelink controller and air unit|[Amazon](https://www.amazon.com/gp/product/B0B7NVMBPL/)|$17|1|$17|
 |Herelink Antenna Upgrade Kit|[IR-Lock](https://irlock.com/products/herelink-antenna-upgrade-kit?variant=32628365000755)|$35|1|$35|
 |Kore Carrier Board|[IR-Lock](https://irlock.com/products/the-cube-kore-without-cube?variant=12823641718835)|$300|1|$300|
 |Herelink HDMI Cable|[IR-Lock](https://irlock.com/products/herelink-hdmi-cable?variant=41104510615603)|$10|1|$10|
@@ -56,6 +60,10 @@ This page contains the overall bill of materials/component list that was used to
 |Cube Orange+ Standard Set ADS-B|[IR-Lock](https://irlock.com/products/cube-orange-standard-set?variant=40910825979955)|$350|1|$350|
 |Here iStand|[IR-Lock](https://irlock.com/products/here-istand?variant=40234969432115)|$20|1|$20|
 |Herelink Air Unit (V1.1) Ethernet Cable|[IR-Lock](https://irlock.com/products/herelink-air-unit-v1-1-ethernet-cable?variant=41185288880179)|$7|1|$7|
+|HereFlow|[IR-Lock](https://irlock.com/products/here-flow)|$75|1|$75|
+|Cube ID - CAN Version|[IR-Lock](https://irlock.com/collections/pixhawk2/products/cube-id_can)|$69|1|$69|
+|MATEKSYS PM12S-3 Power Module|[GetFPV](https://www.getfpv.com/mateksys-pm12s-3-power-module.html)|$50|1|$50|
+|MakerFocus TFmini-s Micro Lidar Module|[Amazon](https://www.amazon.com/gp/product/B075V5TZRY/)|$40|1|$40|
 |Strobon V2 Cree Edition - Navigation Strobe Lights|[Flytron](https://store.flytron.com/collections/led-light-systems/products/strobon-v2-cree-edition-navigation-strobe-lights)|$13|1|$13|
 <!--
 |Component|[Source](https:URL)|$XXX|1|$XXX|
@@ -91,6 +99,9 @@ You need some additional tools and items to complete the build as well such as:
 - Soldering iron and solder
 - Razor knife
 - 3d printer
+- Crimpers for various connectors
+- Wire
+- Power Supply
 
 Here are links to some of the tools I bought are below. Feel free to substitute as needed, these are just many of the items I have bought:
 |Component|Source|Unit Cost|Quantity|Total Cost|
