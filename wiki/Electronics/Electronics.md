@@ -2,8 +2,8 @@ This page contains details about the electronics installation in the Drone.
 
 
 # YouTube Video
-Coming soon.
-
+- Electronics Inventory: [Hexacopter Drone Build Project – Part 2 Electronics Inventory](https://www.youtube.com/watch?v=9nkmOGkzU3E)
+ 
 # Build Notes
 Coming soon.
 
