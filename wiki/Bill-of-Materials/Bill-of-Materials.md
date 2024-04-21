@@ -7,7 +7,7 @@ This page contains the overall bill of materials/component list that was used to
 |RJX 1pcs RC Drone GPS Bracket Holder Mount Suitable for 30mm/40mm/50mm Tube Agriculture Plant UAV - 30mm variant|[RJX Hobby](https://www.rjxhobby.com/rjx-1pcs-rc-drone-gps-bracket-holder-mount-suitable-for-30mm-35mm-40mm-tube-agriculture-plant-uav)|$15|2|$30|
 |RJX 1PCS RC Agriculture UAV Frame AS150U Plug Fixed Seat Male Connector Mount Holder Support Base for 20mm 25mm Carbon Tube - 20mm variant|[RJX Hobby](https://www.rjxhobby.com/rjx-1pcs-rc-agriculture-uav-frame-as150u-plug-fixed-seat-male-connector-mount-holder-support-base-for-20mm-25mm-carbon-tube)|$12|1|$12|
 |Small Bubble Levels|[Amazon](https://www.amazon.com/gp/product/B098CWYPZC/)|$6|1|$6|
-|Loctite Threadlocker Blue 242|[Amazon](https://www.amazon.com/gp/product/B000I1RSNS/ref=ox_sc_act_title_3?smid=ATVPDKIKX0DER&th=1)|$8|1|$8|
+|Loctite Threadlocker Blue 242|[Amazon](https://www.amazon.com/gp/product/B000I1RSNS/)|$8|1|$8|
 <!--
 |Component|[Source](https:URL)|$XXX|1|$XXX|
 -->
@@ -36,7 +36,7 @@ This page contains the overall bill of materials/component list that was used to
 # Battery
 |Component|Source|Unit Cost|Quantity|Total Cost|
 |---|---|---|---|---|
-|Amass AS150U Pigtails 8AWG AS150U Connector with Wire 350mm Silicon Wire AS150U Plug Male and Female Connector for RC Lipo Battery FPV Racing Drone (1 Pair)|[Amazon](https://www.amazon.com/gp/product/B0BMPQL7Z1/ref=ox_sc_act_title_2?smid=A1JGQIWP459RKC&psc=1)|$23|1|$23|
+|Amass AS150U Pigtails 8AWG AS150U Connector with Wire 350mm Silicon Wire AS150U Plug Male and Female Connector for RC Lipo Battery FPV Racing Drone (1 Pair)|[Amazon](https://www.amazon.com/gp/product/B0BMPQL7Z1/)|$23|1|$23|
 <!--
 |Component|[Source](https:URL)|$XXX|1|$XXX|
 |Component|[Source](https:URL)|$XXX|1|$XXX|
@@ -70,7 +70,10 @@ This page contains the overall bill of materials/component list that was used to
 |SwitchBlox Cable Adapter for Ardupilot|[BotBlox](https://botblox.io/switchblox-cable-adapter-for-ardupilot/)|$15|1|$15|
 |BotBlox PicoBlade to Tinned Leads, 4 way, 0.3 meters|[BotBlox](https://botblox.io/botblox-picoblade-to-tinned-leads-4-way-0-3-meters/)|$2.20|5|$11|
 |BotBlox PicoBlade to RJ45 cable, 4 way, 0.3 meters|[BotBlox](https://botblox.io/botblox-picoblade-to-rj45-cable-4-way-0-3-meters/)|$3|2|$6|
-
+|XT90 Plug Series Battery Connector 1 Female 2 Males Adapter with 10CM 10AWG Silicon Cable|[Amazon](https://www.amazon.com/gp/product/B084VK7N9D/)|$11|1|$11|
+|AS150U Female to XT90 Male Connector, 8AWG Insulated Weatherproof XT90 Male Connector|[Amazon](https://www.amazon.com/gp/product/B0CBHV4S2M/)|$18|1|$18|
+|12 Gauge Silicone Wire 10 ft red and 10 ft Black Flexible 12 AWG Stranded Tinned Copper Wire|[Amazon](https://www.amazon.com/gp/product/B01ABOPMEI/)|$13|1|$13|
+|Holybro CAN Hub|[Holybro](https://holybro.com/products/can-hub)|$28|1|$28|
 
 <!--
 |Component|[Source](https:URL)|$XXX|1|$XXX|
