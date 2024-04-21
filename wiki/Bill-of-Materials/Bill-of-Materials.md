@@ -65,6 +65,12 @@ This page contains the overall bill of materials/component list that was used to
 |MATEKSYS PM12S-3 Power Module|[GetFPV](https://www.getfpv.com/mateksys-pm12s-3-power-module.html)|$50|1|$50|
 |MakerFocus TFmini-s Micro Lidar Module|[Amazon](https://www.amazon.com/gp/product/B075V5TZRY/)|$40|1|$40|
 |Strobon V2 Cree Edition - Navigation Strobe Lights|[Flytron](https://store.flytron.com/collections/led-light-systems/products/strobon-v2-cree-edition-navigation-strobe-lights)|$13|1|$13|
+|SwitchBlox - Small Ethernet Switch|[BotBlox](https://botblox.io/products/small-ethernet-switch)|$73|1|$73|
+|SwitchBlox Cable Adapter for Ardupilot|[BotBlox](https://botblox.io/switchblox-cable-adapter-for-ardupilot/)|$15|1|$15|
+|BotBlox PicoBlade to Tinned Leads, 4 way, 0.3 meters|[BotBlox](https://botblox.io/botblox-picoblade-to-tinned-leads-4-way-0-3-meters/)|$2.20|5|$11|
+|BotBlox PicoBlade to RJ45 cable, 4 way, 0.3 meters|[BotBlox](https://botblox.io/botblox-picoblade-to-rj45-cable-4-way-0-3-meters/)|$3|2|$6|
+
+
 <!--
 |Component|[Source](https:URL)|$XXX|1|$XXX|
 |Component|[Source](https:URL)|$XXX|1|$XXX|
