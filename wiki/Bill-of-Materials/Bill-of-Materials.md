@@ -74,6 +74,13 @@ This page contains the overall bill of materials/component list that was used to
 |AS150U Female to XT90 Male Connector, 8AWG Insulated Weatherproof XT90 Male Connector|[Amazon](https://www.amazon.com/gp/product/B0CBHV4S2M/)|$18|1|$18|
 |12 Gauge Silicone Wire 10 ft red and 10 ft Black Flexible 12 AWG Stranded Tinned Copper Wire|[Amazon](https://www.amazon.com/gp/product/B01ABOPMEI/)|$13|1|$13|
 |Holybro CAN Hub|[Holybro](https://holybro.com/products/can-hub)|$28|1|$28|
+|20 Pairs Silicone Male & Female JST Connector 22 AWG|[Amazon](https://www.amazon.com/gp/aw/d/B00EZH8P9W)|$12|1|$12|
+|10 Pairs 2.0mm Spade 2P Cable 8cm Lead Plug Connector Male and Female|[Amazon](https://www.amazon.com/gp/aw/d/B07YQY9V6F)|$8|1|$8|
+|20 Pairs XT30 Connectors Male and Female|[Amazon](https://www.amazon.com/gp/product/B0875MBLNH/)|$12|1|$12|
+|Heat Shrink Tubing Tube Sleeving Wrap Cable Wire 5 Color 8 Size|[Amazon](https://www.amazon.com/gp/product/B00OZSL8UE/)|$12|1|$12|
+
+
+
 
 <!--
 |Component|[Source](https:URL)|$XXX|1|$XXX|
