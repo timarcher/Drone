@@ -78,6 +78,9 @@ This page contains the overall bill of materials/component list that was used to
 |10 Pairs 2.0mm Spade 2P Cable 8cm Lead Plug Connector Male and Female|[Amazon](https://www.amazon.com/gp/aw/d/B07YQY9V6F)|$8|1|$8|
 |20 Pairs XT30 Connectors Male and Female|[Amazon](https://www.amazon.com/gp/product/B0875MBLNH/)|$12|1|$12|
 |Heat Shrink Tubing Tube Sleeving Wrap Cable Wire 5 Color 8 Size|[Amazon](https://www.amazon.com/gp/product/B00OZSL8UE/)|$12|1|$12|
+|USB Type C PD Pigtail Cable Charge Bare Wire Data Transmission Extension Power Cable 6 Cores 5A|[Amazon](https://www.amazon.com/gp/product/B0C1YXM9PF/)|$12|1|$12|
+
+ 
 
 
 
