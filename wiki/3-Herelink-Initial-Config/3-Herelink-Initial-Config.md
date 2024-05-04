@@ -1,5 +1,4 @@
-This page contains an overview of the electronics to be installed in the Drone.
-The complete list of parts bought can be foud on the [bill of materials page](../0-Bill-of-Materials/Bill-of-Materials.md) - This page contains the overall bill of materials/component list that was used to construct the drone.
+This page contains details on the initial unboxing and setup of the Herelink controller and air unit.
 
 
 # YouTube Video
