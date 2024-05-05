@@ -13,10 +13,14 @@ Use the list below to follow my build journey step by step.
 1. [Electronics](2-Electronics-Inventory/Electronics-Inventory.md)
 1. [Herelink Unboxing and Configfuration](3-Herelink-Initial-Config/Herelink-Initial-Config.md)
 
+Future steps are coming soon!
+
+<!--
 Future steps coming soon:
 - [Motors](Motors/Motors.md)
 - [Battery](Battery.md)
 - [Ardupilot Config](Arudpilot.md)
+-->
 
 # YouTube Play list
 All of the YouTube videos linked in this wiki are organized into a [single playlist](https://www.youtube.com/playlist?list=PLT3XAJfSsN4FFodHkPWbuXHesVJ0ILG6v) you can watch as well.
