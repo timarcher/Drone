@@ -28,6 +28,7 @@ This page contains the overall bill of materials/component list that was used to
 |20 Pairs Gold-Plated 4MM Banana Plug Bullet|[Amazon](https://www.amazon.com/dp/B096DWRP14)|$9|1|$9|
 |20 Pairs Gold-Plated 5MM Banana Plug Bullet|[Amazon](https://www.amazon.com/gp/product/B096DSBBZQ/)|$13|1|$13|
 |20 Pairs Gold-Plated 6MM Banana Plug Bullet|[Amazon](https://www.amazon.com/dp/B096DN996B)|$13|1|$13|
+|20 Pairs Gold-Plated 6.5MM Banana Plug Bullet|[Amazon](https://www.amazon.com/gp/product/B096DFJYYS)|$13|1|$13|
 
 
 <!--
@@ -134,6 +135,9 @@ Here are links to some of the tools I bought are below. Feel free to substitute 
 |63-37 Tin Lead Rosin Core Solder Wire for Electrical Soldering (0.8mm 100g)|[Amazon](https://www.amazon.com/gp/product/B076QF1Y85/)|$12|1|$12|
 |SRA #312 Soldering Flux Pen Low-Solids, No-Clean|[Amazon](https://www.amazon.com/gp/product/B008OC0E5M/)|$10|1|$10|
 |3 in 1 Automatic Self Adjusting Wire Stripper/ Cutter/ Crimper, 8 Inch Multi Pliers For Electrical Wire Stripping, Cable Cutting, Crimping Tool from 8 AWG to 30 AWG|[Amazon](https://www.amazon.com/gp/product/B08W44T2XJ/)|$28|1|$28|
+|Silicone Soldering Holder- Wire Holder for Soldering|[Amazon](https://www.amazon.com/gp/product/B0CTJ33VJY)|$12|1|$12|
+
+
 <!--
 |Component|[Source](https:URL)|$XXX|1|$XXX|
 |Component|[Source](https:URL)|$XXX|1|$XXX|
