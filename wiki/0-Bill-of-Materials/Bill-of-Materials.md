@@ -83,7 +83,7 @@ This page contains the overall bill of materials/component list that was used to
 |20 Pairs XT30 Connectors Male and Female|[Amazon](https://www.amazon.com/gp/product/B0875MBLNH/)|$12|1|$12|
 |Heat Shrink Tubing Tube Sleeving Wrap Cable Wire 5 Color 8 Size|[Amazon](https://www.amazon.com/gp/product/B00OZSL8UE/)|$12|1|$12|
 |USB Type C PD Pigtail Cable Charge Bare Wire Data Transmission Extension Power Cable 6 Cores 5A|[Amazon](https://www.amazon.com/gp/product/B0C1YXM9PF/)|$12|1|$12|
-
+|UCTRONICS 0.96 Inch OLED Module 12864 128x64 Yellow Blue SSD1306|[Amazon](https://www.amazon.com/gp/product/B072Q2X2LL/)|$7|1|$7|
  
 
 
