@@ -12,6 +12,7 @@ Use the list below to follow my build journey step by step.
 1. [Frame](1-Frame/Frame.md)
 1. [Electronics](2-Electronics-Inventory/Electronics-Inventory.md)
 1. [Herelink Unboxing and Configfuration](3-Herelink-Initial-Config/Herelink-Initial-Config.md)
+1. [Cube Orange Plus and Kore Carrier Board Unboxing and Configfuration](4-Cube-Orange-Plus-and-Kore-Carrier-Board-Initial-Setup/4-Cube-Orange-Plus-and-Kore-Carrier-Board-Initial-Setup.md)
 
 Future steps are coming soon!
 
@@ -21,6 +22,10 @@ Future steps coming soon:
 - [Battery](Battery.md)
 - [Ardupilot Config](Arudpilot.md)
 -->
+
+# Full ArduPilot Configuration Summary
+- [ArduPilot Configuration](ArduPilot-Config/ArduPilot-Config.md) - This page contains a consolidated list of the all of the configuration done in ArduPilot throughout the videos.
+
 
 # YouTube Play list
 All of the YouTube videos linked in this wiki are organized into a [single playlist](https://www.youtube.com/playlist?list=PLT3XAJfSsN4FFodHkPWbuXHesVJ0ILG6v) you can watch as well.
