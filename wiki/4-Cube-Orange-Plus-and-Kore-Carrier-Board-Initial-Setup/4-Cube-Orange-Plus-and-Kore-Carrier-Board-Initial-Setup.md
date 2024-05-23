@@ -2,7 +2,7 @@ This page contains details on the initial unboxing and setup of the Cube Orange 
 
 
 # YouTube Video
-- [Hexacopter Drone Build Project – Part 4 Cube Orange Plus and Kore Carrier Board Initial Setup](https://www.youtube.com/XXX)
+- [Hexacopter Drone Build Project – Part 4 Cube Orange Plus and Kore Carrier Board Initial Setup](https://www.youtube.com/watch?v=5t4QqKYQOWc)
 
 # Supporting Materials
 - [ArduPilot Configuration](../ArduPilot-Config/ArduPilot-Config.md) - This page contains a consolidated list of the all of the configuration done in ArduPilot throughout the videos.
