@@ -44,19 +44,21 @@ https://discuss.cubepilot.org/t/negative-current-reading-on-kore-carrier-board/2
 |BATT_CURR_PIN|15|Kore docs recommend 3, but I had to set to 15 to work with Cube Orange Plus.|
 |BATT_VOLT_MULT|15.3||
 |BATT_VOLT_PIN|14|Kore docs recommend 2, but I had to set to 14 to work with Cube Orange Plus.|
+<!--
 |XXX|XXX|XXX|
 |XXX|XXX|XXX|
 |XXX|XXX|XXX|
 |XXX|XXX|XXX|
 |XXX|XXX|XXX|
-
+-->
 
 ## Parameters - Here4 GPS
 |Parameter Name|Value|Description|
 |---|---|---|
 |BRD_SAFETY_DEFLT|0|There is no safety switch on the Here4 GPS so we disable it. (BRD_SAFETYENABLE in older firmware versions)|
+<!--
 |XXX|XXX|XXX|
-
+-->
 
 
 
