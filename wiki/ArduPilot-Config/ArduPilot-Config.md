@@ -11,6 +11,7 @@ After flashing firmware for the first time, use Mission Planner to configure sev
     - Airscrew Inch Size: 24
     - Battery Cellcount: 12 (or 6 when testing with a 6s battery)
     - Battery cell fully discharged voltage: 3.3
+    - Check the option to "Add suggested settings for 4.0 and up (Battery failsafe and Fence)".
     - Press the "Calculate Initial Parameters" button, and then the "Write to FC" button on the popup window.
   - On Accel Calibration menu item:
     - Press Calibrate Accel
@@ -19,7 +20,7 @@ After flashing firmware for the first time, use Mission Planner to configure sev
     - Docs on accelerometer calibration [can be found here](https://ardupilot.org/copter/docs/common-accelerometer-calibration.html).    
   - On Compass menu item:
     - TODO - swap compasses later to use the external one higher priority than the one on cube once the GPS is installed
-    - Press start on the Onboard Mag Calibration, calibraten and reboot. Docs on compass calibration [can be found here](https://ardupilot.org/copter/docs/common-compass-calibration-in-mission-planner.html).
+    - Press start on the Onboard Mag Calibration, calibrate, and reboot. Docs on compass calibration [can be found here](https://ardupilot.org/copter/docs/common-compass-calibration-in-mission-planner.html).
   - On Radio Calibration menu item:
     - Prior to calibrating, I had to reverse the joystick outputs in the Herelink controller for the Y (throttle rc2) and R (pitch rc3) axis. Otherwise the values were reversed.
     - Press the Calibrate Radio button. Move joysticks and input buttons to their limits. Then press the Click when Done button.
