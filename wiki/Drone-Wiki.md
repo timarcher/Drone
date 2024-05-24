@@ -13,6 +13,9 @@ Use the list below to follow my build journey step by step.
 1. [Electronics](2-Electronics-Inventory/Electronics-Inventory.md)
 1. [Herelink Unboxing and Configfuration](3-Herelink-Initial-Config/Herelink-Initial-Config.md)
 1. [Cube Orange Plus and Kore Carrier Board Unboxing and Configfuration](4-Cube-Orange-Plus-and-Kore-Carrier-Board-Initial-Setup/4-Cube-Orange-Plus-and-Kore-Carrier-Board-Initial-Setup.md)
+1. [Here 4 GPS and Base](5-Here-4-GPS-and-Base/5-Here-4-GPS-and-Base.md)
+
+
 
 Future steps are coming soon!
 

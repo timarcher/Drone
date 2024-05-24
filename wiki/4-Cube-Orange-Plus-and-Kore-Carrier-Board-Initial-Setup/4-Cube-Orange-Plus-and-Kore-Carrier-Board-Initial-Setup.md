@@ -1,4 +1,4 @@
-This page contains details on the initial unboxing and setup of the Cube Orange Plus and Kore Carrier Board.
+This page contains details on the initial setup of the Cube Orange Plus and Kore Carrier Board.
 
 
 # YouTube Video

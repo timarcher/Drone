@@ -57,10 +57,16 @@ https://discuss.cubepilot.org/t/negative-current-reading-on-kore-carrier-board/2
 |Parameter Name|Value|Description|
 |---|---|---|
 |BRD_SAFETY_DEFLT|0|There is no safety switch on the Here4 GPS so we disable it. (BRD_SAFETYENABLE in older firmware versions)|
+|CAN_P1_DRIVER|1||
+|CAN_P2_DRIVER|1||
+|CAN_D1_PROTOCOL|1||
+|CAN_D2_PROTOCOL|1||
+|GPS_TYPE|9||
+|NTF_LED_TYPES|231||
+
 <!--
 |XXX|XXX|XXX|
 -->
-
 
 
 # Factory Reset the Parameters
