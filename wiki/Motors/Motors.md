@@ -23,5 +23,8 @@ Hobbywing DataLink will allow you to see what firmware version is running on the
 
 
 # Pictures
+![Motor Orientation](./images/motor-orientation.avif)
+
 ![Motor](./images/motor1.png)
+
 ![Motor](./images/motor2.jpg)
