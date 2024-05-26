@@ -68,6 +68,12 @@ https://discuss.cubepilot.org/t/negative-current-reading-on-kore-carrier-board/2
 |XXX|XXX|XXX|
 -->
 
+## Parameters - Onboard OLED Display
+|Parameter Name|Value|Description|
+|---|---|---|
+|NTF_DISPLAY_TYPE|1|SSD1306 OLED Connected to I2C|
+
+
 
 # Factory Reset the Parameters
 If, for some reason, you ever want to reset all of the parameters to their defaults you can follow any of the methods [listed here](https://ardupilot.org/copter/docs/common-parameter-reset.html).

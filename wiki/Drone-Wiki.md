@@ -39,3 +39,4 @@ All of the YouTube videos linked in this wiki are organized into a [single playl
 
 # Other Resources
 - [eCalc](https://ecalc.ch/) - Services to simulate, calculate, evaluate and design electric brushless motor drives for RC pilots of airplane, multi rotor, UAV, helicopter and EDF jets.
+- [How to methodically configure and tune any ArduCopter Blog Post](https://discuss.ardupilot.org/t/how-to-methodically-configure-and-tune-any-arducopter/110842)
