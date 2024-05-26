@@ -14,9 +14,9 @@ After flashing firmware for the first time, use Mission Planner to configure sev
     - Check the option to "Add suggested settings for 4.0 and up (Battery failsafe and Fence)".
     - Press the "Calculate Initial Parameters" button, and then the "Write to FC" button on the popup window.
   - On Accel Calibration menu item:
-    - Press Calibrate Accel
+    - Press Calibrate Accel (use this for when you can manipulate the drone orientation)
     - Press Calibrate Level
-    - Press Simple Accel Cal
+    - Press Simple Accel Cal (use this in lieu of Calibrate Accel for large drone or simple bench testing)
     - Docs on accelerometer calibration [can be found here](https://ardupilot.org/copter/docs/common-accelerometer-calibration.html).    
   - On Compass menu item:
     - TODO - swap compasses later to use the external one higher priority than the one on cube once the GPS is installed
