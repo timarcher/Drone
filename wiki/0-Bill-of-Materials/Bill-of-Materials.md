@@ -86,6 +86,8 @@ This page contains the overall bill of materials/component list that was used to
 |UCTRONICS 0.96 Inch OLED Module 12864 128x64 Yellow Blue SSD1306|[Amazon](https://www.amazon.com/gp/product/B072Q2X2LL/)|$7|1|$7|
 |28 AWG Silicone Wire Kit Spool 25ft Each 6 Colors|[Amazon](https://www.amazon.com/gp/product/B089CWGQKW/)|$9|1|$9|
 |JST GH 1.25mm Connector Kit,2/3/4/5/6/7/8/10 Pin Housing Connectors,1.25mm Pitch JST Adapter|[Amazon](https://www.amazon.com/gp/product/B0CYZCWB4X/)|$14|1|$14|
+|XT90 Male to XT60 Female Connector Adapter with 12awg|[Amazon](https://www.amazon.com/gp/product/B07PGVZJNZ/)|$10|1|$10|
+|XT60 Male to XT90 Female Connector Adapter with 14awg|[Amazon](https://www.amazon.com/gp/product/B07YRRK7CG/)|$9|1|$9|
 
 
 
@@ -137,6 +139,7 @@ Here are links to some of the tools I bought are below. Feel free to substitute 
 |3 in 1 Automatic Self Adjusting Wire Stripper/ Cutter/ Crimper, 8 Inch Multi Pliers For Electrical Wire Stripping, Cable Cutting, Crimping Tool from 8 AWG to 30 AWG|[Amazon](https://www.amazon.com/gp/product/B08W44T2XJ/)|$28|1|$28|
 |Silicone Soldering Holder- Wire Holder for Soldering|[Amazon](https://www.amazon.com/gp/product/B0CTJ33VJY)|$12|1|$12|
 |iCrimp IWS-3220M Micro Connector Pin Crimping Tool 0.03-0.52mm² 32-20AWG Ratcheting Crimper for D-Sub,Open Barrel suits Molex,JST,JAE|[Amazon](https://www.amazon.com/gp/product/B078WPT5M1/)|$26|1|$26|
+|Watt Meter Power Analyzer - Greatlong 200A Power Analyzer, High Precision RC with Digital LCD Screen for voltage (V) current (A) Power (W) Charge(Ah) and Energy (Wh) Measurement|[Amazon](https://www.amazon.com/gp/product/B0CC5CFT47/)|$15|1|$15|
 
 
 <!--
