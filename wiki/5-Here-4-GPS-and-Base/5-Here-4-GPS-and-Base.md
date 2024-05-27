@@ -6,7 +6,7 @@ The Here 4 Base employs RTK (Real-Time Kinematic) technology to offer more preci
 
 
 # YouTube Video
-- [Hexacopter Drone Build Project – Part 5 Here 4 GPS and Base](https://www.youtube.com/XXX)
+- [Hexacopter Drone Build Project – Part 5 Here 4 GPS and Base](https://www.youtube.com/watch?v=yGW7yLQpPdI)
 
 # Supporting Materials
 - [ArduPilot Configuration](../ArduPilot-Config/ArduPilot-Config.md) - This page contains a consolidated list of the all of the configuration done in ArduPilot throughout the videos.
