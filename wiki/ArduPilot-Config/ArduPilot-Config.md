@@ -74,6 +74,11 @@ https://discuss.cubepilot.org/t/negative-current-reading-on-kore-carrier-board/2
 |NTF_DISPLAY_TYPE|1|SSD1306 OLED Connected to I2C|
 
 
+## Parameters - Motors
+|Parameter Name|Value|Description|
+|---|---|---|
+|CAN_D1_UC_ESC_BM|63|Bitmask that determines which autopilot servo/motor output signals are sent to the DroneCAN ESCs. 63 = ESC 1 through 6.|
+|CAN_D1_UC_OPTION|128|Hobbywing ESC|
 
 # Factory Reset the Parameters
 If, for some reason, you ever want to reset all of the parameters to their defaults you can follow any of the methods [listed here](https://ardupilot.org/copter/docs/common-parameter-reset.html).
