@@ -10,6 +10,8 @@ This page contains details about the motors on the drone. I used the [Hobbywing 
 
 # References 
 - [Setting up Hobbywing DroneCAN ESCs with ArduPilot](https://www.youtube.com/watch?v=2fQBczEFnO8) - Great video from Andrew Tridgell showing how to setup the HobbyWing XRotor DroneCAN motors.
+- [ArduPilot Docs Hobbywing DroneCAN ESC](https://ardupilot.org/copter/docs/common-hobbywing-dronecan-esc.html) - ArduPilot documentation page on setting up the Hobbywing ESCs.
+
 
 # Firmware / Hobbywing DataLink
 Hobbywing DataLink will allow you to see what firmware version is running on the ESCs and set ESC parameters. [Click here for the DataLink v2 user manual.](https://support.hobbywingdirect.com/hc/en-us/article_attachments/21956106298003)
