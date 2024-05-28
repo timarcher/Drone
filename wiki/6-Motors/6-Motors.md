@@ -4,6 +4,9 @@ This page contains details about the motors on the drone. I used the [Hobbywing 
 # YouTube Video
 - [Hexacopter Drone Build Project – Part 6 Motors](https://www.youtube.com/XXX)
 
+# Notes
+- When I powered the motor witha 6s battery it beeped twice every second. This means the voltage is too low for the motor. When I put a bigger battery in it beeped once every second, meaning its not connected to a flight controller.
+
 # Supporting Materials
 - [ArduPilot Configuration](../ArduPilot-Config/ArduPilot-Config.md) - This page contains a consolidated list of the all of the configuration done in ArduPilot throughout the videos.
 - [DroneCAN GUI Tool](https://dronecan.github.io/GUI_Tool/Overview/) - a coss-platform free open source application for DroneCAN bus management and diagnostics.
