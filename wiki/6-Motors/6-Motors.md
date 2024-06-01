@@ -5,7 +5,10 @@ This page contains details about the motors on the drone. I used the [Hobbywing 
 - [Hexacopter Drone Build Project – Part 6 Motors](https://www.youtube.com/XXX)
 
 # Notes
-- When I powered the motor witha 6s battery it beeped twice every second. This means the voltage is too low for the motor. When I put a bigger battery in it beeped once every 3 seconds, meaning its ready but not connected to a flight controller. Once a flight controller connects it will give a solid tone for a second and then make no more sounds.
+- When I powered the motor with a 6s battery it beeped twice every second. This means the voltage is too low for the motor. When I put a bigger battery in it beeped once every 3 seconds, meaning its ready but not connected to a flight controller. Once a flight controller connects it will give a solid tone for a second and then make no more sounds.
+- Be sure to set your motor node and throttle IDs to correspond with the proper motor rotation.
+  - Clockwise Motors are #1, 3, 6
+  - Counter-Clockwise Motors are #2, 4, 5
 
 # Supporting Materials
 - [ArduPilot Configuration](../ArduPilot-Config/ArduPilot-Config.md) - This page contains a consolidated list of the all of the configuration done in ArduPilot throughout the videos.
