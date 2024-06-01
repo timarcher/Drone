@@ -9,6 +9,7 @@ This page contains details about the motors on the drone. I used the [Hobbywing 
 - Be sure to set your motor node and throttle IDs to correspond with the proper motor rotation.
   - Clockwise Motors are #1, 3, 6
   - Counter-Clockwise Motors are #2, 4, 5
+- To attach the props to the motors you will need 4 x 10mm M3 socket head screws per motor.
 
 # Supporting Materials
 - [ArduPilot Configuration](../ArduPilot-Config/ArduPilot-Config.md) - This page contains a consolidated list of the all of the configuration done in ArduPilot throughout the videos.
