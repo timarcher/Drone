@@ -25,10 +25,7 @@ This page contains the overall bill of materials/component list that was used to
 |3pcs Male XT-60 to Female XT-30 Connector Adapter for Turnigy Drone XT30 XT60 FPV Cable 16awg|[Amazon](https://www.amazon.com/gp/product/B073Z77473/)|$10|1|$10|
 |M3 x 40mm Hex Socket Head Cap Bolts|[Amazon](https://www.amazon.com/gp/product/B07VPGQ1RZ/)|$12|1|$12|
 |M3 x 0.5mm Nylon Inserted Self Locking Nuts|[Amazon](https://www.amazon.com/gp/product/B07MXVZJYG/)|$7|1|$7|
-|20 Pairs Gold-Plated 4MM Banana Plug Bullet|[Amazon](https://www.amazon.com/dp/B096DWRP14)|$9|1|$9|
-|20 Pairs Gold-Plated 5MM Banana Plug Bullet|[Amazon](https://www.amazon.com/gp/product/B096DSBBZQ/)|$13|1|$13|
-|20 Pairs Gold-Plated 6MM Banana Plug Bullet|[Amazon](https://www.amazon.com/dp/B096DN996B)|$13|1|$13|
-|20 Pairs Gold-Plated 6.5MM Banana Plug Bullet|[Amazon](https://www.amazon.com/gp/product/B096DFJYYS)|$13|1|$13|
+|M3 x 4/5/6/8/10/12/14/16/18/20/25mm Socket Cap Screws|[Amazon](https://www.amazon.com/gp/product/B09NR8X2LV/)|$18|1|$18|
 
 
 <!--
@@ -40,6 +37,8 @@ This page contains the overall bill of materials/component list that was used to
 # Battery
 |Component|Source|Unit Cost|Quantity|Total Cost|
 |---|---|---|---|---|
+|Tattu Plus 1.0 Compact Version 16000mAh 44.4V 15C 12S1P Lipo Smart Battery Pack With AS150U Plug|[Tattu](https://genstattu.com/tattu-plus-1-0-compact-version-16000mah-44-4v-15c-12s1p-lipo-smart-battery-pack-with-as150u-plug/)|$695|1|$695|
+|Tattu Dual-Channel Smart Charger 60A/3200W For 6S-14S LiPo Tattu Smart Battery|[Tattu](https://genstattu.com/tattu-dual-channelsmart-charger-60a-3200w-for-6s-14s-lipo-tattu-smart-battery/)|$750|1|$750|
 |Amass AS150U Pigtails 8AWG AS150U Connector with Wire 350mm Silicon Wire AS150U Plug Male and Female Connector for RC Lipo Battery FPV Racing Drone (1 Pair)|[Amazon](https://www.amazon.com/gp/product/B0BMPQL7Z1/)|$23|1|$23|
 <!--
 |Component|[Source](https:URL)|$XXX|1|$XXX|
@@ -88,7 +87,10 @@ This page contains the overall bill of materials/component list that was used to
 |JST GH 1.25mm Connector Kit,2/3/4/5/6/7/8/10 Pin Housing Connectors,1.25mm Pitch JST Adapter|[Amazon](https://www.amazon.com/gp/product/B0CYZCWB4X/)|$14|1|$14|
 |XT90 Male to XT60 Female Connector Adapter with 12awg|[Amazon](https://www.amazon.com/gp/product/B07PGVZJNZ/)|$10|1|$10|
 |XT60 Male to XT90 Female Connector Adapter with 14awg|[Amazon](https://www.amazon.com/gp/product/B07YRRK7CG/)|$9|1|$9|
-
+|20 Pairs Gold-Plated 4MM Banana Plug Bullet|[Amazon](https://www.amazon.com/dp/B096DWRP14)|$9|1|$9|
+|20 Pairs Gold-Plated 5MM Banana Plug Bullet|[Amazon](https://www.amazon.com/gp/product/B096DSBBZQ/)|$13|1|$13|
+|20 Pairs Gold-Plated 6MM Banana Plug Bullet|[Amazon](https://www.amazon.com/dp/B096DN996B)|$13|1|$13|
+|20 Pairs Gold-Plated 6.5MM Banana Plug Bullet|[Amazon](https://www.amazon.com/gp/product/B096DFJYYS)|$13|1|$13|
 
 
 <!--

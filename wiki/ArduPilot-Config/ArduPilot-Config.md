@@ -99,6 +99,9 @@ https://discuss.cubepilot.org/t/negative-current-reading-on-kore-carrier-board/2
 |Parameter Name|Value|Description|
 |---|---|---|
 |DID_ENABLE|1|Enable Open Drone ID|
+|DID_CANDRIVER|1|DroneCAN driver index, 0 to disable DroneCAN.|
+
+You can optionally set the DID_OPTIONS bitmask value as well for EnforceArming, AllowNonGPSPosition, and LockUASIDOnFirstBasicIDRx.
 
 
 ## Parameters - Here Flow
