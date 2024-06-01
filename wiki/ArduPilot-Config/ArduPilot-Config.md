@@ -1,6 +1,20 @@
 This page contains a consolidated list of the all of the configuration done in ArduPilot throughout the videos. 
 Use this to easily setup a new flight controllers.
 
+# Custom Firmware
+You will need to build your own custom firmware from [custom.ardupilot.org](http://custom.ardupilot.org/) in order to enable the DID_* parameters for Open Drone ID.
+- Press "Add a build"
+- For vehicle select Copter
+- For branch Select the latest stable branch (i.e., Copter 4.5 stable)
+- For board select CubeOrangePlus
+- Under the Ident category, check the box for OpenDroneID (Remote ID)
+- Press the "Generate Build" button
+- Download the generated arducopter.apj file.
+- In Mission Planner, go to Setup->Install Firmware
+- Press "Load Custom Firmware"
+- Select the apj file you downloaded and flash it to the board
+
+
 # Initial Setup
 After flashing firmware for the first time, use Mission Planner to configure several items:
 - Go to Setup tab.
@@ -79,6 +93,22 @@ https://discuss.cubepilot.org/t/negative-current-reading-on-kore-carrier-board/2
 |---|---|---|
 |CAN_D1_UC_ESC_BM|63|Bitmask that determines which autopilot servo/motor output signals are sent to the DroneCAN ESCs. 63 = ESC 1 through 6.|
 |CAN_D1_UC_OPTION|128|Set options for the DroneCAN driver for Hobbywing ESC.|
+
+
+## Parameters - Cube_ID
+|Parameter Name|Value|Description|
+|---|---|---|
+|DID_ENABLE|1|Enable Open Drone ID|
+
+
+## Parameters - Here Flow
+|Parameter Name|Value|Description|
+|---|---|---|
+|RNGFND1_TYPE|24|Type of connected rangefinder. Reboot flight controller after setting this for rest of the params to show.|
+|RNGFND1_MIN_CM|5|Minimum distance in centimeters that rangefinder can reliably read.|
+|RNGFND1_MAX_CM|200|Maximum distance in centimeters that rangefinder can reliably read.|
+|FLOW_TYPE|6|Enable optical flow camera.|
+
 
 
 # Factory Reset the Parameters
