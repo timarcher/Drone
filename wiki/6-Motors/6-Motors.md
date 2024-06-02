@@ -29,10 +29,22 @@ Hobbywing DataLink will allow you to see what firmware version is running on the
 1. Extract the zip file
 1. Run DataLink.exe
 1. Connect the esc connection to the CH1/CL1 port on the datalink box. The  yellow/white/green 3 wire connection is what connects to this port. The yellow cable connects to the - port (the furthest pin on the left). White is CANH and green is CANL.
-1. Power the ESC and the datalink box.
+1. Connect a USB-C cable between the DataLink box and your computer.
+
+
+## Upgrade the DataLink Box Firmware
 1. In the DataLink application, on the Firmware Upgrade tab, click on "DataLink" in the radio buttons on the left.
-1. Update the firmware if an update is available. My DataLink unit came with firmware LINK-01.2.08-U, and there was an upgrade available to version LINK-01.2.14-C
+1. Update the firmware if an update is available. My DataLink unit came with firmware LINK-01.2.09-U, and there was an upgrade available to version LINK-01.2.14-C
 1. After updating you must power cycle the DataLink unit. 
+
+
+## Upgrade the ESC Firmware
+1. In the DataLink application, on the Firmware Upgrade tab, click on "Can->ESC(FAST)" in the radio buttons on the left.
+1. Set the communication information to 500 Khz (or 1MHz if you changed its bus speed already), Hobbywing, ESC Drive. Press the Communication Setting button.
+1. Press the Scanning button.
+1. Power the ESC.
+1. As soon as a device shows in the list press stop.
+1. If there is a new version in the Available version drop down you can select it and press update.
 
 
 # Pictures
