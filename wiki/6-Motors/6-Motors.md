@@ -2,7 +2,7 @@ This page contains details about the motors on the drone. I used the [Hobbywing 
 
 
 # YouTube Video
-- [Hexacopter Drone Build Project – Part 6 Motors](https://www.youtube.com/XXX)
+- [Hexacopter Drone Build Project – Part 6 Motors](https://youtu.be/Da3giR6eTWk)
 
 # Notes
 - When I powered the motor with a 6s battery it beeped twice every second. This means the voltage is too low for the motor. When I put a bigger battery in it beeped once every 3 seconds, meaning its ready but not connected to a flight controller. Once a flight controller connects it will give a solid tone for a second and then make no more sounds.
