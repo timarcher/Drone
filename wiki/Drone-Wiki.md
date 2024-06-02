@@ -31,7 +31,8 @@ Future steps coming soon:
 
 
 # YouTube Play list
-All of the YouTube videos linked in this wiki are organized into a [single playlist](https://www.youtube.com/playlist?list=PLT3XAJfSsN4FFodHkPWbuXHesVJ0ILG6v) you can watch as well.
+All of the YouTube videos linked in this wiki are organized into a [single playlist](https://www.youtube.com/playlist?list=PLT3XAJfSsN4FFodHkPWbuXHesVJ0ILG6v) you can watch as well. Follow each part of the video playlist in order.
+
 
 # Flight Training
 - [RealFlight Simulator](https://www.realflight.com/) - Awesome flight simulator software you can use to learn to safely fly on your computer.
