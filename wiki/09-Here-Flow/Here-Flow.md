@@ -9,3 +9,4 @@ This page contains details on the setup of the Here Flow sensor. The Here Flow o
 # References 
 - Here Flow documentation [can be found here](https://docs.cubepilot.org/user-guides/flow-senor/here-flow).
 - ArduPilot page on Here Flow sensor [can be found here](https://ardupilot.org/copter/docs/common-hereflow.html).
+- ArduPilot page on Optical Flow Sensor Testing and Setup [can be found here](https://ardupilot.org/copter/docs/common-optical-flow-sensor-setup.html).
