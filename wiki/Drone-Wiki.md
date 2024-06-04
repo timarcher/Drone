@@ -12,14 +12,17 @@ All of the YouTube videos linked in this wiki are organized into a [single playl
 
 # Step by Step Build Process
 Use the list below to follow my build journey step by step.
-1. [Frame](1-Frame/Frame.md)
-1. [Electronics](2-Electronics-Inventory/Electronics-Inventory.md)
-1. [Herelink Unboxing and Configfuration](3-Herelink-Initial-Config/Herelink-Initial-Config.md)
-1. [Cube Orange Plus and Kore Carrier Board Unboxing and Configfuration](4-Cube-Orange-Plus-and-Kore-Carrier-Board-Initial-Setup/4-Cube-Orange-Plus-and-Kore-Carrier-Board-Initial-Setup.md)
-1. [Here 4 GPS and Base](5-Here-4-GPS-and-Base/5-Here-4-GPS-and-Base.md)
-1. [Motors](6-Motors/6-Motors.md)
-1. [Onboard OLED Display](7-OLED-Display/7-OLED-Display.md)
-
+1. [Frame](01-Frame/Frame.md)
+1. [Electronics](02-Electronics-Inventory/Electronics-Inventory.md)
+1. [Herelink Unboxing and Configfuration](03-Herelink-Initial-Config/Herelink-Initial-Config.md)
+1. [Cube Orange Plus and Kore Carrier Board Unboxing and Configfuration](04-Cube-Orange-Plus-and-Kore-Carrier-Board-Initial-Setup/Cube-Orange-Plus-and-Kore-Carrier-Board-Initial-Setup.md)
+1. [Here 4 GPS and Base](05-Here-4-GPS-and-Base/Here-4-GPS-and-Base.md)
+1. [Motors](06-Motors/Motors.md)
+1. [Onboard OLED Display](07-OLED-Display/OLED-Display.md)
+1. [Cube ID Remote ID](08-Cube-ID-Remote-ID/Cube-ID-Remote-ID.md)
+1. [HereFlow](09-Here-Flow/Here-Flow.md)
+1. [Onboard Computer and Ethernet](10-Onboard-Computer-and-Ethernet/Onboard-Computer-and-Ethernet.md)
+   
 Future steps are coming soon!
 
 <!--
@@ -40,3 +43,5 @@ Future steps coming soon:
 # Other Resources
 - [eCalc](https://ecalc.ch/) - Services to simulate, calculate, evaluate and design electric brushless motor drives for RC pilots of airplane, multi rotor, UAV, helicopter and EDF jets.
 - [How to methodically configure and tune any ArduCopter Blog Post](https://discuss.ardupilot.org/t/how-to-methodically-configure-and-tune-any-arducopter/110842)
+- [Measuring Vibration ArduPilot Article](https://ardupilot.org/copter/docs/common-measuring-vibration.html) - These instructions explain how to measure the vibration levels. If you find they are out-of-tolerance then follow the advice found on the ArduPilot Vibration Damping page.
+- [Log Analysis in Mission Planner](https://youtu.be/xhBd9KSAfzg?si=X1SPhqCtfS4Ki4Zp) - A video from Dan Benson offering a complete discussion of log analysis in mission planner. He uses a crash to illustrate how to use the log analysis.

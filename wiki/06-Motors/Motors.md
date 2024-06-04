@@ -18,6 +18,8 @@ This page contains details about the motors on the drone. I used the [Hobbywing 
 # References 
 - [Setting up Hobbywing DroneCAN ESCs with ArduPilot](https://www.youtube.com/watch?v=2fQBczEFnO8) - Great video from Andrew Tridgell showing how to setup the HobbyWing XRotor DroneCAN motors.
 - [ArduPilot Docs Hobbywing DroneCAN ESC](https://ardupilot.org/copter/docs/common-hobbywing-dronecan-esc.html) - ArduPilot documentation page on setting up the Hobbywing ESCs.
+- [The Cube User Manual V1.0](https://docs.cubepilot.org/user-guides/autopilot/the-cube-user-manual) - Contains information on setup of the cube, including motor orientation.
+
 
 
 # Firmware / Hobbywing DataLink
