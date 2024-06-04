@@ -8,7 +8,7 @@ All of the YouTube videos linked in this wiki are organized into a [single playl
 - [Prep Work](Preparation/Preparation.md) - Prior to building and flying your drone, complete this prep work around knowledge, safety, and compliance.
 
 # Bill of Materials
-- [Overall BOM](0-Bill-of-Materials/Bill-of-Materials.md) - This page contains the overall bill of materials/component list that was used to construct the drone.
+- [Overall BOM](00-Bill-of-Materials/Bill-of-Materials.md) - This page contains the overall bill of materials/component list that was used to construct the drone.
 
 # Step by Step Build Process
 Use the list below to follow my build journey step by step.

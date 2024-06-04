@@ -4,4 +4,4 @@ Welcome to the Hexacopter Build Project! Follow along as I embark on a journey t
 For details [click here to access the wiki and documentation home folder.](./wiki/Drone-Wiki.md)
 
 
-![Frame](./wiki/1-Frame/images/frame1.jpg)
+![Frame](./wiki/01-Frame/images/frame1.jpg)
