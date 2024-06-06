@@ -91,6 +91,9 @@ This page contains the overall bill of materials/component list that was used to
 |20 Pairs Gold-Plated 5MM Banana Plug Bullet|[Amazon](https://www.amazon.com/gp/product/B096DSBBZQ/)|$13|1|$13|
 |20 Pairs Gold-Plated 6MM Banana Plug Bullet|[Amazon](https://www.amazon.com/dp/B096DN996B)|$13|1|$13|
 |20 Pairs Gold-Plated 6.5MM Banana Plug Bullet|[Amazon](https://www.amazon.com/gp/product/B096DFJYYS)|$13|1|$13|
+|9 PCS 1.25mm to Dupont 2.54mm Pitch Adapter Cables Wire Compatible with JST Molex PicoBlade 1.25 for Pixhawk Flight Controller RC Drone 2Pin to 8P|[Amazon](https://www.amazon.com/gp/product/B07PWZTC88/)|$9|1|$9|
+|120pcs Breadboard Jumper Wires 10cm 15cm 20cm 30cm 40cm 50 cm 100cm Wire Length Optional Dupont Cable Assorted Kit Male to Female Male to Male Female to Female Multicolored Ribbon Cables|[Amazon](https://www.amazon.com/gp/product/B07GD2BWPY/)|$7|1|$7|
+
 
 
 <!--
