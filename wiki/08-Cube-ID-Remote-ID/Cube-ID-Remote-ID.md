@@ -4,7 +4,7 @@ This page contains details on the setup of the Cube ID Remote ID solution. This 
 - [Hexacopter Drone Build Project – Part 8 Cube ID](https://www.youtube.com/XXX)
 
 # Notes
-- You must build and install a custom ArduPilot firmware in order for the DID_* config parameters to be available to set.
+- You must build and install a custom ArduPilot firmware in order for the DID_* config parameters to be available to set. See the [ArduPilot Configuration](../ArduPilot-Config/ArduPilot-Config.md) for how to do this.
 - Use the Drone Scanner app on your mobile phone to verify if your drone is broadcasting Remote ID information.
 - See the [ArduPilot Configuration](../ArduPilot-Config/ArduPilot-Config.md) page for details on parameters to set to enable Open Drone ID (Remote ID). You may also wish to set the DID_OPTIONS parameter to be different from the defaults based on your needs.
   - Before setting the DID_OPTIONS parameter, setup your Drone ID info in mission planner, verify it shows in Drone Scanner, and then set this bit.
