@@ -95,7 +95,7 @@ https://discuss.cubepilot.org/t/negative-current-reading-on-kore-carrier-board/2
 |CAN_D1_UC_OPTION|128|Set options for the DroneCAN driver for Hobbywing ESC.|
 
 
-## Parameters - Cube_ID
+## Parameters - Cube ID
 Be sure to build and load the custom firmware as described above. Otherwise, you will not see any of the DID_* parameters.
 |Parameter Name|Value|Description|
 |---|---|---|
