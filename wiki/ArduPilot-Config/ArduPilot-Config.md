@@ -106,7 +106,7 @@ Be sure to build and load the custom firmware as described above. Otherwise, you
 You can optionally set the DID_OPTIONS bitmask value as well for EnforceArming, AllowNonGPSPosition, and LockUASIDOnFirstBasicIDRx.
 - EnforceArming = set to enforce arming checks
 - AllowNonGPSPosition = allow drone to be armed without a GPS position. If you want to be able to arm without the operator location set this bit. Useful when testing flight controller indoors and not actually flying. You'll hear your Herelink repeat the error "ODID Lost Operator Location" which can get annoying after awhile.
-- LockUASIDOnFirstBasicIDRx = To meet FAA requirements for manufacturers, a persistent ID needs to be recorded in Flight system. To achieve this with CubeID + Ardupilot setup. Ardupilot's persistent storage feature is used. After the setting, the first reception of Basic ID containing Drone ID and other details (from Mission Planner or any other GCS) will be persistently recorded. Please note that once set the persistent parameters can't be rolled back.
+- LockUASIDOnFirstBasicIDRx = To meet FAA requirements for manufacturers, a persistent ID needs to be recorded in Flight system. To achieve this with CubeID + Ardupilot setup. Ardupilot's persistent storage feature is used. After the setting, the first reception of Basic ID containing Drone ID and other details (from Mission Planner or any other GCS) will be persistently recorded. Please note that once set the persistent parameters can't be rolled back. Once the UAS ID is persisted, this will be unchecked and the values stored in the persistent.parm file on the flight controller. It will persist DID_UAS_ID, DID_UAS_ID_TYPE, and DID_UA_TYPE.
 
 
 ## Parameters - Here Flow
@@ -122,6 +122,11 @@ You can optionally set the DID_OPTIONS bitmask value as well for EnforceArming, 
 # Factory Reset the Parameters
 If, for some reason, you ever want to reset all of the parameters to their defaults you can follow any of the methods [listed here](https://ardupilot.org/copter/docs/common-parameter-reset.html).
 
+To reset all params to defaults in MavProxy, first install MavProxy and then open MavProxy and run these commands:
+- link add COM6
+- param show FORMAT_VERSION
+- param set FORMAT_VERSION 0
+- reboot
 
 
 

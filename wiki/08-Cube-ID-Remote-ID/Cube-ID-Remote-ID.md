@@ -18,6 +18,7 @@ This page contains details on the setup of the Cube ID Remote ID solution. This 
     - Oper. ID Type - CAA
     - Self ID Desc - [Put your name in this field]. This wll show under the Operation Description field in Drone Scanner.
     - Self ID Type - TEXT
+- Once you persist the settingsUAS ID with LockUASIDOnFirstBasicIDRx, this will be unchecked and the values stored in the persistent.parm file on the flight controller. It will persist DID_UAS_ID, DID_UAS_ID_TYPE, and DID_UA_TYPE. You will be unable to change/reset these later.
 
 
 # Supporting Materials
