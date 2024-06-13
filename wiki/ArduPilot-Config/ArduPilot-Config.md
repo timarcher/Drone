@@ -96,12 +96,17 @@ https://discuss.cubepilot.org/t/negative-current-reading-on-kore-carrier-board/2
 
 
 ## Parameters - Cube_ID
+Be sure to build and load the custom firmware as described above. Otherwise, you will not see any of the DID_* parameters.
 |Parameter Name|Value|Description|
 |---|---|---|
 |DID_ENABLE|1|Enable Open Drone ID|
 |DID_CANDRIVER|1|DroneCAN driver index, 0 to disable DroneCAN.|
+|DID_OPTIONS|6|6 sets AllowNonGPSPosition and LockUASIDOnFirstBasicIDRx. First setup the above two params, setup your Drone ID info in mission planner, verify it shows in Drone Scanner, and then set this bit.|
 
 You can optionally set the DID_OPTIONS bitmask value as well for EnforceArming, AllowNonGPSPosition, and LockUASIDOnFirstBasicIDRx.
+- EnforceArming = set to enforce arming checks
+- AllowNonGPSPosition = allow drone to be armed without a GPS position. If you want to be able to arm without the operator location set this bit. Useful when testing flight controller indoors and not actually flying. You'll hear your Herelink repeat the error "ODID Lost Operator Location" which can get annoying after awhile.
+- LockUASIDOnFirstBasicIDRx = To meet FAA requirements for manufacturers, a persistent ID needs to be recorded in Flight system. To achieve this with CubeID + Ardupilot setup. Ardupilot's persistent storage feature is used. After the setting, the first reception of Basic ID containing Drone ID and other details (from Mission Planner or any other GCS) will be persistently recorded. Please note that once set the persistent parameters can't be rolled back.
 
 
 ## Parameters - Here Flow
