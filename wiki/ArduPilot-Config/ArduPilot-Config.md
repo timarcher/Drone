@@ -101,7 +101,7 @@ Be sure to build and load the custom firmware as described above. Otherwise, you
 |---|---|---|
 |DID_ENABLE|1|Enable Open Drone ID|
 |DID_CANDRIVER|1|DroneCAN driver index, 0 to disable DroneCAN.|
-|DID_OPTIONS|6|6 sets AllowNonGPSPosition and LockUASIDOnFirstBasicIDRx. First setup the above two params, setup your Drone ID info in mission planner, verify it shows in Drone Scanner, and then set this bit.|
+|DID_OPTIONS|6|6 sets AllowNonGPSPosition and LockUASIDOnFirstBasicIDRx. First setup the above two params, setup your Drone ID info in mission planner, verify it shows in Drone Scanner, and then set this bit. After your DID_UAS_ID is persisted, the LockUASIDOnFirstBasicIDRx will be unchecked in the params and this value set back to a 2.|
 
 You can optionally set the DID_OPTIONS bitmask value as well for EnforceArming, AllowNonGPSPosition, and LockUASIDOnFirstBasicIDRx.
 - EnforceArming = set to enforce arming checks
