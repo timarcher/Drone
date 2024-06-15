@@ -20,7 +20,7 @@ Use the list below to follow my build journey step by step.
 1. [Motors](06-Motors/Motors.md)
 1. [Onboard OLED Display](07-OLED-Display/OLED-Display.md)
 1. [Cube ID Remote ID](08-Cube-ID-Remote-ID/Cube-ID-Remote-ID.md)
-1. [HereFlow](09-Here-Flow/Here-Flow.md)
+1. [Here Flow](09-Here-Flow/Here-Flow.md)
 1. [Onboard Computer and Ethernet](10-Onboard-Computer-and-Ethernet/Onboard-Computer-and-Ethernet.md)
    
 Future steps are coming soon!

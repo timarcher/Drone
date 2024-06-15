@@ -13,8 +13,8 @@ The complete list of parts bought can be foud on the [bill of materials page](..
 ## Cube Pilot
 Cube pilot product documentation [can be found here](https://docs.cubepilot.org/user-guides).
 
-## Hereflow 3d Printed Case
-You can download and 3d print a case for the HereFlow [from here](https://discuss.cubepilot.org/t/hereflow-3d-printed-enclosure/1890/8).
+## Here Flow 3d Printed Case
+You can download and 3d print a case for the Here Flow [from here](https://discuss.cubepilot.org/t/hereflow-3d-printed-enclosure/1890/8).
 
 # Pictures
 ![Parts](./images/electronic-parts1.jpg)

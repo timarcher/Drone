@@ -63,7 +63,7 @@ This page contains the overall bill of materials/component list that was used to
 |Cube Orange+ Standard Set ADS-B|[IR-Lock](https://irlock.com/products/cube-orange-standard-set?variant=40910825979955)|$350|1|$350|
 |Here iStand for Here4 GPS|[IR-Lock](https://irlock.com/products/here-istand?variant=40234969432115)|$20|1|$20|
 |Herelink Air Unit (V1.1) Ethernet Cable|[IR-Lock](https://irlock.com/products/herelink-air-unit-v1-1-ethernet-cable?variant=41185288880179)|$7|1|$7|
-|HereFlow|[IR-Lock](https://irlock.com/products/here-flow)|$75|1|$75|
+|Here Flow|[IR-Lock](https://irlock.com/products/here-flow)|$75|1|$75|
 |CAN BUS Splitter|[IR-Lock](https://irlock.com/products/can-bus-splitter)|$15|3|$45|
 |Cube ID - CAN Version|[IR-Lock](https://irlock.com/collections/pixhawk2/products/cube-id_can)|$69|1|$69|
 |MATEKSYS PM12S-3 Power Module|[GetFPV](https://www.getfpv.com/mateksys-pm12s-3-power-module.html)|$50|1|$50|
