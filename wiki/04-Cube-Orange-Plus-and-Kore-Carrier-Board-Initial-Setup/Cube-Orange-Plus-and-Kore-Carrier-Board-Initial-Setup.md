@@ -11,6 +11,8 @@ This page contains details on the initial setup of the Cube Orange Plus and Kore
 ## Herelink User Guides
 - User guides for the Herelink [can be found here](https://docs.cubepilot.org/user-guides/herelink/herelink-user-guides).
 - User guides for the Kore Carrier Board [can be found here](https://docs.cubepilot.org/user-guides/carrier-boards/kore-carrier-board).
+- Details about the Kore carrier board [can be found here](https://docs.spektreworks.com/carrier_board_v1_3_1/).
+- You can download STL files to 3d print a case for the Kore carrier board [from here](https://www.spektreworks.com/products/multi-rotor-pixhawk21-carrier-board). We dont use this in this project, but it may be an option for yours.
 
 ## ArduPilot References
 - [ArduPilot Tuning Process Instructions](https://ardupilot.org/copter/docs/tuning-process-instructions.html)

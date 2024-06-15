@@ -8,7 +8,7 @@ The complete list of parts bought can be foud on the [bill of materials page](..
 # References 
 ## Kore Multi-Rotor Carrier Board
 - Details about the Kore carrier board [can be found here](https://docs.spektreworks.com/carrier_board_v1_3_1/).
-- You down download STL files to 3d print a case for the board [from here](https://www.spektreworks.com/products/multi-rotor-pixhawk21-carrier-board).
+- You can download STL files to 3d print a case for the Kore carrier board [from here](https://www.spektreworks.com/products/multi-rotor-pixhawk21-carrier-board). We dont use this in this project, but it may be an option for yours.
 
 ## Cube Pilot
 Cube pilot product documentation [can be found here](https://docs.cubepilot.org/user-guides).

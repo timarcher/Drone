@@ -1,7 +1,7 @@
 This page contains details on the setup of the Cube ID Remote ID solution. This device broadcasts information about UAVs in flight through a Bluetooth 5.2 dual-mode unit, and supports both CAN and serial protocols. This page installs the device which uses the CAN protocol.
 
 # YouTube Video
-- [Hexacopter Drone Build Project – Part 8 Cube ID](https://www.youtube.com/XXX)
+- [Hexacopter Drone Build Project – Part 8 Cube ID](https://youtu.be/XXjpxRVWvc4)
 
 # Notes
 - You must build and install a custom ArduPilot firmware in order for the DID_* config parameters to be available to set. See the [ArduPilot Configuration](../ArduPilot-Config/ArduPilot-Config.md) for how to do this.
