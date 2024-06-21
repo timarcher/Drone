@@ -14,7 +14,7 @@ The complete list of parts bought can be foud on the [bill of materials page](..
 Cube pilot product documentation [can be found here](https://docs.cubepilot.org/user-guides).
 
 ## Here Flow 3d Printed Case
-You can download and 3d print a case for the Here Flow [from here](https://discuss.cubepilot.org/t/hereflow-3d-printed-enclosure/1890/8).
+You can download and 3d print a case for the Here Flow [from here](https://discuss.cubepilot.org/t/hereflow-3d-printed-enclosure/1890/8). You will need 3 x 2.5x6mm socket head screws as well.
 
 # Pictures
 ![Parts](./images/electronic-parts1.jpg)
