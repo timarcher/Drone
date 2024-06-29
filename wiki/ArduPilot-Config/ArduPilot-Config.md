@@ -115,8 +115,19 @@ You can optionally set the DID_OPTIONS bitmask value as well for EnforceArming, 
 |RNGFND1_TYPE|24|Type of connected rangefinder. Reboot flight controller after setting this for rest of the params to show.|
 |RNGFND1_MIN_CM|5|Minimum distance in centimeters that rangefinder can reliably read.|
 |RNGFND1_MAX_CM|200|Maximum distance in centimeters that rangefinder can reliably read.|
+|RNGFND1_GNDCLEAR|10|Optional - This parameter sets  the expected range measurement(in cm) that the range finder should return when the vehicle is on the ground.|
 |FLOW_TYPE|6|Enable optical flow camera.|
 
+
+## Parameters - TFMini-S LIDAR
+|Parameter Name|Value|Description|
+|---|---|---|
+|SERIAL4_PROTOCOL|9|What protocol Serial4 port should be used for. Change from -1 (GPS) to 9 (Lidar)|
+|SERIAL4_BAUD|115|The baud rate used for Serial4. 115200 baud.|
+|RNGFND2_TYPE|20|Type of connected rangefinder. 20=Benewake-Serial. Reboot flight controller after setting this for rest of the params to show.|
+|RNGFND2_MIN_CM|10|Minimum distance in centimeters that rangefinder can reliably read. 10 for TFminiPlus|
+|RNGFND2_MAX_CM|600|This is the distance in centimeters that the rangefinder can reliably read. 600 for outdoors.|
+|RNGFND2_GNDCLEAR|10|Optional - This parameter sets  the expected range measurement(in cm) that the range finder should return when the vehicle is on the ground.|
 
 
 # Factory Reset the Parameters
