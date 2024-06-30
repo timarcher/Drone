@@ -17,6 +17,7 @@ This page contains details on the installation of a Raspberry Pi 5 companion com
     - To make the route persistent across reboots, run it with the -p flag: `route -p add 192.168.144.0 mask 255.255.255.0 192.168.43.1`
   - Companion computer needs a static route for 192.168.43.0/24 via 192.168.144.11
     - To do this temporarily, run the command: `sudo ip route add 192.168.43.0/24 via 192.168.144.11`
+    - To do it permanently, simply leave in the routes section in the static IP configuration as shown below.
 - URL for the RTSP video stream is: rtsp://192.168.43.1:8554/fpv_stream
 
 
