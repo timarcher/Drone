@@ -1,7 +1,7 @@
 This page contains details on the setup of the Here Flow sensor. The Here Flow optical flow sensor is a lightweight optical flow sensor including a short range lidar which uses the CAN protocol to communicate with the autopilot. This can be used to improve horizontal position control especially in GPS denied environments.
 
 # YouTube Video
-- [Hexacopter Drone Build Project – Part 9 Here Flow](https://www.youtube.com/XXX)
+- [Hexacopter Drone Build Project – Part 9 Here Flow](https://youtu.be/-sVRtrQ2aTM)
 
 # Supporting Materials
 - [ArduPilot Configuration](../ArduPilot-Config/ArduPilot-Config.md) - This page contains a consolidated list of the all of the configuration done in ArduPilot throughout the videos. After you make the configuration changes you should see values show in the sonarrange and opt_* parameters in mission planner.
