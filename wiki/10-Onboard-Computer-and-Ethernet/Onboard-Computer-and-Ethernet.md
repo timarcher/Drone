@@ -17,7 +17,8 @@ This page contains details on the installation of a Raspberry Pi 5 companion com
     - To make the route persistent across reboots, run it with the -p flag: `route -p add 192.168.144.0 mask 255.255.255.0 192.168.43.1`
   - Companion computer needs a static route for 192.168.43.0/24 via 192.168.144.11
     - To do this temporarily, run the command: `sudo ip route add 192.168.43.0/24 via 192.168.144.11`
-    - 
+- URL for the RTSP video stream is: rtsp://192.168.43.1:8554/fpv_stream
+
 
 # Setting An IP Address on the Raspberry Pi
 The following commands will give your Raspberry Pi a static IP address that will allow it to communicate with the HereLink Air Unit, Controller, and the Ground Control Station (if connected through the WiFi AP on the HereLink controller). 
@@ -42,6 +43,7 @@ network:
 # Supporting Materials
 - [Raspberry Pi Imager](https://www.raspberrypi.com/software/) - Download and install the Raspberry Pi Imager from this website.
 - [PuTTY SSH Client](https://www.putty.org/) - Free SSH client you can use to connect to your Raspberry Pi.
+- [VLC Media Player](https://www.videolan.org/) - Used to view RTSP video streams over a network connection.
 - [ArduPilot Configuration](../ArduPilot-Config/ArduPilot-Config.md) - This page contains a consolidated list of the all of the configuration done in ArduPilot throughout the videos.
 
 # References 
