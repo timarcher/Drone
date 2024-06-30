@@ -4,7 +4,7 @@ This page contains details on the setup of the Here Flow sensor. The Here Flow o
 - [Hexacopter Drone Build Project – Part 9 Here Flow](https://www.youtube.com/XXX)
 
 # Supporting Materials
-- [ArduPilot Configuration](../ArduPilot-Config/ArduPilot-Config.md) - This page contains a consolidated list of the all of the configuration done in ArduPilot throughout the videos.
+- [ArduPilot Configuration](../ArduPilot-Config/ArduPilot-Config.md) - This page contains a consolidated list of the all of the configuration done in ArduPilot throughout the videos. After you make the configuration changes you should see values show in the sonarrange and opt_* parameters in mission planner.
 
 # References 
 - Here Flow documentation [can be found here](https://docs.cubepilot.org/user-guides/flow-senor/here-flow).
