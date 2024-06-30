@@ -9,8 +9,19 @@ This page contains details on the installation of a Raspberry Pi 5 companion com
   - The Airunit and Controller occupy the addresses 192.168.144.10 and 192.168.144.11, so you cannot use these IP addresses for other devices on the network within the drone.
   - HereLink Air Unit is at IP address 192.168.144.10
   - HereLink Controlleris at IP address 192.168.144.11
+- You can get rtsp video from 192.168.43.1, 192.168.144.10, or 192.168.144.11
+- You can get mavlink from 192.168.43.1, 192.168.144.10, or 192.168.144.11 port 14552
+- To be able to route traffic between the Drone Network and the Ground Control Station HereLink WiFi AP:
+  - GCS/Laptop needs a static route to 192.168.144.0/24 via 192.168.43.1
+    - To do this, assuming your GCS is a Windows PC, open a command prompt as administrator and run `route add 192.168.144.0 mask 255.255.255.0 192.168.43.1`
+    - To make the route persistent across reboots, run it with the -p flag: `route -p add 192.168.144.0 mask 255.255.255.0 192.168.43.1`
+  - Companion computer needs a static route for 192.168.43.0/24 via 192.168.144.11
+    - To do this temporarily, run the command: `sudo ip route add 192.168.43.0/24 via 192.168.144.11`
+    - 
 
 # Setting An IP Address on the Raspberry Pi
+The following commands will give your Raspberry Pi a static IP address that will allow it to communicate with the HereLink Air Unit, Controller, and the Ground Control Station (if connected through the WiFi AP on the HereLink controller). 
+
 - Open the Netplan configuration file for editing: `sudo vi /etc/netplan/01-netcfg.yaml`
 - Edit the configuration file to set the static IP address. The file should look something like this
 ```
@@ -21,6 +32,9 @@ network:
       addresses:
         - 192.168.144.50/24
       dhcp4: no
+      routes:
+        - to: 192.168.43.0/24
+          via: 192.168.144.11
 ```
 - After saving the file, apply the Netplan configuration with the following command: `sudo netplan apply`
 - Verify the configuration. You can check the IP address assignment by using the ip command: `ip addr show eth0`
