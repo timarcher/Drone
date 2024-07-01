@@ -18,7 +18,7 @@ This page contains details on the installation of a Raspberry Pi 5 companion com
   - Companion computer needs a static route for 192.168.43.0/24 via 192.168.144.11
     - To do this temporarily, run the command: `sudo ip route add 192.168.43.0/24 via 192.168.144.11`
     - To do it permanently, simply leave in the routes section in the static IP configuration as shown below.
-- URL for the RTSP video stream is: rtsp://192.168.43.1:8554/fpv_stream
+- URL for the RTSP video stream is: rtsp://192.168.43.1:8554/fpv_stream or rtsp://192.168.144.11:8554/fpv_stream
 
 
 # Setting An IP Address on the Raspberry Pi
@@ -32,7 +32,7 @@ network:
   ethernets:
     eth0:
       addresses:
-        - 192.168.144.50/24
+        - 192.168.144.55/24
       dhcp4: no
       routes:
         - to: 192.168.43.0/24
