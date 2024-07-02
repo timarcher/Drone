@@ -56,7 +56,7 @@ You may wish to interact with your drone from your companion computer using Pyth
 import time
 from pymavlink import mavutil
 
-drone = mavutil.mavlink_connection("udpout:192.168.144.10:14550")
+drone = mavutil.mavlink_connection("udpout:192.168.144.10:14552")
 
 drone.mav.ping_send(
     int(time.time() * 1e6), # Unix time in microseconds
@@ -69,12 +69,47 @@ drone.wait_heartbeat()
 
 print(f"Drone Target System: {drone.target_system}")
 
-while True:
+i = 0
+while i < 10:
     try:
         print(drone.recv_match().to_dict())
+        i = i + 1
     except:
         pass
     time.sleep(0.1)
+
+
+time.sleep(0.2)
+
+# Function to set mode
+def set_mode(mode):
+    if mode not in drone.mode_mapping():
+        print(f"Unknown mode: {mode}")
+        print("Available modes:", list(drone.mode_mapping().keys()))
+        return
+
+    mode_id = drone.mode_mapping()[mode]
+    drone.mav.command_long_send(
+        drone.target_system, drone.target_component,
+        mavutil.mavlink.MAV_CMD_DO_SET_MODE, 0,
+        mavutil.mavlink.MAV_MODE_FLAG_CUSTOM_MODE_ENABLED,
+        mode_id, 0, 0, 0, 0, 0)
+
+    # Check the ACK
+    ack = None
+    while ack is None:
+        ack_msg = drone.recv_match(type='COMMAND_ACK', blocking=True)
+        ack = ack_msg.to_dict()
+
+    print(f"Mode change to {mode} result: {ack}")
+
+# Set the mode to LOITER
+set_mode('LOITER')
+
+time.sleep(5)
+
+set_mode('STABILIZE')
+
 ```
 1. Deactivate the virtual environment: `deactivate`
 1. Delete the virtual environment: `rm -rf drone01`
