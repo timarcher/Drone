@@ -19,6 +19,7 @@ This page contains details on the installation of a Raspberry Pi 5 companion com
     - To do this temporarily, run the command: `sudo ip route add 192.168.43.0/24 via 192.168.144.11`
     - To do it permanently, simply leave in the routes section in the static IP configuration as shown below.
 - URL for the RTSP video stream is: rtsp://192.168.43.1:8554/fpv_stream or rtsp://192.168.144.11:8554/fpv_stream
+  - You can connect to that using a tool such as VLC Media Player
 
 # Setting An IP Address on the Raspberry Pi
 The following commands will give your Raspberry Pi a static IP address that will allow it to communicate with the HereLink Air Unit, Controller, and the Ground Control Station (if connected through the WiFi AP on the HereLink controller). 
