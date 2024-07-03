@@ -40,21 +40,20 @@ network:
 - After saving the file, apply the Netplan configuration with the following command: `sudo netplan apply`
 - Verify the configuration. You can check the IP address assignment by using the ip command: `ip addr show eth0`
 
-# Python, Pymavlink, and DroneKit
+# Python and Pymavlink
 You may wish to interact with your drone from your companion computer using Python. This section shows the basics of how to communicate with the ArduPilot flight controller.
 
 - [Pymavlink](https://github.com/ArduPilot/pymavlink) is a Python library for generating and parsing MAVLink messages. MAVLink (Micro Air Vehicle Link) is a communication protocol used primarily in drone applications for telemetry and command/control communication.
-- [Dronekit](https://github.com/dronekit/dronekit-python) is a higher-level Python library that simplifies interaction with drones using the MAVLink protocol. It abstracts many of the complexities of MAVLink, providing a more user-friendly API for controlling drones, accessing telemetry data, and performing autonomous flight operations. Dronekit is best used for rapid development and prototyping of drone applications. It is suitable for users who need to interact with and control drones without delving into the details of MAVLink message handling. It also appears the Dronekit may not be well maintained anymore, but is suitable for basic prototyping. I was unable to get dronekit working correctly in my setup but I am linking to it here just in case it is useful.
 
 
 1. Install dependencies: `sudo apt update && sudo apt install python3-full python3-pip python-is-python3`
 1. Create a python virtual environment: `python3 -m venv drone01`
 1. Activate virtual environment: `source drone01/bin/activate`
-1. Install python libraries into the virtual environment: `pip3 install pymavlink dronekit`
-1. Try a simple dronekit test program. Create a file named `sample01_simple_mavlink_test.py` and add the contents of [this file](../../src/sample01_simple_mavlink_test/sample01_simple_mavlink_test.py) to it.
-1. Run the program: `python sample01_simple_mavlink_test.py`
-1. Deactivate the virtual environment: `deactivate`
-1. Delete the virtual environment: `rm -rf drone01`
+2. Install python libraries into the virtual environment: `pip3 install pymavlink`
+3. Try a simple test program to communicate with the flight controller. Create a file named `sample01_simple_mavlink_test.py` and add the contents of [this file](../../src/sample01_simple_mavlink_test/sample01_simple_mavlink_test.py) to it.
+4. Run the program: `python sample01_simple_mavlink_test.py`
+5. Deactivate the virtual environment: `deactivate`
+6. Delete the virtual environment: `rm -rf drone01`
 
 
 
