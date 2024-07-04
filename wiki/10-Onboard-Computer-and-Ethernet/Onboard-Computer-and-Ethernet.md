@@ -5,10 +5,10 @@ This page contains details on the installation of a Raspberry Pi 5 companion com
 
 # Notes
 - 192.168.43.1 is HereLink controller IP address when you connect to it through it's WiFi access point mode from a ground control station (i.e., a laptop or computer).
-- There is no dhcp provided by the HereLink Air Units. You need to manual set an ip address inside the range eg 192.168.144.0, subnet mask 255.255.255.0. For example, use 192.168.144.50. This will put you within the ip range of the airunit and gcs unit, so they are accessible from the airunit ethernet port.
+- There is no dhcp provided by the HereLink Air Units. You need to manual set an ip address inside the range eg 192.168.144.0, subnet mask 255.255.255.0. For example, use 192.168.144.50. This will put you within the IP range of the airunit and GCS unit, so they are accessible from the airunit ethernet port.
   - The Airunit and Controller occupy the addresses 192.168.144.10 and 192.168.144.11, so you cannot use these IP addresses for other devices on the network within the drone.
   - HereLink Air Unit is at IP address 192.168.144.10
-  - HereLink Controlleris at IP address 192.168.144.11
+  - HereLink Controller is at IP address 192.168.144.11
 - You can get rtsp video from 192.168.43.1, 192.168.144.10, or 192.168.144.11
 - You can get mavlink from 192.168.43.1, 192.168.144.10, or 192.168.144.11 port 14552
 - To be able to route traffic between the Drone Network and the Ground Control Station HereLink WiFi AP:
@@ -46,15 +46,14 @@ You may wish to interact with your drone from your companion computer using Pyth
 
 - [Pymavlink](https://github.com/ArduPilot/pymavlink) is a Python library for generating and parsing MAVLink messages. MAVLink (Micro Air Vehicle Link) is a communication protocol used primarily in drone applications for telemetry and command/control communication.
 
-
 1. Install dependencies: `sudo apt update && sudo apt install python3-full python3-pip python-is-python3`
 1. Create a python virtual environment: `python3 -m venv drone01`
 1. Activate virtual environment: `source drone01/bin/activate`
-2. Install python libraries into the virtual environment: `pip3 install pymavlink`
-3. Try a simple test program to communicate with the flight controller. Create a file named `sample01_simple_mavlink_test.py` and add the contents of [this file](../../src/sample01_simple_mavlink_test/sample01_simple_mavlink_test.py) to it.
-4. Run the program: `python sample01_simple_mavlink_test.py`
-5. Deactivate the virtual environment: `deactivate`
-6. Delete the virtual environment: `rm -rf drone01`
+1. Install python libraries into the virtual environment: `pip3 install pymavlink`
+1. Try a simple test program to communicate with the flight controller. Create a file named `sample01_simple_mavlink_test.py` and add the contents of [this file](../../src/sample01_simple_mavlink_test/sample01_simple_mavlink_test.py) to it.
+1. Run the program: `python sample01_simple_mavlink_test.py`
+1. Deactivate the virtual environment: `deactivate`
+1. Delete the virtual environment: `rm -rf drone01`
 
 
 
@@ -64,6 +63,11 @@ You may wish to interact with your drone from your companion computer using Pyth
 - [VLC Media Player](https://www.videolan.org/) - Used to view RTSP video streams over a network connection.
 - [ArduPilot Configuration](../ArduPilot-Config/ArduPilot-Config.md) - This page contains a consolidated list of the all of the configuration done in ArduPilot throughout the videos.
 
+
 # References 
 - Herelink air unit to botblox switch wiring is shown [on this page](https://ardupilot.org/copter/docs/common-ethernet-vehicle.html).
 - ArduPilot discussion post on Ethernet Connected Ardupilot Vehicle Example [can be found here](https://discuss.ardupilot.org/t/ethernet-connected-ardupilot-vehicle-example/117942).
+
+
+# Pictures
+![Herelink Network Overview](./images/herelink-network-overview.png)
