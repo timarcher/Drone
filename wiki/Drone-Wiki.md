@@ -22,6 +22,9 @@ Use the list below to follow my build journey step by step.
 1. [Cube ID Remote ID](08-Cube-ID-Remote-ID/Cube-ID-Remote-ID.md)
 1. [Here Flow](09-Here-Flow/Here-Flow.md)
 1. [Onboard Computer and Ethernet](10-Onboard-Computer-and-Ethernet/Onboard-Computer-and-Ethernet.md)
+1. [TFMini-S Lidar](11-TFMini-S-Lidar/TFMini-S-Lidar.md)
+1. [Tattu Smart Battery](12-Tattu-Smart-Battery/Tattu-Smart-Battery.md)
+   
    
 Future steps are coming soon!
 

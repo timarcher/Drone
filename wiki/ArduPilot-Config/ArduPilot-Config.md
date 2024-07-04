@@ -59,22 +59,22 @@ https://discuss.cubepilot.org/t/negative-current-reading-on-kore-carrier-board/2
 |BATT_CURR_PIN|15|Kore docs recommend 3, but I had to set to 15 to work with Cube Orange Plus.|
 |BATT_VOLT_MULT|15.3||
 |BATT_VOLT_PIN|14|Kore docs recommend 2, but I had to set to 14 to work with Cube Orange Plus.|
-<!--
-|XXX|XXX|XXX|
-|XXX|XXX|XXX|
-|XXX|XXX|XXX|
-|XXX|XXX|XXX|
-|XXX|XXX|XXX|
--->
+
+> If you are using the Tattu Smart Battery outlined below, you should skip setting these BATT_* parameters for the Kore Carrier Board
+
+## Parameters - Enable DroneCAN (Needed for Basically everything below)
+|Parameter Name|Value|Description|
+|---|---|---|
+|CAN_P1_DRIVER|1||
+|CAN_P2_DRIVER|1||
+|CAN_D1_PROTOCOL|1|DroneCAN|
+|CAN_D2_PROTOCOL|1|DroneCAN|
+
 
 ## Parameters - Here4 GPS
 |Parameter Name|Value|Description|
 |---|---|---|
 |BRD_SAFETY_DEFLT|0|There is no safety switch on the Here4 GPS so we disable it. (BRD_SAFETYENABLE in older firmware versions)|
-|CAN_P1_DRIVER|1||
-|CAN_P2_DRIVER|1||
-|CAN_D1_PROTOCOL|1||
-|CAN_D2_PROTOCOL|1||
 |GPS_TYPE|9||
 |NTF_LED_TYPES|231||
 
@@ -128,6 +128,12 @@ You can optionally set the DID_OPTIONS bitmask value as well for EnforceArming, 
 |RNGFND2_MIN_CM|10|Minimum distance in centimeters that rangefinder can reliably read. 10 for TFminiPlus|
 |RNGFND2_MAX_CM|600|This is the distance in centimeters that the rangefinder can reliably read. 600 for outdoors.|
 |RNGFND2_GNDCLEAR|10|Optional - This parameter sets  the expected range measurement(in cm) that the range finder should return when the vehicle is on the ground.|
+
+## Parameters - Tattu Smart Battery
+|Parameter Name|Value|Description|
+|---|---|---|
+|BATT_MONITOR|8|DroneCAN|
+|BATT_SERIAL_NUM|1||
 
 
 # Factory Reset the Parameters
