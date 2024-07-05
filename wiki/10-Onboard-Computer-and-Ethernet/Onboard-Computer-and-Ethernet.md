@@ -1,7 +1,7 @@
 This page contains details on the installation of a Raspberry Pi 5 companion computer and the setup of a BotBlox SwitchBlox Ethernet switch to create a network onboard the drone.
 
 # YouTube Video
-- [Hexacopter Drone Build Project – Part 10 Onboard Computer and Ethernet](https://www.youtube.com/XXX)
+- [Hexacopter Drone Build Project – Part 10 Onboard Computer and Ethernet](https://youtu.be/5UbClGg2NsM)
 
 # Notes
 - 192.168.43.1 is HereLink controller IP address when you connect to it through it's WiFi access point mode from a ground control station (i.e., a laptop or computer).
