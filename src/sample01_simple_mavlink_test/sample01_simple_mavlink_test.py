@@ -85,6 +85,15 @@ def close_connection(drone):
     print("Connection closed.")
 
 #
+# Signal handler function
+#
+def signal_handler(sig, frame, drone):
+    print(f"Received signal {sig}.")
+    close_connection(drone)
+    print("Graceful shutdown completed.")
+    exit(0)
+
+#
 # Main program logic
 #
 def main():
