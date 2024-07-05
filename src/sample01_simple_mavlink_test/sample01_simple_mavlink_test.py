@@ -9,7 +9,7 @@ from pymavlink import mavutil
 def connect(connection_string):
     drone = mavutil.mavlink_connection(connection_string)
 
-    # This workaround seems to be needed otherwise connections to the HereLink fail
+    # This workaround seems to be needed otherwise connections to the Herelink fail
     # waiting for the heartbeat
     drone.mav.ping_send(
         int(time.time() * 1e6), # Unix time in microseconds

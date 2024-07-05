@@ -5,7 +5,7 @@ This page contains details on the initial unboxing and setup of the Herelink con
 - [Hexacopter Drone Build Project – Part 3 Herelink Unboxing and Setup](https://youtu.be/6hCZ1OqMMvg)
 
 # Notes
-- Be sure to enable video sharing in the HereLink controller.
+- Be sure to enable video sharing in the Herelink controller.
 
 
 # References 
