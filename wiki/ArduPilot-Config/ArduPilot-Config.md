@@ -119,7 +119,7 @@ You can optionally set the DID_OPTIONS bitmask value as well for EnforceArming, 
 |FLOW_TYPE|6|Enable optical flow camera.|
 
 
-## Parameters - TFMini-S LIDAR
+## Parameters - TFMini-S LiDAR
 |Parameter Name|Value|Description|
 |---|---|---|
 |SERIAL4_PROTOCOL|9|What protocol Serial4 port should be used for. Change from -1 (GPS) to 9 (Lidar)|
