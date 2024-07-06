@@ -49,7 +49,7 @@ Note: If you are using a fresh installation of mission planner you will have to 
 The default params recommended for battery monitoring are on the Kore carrier board page.
 However, with the defaults I was getting negative current readings. Per this post I set the BATT_AMP_OFFSET to 0.37. There is also a recommendation to set BATT_AMP_PERVOLT to 67 but I did not do that.
 https://discuss.cubepilot.org/t/negative-current-reading-on-kore-carrier-board/2299/11
-
+You do not need to set these if you are going to use the settings below for the Tattu Smart Battery. That battery has a BMS from which ArduPilot can get it's status through DroneCAN.
 
 |Parameter Name|Value|Description|
 |---|---|---|
@@ -61,6 +61,16 @@ https://discuss.cubepilot.org/t/negative-current-reading-on-kore-carrier-board/2
 |BATT_VOLT_PIN|14|Kore docs recommend 2, but I had to set to 14 to work with Cube Orange Plus.|
 
 > If you are using the Tattu Smart Battery outlined below, you should skip setting these BATT_* parameters for the Kore Carrier Board
+
+## Parameters - Fence
+A fence is a virtual boundary set in the flight control system that restricts the area within which an unmanned aerial vehicle (UAV) can operate, helping to ensure it stays within a predefined safe zone and enhancing flight safety. If the UAV attempts to cross this boundary, the system can trigger predefined actions like returning to launch or landing. Upon Fence breach, selectable actions are taken.
+|Parameter Name|Value|Description|
+|---|---|---|
+|FENCE_ENABLE|1|Enable or disable the fence functionality.|
+|FENCE_ACTION|4|4 = Brake or Land. Set to 0 for report only.|
+|FENCE_ALT_MAX|30|Maximum altitude before geofence triggers.|
+|FENCE_MARGIN|3|Distance that the autopilot should maintain from the fence to avoid a breach.|
+|FENCE_RADIUS|100|Radius of the geofence.|
 
 ## Parameters - Enable DroneCAN (Needed for Basically everything below)
 |Parameter Name|Value|Description|
@@ -129,11 +139,20 @@ You can optionally set the DID_OPTIONS bitmask value as well for EnforceArming, 
 |RNGFND2_MAX_CM|600|This is the distance in centimeters that the rangefinder can reliably read. 600 for outdoors.|
 |RNGFND2_GNDCLEAR|10|Optional - This parameter sets  the expected range measurement(in cm) that the range finder should return when the vehicle is on the ground.|
 
-## Parameters - Tattu Smart Battery
+## Parameters - Tattu 12s 16000mAh Smart Battery
+These are the settings I used for the Tattu Plus 1.0 Compact Version 16000mAh 44.4V 15C 12S1P Lipo Smart Battery Pack With AS150U Plug.
 |Parameter Name|Value|Description|
 |---|---|---|
 |BATT_MONITOR|8|DroneCAN|
-|BATT_SERIAL_NUM|1||
+|BATT_SERIAL_NUM|-1|Leave at -1 unless you have multiple DroneCAN batteries in the drone.|
+|BATT_ARM_VOLT|44.3|Minimum battery voltage required to arm the aircraft.|
+|BATT_CAPACITY|15800|The Tattu 12s battery has 16000 mah.|
+|BATT_CRT_VOLT|42|Battery voltage that triggers a critical battery failsafe.|
+|BATT_FS_CRT_ACT|1|Action to perform if the critical battery failsafe is hit. 1 = Land|
+|BATT_FS_LOW_ACT|2|Action to perform if the low battery failsafe is hit. 2 = RTL|
+|BATT_LOW_VOLT|43.2|Battery voltage that triggers a low battery failsafe.|
+|MOT_BAT_VOLT_MAX|50.4|Battery voltage compensation maximum voltage. Set to 4.2 * cell count.|
+|MOT_BAT_VOLT_MIN|39.6|Battery voltage minimum compensation voltage. Set to 3.3 * cell count.|
 
 
 # Factory Reset the Parameters
