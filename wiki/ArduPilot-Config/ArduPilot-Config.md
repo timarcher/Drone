@@ -144,13 +144,14 @@ These are the settings I used for the Tattu Plus 1.0 Compact Version 16000mAh 44
 |Parameter Name|Value|Description|
 |---|---|---|
 |BATT_MONITOR|8|DroneCAN|
-|BATT_SERIAL_NUM|-1|Leave at -1 unless you have multiple DroneCAN batteries in the drone.|
 |BATT_ARM_VOLT|44.3|Minimum battery voltage required to arm the aircraft.|
 |BATT_CAPACITY|15800|The Tattu 12s battery has 16000 mah.|
 |BATT_CRT_VOLT|42|Battery voltage that triggers a critical battery failsafe.|
+|BATT_CURR_MULT|-1|Multiplier applied to all current related reports. Needed otherwise you get negative current readings from the Tattu battery.|
 |BATT_FS_CRT_ACT|1|Action to perform if the critical battery failsafe is hit. 1 = Land|
 |BATT_FS_LOW_ACT|2|Action to perform if the low battery failsafe is hit. 2 = RTL|
 |BATT_LOW_VOLT|43.2|Battery voltage that triggers a low battery failsafe.|
+|BATT_SERIAL_NUM|-1|Leave at -1 unless you have multiple DroneCAN batteries in the drone.|
 |MOT_BAT_VOLT_MAX|50.4|Battery voltage compensation maximum voltage. Set to 4.2 * cell count.|
 |MOT_BAT_VOLT_MIN|39.6|Battery voltage minimum compensation voltage. Set to 3.3 * cell count.|
 
