@@ -144,6 +144,8 @@ These are the settings I used for the Tattu Plus 1.0 Compact Version 16000mAh 44
 |Parameter Name|Value|Description|
 |---|---|---|
 |BATT_MONITOR|8|DroneCAN|
+|BATT_AMP_OFFSET|0|This may not show up once you set BATT_MONITOR to 8. Thats OK.|
+|BATT_AMP_PERVLT|1|This may not show up once you set BATT_MONITOR to 8. Thats OK.|
 |BATT_ARM_VOLT|44.3|Minimum battery voltage required to arm the aircraft.|
 |BATT_CAPACITY|15800|The Tattu 12s battery has 16000 mah.|
 |BATT_CRT_VOLT|42|Battery voltage that triggers a critical battery failsafe.|
