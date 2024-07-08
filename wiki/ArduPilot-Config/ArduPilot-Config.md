@@ -78,7 +78,9 @@ A fence is a virtual boundary set in the flight control system that restricts th
 |CAN_P1_DRIVER|1||
 |CAN_P2_DRIVER|1||
 |CAN_D1_PROTOCOL|1|DroneCAN|
+|CAN_D1_UC_POOL|16384|Amount of memory in bytes to allocate for the DroneCAN memory pool. More memory is needed for higher CAN bus loads.|
 |CAN_D2_PROTOCOL|1|DroneCAN|
+
 
 
 ## Parameters - Here4 GPS
