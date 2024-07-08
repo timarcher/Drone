@@ -76,7 +76,7 @@ A fence is a virtual boundary set in the flight control system that restricts th
 |Parameter Name|Value|Description|
 |---|---|---|
 |CAN_P1_DRIVER|1||
-|CAN_P2_DRIVER|1||
+|CAN_P2_DRIVER|2||
 |CAN_D1_PROTOCOL|1|DroneCAN|
 |CAN_D2_PROTOCOL|1|DroneCAN|
 

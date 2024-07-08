@@ -76,7 +76,7 @@ This page contains the overall bill of materials/component list that was used to
 |XT90 Plug Series Battery Connector 1 Female 2 Males Adapter with 10CM 10AWG Silicon Cable|[Amazon](https://www.amazon.com/gp/product/B084VK7N9D/)|$11|1|$11|
 |AS150U Female to XT90 Male Connector, 8AWG Insulated Weatherproof XT90 Male Connector|[Amazon](https://www.amazon.com/gp/product/B0CBHV4S2M/)|$18|1|$18|
 |12 Gauge Silicone Wire 10 ft red and 10 ft Black Flexible 12 AWG Stranded Tinned Copper Wire|[Amazon](https://www.amazon.com/gp/product/B01ABOPMEI/)|$13|1|$13|
-|Holybro CAN Hub|[Holybro](https://holybro.com/products/can-hub)|$28|1|$28|
+|Holybro CAN Hub|[Holybro](https://holybro.com/products/can-hub)|$28|2|$56|
 |20 Pairs Silicone Male & Female JST Connector 22 AWG|[Amazon](https://www.amazon.com/gp/aw/d/B00EZH8P9W)|$12|1|$12|
 |10 Pairs 2.0mm Spade 2P Cable 8cm Lead Plug Connector Male and Female|[Amazon](https://www.amazon.com/gp/aw/d/B07YQY9V6F)|$8|1|$8|
 |20 Pairs XT30 Connectors Male and Female|[Amazon](https://www.amazon.com/gp/product/B0875MBLNH/)|$12|1|$12|
