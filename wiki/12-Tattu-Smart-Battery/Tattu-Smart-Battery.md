@@ -22,3 +22,6 @@ This page contains details on the setup of the Tattu smart battery. Tattu Plus b
 
 # References 
 - Ardupilot Tattu DroneCAN battery guide [can be found here](https://ardupilot.org/plane/docs/common-tattu-dronecan-battery.html).
+
+# Images
+![alt text](./images/tattu-can-wiring.png)
