@@ -1,7 +1,7 @@
 This page contains details on the setup of the Tattu smart battery. Tattu Plus batteries with AS150U connectors support DroneCAN which allows the autopilot to retrieve the battery’s total voltage, individual cell voltages, current, temperature and percentage of remaining capacity.
 
 # YouTube Video
-- [Hexacopter Drone Build Project – Part 12 Tattu Smart Battery](https://youtu.be/XXX)
+- [Hexacopter Drone Build Project – Part 12 Tattu Smart Battery](https://youtu.be/B040AUwVVrQ)
 
 # Notes
 - I could NOT get the telemetry to reliably read on the CAN bus if the battery was connected to the same CAN port as the HobbyWing motors. In my configuration the motors, GPS, HereFlow, and Cube ID are all connected to CAN1, and the battery is connected to CAN2.
