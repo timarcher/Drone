@@ -8,6 +8,10 @@ This page contains the overall bill of materials/component list that was used to
 |RJX 1PCS RC Agriculture UAV Frame AS150U Plug Fixed Seat Male Connector Mount Holder Support Base for 20mm 25mm Carbon Tube - 20mm variant|[RJX Hobby](https://www.rjxhobby.com/rjx-1pcs-rc-agriculture-uav-frame-as150u-plug-fixed-seat-male-connector-mount-holder-support-base-for-20mm-25mm-carbon-tube)|$12|1|$12|
 |Small Bubble Levels|[Amazon](https://www.amazon.com/gp/product/B098CWYPZC/)|$6|1|$6|
 |Loctite Threadlocker Blue 242|[Amazon](https://www.amazon.com/gp/product/B000I1RSNS/)|$8|1|$8|
+|Rubber Grip Tape, Ultra-Thin Strong Adhesive Anti-Slip Waterproof Heat Resistant Wear-Resistant Cushion Pad, Making Handles or Contact Surfaces Safer, with Grip and Comfort (Black, 2In x 10Ft)|[Amazon](https://www.amazon.com/gp/product/B0CLVC79BD/)|$17|1|$17|
+|Cable Zip Ties,600 Packs Self-Locking Nylon CableTies Assorted Sizes 4+6+8+10+12-Inch|[Amazon](https://www.amazon.com/gp/product/B08TVMRFV8/?th=1)|$10|1|$10|
+|XHF 3/4" Strong Back-Glue Self Adhesive Black Cable Zip Tie Mounts|[Amazon](https://www.amazon.com/gp/product/B08F77YVYB/)|$10|1|$10|
+
 <!--
 |Component|[Source](https:URL)|$XXX|1|$XXX|
 -->
@@ -81,6 +85,7 @@ This page contains the overall bill of materials/component list that was used to
 |10 Pairs 2.0mm Spade 2P Cable 8cm Lead Plug Connector Male and Female|[Amazon](https://www.amazon.com/gp/aw/d/B07YQY9V6F)|$8|1|$8|
 |20 Pairs XT30 Connectors Male and Female|[Amazon](https://www.amazon.com/gp/product/B0875MBLNH/)|$12|1|$12|
 |Heat Shrink Tubing Tube Sleeving Wrap Cable Wire 5 Color 8 Size|[Amazon](https://www.amazon.com/gp/product/B00OZSL8UE/)|$12|1|$12|
+|Heat Shrink Tubing Kit, 3:1 Industrial Electrical Shrink Tube, Marine Grade Shrink Wrap, Adhesive Lined, 200PCS, 7 Sizes, Black|[Amazon](https://www.amazon.com/gp/product/B0BVM4FMY9/)|$10|1|$10|
 |USB Type C PD Pigtail Cable Charge Bare Wire Data Transmission Extension Power Cable 6 Cores 5A|[Amazon](https://www.amazon.com/gp/product/B0C1YXM9PF/)|$12|1|$12|
 |UCTRONICS 0.96 Inch OLED Module 12864 128x64 Yellow Blue SSD1306|[Amazon](https://www.amazon.com/gp/product/B072Q2X2LL/)|$7|1|$7|
 |28 AWG Silicone Wire Kit Spool 25ft Each 6 Colors|[Amazon](https://www.amazon.com/gp/product/B089CWGQKW/)|$9|1|$9|
@@ -145,6 +150,8 @@ Here are links to some of the tools I bought are below. Feel free to substitute 
 |Silicone Soldering Holder- Wire Holder for Soldering|[Amazon](https://www.amazon.com/gp/product/B0CTJ33VJY)|$12|1|$12|
 |iCrimp IWS-3220M Micro Connector Pin Crimping Tool 0.03-0.52mm² 32-20AWG Ratcheting Crimper for D-Sub,Open Barrel suits Molex,JST,JAE|[Amazon](https://www.amazon.com/gp/product/B078WPT5M1/)|$26|1|$26|
 |Watt Meter Power Analyzer - Greatlong 200A Power Analyzer, High Precision RC with Digital LCD Screen for voltage (V) current (A) Power (W) Charge(Ah) and Energy (Wh) Measurement|[Amazon](https://www.amazon.com/gp/product/B0CC5CFT47/)|$15|1|$15|
+|Machinist Ruler, 4 Pack (6, 8, 12, 14 inch), Metric Ruler, Millimeter Ruler, (1/64, 1/32, mm and .5 mm), 6 inch Ruler, Stainless Steel Ruler|[Amazon](https://www.amazon.com/gp/product/B086TWLKC1/)|$8|1|$8|
+|Electronic digital calipers, inch and millimeter conversion,LCD screen displays 0-6"caliper measuring tool|[Amazon](https://www.amazon.com/gp/product/B08ZNQRB39/?th=1)|$8|1|$8|
 
 
 <!--
