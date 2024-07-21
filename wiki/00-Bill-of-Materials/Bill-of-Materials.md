@@ -11,6 +11,10 @@ This page contains the overall bill of materials/component list that was used to
 |Rubber Grip Tape, Ultra-Thin Strong Adhesive Anti-Slip Waterproof Heat Resistant Wear-Resistant Cushion Pad, Making Handles or Contact Surfaces Safer, with Grip and Comfort (Black, 2In x 10Ft)|[Amazon](https://www.amazon.com/gp/product/B0CLVC79BD/)|$17|1|$17|
 |Cable Zip Ties,600 Packs Self-Locking Nylon CableTies Assorted Sizes 4+6+8+10+12-Inch|[Amazon](https://www.amazon.com/gp/product/B08TVMRFV8/?th=1)|$10|1|$10|
 |XHF 3/4" Strong Back-Glue Self Adhesive Black Cable Zip Tie Mounts|[Amazon](https://www.amazon.com/gp/product/B08F77YVYB/)|$10|1|$10|
+|25ft x 1/4 inch & 25ft x 1/2 inch PET Expandable Braided Sleeving Braided Cable Sleeve|[Amazon](https://www.amazon.com/gp/product/B07RZXSJBM/)|$10|1|$10|
+|1/2 inch Cord Protector Wire Loom Tubing Cable Sleeve Split Sleeving|[Amazon](https://www.amazon.com/gp/product/B07FW3GTXB/)|$9|1|$9|
+|3/4 inch Cord Protector Wire Loom Tubing Cable Sleeve Split Sleeving|[Amazon](https://www.amazon.com/gp/product/B07FW672R7/)|$12|1|$12|
+
 
 <!--
 |Component|[Source](https:URL)|$XXX|1|$XXX|
@@ -25,7 +29,6 @@ This page contains the overall bill of materials/component list that was used to
 |Hobbywing Xrotor 2480 Propeller - Clockwise|[Hobbywing](https://www.hobbywingdirect.com/products/xrotor-2480-propeller?variant=40989998907507)|$22|3|$66|
 |Hobbywing Xrotor 2480 Propeller - CounterClockwise|[Hobbywing](https://www.hobbywingdirect.com/products/xrotor-2480-propeller?variant=40989998940275)|$22|3|$66|
 |Hobbywing Data Link V2|[Hobbywing](https://www.hobbywingdirect.com/products/data-link-v2)|$70|1|$70|
-|25ft x 1/4 inch & 25ft x 1/2 inch PET Expandable Braided Sleeving Braided Cable Sleeve|[Amazon](https://www.amazon.com/gp/product/B07RZXSJBM/)|$10|1|$10|
 |3pcs Male XT-60 to Female XT-30 Connector Adapter for Turnigy Drone XT30 XT60 FPV Cable 16awg|[Amazon](https://www.amazon.com/gp/product/B073Z77473/)|$10|1|$10|
 |M3 x 40mm Hex Socket Head Cap Bolts|[Amazon](https://www.amazon.com/gp/product/B07VPGQ1RZ/)|$12|1|$12|
 |M3 x 0.5mm Nylon Inserted Self Locking Nuts|[Amazon](https://www.amazon.com/gp/product/B07MXVZJYG/)|$7|1|$7|
