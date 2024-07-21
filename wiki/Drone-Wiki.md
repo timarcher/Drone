@@ -24,8 +24,8 @@ Use the list below to follow my build journey step by step.
 1. [Onboard Computer and Ethernet](10-Onboard-Computer-and-Ethernet/Onboard-Computer-and-Ethernet.md)
 1. [TFMini-S Lidar](11-TFMini-S-Lidar/TFMini-S-Lidar.md)
 1. [Tattu Smart Battery](12-Tattu-Smart-Battery/Tattu-Smart-Battery.md)
-   
-   
+1. [Electronics Installation](13-Electronics-Installation/Electronics-Installation.md)
+
 Future steps are coming soon!
 
 <!--
