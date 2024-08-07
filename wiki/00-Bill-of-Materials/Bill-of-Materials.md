@@ -12,9 +12,11 @@ This page contains the overall bill of materials/component list that was used to
 |Cable Zip Ties,600 Packs Self-Locking Nylon CableTies Assorted Sizes 4+6+8+10+12-Inch|[Amazon](https://www.amazon.com/gp/product/B08TVMRFV8/?th=1)|$10|1|$10|
 |XHF 3/4" Strong Back-Glue Self Adhesive Black Cable Zip Tie Mounts|[Amazon](https://www.amazon.com/gp/product/B08F77YVYB/)|$10|1|$10|
 |25ft x 1/4 inch & 25ft x 1/2 inch PET Expandable Braided Sleeving Braided Cable Sleeve|[Amazon](https://www.amazon.com/gp/product/B07RZXSJBM/)|$10|1|$10|
-|1/2 inch Cord Protector Wire Loom Tubing Cable Sleeve Split Sleeving|[Amazon](https://www.amazon.com/gp/product/B07FW3GTXB/)|$9|1|$9|
+|1/2 inch Cord Protector Wire Loom Tubing Cable Sleeve Split Sleeving|[Amazon](https://www.amazon.com/gp/product/B07FW3GTXB/)|$9|3|$27|
 |3/4 inch Cord Protector Wire Loom Tubing Cable Sleeve Split Sleeving|[Amazon](https://www.amazon.com/gp/product/B07FW672R7/)|$12|1|$12|
-
+|Duco ABS Plastic Sheets 1/8 Inch Thick 4" x 6"|[Amazon](https://www.amazon.com/gp/product/B0BBTDYVG9/)|$9|1|$9|
+|Duco ABS Plastic Sheets 1/8 Inch Thick 6" x 6"|[Amazon](https://www.amazon.com/gp/product/B0BBTDQ73S/)|$7|1|$7|
+|Duco ABS Plastic Sheet 1/8 Inch Thick 12" x 12"|[Amazon](https://www.amazon.com/gp/product/B0B79QLYBQ/)|$8|1|$8|
 
 <!--
 |Component|[Source](https:URL)|$XXX|1|$XXX|
@@ -102,6 +104,7 @@ This page contains the overall bill of materials/component list that was used to
 |9 PCS 1.25mm to Dupont 2.54mm Pitch Adapter Cables Wire Compatible with JST Molex PicoBlade 1.25 for Pixhawk Flight Controller RC Drone 2Pin to 8P|[Amazon](https://www.amazon.com/gp/product/B07PWZTC88/)|$9|1|$9|
 |120pcs Breadboard Jumper Wires 10cm 15cm 20cm 30cm 40cm 50 cm 100cm Wire Length Optional Dupont Cable Assorted Kit Male to Female Male to Male Female to Female Multicolored Ribbon Cables|[Amazon](https://www.amazon.com/gp/product/B07GD2BWPY/)|$7|1|$7|
 |RJ45 Coupler|[Amazon](https://www.amazon.com/gp/product/B072HW3WSS/)|$10|1|$10|
+|Micro USB Left Angle,Micro USB Extension Cable, 90 Degree Micro-B Male to Female Extension Cable|[Amazon](https://www.amazon.com/gp/product/B07MC7YSR2/)|$6|1|$6|
 
 
 <!--
