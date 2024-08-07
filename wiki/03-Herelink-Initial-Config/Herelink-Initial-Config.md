@@ -6,7 +6,10 @@ This page contains details on the initial unboxing and setup of the Herelink con
 
 # Notes
 - Be sure to enable video sharing in the Herelink controller.
-
+- In the Joystick settings, 
+  - Change the default channel for the wheel at the top from channel 5 to 16.
+  - Check the Wheel Acc setting
+  - Reverse the hardwheel wheel as well so when you push it to the right it outputs a higher pulse on sbus out.
 
 # References 
 ## Herelink User Guides
