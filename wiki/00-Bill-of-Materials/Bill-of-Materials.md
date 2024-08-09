@@ -18,6 +18,7 @@ This page contains the overall bill of materials/component list that was used to
 |Duco ABS Plastic Sheets 1/8 Inch Thick 6" x 6"|[Amazon](https://www.amazon.com/gp/product/B0BBTDQ73S/)|$7|1|$7|
 |Duco ABS Plastic Sheet 1/8 Inch Thick 12" x 12"|[Amazon](https://www.amazon.com/gp/product/B0B79QLYBQ/)|$8|1|$8|
 |20mm Aluminum Round Tube Mount Clamp w/Hardware Anodized Black|[Amazon](https://www.amazon.com/gp/product/B0CZG1L7F9/)|$10|1|$10|
+|M2.5 Series Hex Brass Spacer/Standoffs + Nuts + Screws w/Storage Case for Raspberry Pi 5/4B/3B+/3B/3A+/Zero W/2W Accessories Kit|[Amazon](https://www.amazon.com/gp/product/B0756CW6Y2/)|$10|2|$20|
 
 
 
@@ -111,6 +112,7 @@ This page contains the overall bill of materials/component list that was used to
 |SMA Female Bulkhead Mount to SMA Male RG316 Antenna Extension Cable 2 feet 60cm 2-Pack|[Amazon](https://www.amazon.com/gp/product/B07WC5WPK5/)|$7|1|$7|
 |SMA Female Bulkhead Mount to SMA Male RG316 Antenna Extension Cable 12 inch 30cm 2-Pack|[Amazon](https://www.amazon.com/gp/product/B07MJQWH8S/)|$7|1|$7|
 
+
 <!--
 |Component|[Source](https:URL)|$XXX|1|$XXX|
 |Component|[Source](https:URL)|$XXX|1|$XXX|
@@ -162,6 +164,9 @@ Here are links to some of the tools I bought are below. Feel free to substitute 
 |Watt Meter Power Analyzer - Greatlong 200A Power Analyzer, High Precision RC with Digital LCD Screen for voltage (V) current (A) Power (W) Charge(Ah) and Energy (Wh) Measurement|[Amazon](https://www.amazon.com/gp/product/B0CC5CFT47/)|$15|1|$15|
 |Machinist Ruler, 4 Pack (6, 8, 12, 14 inch), Metric Ruler, Millimeter Ruler, (1/64, 1/32, mm and .5 mm), 6 inch Ruler, Stainless Steel Ruler|[Amazon](https://www.amazon.com/gp/product/B086TWLKC1/)|$8|1|$8|
 |Electronic digital calipers, inch and millimeter conversion,LCD screen displays 0-6"caliper measuring tool|[Amazon](https://www.amazon.com/gp/product/B08ZNQRB39/?th=1)|$8|1|$8|
+|Liquid Electrical Tape, Clear - 4 OZ Can with Applicator Brush - Waterproof, UV-Resistant, Dielectric Sealant for Wires & Cables, Marine & Home Use|[Amazon](https://www.amazon.com/gp/product/B000BO93RG)|$17|1|$17|
+
+ 
 
 
 <!--
