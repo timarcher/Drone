@@ -17,6 +17,9 @@ This page contains the overall bill of materials/component list that was used to
 |Duco ABS Plastic Sheets 1/8 Inch Thick 4" x 6"|[Amazon](https://www.amazon.com/gp/product/B0BBTDYVG9/)|$9|1|$9|
 |Duco ABS Plastic Sheets 1/8 Inch Thick 6" x 6"|[Amazon](https://www.amazon.com/gp/product/B0BBTDQ73S/)|$7|1|$7|
 |Duco ABS Plastic Sheet 1/8 Inch Thick 12" x 12"|[Amazon](https://www.amazon.com/gp/product/B0B79QLYBQ/)|$8|1|$8|
+|20mm Aluminum Round Tube Mount Clamp w/Hardware Anodized Black|[Amazon](https://www.amazon.com/gp/product/B0CZG1L7F9/)|$10|1|$10|
+
+
 
 <!--
 |Component|[Source](https:URL)|$XXX|1|$XXX|
@@ -105,7 +108,8 @@ This page contains the overall bill of materials/component list that was used to
 |120pcs Breadboard Jumper Wires 10cm 15cm 20cm 30cm 40cm 50 cm 100cm Wire Length Optional Dupont Cable Assorted Kit Male to Female Male to Male Female to Female Multicolored Ribbon Cables|[Amazon](https://www.amazon.com/gp/product/B07GD2BWPY/)|$7|1|$7|
 |RJ45 Coupler|[Amazon](https://www.amazon.com/gp/product/B072HW3WSS/)|$10|1|$10|
 |Micro USB Left Angle,Micro USB Extension Cable, 90 Degree Micro-B Male to Female Extension Cable|[Amazon](https://www.amazon.com/gp/product/B07MC7YSR2/)|$6|1|$6|
-
+|SMA Female Bulkhead Mount to SMA Male RG316 Antenna Extension Cable 2 feet 60cm 2-Pack|[Amazon](https://www.amazon.com/gp/product/B07WC5WPK5/)|$7|1|$7|
+|SMA Female Bulkhead Mount to SMA Male RG316 Antenna Extension Cable 12 inch 30cm 2-Pack|[Amazon](https://www.amazon.com/gp/product/B07MJQWH8S/)|$7|1|$7|
 
 <!--
 |Component|[Source](https:URL)|$XXX|1|$XXX|
