@@ -12,3 +12,4 @@ This page contains details on the installation of the electronics into the drone
 # References 
 - [How to methodically configure and tune any ArduCopter Blog Post](https://discuss.ardupilot.org/t/how-to-methodically-configure-and-tune-any-arducopter/110842).
 - [ArduPilot Methodic Configurator User Manual](https://github.com/ArduPilot/MethodicConfigurator/blob/master/USERMANUAL.md)
+- The [Methodic Configurator releases and downloads can be found here](https://github.com/ArduPilot/MethodicConfigurator/releases).
