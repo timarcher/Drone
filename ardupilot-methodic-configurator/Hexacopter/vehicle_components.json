@@ -1,0 +1,183 @@
+{
+    "Format version": 1,
+    "Components": {
+        "Flight Controller": {
+            "Product": {
+                "Manufacturer": "CubePilot",
+                "Model": "CubeOrangePlus",
+                "URL": "https://docs.cubepilot.org/user-guides/autopilot/the-cube-module-overview",
+                "Version": "CubeOrange+"
+            },
+            "Firmware": {
+                "Type": "ArduCopter",
+                "Version": "4.6.0 dev"
+            },
+            "Notes": "This is a custom build firmware with OpenDroneID enabled."
+        },
+        "Frame": {
+            "Product": {
+                "Manufacturer": "RJX Hobby",
+                "Model": "RJX1300mm 6-Axis Carbon Fiber",
+                "URL": "https://www.rjxhobby.com/rjx1300mm-6-axis-carbon-fiber-umbrella-folding-hexacopter-frame-with",
+                "Version": "RJX1300B"
+            },
+            "Specifications": {
+                "TOW min Kg": 0.6,
+                "TOW max Kg": 0.6
+            },
+            "Notes": "A 1300mm carbon fiber frame."
+        },
+        "RC Controller": {
+            "Product": {
+                "Manufacturer": "CubePilot",
+                "Model": "Herelink HD Video Transmission System (V1.1)",
+                "URL": "https://docs.cubepilot.org/user-guides/herelink/herelink-overview",
+                "Version": "1.1"
+            },
+            "Firmware": {
+                "Type": "HereLink",
+                "Version": "RU01240301"
+            },
+            "Notes": "HereLink Video Transmission System"
+        },
+        "RC Transmitter": {
+            "Product": {
+                "Manufacturer": "TBS",
+                "Model": "TRACER Micro TX",
+                "URL": "https://www.team-blacksheep.com/products/prod:tbs_tracer_mtx",
+                "Version": "2"
+            },
+            "Firmware": {
+                "Type": "Crossfire TX",
+                "Version": "4.0.0"
+            },
+            "Notes": "This RC transmitter piggie-backs on the back of the Radiomaster TX16S"
+        },
+        "RC Receiver": {
+            "Product": {
+                "Manufacturer": "TBS",
+                "Model": "Crossfire RX se",
+                "URL": "https://www.team-blacksheep.com/products/prod:crossfire_nano_se",
+                "Version": ""
+            },
+            "Firmware": {
+                "Type": "Crossfire",
+                "Version": "7"
+            },
+            "FC Connection": {
+                "Type": "SERIAL7",
+                "Protocol": "CRSF"
+            },
+            "Notes": "This receiver is on the vehicle and is connected to the flight controller"
+        },
+        "Telemetry": {
+            "Product": {
+                "Manufacturer": "Espressif",
+                "Model": "ESP32 WROOM",
+                "URL": "",
+                "Version": ""
+            },
+            "Firmware": {
+                "Type": "dronebridge",
+                "Version": "1.5"
+            },
+            "FC Connection": {
+                "Type": "SERIAL1",
+                "Protocol": "MAVLink2"
+            },
+            "Notes": "A cheap WiFi alternative to the more commonly used 3DR and RFDesigns telemetry modems"
+        },
+        "Battery Monitor": {
+            "Product": {
+                "Manufacturer": "Matek",
+                "Model": "H743 SLIM",
+                "URL": "https://www.mateksys.com/?portfolio=h743-slim",
+                "Version": "3"
+            },
+            "Firmware": {
+                "Type": "ArduCopter",
+                "Version": "4.5.5"
+            },
+            "FC Connection": {
+                "Type": "Analog",
+                "Protocol": "Analog Voltage and Current"
+            },
+            "Notes": "Voltage is done via the flight controller. Current is done via the ESC."
+        },
+        "Battery": {
+            "Product": {
+                "Manufacturer": "SLS",
+                "Model": "X-Cube 1800mAh 4S1P 14,8V 40C/80C",
+                "URL": "https://www.stefansliposhop.de/akkus/sls-x-cube/sls-x-cube-40c/sls-x-cube-1800mah-4s1p-14-8v-40c-80c::1568.html",
+                "Version": ""
+            },
+            "Specifications": {
+                "Chemistry": "Lipo",
+                "Volt per cell max": 4.2,
+                "Volt per cell low": 3.6,
+                "Volt per cell crit": 3.55,
+                "Number of cells": 4,
+                "Capacity mAh": 1800
+            },
+            "Notes": "A normal battery"
+        },
+        "ESC": {
+            "Product": {
+                "Manufacturer": "Mamba System",
+                "Model": "F45_128k 4in1 ESC",
+                "URL": "https://www.diatone.us/products/mb-f45_128k-bl32-esc",
+                "Version": "1"
+            },
+            "Firmware": {
+                "Type": "BLHeli32",
+                "Version": "32.10"
+            },
+            "FC Connection": {
+                "Type": "SERIAL5",
+                "Protocol": "DShot600"
+            },
+            "Notes": "Runs BDshot600"
+        },
+        "Motors": {
+            "Product": {
+                "Manufacturer": "T-Motor",
+                "Model": "T-Motor 15507 3800kv",
+                "URL": "https://www.fpv24.com/de/t-motor/t-motor-f-serie-f1507-cinematic-3800kv-3s-4s",
+                "Version": ""
+            },
+            "Specifications": {
+                "Poles": 14
+            },
+            "Notes": "store.tmotor.com offline at time of filling out this form, so no tmotor link available"
+        },
+        "Propellers": {
+            "Product": {
+                "Manufacturer": "HQProp",
+                "Model": "CineWhoop 3\", 8-Blade",
+                "URL": "https://shop.rc-hangar15.de/HQProp-76mm-CineWhoop-3-8-Blatt-Propeller-grau",
+                "Version": ""
+            },
+            "Specifications": {
+                "Diameter_inches": 3
+            },
+            "Notes": ""
+        },
+        "GNSS receiver": {
+            "Product": {
+                "Manufacturer": "Holybro",
+                "Model": "H-RTK F9P Helical",
+                "URL": "https://holybro.com/products/h-rtk-f9p-gnss-series?variant=41466787168445",
+                "Version": "1"
+            },
+            "Firmware": {
+                "Type": "UBlox",
+                "Version": "1.13.2"
+            },
+            "FC Connection": {
+                "Type": "SERIAL3",
+                "Protocol": "uBlox"
+            },
+            "Notes": "A very good receiver with an excellent antenna https://docs.holybro.com/gps-and-rtk-system/gps-led-and-buzzer/status-led-changes"
+        }
+    }
+}
