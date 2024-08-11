@@ -4,12 +4,12 @@ This page contains details on the installation of the electronics into the drone
 - [Hexacopter Drone Build Project – Part 13 Electronics Installation](https://youtu.be/XXX)
 
 # Notes
-- TBD
+- Not many notes for the build, I recommend watching the video. There were lots of things to figure out and play with to get positioning right. Space in the frame ended up being tight.
+- The STL and Autodesk Fusion files for the 3d printed antenna mounts are [located here](../../3d-print-files/antenna-l-bracket/).
+
 
 # Supporting Materials
 - [ArduPilot Configuration](../ArduPilot-Config/ArduPilot-Config.md) - This page contains a consolidated list of the all of the configuration done in ArduPilot throughout the videos.
 
 # References 
-- [How to methodically configure and tune any ArduCopter Blog Post](https://discuss.ardupilot.org/t/how-to-methodically-configure-and-tune-any-arducopter/110842).
-- [ArduPilot Methodic Configurator User Manual](https://github.com/ArduPilot/MethodicConfigurator/blob/master/USERMANUAL.md)
-- The [Methodic Configurator releases and downloads can be found here](https://github.com/ArduPilot/MethodicConfigurator/releases).
+- You can download and 3d print a case for the OLED Display [from here](https://www.thingiverse.com/thing:3765981).

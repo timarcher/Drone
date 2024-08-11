@@ -111,6 +111,13 @@ This page contains the overall bill of materials/component list that was used to
 |Micro USB Left Angle,Micro USB Extension Cable, 90 Degree Micro-B Male to Female Extension Cable|[Amazon](https://www.amazon.com/gp/product/B07MC7YSR2/)|$6|1|$6|
 |SMA Female Bulkhead Mount to SMA Male RG316 Antenna Extension Cable 2 feet 60cm 2-Pack|[Amazon](https://www.amazon.com/gp/product/B07WC5WPK5/)|$7|1|$7|
 |SMA Female Bulkhead Mount to SMA Male RG316 Antenna Extension Cable 12 inch 30cm 2-Pack|[Amazon](https://www.amazon.com/gp/product/B07MJQWH8S/)|$7|1|$7|
+|CubePilot - CAN Cable 15cm|[3DXR](https://www.3dxr.co.uk//electronics-c78/connectors-c107/cubepilot-can-cable-p4991/s5713)|$3|5|$15|
+|CubePilot - CAN Cable 25cm|[3DXR](https://www.3dxr.co.uk//electronics-c78/connectors-c107/cubepilot-can-cable-p4991/s5714)|$3|3|$9|
+|CubePilot - CAN Cable 40cm|[3DXR](https://www.3dxr.co.uk//electronics-c78/connectors-c107/cubepilot-can-cable-p4991/s5715)|$4|2|$8|
+|CubePilot - CAN Cable 60cm|[3DXR](https://www.3dxr.co.uk//electronics-c78/connectors-c107/cubepilot-can-cable-p4991/s5716)|$4|2|8|
+|CubePilot - CAN Cable 100cm|[3DXR](https://www.3dxr.co.uk//electronics-c78/connectors-c107/cubepilot-can-cable-p4991/s5717)|$5|2|$10|
+|RFDesign - PIXHAWK 2 to RFD900/868 Telemetry Cable 300mm|[3DXR]([https:URL](https://www.3dxr.co.uk//radio-gear-c33/telemetry-c31/telemetry-cables-accessories-c465/rf-design-rfdesign-pixhawk-2-to-rfd900-868-telemetry-cable-p5415/s6560))|$6|2|$12|
+|RFDesign - PIXHAWK 2 to RFD900/868 Telemetry Cable 750mm|[3DXR](https://www.3dxr.co.uk//radio-gear-c33/telemetry-c31/telemetry-cables-accessories-c465/rf-design-rfdesign-pixhawk-2-to-rfd900-868-telemetry-cable-p5415/s6884)|$8|2|$16|
 
 
 <!--
