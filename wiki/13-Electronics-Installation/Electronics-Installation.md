@@ -12,4 +12,6 @@ This page contains details on the installation of the electronics into the drone
 - [ArduPilot Configuration](../ArduPilot-Config/ArduPilot-Config.md) - This page contains a consolidated list of the all of the configuration done in ArduPilot throughout the videos.
 
 # References 
-- You can download and 3d print a case for the OLED Display [from here](https://www.thingiverse.com/thing:3765981).
+- You can download and 3d print various cases for the OLED Display from thingiverse:
+  - [OLED Display Frame 0.96 inch I2c](https://www.thingiverse.com/thing:3765981)
+  - [0.96 OLED case](https://www.thingiverse.com/thing:5225024) - THIS IS THE ONE I USED TO ATTACH TO THE DRONE FRAME.

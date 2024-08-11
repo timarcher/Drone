@@ -8,4 +8,6 @@ This page contains details on the setup of the SSD1306 OLED Display. This displa
 
 # References 
 - Ardupilot onboard display guide [can be found here](https://ardupilot.org/copter/docs/common-display-onboard.html).
-- You can download and 3d print a case for the OLED Display [from here](https://www.thingiverse.com/thing:3765981).
+- You can download and 3d print various cases for the OLED Display from thingiverse:
+  - [OLED Display Frame 0.96 inch I2c](https://www.thingiverse.com/thing:3765981)
+  - [0.96 OLED case](https://www.thingiverse.com/thing:5225024)
