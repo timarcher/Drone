@@ -1,7 +1,7 @@
 This page contains details on the installation of the electronics into the drone frame.
 
 # YouTube Video
-- [Hexacopter Drone Build Project – Part 13 Electronics Installation](https://youtu.be/XXX)
+- [Hexacopter Drone Build Project – Part 13 Electronics Installation](https://youtu.be/kmTBtlIYcv4)
 
 # Notes
 - Not many notes for the build, I recommend watching the video. There were lots of things to figure out and play with to get positioning right. Space in the frame ended up being tight.
