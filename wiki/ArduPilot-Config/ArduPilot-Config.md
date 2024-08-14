@@ -56,11 +56,18 @@ You do not need to set these if you are going to use the settings below for the 
 |BATT_MONITOR|4|Set this first, and then write the params so the other ones below show. Must reboot the board after changing. 4 = Analog voltage and current.|
 |BATT_AMP_OFFSET|0.37|Kore docs recommend 0.45 but this caused negative current readings on my board.|
 |BATT_AMP_PERVLT|50||
+|BATT_ARM_VOLT|44.3|Minimum battery voltage required to arm the aircraft.|
+|BATT_CAPACITY|15800|The Tattu 12s battery has 16000 mah.|
+|BATT_CRT_VOLT|42|Battery voltage that triggers a critical battery failsafe.|
 |BATT_CURR_PIN|15|Kore docs recommend 3, but I had to set to 15 to work with Cube Orange Plus.|
-|BATT_VOLT_MULT|15.3||
+|BATT_FS_CRT_ACT|1|Action to perform if the critical battery failsafe is hit. 1 = Land|
+|BATT_FS_LOW_ACT|2|Action to perform if the low battery failsafe is hit. 2 = RTL|
+|BATT_LOW_VOLT|43.2|Battery voltage that triggers a low battery failsafe.|
+|BATT_SERIAL_NUM|-1|Leave at -1.|
+|BATT_VOLT_MULT|15.2||
 |BATT_VOLT_PIN|14|Kore docs recommend 2, but I had to set to 14 to work with Cube Orange Plus.|
 
-> If you are using the Tattu Smart Battery outlined below, you should skip setting these BATT_* parameters for the Kore Carrier Board
+> If you are using the Tattu Smart Battery outlined below, you should skip setting these BATT_* parameters for the Kore Carrier Board. If you wish, you may set the Tattu smart battery settings as described below under BATT_, and then set these values under BATT2_ instead of BATT_ to have a secondary battery monitor using the circuity on the Kore carrier board. If you do that, I recommend you set BATT2_MONITOR to a value of 3, monitoring the analog voltage only. The remaining capacity is more accurately measured through the smart battery, and so also trying to measure current through the Kore carrier board will show a remaining capacity on the 2nd battery monitor that is wrong because it resets between flight controller reboots.
 
 ## Parameters - Fence
 A fence is a virtual boundary set in the flight control system that restricts the area within which an unmanned aerial vehicle (UAV) can operate, helping to ensure it stays within a predefined safe zone and enhancing flight safety. If the UAV attempts to cross this boundary, the system can trigger predefined actions like returning to launch or landing. Upon Fence breach, selectable actions are taken.
