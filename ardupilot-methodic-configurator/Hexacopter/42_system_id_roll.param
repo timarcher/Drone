@@ -6,8 +6,8 @@ ATC_ANG_YAW_P,4.5  # reset to default to not interfere with sysID
 ATC_RAT_RLL_I,0.135  # prevent the rate controllers from compensating too much of the frequency-sweep signal
 ATC_RATE_FF_ENAB,1  # prevent the rate controllers from compensating too much of the frequency-sweep signal
 FLTMODE5,0  # Activate sysid instead of autotune
-LOG_BITMASK,176126  # attitude sample rate at loop rate
-LOG_DISARMED,0  # was only needed for wind speed estimation
+LOG_BITMASK,524416  # attitude sample rate at loop rate
+LOG_DISARMED,1  # was only needed for wind speed estimation
 LOG_REPLAY,0  # was only needed for wind speed estimation
 SID_AXIS,0  # Inject chip on the mixer roll signal
 SID_F_START_HZ,0.05
