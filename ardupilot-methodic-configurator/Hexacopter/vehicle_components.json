@@ -38,7 +38,7 @@
                 "Type": "HereLink",
                 "Version": "RU01240301"
             },
-            "Notes": "HereLink Video Transmission System"
+            "Notes": "HereLink Video Transmission System."
         },
         "RC Transmitter": {
             "Product": {
@@ -51,7 +51,7 @@
                 "Type": "",
                 "Version": ""
             },
-            "Notes": "This RC transmitter is integrated inside the Herelink above"
+            "Notes": "This RC transmitter is integrated inside the Herelink above."
         },
         "RC Receiver": {
             "Product": {
@@ -68,7 +68,7 @@
                 "Type": "RCin/SBUS",
                 "Protocol": "All"
             },
-            "Notes": "This receiver is on the vehicle and is connected to the flight controller"
+            "Notes": "This receiver is on the vehicle and is connected to the flight controller."
         },
         "Telemetry": {
             "Product": {
@@ -94,11 +94,10 @@
                 "URL": "https://genstattu.com/tattu-plus-1-0-compact-version-16000mah-44-4v-15c-12s1p-lipo-smart-battery-pack-with-as150u-plug/",
                 "Version": ""
             },
-            "Firmware": {
-            },
+            "Firmware": {},
             "FC Connection": {
                 "Type": "CAN2",
-                "Protocol": "DroneCAN"
+                "Protocol": "DroneCAN-BatteryInfo"
             },
             "Notes": "This is a smart battery with an integrated DroneCAN enabled BMS."
         },
@@ -110,7 +109,7 @@
                 "Version": ""
             },
             "Specifications": {
-                "Chemistry": "Lipo",
+                "Chemistry": "LipoHV",
                 "Volt per cell max": 4.2,
                 "Volt per cell low": 3.6,
                 "Volt per cell crit": 3.55,
@@ -126,8 +125,7 @@
                 "URL": "https://www.hobbywingdirect.com/products/xrotor-x6-plus",
                 "Version": ""
             },
-            "Firmware": {
-            },
+            "Firmware": {},
             "FC Connection": {
                 "Type": "CAN1",
                 "Protocol": "DroneCAN"
@@ -141,8 +139,7 @@
                 "URL": "https://www.hobbywingdirect.com/products/xrotor-x6-plus",
                 "Version": ""
             },
-            "Specifications": {
-            },
+            "Specifications": {},
             "Notes": ""
         },
         "Propellers": {
@@ -169,7 +166,7 @@
                 "Version": "1.13.2"
             },
             "FC Connection": {
-                "Type": "CAN1",
+                "Type": "CAN2",
                 "Protocol": "DroneCAN"
             },
             "Notes": "Here4 GPS"
