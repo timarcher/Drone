@@ -32,8 +32,8 @@ This page contains the overall bill of materials/component list that was used to
 |---|---|---|---|---|
 |Hobbywing XRotor X6 Plus system - Clockwise CW Motors|[Hobbywing](https://www.hobbywingdirect.com/products/xrotor-x6-plus?variant=40960661094515)|$170|3|$510|
 |Hobbywing XRotor X6 Plus system - CounterClockwise CCW Motors|[Hobbywing](https://www.hobbywingdirect.com/products/xrotor-x6-plus?variant=40960661127283)|$170|3|$510|
-|Hobbywing Xrotor 2480 Propeller - Clockwise|[Hobbywing](https://www.hobbywingdirect.com/products/xrotor-2480-propeller?variant=40989998907507)|$22|3|$66|
-|Hobbywing Xrotor 2480 Propeller - CounterClockwise|[Hobbywing](https://www.hobbywingdirect.com/products/xrotor-2480-propeller?variant=40989998940275)|$22|3|$66|
+|Hobbywing XRotor 2480 Propeller - Clockwise|[Hobbywing](https://www.hobbywingdirect.com/products/xrotor-2480-propeller?variant=40989998907507)|$22|3|$66|
+|Hobbywing XRotor 2480 Propeller - CounterClockwise|[Hobbywing](https://www.hobbywingdirect.com/products/xrotor-2480-propeller?variant=40989998940275)|$22|3|$66|
 |Hobbywing Data Link V2|[Hobbywing](https://www.hobbywingdirect.com/products/data-link-v2)|$70|1|$70|
 |3pcs Male XT-60 to Female XT-30 Connector Adapter for Turnigy Drone XT30 XT60 FPV Cable 16awg|[Amazon](https://www.amazon.com/gp/product/B073Z77473/)|$10|1|$10|
 |M3 x 40mm Hex Socket Head Cap Bolts|[Amazon](https://www.amazon.com/gp/product/B07VPGQ1RZ/)|$12|1|$12|
