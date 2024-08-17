@@ -19,7 +19,7 @@ This page contains the overall bill of materials/component list that was used to
 |Duco ABS Plastic Sheet 1/8 Inch Thick 12" x 12"|[Amazon](https://www.amazon.com/gp/product/B0B79QLYBQ/)|$8|1|$8|
 |20mm Aluminum Round Tube Mount Clamp w/Hardware Anodized Black|[Amazon](https://www.amazon.com/gp/product/B0CZG1L7F9/)|$10|1|$10|
 |M2.5 Series Hex Brass Spacer/Standoffs + Nuts + Screws w/Storage Case for Raspberry Pi 5/4B/3B+/3B/3A+/Zero W/2W Accessories Kit|[Amazon](https://www.amazon.com/gp/product/B0756CW6Y2/)|$10|2|$20|
-
+|PATIKIL 12pcs M3 Standoffs, M3 45+6mm Spacer Standoffs Steel Threaded Standoffs Screws Kit 3mm ID 5mm OD Metric Male Female Thread Adapters|[Amazon](https://www.amazon.com/gp/product/B0D492547D/)|$10|2|$20|
 
 
 <!--
@@ -118,6 +118,10 @@ This page contains the overall bill of materials/component list that was used to
 |CubePilot - CAN Cable 100cm|[3DXR](https://www.3dxr.co.uk//electronics-c78/connectors-c107/cubepilot-can-cable-p4991/s5717)|$5|2|$10|
 |RFDesign - PIXHAWK 2 to RFD900/868 Telemetry Cable 300mm|[3DXR]([https:URL](https://www.3dxr.co.uk//radio-gear-c33/telemetry-c31/telemetry-cables-accessories-c465/rf-design-rfdesign-pixhawk-2-to-rfd900-868-telemetry-cable-p5415/s6560))|$6|2|$12|
 |RFDesign - PIXHAWK 2 to RFD900/868 Telemetry Cable 750mm|[3DXR](https://www.3dxr.co.uk//radio-gear-c33/telemetry-c31/telemetry-cables-accessories-c465/rf-design-rfdesign-pixhawk-2-to-rfd900-868-telemetry-cable-p5415/s6884)|$8|2|$16|
+|3-pin servo Extension, Male-Female JR Plug servo Extension Lead Cable, Used for RC Quadcopter Aircraft (5 Sizes) 50 cm/19.7in 5PCS|[Amazon](https://www.amazon.com/gp/product/B09MNLP1ZG/)|$7|1|$7|
+|5pcs JR Y Connector Servo Extension Cable 3 Pin JR Plug Splitters 1 Male to 4 Female Servo Y Extension Connector|[Amazon](https://www.amazon.com/gp/product/B0BC5QNDTC/)|$9|1|$9|
+|20Pcs Micro JST GH 4Pin 1.25mm Male to Male Connector, GH1.25 Terminal Connector Wire Cable 15cm 28AWG|[Amazon](https://www.amazon.com/gp/product/B0C2ZQHZ9T/)|$10|1|$10|
+|5 Pairs JST Plug to JR Connector Male Female Cable 10cm Servo Adapter Wire for RC Plane Helicopter Car (JST to JR-10pcs)|[Amazon](https://www.amazon.com/gp/product/B0CQXB94HX/)|$7|1|$7|
 
 
 <!--

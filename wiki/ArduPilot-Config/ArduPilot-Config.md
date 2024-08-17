@@ -166,6 +166,57 @@ These are the settings I used for the Tattu Plus 1.0 Compact Version 16000mAh 44
 |MOT_BAT_VOLT_MIN|39.6|Battery voltage minimum compensation voltage. Set to 3.3 * cell count.|
 
 
+## Parameters - Flytron STROBON Cree V2 Lights
+|Parameter Name|Value|Description|
+|---|---|---|
+|SERVO9_FUNCTION|56|Configure for RC Pass thru. 56 = RCIN6 which means RC channel 6 gets output to SERVO9.|
+
+> On the Kore carrier board SERVO9 - SERVO15 are mapped to the 6 auxiliary outputs.
+> For testing, on the Herelink controller, go to the settings and map a button to a channel. In my testing I mapped a short press of the D button to RC channel 6, and it toggles between a value of 1000 and 2000 when pressed. And then in Ardupilot, I set SERVO9_FUNCTION to 56, which means to pass RC channel 6 (RCIN6) through to SERVO9. SERVO9 corresponds to the first auxiliary output on the Kore carrier board.
+
+
+## Parameters - Flight Modes
+I have my flight modes configured as follows. This requires some config in ArduPilot as well as the HereLink controller. You can also set these up in Mission Planner on the Setup->Flight Modes screen.
+
+|Parameter Name|Value|Description|
+|---|---|---|
+|FLTMODE_CH|5|RC Channel to use for flight mode control. Default is 5.|
+|FLTMODE1|5|Flight mode when pwm of Flightmode channel(FLTMODE_CH) is <= 1230. Set to Loiter.|
+|FLTMODE2|15|Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1230, <= 1360. Set to AutoTune.|
+|FLTMODE3|2|Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1360, <= 1490. Set to AltHold.|
+|FLTMODE4|0|Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1490, <= 1620. Set to Stabilize.|
+|FLTMODE5|6|Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1620, <= 1749. Set to RTL.|
+|FLTMODE6|9|Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >=1750. Set to Land.|
+
+On the HereLink controller I configured the A, B, and Home buttons to control my flight modes using the following steps:
+- On the HereLink controller in the settings area, go to the buttons tab.
+-  Flight Mode 1 - Loiter - PWM 0-1230 - Mapped to button A short press, active value 1100, mark as default button
+-  Flight Mode 2 - AutoTune - PWM 1231-1360 - Mapped to button A long press, active value 1300
+-  Flight Mode 3 - AltHold - PWM 1361-1490 - Mapped to button B short press, active value 1425
+-  Flight Mode 4 - Stabilize - PWM 1491-1620 - Mapped to button B long press, active value 1550
+-  Flight Mode 5 - Smart_RTL - PWM 1621-1749 - Mapped to button home short press, active value 1675
+-  Flight Mode 6 - Land - PWM 1750+ - Mapped to button home long press, active value 1800
+
+
+## Parameters - RC Failsafe
+- In Mission Planner go to the Setup->FailSafe tab. Configure the radio failsafe to Enabled always RTL, and an FS Pwm of 975
+
+|Parameter Name|Value|Description|
+|---|---|---|
+|RC_FS_TIMEOUT|1|RC failsafe will trigger this many seconds after loss of RC.|
+|FS_THR_ENABLE|1|The throttle failsafe allows you to configure a software failsafe activated by a setting on the throttle input channel. Set to Enabled, always RTL.|
+|FS_THR_VALUE|975|The PWM level in microseconds on channel 3 below which throttle failsafe triggers.|
+
+
+## Parameters - Additonal RC Channel Options
+- In Mission Planner you can also go to the Config->User Params tab and map actions to other channels as desired. For example you could map channel 7 to fence enable/disable. This would be the same as setting RC7_OPTION to a value of 11. Other fun things, for example, you could map it to the lost copter sound.
+
+|Parameter Name|Value|Description|
+|---|---|---|
+|RC7_OPTION|11|Function assigned to this RC channel. Set to Fence Enable.|
+
+
+
 # Factory Reset the Parameters
 If, for some reason, you ever want to reset all of the parameters to their defaults you can follow any of the methods [listed here](https://ardupilot.org/copter/docs/common-parameter-reset.html).
 
