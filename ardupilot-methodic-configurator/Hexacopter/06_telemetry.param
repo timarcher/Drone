@@ -1,7 +1,7 @@
-BRD_SER1_RTSCTS,2  # we have RTS/CTS pins connected
-SERIAL1_BAUD,57  # The MAVLink over Herelink telemetry
+BRD_SER1_RTSCTS,2  # Set to Auto. we have RTS/CTS pins connected.
+SERIAL1_BAUD,57  # The MAVLink over Herelink telemetry, 57600.
 SERIAL1_PROTOCOL,2  # Use MAVLink 2 for telemetry
-SR0_EXT_STAT,0
+SR0_EXT_STAT,0 #TODO pickup here
 SR0_EXTRA1,0
 SR0_EXTRA2,0
 SR0_EXTRA3,0
