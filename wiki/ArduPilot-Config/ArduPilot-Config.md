@@ -208,6 +208,21 @@ On the HereLink controller I configured the A, B, and Home buttons to control my
 |FS_THR_VALUE|975|The PWM level in microseconds on channel 3 below which throttle failsafe triggers.|
 
 
+## Parameters - GeoFence
+- In Mission Planner go to the Config->GeoFence tab. Configure the GeoFence settings to control the distance your drone is allowed to go from it's launch point.
+
+|Parameter Name|Value|Description|
+|---|---|---|
+|FENCE_ALT_MAX|120|Maximum altitude allowed before geofence triggers. Value is in meters. I set to 30 when initially testing drone.|
+|FENCE_ALT_MIN|-10|Minimum altitude allowed before geofence triggers. Value is in meters.|
+|FENCE_AUTOENABLE|0|Auto-enable of fences. Set to Disabled.|
+|FENCE_ENABLE|1|Allows you to enable (1) or disable (0) the fence functionality.|
+|FENCE_MARGIN|2|Distance that autopilot's should maintain from the fence to avoid a breach. Value is in meters.|
+|FENCE_RADIUS|100|Circle fence radius which when breached will cause an RTL. Value is in meters.|
+|FENCE_TYPE|7|Bitmask. Set to Max Altitude, Circle Centered on Home, and Inclusion/Exclusion Circles+Polygons|
+
+
+
 ## Parameters - Additonal RC Channel Options
 - In Mission Planner you can also go to the Config->User Params tab and map actions to other channels as desired. For example you could map channel 7 to fence enable/disable. This would be the same as setting RC7_OPTION to a value of 11. Other fun things, for example, you could map it to the lost copter sound.
 
