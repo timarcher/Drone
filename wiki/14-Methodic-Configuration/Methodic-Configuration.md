@@ -14,3 +14,6 @@ This page contains details on performing the methodic configuration steps for th
 - [How to methodically configure and tune any ArduCopter Blog Post](https://discuss.ardupilot.org/t/how-to-methodically-configure-and-tune-any-arducopter/110842).
 - [ArduPilot Methodic Configurator User Manual](https://github.com/ArduPilot/MethodicConfigurator/blob/master/USERMANUAL.md)
 - The [Methodic Configurator releases and downloads can be found here](https://github.com/ArduPilot/MethodicConfigurator/releases).
+- [ArduPilot Hardware Report Utility](https://firmware.ardupilot.org/Tools/WebTools/HardwareReport/)
+- [ArduPilot Filter Review Tool](https://firmware.ardupilot.org/Tools/WebTools/FilterReview/)
+- [ArduPilot Online Log Viewer](https://plotbeta.ardupilot.org/)
