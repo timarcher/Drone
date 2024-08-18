@@ -1,17 +1,16 @@
-BATT2_MONITOR,3  # Monitoring the analog voltage only. The remaining capacity is more accurately measured through the smart battery, and so also trying to measure current through the Kore carrier board will show a remaining capacity on the 2nd battery monitor that is wrong because it resets between flight controller reboots.
 BATT2_AMP_OFFSET,0.37  # Kore docs recommend 0.45 but this caused negative current readings on my board.|
 BATT2_AMP_PERVLT,50  # Setting I derived to work best with Kore carrier board
 BATT2_ARM_VOLT,44.3  # Minimum battery voltage required to arm the aircraft.|
 BATT2_CAPACITY,15800  # The Tattu 12s battery has 16000 mah.
+BATT2_CRT_MAH,0  # This is a redundant monitor for batt1. Battery capacity at which the critical battery failsafe is triggered. Set to 0 to disable battery remaining failsafe.
 BATT2_CRT_VOLT,42  # Battery voltage that triggers a critical battery failsafe.
 BATT2_CURR_PIN,15  # Kore docs recommend 3, but I had to set to 15 to work with Cube Orange Plus.
 BATT2_FS_CRT_ACT,1  # Action to perform if the critical battery failsafe is hit. 1 = Land
 BATT2_FS_LOW_ACT,2  # Action to perform if the low battery failsafe is hit. 2 = RTL
+BATT2_FS_VOLTSRC,0  # This is a redundant monitor for batt1. Battery capacity at which the critical battery failsafe is triggered. Set to 0 to disable battery remaining failsafe.
+BATT2_LOW_MAH,0  # This is a redundant monitor for batt1. Battery capacity at which the low battery failsafe is triggered. Set to 0 to disable battery remaining failsafe.
 BATT2_LOW_VOLT,43.2  # Battery voltage that triggers a low battery failsafe.
+BATT2_MONITOR,3  # Monitoring the analog voltage only. The remaining capacity is more accurately measured through the smart battery, and so also trying to measure current through the Kore carrier board will show a remaining capacity on the 2nd battery monitor that is wrong because it resets between flight controller reboots.
 BATT2_SERIAL_NUM,-1  # Leave at -1.
 BATT2_VOLT_MULT,15.2  # Setting I derived to work best with Kore carrier board
 BATT2_VOLT_PIN,14  # Kore docs recommend 2, but I had to set to 14 to work with Cube Orange Plus.
-BATT2_CRT_MAH,0  # This is a redundant monitor for batt1. Battery capacity at which the critical battery failsafe is triggered. Set to 0 to disable battery remaining failsafe.
-BATT2_FS_VOLTSRC,0  # This is a redundant monitor for batt1. Battery capacity at which the critical battery failsafe is triggered. Set to 0 to disable battery remaining failsafe.
-BATT2_LOW_MAH,0  # This is a redundant monitor for batt1. Battery capacity at which the low battery failsafe is triggered. Set to 0 to disable battery remaining failsafe.
-
