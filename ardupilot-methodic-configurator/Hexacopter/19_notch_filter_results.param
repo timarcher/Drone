@@ -1,6 +1,6 @@
-INS_HNTCH_ATT,20  # Notch filter attenuation
-INS_HNTCH_BW,40  # Using the default
+INS_HNTCH_ATT,30  # Notch filter attenuation
+INS_HNTCH_BW,40  # Using the default of 40
 INS_HNTCH_FM_RAT,1  # Allowed undercutting of the base frequency of the first notch filter
-INS_HNTCH_FREQ,28  # the minimum frequency that the motors are expected to operate at
-INS_HNTCH_HMNCS,3  # the motors produce secondary harmonics on this vehicle
-INS_HNTCH_OPTS,15  # One Notch per motor, update at loop rate
+INS_HNTCH_FREQ,80  # the minimum frequency that the motors are expected to operate at
+INS_HNTCH_HMNCS,1  # 1st harmonic
+INS_HNTCH_OPTS,6  # Use multi source, update at loop rate, enable on all IMUs
