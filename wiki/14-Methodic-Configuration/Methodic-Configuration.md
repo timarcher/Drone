@@ -17,3 +17,4 @@ This page contains details on performing the methodic configuration steps for th
 - [ArduPilot Hardware Report Utility](https://firmware.ardupilot.org/Tools/WebTools/HardwareReport/)
 - [ArduPilot Filter Review Tool](https://firmware.ardupilot.org/Tools/WebTools/FilterReview/)
 - [ArduPilot Online Log Viewer](https://plotbeta.ardupilot.org/)
+- [Follow the instructions from Peter Hall on his Blog Post to configure the Harmonic Notch filter(s)](https://discuss.ardupilot.org/t/new-fft-filter-setup-and-review-web-tool/102572).
