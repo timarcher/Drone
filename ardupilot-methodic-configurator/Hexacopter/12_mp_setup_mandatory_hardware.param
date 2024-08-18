@@ -35,6 +35,13 @@ FENCE_ENABLE,1  # Allows you to enable (1) or disable (0) the fence functionalit
 FENCE_MARGIN,3  # Distance that autopilot's should maintain from the fence to avoid a breach. Value is in meters.
 FENCE_RADIUS,100  # Circle fence radius which when breached will cause an RTL. Value is in meters.
 FENCE_TYPE,7  # Bitmask. Set to Max Altitude, Circle Centered on Home, and Inclusion/Exclusion Circles+Polygons
+FLTMODE_CH,5  # RC Channel to use for flight mode control. Default is 5.
+FLTMODE1,5  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is <= 1230. Set to Loiter.
+FLTMODE2,15  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1230, <= 1360. Set to AutoTune.
+FLTMODE3,2  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1360, <= 1490. Set to AltHold.
+FLTMODE4,0  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1490, <= 1620. Set to Stabilize.
+FLTMODE5,6  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1620, <= 1749. Set to RTL.
+FLTMODE6,9  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >=1750. Set to Land.
 FRAME_CLASS,2  # Hexacopter
 FRAME_TYPE,1  # X type
 INS_ACC1_CALTEMP,45.750572
@@ -73,14 +80,8 @@ INS_GYROFFS_Y,-0.000217
 INS_GYROFFS_Z,0.001146
 INS_TCAL3_ENABLE,0
 INS_USE3,1
-MODE1,0
-MODE2,0
-MODE3,0
-MODE4,9
-MODE5,0
-MODE6,10
-MOT_BAT_VOLT_MAX,50.400002
-MOT_BAT_VOLT_MIN,39.599998
+MOT_BAT_VOLT_MAX,50.400002  # Battery voltage compensation maximum voltage. Set to 4.2 * cell count.
+MOT_BAT_VOLT_MIN,39.599998  # Battery voltage minimum compensation voltage. Set to 3.3 * cell count.
 MOT_SPIN_ARM,0.1
 MOT_SPIN_MAX,0.95
 MOT_SPIN_MIN,0.15

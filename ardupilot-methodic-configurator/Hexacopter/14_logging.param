@@ -1,5 +1,5 @@
-INS_LOG_BAT_MASK,1  # Only log the first CubeOrange IMU
-INS_LOG_BAT_OPT,0  # Logs measured data both before and after the filters for Filter Review Webtool usage
-INS_RAW_LOG_OPT,0  # No logging needed
-LOG_BITMASK,524416  # Logs Notch filter data and other control signals
-LOG_FILE_DSRMROT,0  # One .bin log file per flight, not per battery/reboot
+INS_LOG_BAT_MASK,1  # Bitmap of which IMUs to log batch data for. Only log the first CubeOrange IMU.
+INS_LOG_BAT_OPT,0  # Options for the BatchSampler. Logs measured data both before and after the filters for Filter Review Webtool usage.
+INS_RAW_LOG_OPT,0  # Raw logging options bitmask. No logging needed
+LOG_BITMASK,524416  # Bitmap of what on-board log types to enable. This value is made up of the sum of each of the log types you want to be saved. Logs Notch filter data and other control signals.
+LOG_FILE_DSRMROT,0  # When set, the current log file is closed when the vehicle is disarmed. If LOG_DISARMED is set then a fresh log will be opened. One .bin log file per flight, not per battery/reboot
