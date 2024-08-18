@@ -33,12 +33,16 @@ After flashing firmware for the first time, use Mission Planner to configure sev
     - Press Simple Accel Cal (use this in lieu of Calibrate Accel for large drone or simple bench testing)
     - Docs on accelerometer calibration [can be found here](https://ardupilot.org/copter/docs/common-accelerometer-calibration.html).    
   - On Compass menu item:
-    - TODO - swap compasses later to use the external one higher priority than the one on cube once the GPS is installed
+    - Swap compasses later to use the external one higher priority than the one on cube once the GPS is installed.
     - Press start on the Onboard Mag Calibration, calibrate, and reboot. Docs on compass calibration [can be found here](https://ardupilot.org/copter/docs/common-compass-calibration-in-mission-planner.html).
   - On Radio Calibration menu item:
-    - Prior to calibrating, I had to reverse the joystick outputs in the Herelink controller for the Y (throttle rc2) and R (pitch rc3) axis. Otherwise the values were reversed.
+    - Prior to calibrating, I had to reverse the joystick outputs in the Herelink controller for the Y (throttle rc2). Otherwise the values were reversed.
     - Press the Calibrate Radio button. Move joysticks and input buttons to their limits. Then press the Click when Done button.
     - Docs on radio calibration [can be found here](https://ardupilot.org/copter/docs/common-radio-control-calibration.html).
+    - Be sure to test the controls in Mission Planner. Move the transmitter’s roll, pitch, throttle and yaw sticks and ensure the green bars move in the correct direction:
+      - For roll, throttle and yaw channels, the green bars should move in the same direction as the transmitter’s physical sticks.
+      - For pitch, the green bar should move in the opposite direction to the transmitter’s physical stick.
+      - If one of the green bars moves in the incorrect direction reverse the channel in the transmitter itself. If it is not possible to reverse the channel in the transmitter you may reverse the channel in ArduPilot by checking the “Reversed” checkbox (Plane and Rover only). If the checkbox is not visible it is possible to reverse the channel by directly changing the RCx_REVERSED parameter (where “x” is the input channel from 1 to 4).
     
 
 # Parameter Settings

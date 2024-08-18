@@ -2,6 +2,7 @@ This page contains details on performing the methodic configuration steps for th
 
 # YouTube Video
 - [Hexacopter Drone Build Project – Part 14 Methodic Configuration](https://youtu.be/XXX)
+- [Hexacopter Drone Build Project – First Flight](https://www.youtube.com/watch?v=HhvRLNxARRs)
 
 # Notes
 - TBD
