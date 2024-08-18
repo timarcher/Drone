@@ -1,10 +1,10 @@
 ARMING_RUDDER,2  # Allow arm or disarm by rudder input.
 BRD_ALT_CONFIG,0  # Stay at default. This is used to select an alternative hardware config.
-FLTMODE_CH,5  # RC channel to use for flight mode control
+FLTMODE_CH,5  # RC channel to use for flight mode control. 5 is the default, so we stay with that.
 RC_OPTIONS,32  # Stay at default. This is set to Arming check throttle for 0 input.
-RC_PROTOCOLS,2  # Selected in the component editor
+RC_PROTOCOLS,1  # Selected in the component editor
 RC6_OPTION,0  # Do nothing. Function assigned to rc channel 6. For example, we could pick things like "Motor Emergency Stop", "Lost rover Sound", etc
-RC7_OPTION,11  # Do nothing. Function assigned to rc channel 6. For example, we could pick things like "Motor Emergency Stop", "Lost rover Sound", etc
+RC7_OPTION,11  # Enable/Disable fence
 RC8_OPTION,0  # Do nothing. Function assigned to rc channel 6. For example, we could pick things like "Motor Emergency Stop", "Lost rover Sound", etc
 RC9_OPTION,0  # Do nothing. Function assigned to rc channel 6. For example, we could pick things like "Motor Emergency Stop", "Lost rover Sound", etc
 RSSI_TYPE,0  # Set to disabled. Used to configure radio receiver RSSI type.

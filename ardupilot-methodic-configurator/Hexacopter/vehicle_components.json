@@ -128,7 +128,7 @@
             "Firmware": {},
             "FC Connection": {
                 "Type": "CAN1",
-                "Protocol": "DroneCAN"
+                "Protocol": "Normal"
             },
             "Notes": "ESCs and Motors are an all in one unit."
         },

@@ -1,25 +1,6 @@
+CAN_D1_PROTOCOL,1  # Enable dronecan.
+CAN_P1_DRIVER,1  # Set to the first driver.
+CAN_D1_UC_ESC_BM,63  # Bitmask that determines which autopilot servo/motor output signals are sent to the DroneCAN ESCs. 63 = ESC 1 through 6.
+CAN_D1_UC_OPTION,128  # Set options for the DroneCAN driver for Hobbywing ESC.
 MOT_HOVER_LEARN,2  # So that it can tune the throttle controller on 20_throttle_controller.param file
 MOT_PWM_TYPE,0  # Specified in component editor window
-NTF_BUZZ_TYPES,5
-NTF_LED_TYPES,231  # Adds DroneCAN LED support for Here4
-SERVO_BLH_AUTO,0
-SERVO_BLH_POLES,14  # Specified in component editor window
-SERVO_BLH_TRATE,10  # Set to a low value because the RPM telemetry uses bi-directional DShot telemetry instead of this UART telemetry
-SERVO_DSHOT_ESC,0
-SERVO_DSHOT_RATE,0
-SERVO1_MAX,1900  # Use the full available 1000-2000 PWM range
-SERVO1_MIN,1100  # Use the full available 1000-2000 PWM range
-SERVO1_TRIM,1500  # Use the full available 1000-2000 PWM range
-SERVO11_FUNCTION,0
-SERVO12_FUNCTION,0
-SERVO13_FUNCTION,0
-SERVO14_FUNCTION,0
-SERVO2_MAX,1900  # Restrict to 1100-1900 PWM range
-SERVO2_MIN,1100  # Restrict to 1100-1900 PWM range
-SERVO2_TRIM,1500  # Restrict to 1100-1900 PWM range
-SERVO3_MAX,1900  # Use the full available 1000-2000 PWM range
-SERVO3_MIN,1100  # Use the full available 1000-2000 PWM range
-SERVO3_TRIM,1500  # Restrict to 1100-1900 PWM range
-SERVO4_MAX,1900  # Restrict to 1100-1900 PWM range
-SERVO4_MIN,1100  # Restrict to 1100-1900 PWM range
-SERVO4_TRIM,1500  # Restrict to 1100-1900 PWM range

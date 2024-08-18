@@ -69,23 +69,14 @@ You do not need to set these if you are going to use the settings below for the 
 
 > If you are using the Tattu Smart Battery outlined below, you should skip setting these BATT_* parameters for the Kore Carrier Board. If you wish, you may set the Tattu smart battery settings as described below under BATT_, and then set these values under BATT2_ instead of BATT_ to have a secondary battery monitor using the circuity on the Kore carrier board. If you do that, I recommend you set BATT2_MONITOR to a value of 3, monitoring the analog voltage only. The remaining capacity is more accurately measured through the smart battery, and so also trying to measure current through the Kore carrier board will show a remaining capacity on the 2nd battery monitor that is wrong because it resets between flight controller reboots.
 
-## Parameters - Fence
-A fence is a virtual boundary set in the flight control system that restricts the area within which an unmanned aerial vehicle (UAV) can operate, helping to ensure it stays within a predefined safe zone and enhancing flight safety. If the UAV attempts to cross this boundary, the system can trigger predefined actions like returning to launch or landing. Upon Fence breach, selectable actions are taken.
-|Parameter Name|Value|Description|
-|---|---|---|
-|FENCE_ENABLE|1|Enable or disable the fence functionality.|
-|FENCE_ACTION|4|4 = Brake or Land. Set to 0 for report only.|
-|FENCE_ALT_MAX|30|Maximum altitude before geofence triggers.|
-|FENCE_MARGIN|3|Distance that the autopilot should maintain from the fence to avoid a breach.|
-|FENCE_RADIUS|100|Radius of the geofence.|
 
 ## Parameters - Enable DroneCAN (Needed for Basically everything below)
 |Parameter Name|Value|Description|
 |---|---|---|
-|CAN_P1_DRIVER|1||
-|CAN_P2_DRIVER|2||
-|CAN_D1_PROTOCOL|1|DroneCAN|
-|CAN_D2_PROTOCOL|1|DroneCAN|
+|CAN_P1_DRIVER|1|1st Driver.|
+|CAN_P2_DRIVER|2|2nd Driver.|
+|CAN_D1_PROTOCOL|1|DroneCAN.|
+|CAN_D2_PROTOCOL|1|DroneCAN.|
 
 
 
@@ -93,8 +84,8 @@ A fence is a virtual boundary set in the flight control system that restricts th
 |Parameter Name|Value|Description|
 |---|---|---|
 |BRD_SAFETY_DEFLT|0|There is no safety switch on the Here4 GPS so we disable it. (BRD_SAFETYENABLE in older firmware versions)|
-|GPS_TYPE|9||
-|NTF_LED_TYPES|231||
+|GPS1_TYPE|9|GPS type of 1st GPS.|
+|NTF_LED_TYPES|231|Controls what types of LEDs will be enabled.|
 
 <!--
 |XXX|XXX|XXX|
@@ -103,7 +94,7 @@ A fence is a virtual boundary set in the flight control system that restricts th
 ## Parameters - Onboard OLED Display
 |Parameter Name|Value|Description|
 |---|---|---|
-|NTF_DISPLAY_TYPE|1|SSD1306 OLED Connected to I2C|
+|NTF_DISPLAY_TYPE|1|SSD1306 OLED Connected to I2C.|
 
 
 ## Parameters - Motors
@@ -209,18 +200,21 @@ On the HereLink controller I configured the A, B, and Home buttons to control my
 
 
 ## Parameters - GeoFence
+## Parameters - Fence
+A fence is a virtual boundary set in the flight control system that restricts the area within which an unmanned aerial vehicle (UAV) can operate, helping to ensure it stays within a predefined safe zone and enhancing flight safety. If the UAV attempts to cross this boundary, the system can trigger predefined actions like returning to launch or landing. Upon Fence breach, selectable actions are taken.
+
 - In Mission Planner go to the Config->GeoFence tab. Configure the GeoFence settings to control the distance your drone is allowed to go from it's launch point.
 
 |Parameter Name|Value|Description|
 |---|---|---|
+|FENCE_ACTION|4|4 = Brake or Land. Set to 0 for report only.|
 |FENCE_ALT_MAX|120|Maximum altitude allowed before geofence triggers. Value is in meters. I set to 30 when initially testing drone.|
 |FENCE_ALT_MIN|-10|Minimum altitude allowed before geofence triggers. Value is in meters.|
 |FENCE_AUTOENABLE|0|Auto-enable of fences. Set to Disabled.|
 |FENCE_ENABLE|1|Allows you to enable (1) or disable (0) the fence functionality.|
-|FENCE_MARGIN|2|Distance that autopilot's should maintain from the fence to avoid a breach. Value is in meters.|
+|FENCE_MARGIN|3|Distance that autopilot's should maintain from the fence to avoid a breach. Value is in meters.|
 |FENCE_RADIUS|100|Circle fence radius which when breached will cause an RTL. Value is in meters.|
 |FENCE_TYPE|7|Bitmask. Set to Max Altitude, Circle Centered on Home, and Inclusion/Exclusion Circles+Polygons|
-
 
 
 ## Parameters - Additonal RC Channel Options

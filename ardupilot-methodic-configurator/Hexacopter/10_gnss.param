@@ -1,9 +1,9 @@
-BRD_SAFETY_DEFLT,0  # Here4 has no safety switch
-CAN_P1_DRIVER,1
-GPS_AUTO_SWITCH,1  # Randy I do not understand why this, there is only one GNSS receiver
-GPS_GNSS_MODE,0  # limit the constalations to ensure an update rate higher than 5Hz
-GPS_POS1_X,0
-GPS_POS1_Y,0
-GPS_POS1_Z,0
-GPS_TYPE,9  # Defined in component editor
-SERIAL3_PROTOCOL,5  # GNSS receiver is connected to CAN1
+BRD_SAFETY_DEFLT,0  # There is no safety switch on the Here4 GPS so we disable it. (BRD_SAFETYENABLE in older firmware versions)|
+GPS_AUTO_SWITCH,1  # Automatic switchover to GPS reporting best lock, 1:UseBest selects the GPS with highest status, if both are equal the GPS with highest satellite count is used 4:Use primary if 3D fix or better, will revert to 'UseBest' behaviour if 3D fix is lost on primary
+GPS1_TYPE,9  # Defined in component editor
+GPS1_GNSS_MODE,0  # Set to allow all
+GPS1_POS_X,0
+GPS1_POS_Y,0
+GPS1_POS_Z,0
+NTF_BUZZ_TYPES,5  # Controls what types of Buzzer will be enabled
+NTF_LED_TYPES,231  # Adds DroneCAN LED support for Here4
