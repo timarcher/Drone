@@ -1,7 +1,7 @@
 ARMING_CHECK,1  # Perform all arming checks. If you have a problem fix its source. Do NOT change this
 BRD_RTC_TZ_MIN,0  # Adds offset in +- minutes from UTC to calculate local time
 FLOW_TYPE,6  # HereFlow. Enable optical flow camera.
-INS_ACCEL_FILTER,20  # Filter cutoff frequency for accelerometers. The default is 20 and that lets too much noise in.
+INS_ACCEL_FILTER,10  # Filter cutoff frequency for accelerometers. The default is 20 and that lets too much noise in.
 INS_POS1_X,0  # X position of the first IMU Accelerometer in body frame. Positive X is forward of the origin.
 INS_POS1_Y,0  # Y position of the first IMU accelerometer in body frame. Positive Y is to the right of the origin.
 INS_POS2_X,0  # X position of the second IMU accelerometer in body frame. Positive X is forward of the origin.
