@@ -34,3 +34,5 @@ This page contains details on the initial unboxing and setup of the Herelink con
 ## Herelink User Guides
 - User guides for the Herelink [can be found here](https://docs.cubepilot.org/user-guides/herelink/herelink-user-guides).
 - Many thanks to Painless360 for their video which gave me the info needed to perform this process. Be sure to [watch their video here](https://www.youtube.com/watch?v=DVPRaErKsn0&t=2167s).
+- [Siyi Downloads](https://siyi.biz/en/index.php?id=downloads1&asd=186) - Useful to get their QGroundControl app to control their cameras. 
+- [Herelink how to install a custom app](https://www.youtube.com/watch?v=a-cLzYD7HBk&t=56s) - Shows how to install an APK file on your Herelink controller, such as the Siyi apps.
