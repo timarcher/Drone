@@ -18,3 +18,5 @@ This page contains details on performing the methodic configuration steps for th
 - [ArduPilot Filter Review Tool](https://firmware.ardupilot.org/Tools/WebTools/FilterReview/)
 - [ArduPilot Online Log Viewer](https://plotbeta.ardupilot.org/)
 - [Follow the instructions from Peter Hall on his Blog Post to configure the Harmonic Notch filter(s)](https://discuss.ardupilot.org/t/new-fft-filter-setup-and-review-web-tool/102572).
+- [QuikTune Documentation and Scripts](https://ardupilot.org/copter/docs/quiktune.html)
+- [Scripted MagFit flightpath generation](https://discuss.ardupilot.org/t/scripted-magfit-flightpath-generation/97536)
