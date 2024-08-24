@@ -1,2 +1,2 @@
-AUTOTUNE_AGGR,0.075  # Use smaller than default because there is no wind in the Hangar
-AUTOTUNE_AXES,7  # Autotune roll and pitch axis
+AUTOTUNE_AGGR,0.075  # Autotune Aggressiveness. .1=agressive, .075=medium, .05=weak. Default is .1
+AUTOTUNE_AXES,3  # Autotune roll and pitch axis
