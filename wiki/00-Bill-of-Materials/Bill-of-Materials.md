@@ -129,7 +129,7 @@ This page contains the overall bill of materials/component list that was used to
 |Component|[Source](https:URL)|$XXX|1|$XXX|
 -->
 
-# Electronics - Ground Station
+# Electronics - Ground Control Station GPS
 |Component|Source|Unit Cost|Quantity|Total Cost|
 |---|---|---|---|---|
 |GNSS Multi-Band L1/L2/L5 Surveying Antenna - TNC (SPK6618H)|[Sparkfun](https://www.sparkfun.com/products/21801)|$125|1|$125|
@@ -144,8 +144,14 @@ This page contains the overall bill of materials/component list that was used to
 -->
 
 
-# Laptop
-- You will need a Windows based laptop to be able to run the appropriate utilities and ground control software.
+# Ground Control Station Hardware
+You will need a Windows based laptop to be able to run the appropriate utilities and ground control software such as Mission Planner. You'll also need a travel router which supports both 5Ghz and 2.4Ghz to be able to create a WiFi network if you want to be able to connect to the internet easily at the field.
+
+|Component|Source|Unit Cost|Quantity|Total Cost|
+|---|---|---|---|---|
+|Lenovo - Legion 7i 16" Gaming Laptop WQXGA - Intel 14th Gen Core i9 with 32GB Memory - NVIDIA GeForce RTX 4070 8GB - 1TB SSD - Glacier White|[Best Buy](https://www.bestbuy.com/site/lenovo-legion-7i-16-gaming-laptop-wqxga-intel-14th-gen-core-i9-with-32gb-memory-nvidia-geforce-rtx-4070-8gb-1tb-ssd-glacier-white/6575387.p?skuId=6575387)|$1,849|1|$1,849|
+|TP-Link Ultra-Portable Wi-Fi 6 AX1500 Travel Router TL-WR1502X|[Amazon](https://www.amazon.com/gp/product/B0D41G5N95/)|$50|1|$50|
+|Power Bank 26800mAh Portable Charger|[Amazon](https://www.amazon.com/gp/product/B08BRDVGP1/)|$22|1|$22|
 
 
 # Miscellaneous
