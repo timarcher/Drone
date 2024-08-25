@@ -19,7 +19,21 @@ This page contains details about the motors on the drone. I used the [Hobbywing 
 - [Setting up Hobbywing DroneCAN ESCs with ArduPilot](https://www.youtube.com/watch?v=2fQBczEFnO8) - Great video from Andrew Tridgell showing how to setup the HobbyWing XRotor DroneCAN motors.
 - [ArduPilot Docs Hobbywing DroneCAN ESC](https://ardupilot.org/copter/docs/common-hobbywing-dronecan-esc.html) - ArduPilot documentation page on setting up the Hobbywing ESCs.
 - [The Cube User Manual V1.0](https://docs.cubepilot.org/user-guides/autopilot/the-cube-user-manual) - Contains information on setup of the cube, including motor orientation.
+- [Hobbywing XRotor X6 Motor Manual](https://manuals.plus/hobbywing/xrotor-pro-x6-manual)
 
+# How to Change the LED Light Color
+Unscrew the two M3*8 screws for fastening the light cover with a screwdriver, slide the DIP switches accordingly (as shown below) to change the light color (it’s Green by default), mount the cover back after setting.
+
+|DIP Switch 1|DIP Switch 2|DIP Switch 1|Color of the LED|
+|---|---|---|---|
+|ON|ON|ON|White
+|ON|OFF|ON|Light Blue
+|ON|ON|OFF|Purple
+|ON|OFF|OFF|Blue
+|OFF|ON|ON|Yellow
+|OFF|OFF|ON|Green
+|OFF|ON|OFF|Red
+|OFF|OFF|OFF|LED Disabled
 
 
 # Firmware / Hobbywing DataLink
