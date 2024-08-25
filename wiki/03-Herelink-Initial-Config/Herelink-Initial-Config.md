@@ -30,6 +30,24 @@ This page contains details on the initial unboxing and setup of the Herelink con
   - If one of the green bars moves in the incorrect direction reverse the channel in the transmitter itself. If it is not possible to reverse the channel in the transmitter you may reverse the channel in ArduPilot by checking the “Reversed” checkbox (Plane and Rover only). If the checkbox is not visible it is possible to reverse the channel by directly changing the RCx_REVERSED parameter (where “x” is the input channel from 1 to 4).
     
 
+## Downloading Offline Maps in QGroundControl
+You may wish to download maps locally for when you will be running missions in areas without internet connectivity. With the maps downloaded, you can plan missions in QGroundControl while offline in the field. The downloaded map tiles will be used automatically by QGroundControl when you're not connected to the internet.
+
+To download maps in QGroundControl for offline use, follow these steps:
+- Open QGroundControl on the Herelink controller.
+- Click on the Q icon in the top-left corner to open the main menu.
+- In the settings, choose the Offline Maps option.
+- Click on Add New Set.
+- Navigate to the area you plan to operate in by dragging the map.
+- Use the zoom controls to set the desired zoom levels. The number of tiles to be downloaded will increase with more zoom levels selected.
+- Name the tile set.
+- Click Download to start the process.
+
+To manage offline maps:
+- After the download completes, the map tiles will be stored locally on your device.
+- You can manage these offline maps under the Manage Tiles section, where you can delete or add more tiles as needed.
+
+
 # References 
 ## Herelink User Guides
 - User guides for the Herelink [can be found here](https://docs.cubepilot.org/user-guides/herelink/herelink-user-guides).
