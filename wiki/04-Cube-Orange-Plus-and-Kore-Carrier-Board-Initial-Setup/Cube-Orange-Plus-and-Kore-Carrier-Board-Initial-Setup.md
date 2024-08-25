@@ -4,6 +4,15 @@ This page contains details on the initial setup of the Cube Orange Plus and Kore
 # YouTube Video
 - [Hexacopter Drone Build Project – Part 4 Cube Orange Plus and Kore Carrier Board Initial Setup](https://www.youtube.com/watch?v=5t4QqKYQOWc)
 
+# Notes
+- Its important to note that the auxiliary ports of the Kore carrier board map to servo ports starting at 9. So:
+  - Kore Carrier Board Auxiliary Port 1 = SERVO9
+  - Kore Carrier Board Auxiliary Port 2 = SERVO10
+  - Kore Carrier Board Auxiliary Port 3 = SERVO11
+  - Kore Carrier Board Auxiliary Port 4 = SERVO12
+  - Kore Carrier Board Auxiliary Port 5 = SERVO13
+  - Kore Carrier Board Auxiliary Port 6 = SERVO14
+
 # Supporting Materials
 - [ArduPilot Configuration](../ArduPilot-Config/ArduPilot-Config.md) - This page contains a consolidated list of the all of the configuration done in ArduPilot throughout the videos.
 
