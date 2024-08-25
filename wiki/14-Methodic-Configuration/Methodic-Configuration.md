@@ -5,9 +5,12 @@ This page contains details on performing the methodic configuration steps for th
 - [Hexacopter Drone Build Project – First Flight](https://www.youtube.com/watch?v=HhvRLNxARRs)
 
 # Notes
-- TBD
+- Read the blog post [How to methodically configure and tune any ArduCopter Blog Post](https://discuss.ardupilot.org/t/how-to-methodically-configure-and-tune-any-arducopter/110842) several times. It tooks me several reads before it really started to sink in.
+- You may be in a hurry to skip steps you understand. Dont. This utility had me exploring areas of the documentation I have never read, and using tools I did not know existed. Think of it as a great structured classroom for learning how to tune your drone.
+- Take the time to understand why each parameter is set the way it is.
 
 # Supporting Materials
+- [My Drones Methodic Configuration Directory](../../ardupilot-methodic-configurator/Hexacopter/) - This folder contains my methodic configuration. Use it for your own starting point.
 - [ArduPilot Configuration](../ArduPilot-Config/ArduPilot-Config.md) - This page contains a consolidated list of the all of the configuration done in ArduPilot throughout the videos.
 
 # References 
@@ -17,7 +20,8 @@ This page contains details on performing the methodic configuration steps for th
 - [ArduPilot Web Tools](https://firmware.ardupilot.org/Tools/WebTools/)
 - [ArduPilot Hardware Report Utility](https://firmware.ardupilot.org/Tools/WebTools/HardwareReport/)
 - [ArduPilot Filter Review Tool](https://firmware.ardupilot.org/Tools/WebTools/FilterReview/)
-- [ArduPilot Online Log Viewer](https://plotbeta.ardupilot.org/)
+- [ArduPilot MAGFit Tool](https://plotbeta.ardupilot.org/)
+- [ArduPilot Online Log Viewer](https://firmware.ardupilot.org/Tools/WebTools/MAGFit/)
 - [Follow the instructions from Peter Hall on his Blog Post to configure the Harmonic Notch filter(s)](https://discuss.ardupilot.org/t/new-fft-filter-setup-and-review-web-tool/102572).
 - [QuikTune Documentation and Scripts](https://ardupilot.org/copter/docs/quiktune.html)
 - [Scripted MagFit flightpath generation](https://discuss.ardupilot.org/t/scripted-magfit-flightpath-generation/97536)

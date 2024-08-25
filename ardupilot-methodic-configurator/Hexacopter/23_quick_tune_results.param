@@ -1,10 +1,10 @@
-ATC_RAT_PIT_D,0.007363  # Tuned in my backyard
-ATC_RAT_PIT_I,0.152971  # Tuned in my backyard
-ATC_RAT_PIT_P,0.152971  # Tuned in my backyard
-ATC_RAT_RLL_D,0.008165  # Tuned in my backyard
-ATC_RAT_RLL_I,0.182321  # Tuned in my backyard
-ATC_RAT_RLL_P,0.182321  # Tuned in my backyard
-ATC_RAT_YAW_D,0.01  # Tuned in my backyard
-ATC_RAT_YAW_FLTD,10  # Tuned in my backyard
-ATC_RAT_YAW_I,0.05  # Tuned in my backyard
-ATC_RAT_YAW_P,0.5  # Tuned in my backyard
+ATC_RAT_PIT_D,0.007363  # Setting value after running QuickTune LUA script
+ATC_RAT_PIT_I,0.152971  # Setting value after running QuickTune LUA script
+ATC_RAT_PIT_P,0.152971  # Setting value after running QuickTune LUA script
+ATC_RAT_RLL_D,0.008165  # Setting value after running QuickTune LUA script
+ATC_RAT_RLL_I,0.182321  # Setting value after running QuickTune LUA script
+ATC_RAT_RLL_P,0.182321  # Setting value after running QuickTune LUA script
+ATC_RAT_YAW_D,0.01  # Setting value after running QuickTune LUA script
+ATC_RAT_YAW_FLTD,10  # Setting value after running QuickTune LUA script
+ATC_RAT_YAW_I,0.05  # Setting value after running QuickTune LUA script
+ATC_RAT_YAW_P,0.5  # Setting value after running QuickTune LUA script
