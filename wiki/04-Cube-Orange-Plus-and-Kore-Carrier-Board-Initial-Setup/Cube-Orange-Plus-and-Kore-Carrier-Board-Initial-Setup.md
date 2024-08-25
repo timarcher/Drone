@@ -12,6 +12,7 @@ This page contains details on the initial setup of the Cube Orange Plus and Kore
   - Kore Carrier Board Auxiliary Port 4 = SERVO12
   - Kore Carrier Board Auxiliary Port 5 = SERVO13
   - Kore Carrier Board Auxiliary Port 6 = SERVO14
+- You must supply 5v power to the auxiliary ports if you wish to power devices connected to those ports. I applied a simple 5v supply to auxiliary port 6. Applying power to one auxiliary port will power them all. It is recommended to use a BEC to supply power to these ports if you will be attaching noisy devices such as servos.
 
 # Supporting Materials
 - [ArduPilot Configuration](../ArduPilot-Config/ArduPilot-Config.md) - This page contains a consolidated list of the all of the configuration done in ArduPilot throughout the videos.
