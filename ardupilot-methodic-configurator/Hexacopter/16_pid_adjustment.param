@@ -3,7 +3,7 @@
 # Usually, smaller vehicles require lower than default PID rate values.
 # Larger vehicles usually require higher than default PID rate values.
 
-ATC_INPUT_TC,0.15  # Attitude control input time constant. Low numbers lead to sharper response, higher numbers to softer response
+ATC_INPUT_TC,0.15  # Attitude control input time constant. Low numbers lead to sharper response, higher numbers to softer response. 0.5:Very Soft,0.2:Soft,0.15:Medium,0.1:Crisp,0.05:Very Crisp
 ATC_RAT_PIT_D,0.003334  #  = 0.925972 * (0.0036 default)
 ATC_RAT_PIT_I,0.173229  #  = 1.283176 * (0.135 default)
 ATC_RAT_PIT_P,0.173229  #  = 1.283176 * (0.135 default)

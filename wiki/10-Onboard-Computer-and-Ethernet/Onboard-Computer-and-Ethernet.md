@@ -10,7 +10,7 @@ This page contains details on the installation of a Raspberry Pi 5 companion com
   - Herelink Air Unit is at IP address 192.168.144.10
   - Herelink Controller is at IP address 192.168.144.11
 - You can get rtsp video from 192.168.43.1, 192.168.144.10, or 192.168.144.11
-- You can get mavlink from 192.168.43.1, 192.168.144.10, or 192.168.144.11 port 14552
+- You can get mavlink from 192.168.43.1, 192.168.144.10 (Herelink Air Unit), or 192.168.144.11 (Herelink Controller) port 14552
 - To be able to route traffic between the Drone Network and the Ground Control Station Herelink WiFi AP:
   - GCS/Laptop needs a static route to 192.168.144.0/24 via 192.168.43.1
     - To do this, assuming your GCS is a Windows PC, open a command prompt as administrator and run `route add 192.168.144.0 mask 255.255.255.0 192.168.43.1`
@@ -55,6 +55,14 @@ You may wish to interact with your drone from your companion computer using Pyth
 1. Deactivate the virtual environment: `deactivate`
 1. Delete the virtual environment: `rm -rf drone01`
 
+
+# Stream a video to the Console
+You can use these commands to install mplayer, download a sample mp4, and stream it to the console so that it displays on your Herelink.
+```sh
+sudo apt install mplayer
+wget https://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4 -O big_buck_bunny.mp4
+sudo mplayer -vo fbdev2 big_buck_bunny.mp4
+```
 
 
 # Supporting Materials
