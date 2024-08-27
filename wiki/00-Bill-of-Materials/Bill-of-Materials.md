@@ -151,7 +151,7 @@ You will need a Windows based laptop to be able to run the appropriate utilities
 |---|---|---|---|---|
 |Lenovo - Legion 7i 16" Gaming Laptop WQXGA - Intel 14th Gen Core i9 with 32GB Memory - NVIDIA GeForce RTX 4070 8GB - 1TB SSD - Glacier White|[Best Buy](https://www.bestbuy.com/site/lenovo-legion-7i-16-gaming-laptop-wqxga-intel-14th-gen-core-i9-with-32gb-memory-nvidia-geforce-rtx-4070-8gb-1tb-ssd-glacier-white/6575387.p?skuId=6575387)|$1,849|1|$1,849|
 |TP-Link Ultra-Portable Wi-Fi 6 AX1500 Travel Router TL-WR1502X|[Amazon](https://www.amazon.com/gp/product/B0D41G5N95/)|$50|1|$50|
-|Power Bank 26800mAh Portable Charger|[Amazon](https://www.amazon.com/gp/product/B08BRDVGP1/)|$22|1|$22|
+|Power Bank 50000mAh 22.5W Fast Charging Portable Charger - Must support 12v and PD2.0|[Amazon](https://www.amazon.com/gp/product/B0BF54MTCG/)|$40|1|$40|
 
 
 # Miscellaneous
