@@ -25,3 +25,4 @@ This page contains details on performing the methodic configuration steps for th
 - [Follow the instructions from Peter Hall on his Blog Post to configure the Harmonic Notch filter(s)](https://discuss.ardupilot.org/t/new-fft-filter-setup-and-review-web-tool/102572).
 - [QuikTune Documentation and Scripts](https://ardupilot.org/copter/docs/quiktune.html)
 - [Scripted MagFit flightpath generation](https://discuss.ardupilot.org/t/scripted-magfit-flightpath-generation/97536)
+- [Downloading and Analyzing Data Logs in Mission Planner](https://ardupilot.org/copter/docs/common-downloading-and-analyzing-data-logs-in-mission-planner.html)

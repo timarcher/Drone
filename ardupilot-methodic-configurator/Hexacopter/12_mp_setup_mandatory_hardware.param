@@ -25,7 +25,8 @@ COMPASS_ORIENT,0
 COMPASS_PRIO1_ID,97283
 COMPASS_PRIO2_ID,1313809
 COMPASS_SCALE,1.101369
-COMPASS_USE2,1
+COMPASS_USE,1  # Use the external herelink compass.
+COMPASS_USE2,0  # Disable the internal compass, it seems to be much less accurate.
 COMPASS_USE3,0
 FENCE_ACTION,4  # 4 = Brake or Land. Set to 0 for report only.
 FENCE_ALT_MAX,30  # Maximum altitude allowed before geofence triggers. Value is in meters. I set to 30 when initially testing drone.
