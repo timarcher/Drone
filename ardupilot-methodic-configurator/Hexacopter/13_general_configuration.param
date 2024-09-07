@@ -7,11 +7,11 @@ INS_POS1_Y,0  # Y position of the first IMU accelerometer in body frame. Positiv
 INS_POS2_X,0  # X position of the second IMU accelerometer in body frame. Positive X is forward of the origin.
 INS_POS2_Y,0  # Y position of the second IMU accelerometer in body frame. Positive Y is to the right of the origin.
 NTF_DISPLAY_TYPE,1  # Onboard OLED display. SSD1306 OLED Connected to I2C.
-RNGFND1_GNDCLEAR,47  # HereFlow. Optional - This parameter sets  the expected range measurement(in cm) that the range finder should return when the vehicle is on the ground.
+RNGFND1_GNDCLEAR,35  # HereFlow. Optional - This parameter sets  the expected range measurement(in cm) that the range finder should return when the vehicle is on the ground.
 RNGFND1_MAX_CM,200  # HereFlow. Maximum distance in centimeters that rangefinder can reliably read.
 RNGFND1_MIN_CM,5  # HereFlow. Minimum distance in centimeters that rangefinder can reliably read.
 RNGFND1_TYPE,24  # HereFlow. Set to 24 to enable the HereFlow rangefinder. It was being flaky so I disabled it. Type of connected rangefinder. Reboot flight controller after setting this for rest of the params to show.
-RNGFND2_GNDCLEAR,47  # TFMini-S LiDAR. Optional - This parameter sets  the expected range measurement(in cm) that the range finder should return when the vehicle is on the ground.
+RNGFND2_GNDCLEAR,45  # TFMini-S LiDAR. Optional - This parameter sets  the expected range measurement(in cm) that the range finder should return when the vehicle is on the ground.
 RNGFND2_MAX_CM,600  # TFMini-S LiDAR. This is the distance in centimeters that the rangefinder can reliably read. 600 for outdoors.
 RNGFND2_MIN_CM,10  # TFMini-S LiDAR. Minimum distance in centimeters that rangefinder can reliably read. 10 for TFminiPlus
 RNGFND2_TYPE,20  # TFMini-S LiDAR. Type of connected rangefinder. 20=Benewake-Serial. Reboot flight controller after setting this for rest of the params to show.

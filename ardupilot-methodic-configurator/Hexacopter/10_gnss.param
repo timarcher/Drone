@@ -5,5 +5,6 @@ GPS1_GNSS_MODE,0  # Set to allow all
 GPS1_POS_X,0
 GPS1_POS_Y,0
 GPS1_POS_Z,0
+GPS_AUTO_CONFIG, 2  # Needed to enable RTK autocorrect, set to enable for DroneCAN as well.
 NTF_BUZZ_TYPES,5  # Controls what types of Buzzer will be enabled
 NTF_LED_TYPES,231  # Adds DroneCAN LED support for Here4
