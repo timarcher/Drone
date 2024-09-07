@@ -179,7 +179,7 @@ I have my flight modes configured as follows. This requires some config in ArduP
 |FLTMODE1|5|Flight mode when pwm of Flightmode channel(FLTMODE_CH) is <= 1230. Set to Loiter.|
 |FLTMODE2|15|Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1230, <= 1360. Set to AutoTune.|
 |FLTMODE3|2|Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1360, <= 1490. Set to AltHold.|
-|FLTMODE4|0|Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1490, <= 1620. Set to Stabilize.|
+|FLTMODE4|3|Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1490, <= 1620. Set to Auto.|
 |FLTMODE5|6|Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1620, <= 1749. Set to RTL.|
 |FLTMODE6|9|Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >=1750. Set to Land.|
 
