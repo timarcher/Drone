@@ -6,6 +6,7 @@ This page contains details on installing ROS2 on the Raspberry PI and integratin
 # Notes
 - Make sure you have a Raspberry Pi with Ubuntu 24.04 installed on it first. See the [Onboard-Computer-and-Ethernet](../10-Onboard-Computer-and-Ethernet/Onboard-Computer-and-Ethernet.md) page and associated video if you havent done that yet.
 ros
+
 # ROS2 Installation Notes
 - Follow the instructions to install ROS2 on your Raspberry Pi by following the guide for [Installing ROS2 on Ubuntu 24.04](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html). I installed the Recommended Desktop Install wehich includes ROS, RViz, demos, tutorials. You need this to run the talker/listener demo in the install instructions.
 - Edit ~/.bashrc to add the following line to it so your ROS environment is configured every time you login:
