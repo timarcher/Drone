@@ -1,11 +1,11 @@
 This page contains details on adding some basic navigation lights to the drone.
 
 # YouTube Video
-- [Hexacopter Drone Build Project – Part 15 Navigation Lights](https://youtu.be/XXX)
+- [Hexacopter Drone Build Project – Part 14 Navigation Lights](https://youtu.be/iyrwQGt4RnM)
 
 # Notes
 - See pictures below for a reference on how the lights are configured on airplanes.
-- Its important to note that the auxiliary ports of the Kore carrier board map to servo ports starting at 9. So:
+- It's important to note that the auxiliary ports of the Kore carrier board map to servo ports starting at 9. So:
   - Kore Carrier Board Auxiliary Port 1 = SERVO9
   - Kore Carrier Board Auxiliary Port 2 = SERVO10
   - Kore Carrier Board Auxiliary Port 3 = SERVO11

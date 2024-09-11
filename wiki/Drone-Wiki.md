@@ -25,7 +25,9 @@ Use the list below to follow my build journey step by step.
 1. [TFMini-S Lidar](11-TFMini-S-Lidar/TFMini-S-Lidar.md)
 1. [Tattu Smart Battery](12-Tattu-Smart-Battery/Tattu-Smart-Battery.md)
 1. [Electronics Installation](13-Electronics-Installation/Electronics-Installation.md)
-1. [Methodic Configuration](14-Methodic-Configuration/Methodic-Configuration.md)
+1. [Navigation Lights](14-Navigation-Lights/Navigation-Lights.md)
+
+<!--1. [Methodic Configuration](XX-Methodic-Configuration/Methodic-Configuration.md)-->
 
 Future steps are coming soon!
 
