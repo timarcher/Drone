@@ -1,4 +1,4 @@
-This page contains details on adding some basic navigation lights to the drone.
+This page contains details on adding some basic navigation lights to the drone. Specifically, they are the STROBON V2 Cree Edition navigation strobe lights from Flytron. In the video I show you how I mounted them to my motors, ran the cabling into the drone, and connect both power and signal so that the lights can be turned on and off through the Herelink controller. 
 
 # YouTube Video
 - [Hexacopter Drone Build Project – Part 14 Navigation Lights](https://youtu.be/iyrwQGt4RnM)
