@@ -240,6 +240,13 @@ I have adjusted these parameters to be about half the default value to make my d
 |WPNAV_ACCEL_Z|75|Defines the vertical acceleration in cm/s/s used during missions.|
 
 
+## Parameters - Gremsy T7 Gimbal
+|Parameter Name|Value|Description|
+|---|---|---|
+|MNT1_TYPE|6|For Gremsy. Reboot after changing this param.|
+|SERIAL2_BAUD|115|Communication at 115200 bps|
+|SERIAL2_PROTOCOL|100|Mavlink2|
+|SERIAL2_OPTIONS|1024|Don’t forward mavlink to/from|
 
 
 # Factory Reset the Parameters

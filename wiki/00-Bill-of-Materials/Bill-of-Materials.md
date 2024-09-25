@@ -124,6 +124,16 @@ This page contains the overall bill of materials/component list that was used to
 |5 Pairs JST Plug to JR Connector Male Female Cable 10cm Servo Adapter Wire for RC Plane Helicopter Car (JST to JR-10pcs)|[Amazon](https://www.amazon.com/gp/product/B0CQXB94HX/)|$7|1|$7|
 
 
+# Electronics - Gimbal and Camera
+|Component|Source|Unit Cost|Quantity|Total Cost|
+|---|---|---|---|---|
+|GREMSY T7 Gimbal|[Gremsy](https://gremsy.com/gremsy-t7-store)|$2350|1|$2350|
+|DAMPING PLATE PRO 2.0|[Gremsy](https://gremsy.com/online-store/h-accessories/damping-plate-pro-20)|$265|1|$265|
+|HDMI HYPER QUICK RELEASE|[Gremsy](https://gremsy.com/online-store/t-s-accessories/hdmi-hyper-quick-release)|$235|1|$235|
+|mRo 6-Pin JST-GH to 6-Pin JST-GH Twisted Pair - MRC0212 - 1000mm. Used for Gimbal serial connection.|[3DR](https://store.3dr.com/mro-6-pin-jst-gh-to-6-pin-jst-gh-twisted-pair-mrc0212/)|$12|2|$24|
+|4pcs 12mm Carbon Fiber Tube 12mmx10mmx330mm,6/8/10/14/16mm Available, 3K roll Wrapped Twill Matte Finish|[Amazon](https://www.amazon.com/gp/product/B09FZZ1JD8/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1)|$22|1|$22|
+
+
 <!--
 |Component|[Source](https:URL)|$XXX|1|$XXX|
 |Component|[Source](https:URL)|$XXX|1|$XXX|
