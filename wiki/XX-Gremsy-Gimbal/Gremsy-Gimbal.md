@@ -28,3 +28,4 @@ This page contains details on setting up the Gremsy T7 Gimbal with the drone.
 - [Gremsy T7 Firmware](https://gremsy.com/support/product-support/series-gremsy-t-s/gremsy-t7/gremsy-t7-download)
 - [Ardupilot to Gremsy HDMI Quick Release Wiring](https://ardupilot.org/copter/docs/common-gremsy-pixyu-gimbal.html)
 - [Gremsy GTune Desktop Software](https://github.com/Gremsy/gTuneDesktop/releases)
+- [Pure Thermal 2 case (for Lepton FLIR)](https://www.thingiverse.com/thing:4642813/files)
