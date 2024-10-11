@@ -5,6 +5,7 @@ This page contains details on the setup of the Here Flow sensor. The Here Flow o
 
 # Supporting Materials
 - [ArduPilot Configuration](../ArduPilot-Config/ArduPilot-Config.md) - This page contains a consolidated list of the all of the configuration done in ArduPilot throughout the videos. After you make the configuration changes you should see values show in the sonarrange and opt_* parameters in mission planner.
+- It is recommended that you do NOT use the HereFlow rangefinder though. Instead it is suggested to use a different rangefinder. In a later video I show how to setup the Benewake TFMini-S LiDAR.
 
 # References 
 - Here Flow documentation [can be found here](https://docs.cubepilot.org/user-guides/flow-senor/here-flow).

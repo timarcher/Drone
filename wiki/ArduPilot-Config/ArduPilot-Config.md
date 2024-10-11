@@ -126,9 +126,9 @@ You can optionally set the DID_OPTIONS bitmask value as well for EnforceArming, 
 |Parameter Name|Value|Description|
 |---|---|---|
 |RNGFND1_TYPE|24|Type of connected rangefinder. Reboot flight controller after setting this for rest of the params to show.|
-|RNGFND1_MIN_CM|5|Minimum distance in centimeters that rangefinder can reliably read.|
+|RNGFND1_MIN_CM|10|Minimum distance in centimeters that rangefinder can reliably read.|
 |RNGFND1_MAX_CM|200|Maximum distance in centimeters that rangefinder can reliably read.|
-|RNGFND1_GNDCLEAR|35|Optional - This parameter sets  the expected range measurement(in cm) that the range finder should return when the vehicle is on the ground.|
+|RNGFND1_GNDCLEAR|29|Optional - This parameter sets  the expected range measurement(in cm) that the range finder should return when the vehicle is on the ground.|
 |FLOW_TYPE|6|Enable optical flow camera.|
 
 
@@ -140,7 +140,17 @@ You can optionally set the DID_OPTIONS bitmask value as well for EnforceArming, 
 |RNGFND2_TYPE|20|Type of connected rangefinder. 20=Benewake-Serial. Reboot flight controller after setting this for rest of the params to show.|
 |RNGFND2_MIN_CM|10|Minimum distance in centimeters that rangefinder can reliably read. 10 for TFminiPlus|
 |RNGFND2_MAX_CM|600|This is the distance in centimeters that the rangefinder can reliably read. 600 for outdoors.|
+|RNGFND2_GNDCLEAR|29|Optional - This parameter sets  the expected range measurement(in cm) that the range finder should return when the vehicle is on the ground.|
+
+If using the Matek AP_PERIPH CAN Node L431 Board to convert your TFMini-S to a DroneCAN device, then set these instead:
+|Parameter Name|Value|Description|
+|---|---|---|
+|RNGFND2_TYPE|24|Type of connected rangefinder. 24=DroneCAN. Reboot flight controller after setting this for rest of the params to show.|
+|RNGFND2_MIN_CM|10|Minimum distance in centimeters that rangefinder can reliably read. 10 for TFminiPlus|
+|RNGFND2_MAX_CM|600|This is the distance in centimeters that the rangefinder can reliably read. 600 for outdoors.|
 |RNGFND2_GNDCLEAR|45|Optional - This parameter sets  the expected range measurement(in cm) that the range finder should return when the vehicle is on the ground.|
+
+
 
 ## Parameters - Tattu 12s 16000mAh Smart Battery
 These are the settings I used for the Tattu Plus 1.0 Compact Version 16000mAh 44.4V 15C 12S1P Lipo Smart Battery Pack With AS150U Plug.

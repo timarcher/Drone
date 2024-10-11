@@ -12,6 +12,8 @@ This page contains the overall bill of materials/component list that was used to
 |Cable Zip Ties,600 Packs Self-Locking Nylon CableTies Assorted Sizes 4+6+8+10+12-Inch|[Amazon](https://www.amazon.com/gp/product/B08TVMRFV8/?th=1)|$10|1|$10|
 |XHF 3/4" Strong Back-Glue Self Adhesive Black Cable Zip Tie Mounts|[Amazon](https://www.amazon.com/gp/product/B08F77YVYB/)|$10|1|$10|
 |25ft x 1/4 inch & 25ft x 1/2 inch PET Expandable Braided Sleeving Braided Cable Sleeve|[Amazon](https://www.amazon.com/gp/product/B07RZXSJBM/)|$10|1|$10|
+|1/8 inch Cord Protector Wire Loom Tubing Cable Sleeve Split Sleeving|[Amazon](https://www.amazon.com/gp/product/B07FWFB9H6)|$14|1|$14|
+|1/4 inch Cord Protector Wire Loom Tubing Cable Sleeve Split Sleeving|[Amazon](https://www.amazon.com/gp/product/B07FW86XV6/)|$14|1|$14|
 |1/2 inch Cord Protector Wire Loom Tubing Cable Sleeve Split Sleeving|[Amazon](https://www.amazon.com/gp/product/B07FW3GTXB/)|$9|3|$27|
 |3/4 inch Cord Protector Wire Loom Tubing Cable Sleeve Split Sleeving|[Amazon](https://www.amazon.com/gp/product/B07FW672R7/)|$12|1|$12|
 |Duco ABS Plastic Sheets 1/8 Inch Thick 4" x 6"|[Amazon](https://www.amazon.com/gp/product/B0BBTDYVG9/)|$9|1|$9|
@@ -122,6 +124,8 @@ This page contains the overall bill of materials/component list that was used to
 |5pcs JR Y Connector Servo Extension Cable 3 Pin JR Plug Splitters 1 Male to 4 Female Servo Y Extension Connector|[Amazon](https://www.amazon.com/gp/product/B0BC5QNDTC/)|$9|1|$9|
 |20Pcs Micro JST GH 4Pin 1.25mm Male to Male Connector, GH1.25 Terminal Connector Wire Cable 15cm 28AWG|[Amazon](https://www.amazon.com/gp/product/B0C2ZQHZ9T/)|$10|1|$10|
 |5 Pairs JST Plug to JR Connector Male Female Cable 10cm Servo Adapter Wire for RC Plane Helicopter Car (JST to JR-10pcs)|[Amazon](https://www.amazon.com/gp/product/B0CQXB94HX/)|$7|1|$7|
+|Matek AP_PERIPH CAN Node L431 Board|[Amazon](https://www.amazon.com/gp/product/B0BC16ZRCB/)|$21|1|$21|
+
 
 
 # Electronics - Gimbal and Camera
@@ -132,7 +136,8 @@ This page contains the overall bill of materials/component list that was used to
 |HDMI HYPER QUICK RELEASE|[Gremsy](https://gremsy.com/online-store/t-s-accessories/hdmi-hyper-quick-release)|$235|1|$235|
 |mRo 6-Pin JST-GH to 6-Pin JST-GH Twisted Pair - MRC0212 - 1000mm. Used for Gimbal serial connection.|[3DR](https://store.3dr.com/mro-6-pin-jst-gh-to-6-pin-jst-gh-twisted-pair-mrc0212/)|$12|2|$24|
 |4pcs 12mm Carbon Fiber Tube 12mmx10mmx330mm,6/8/10/14/16mm Available, 3K roll Wrapped Twill Matte Finish|[Amazon](https://www.amazon.com/gp/product/B09FZZ1JD8/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1)|$22|1|$22|
-
+|AirPixel AIR Commander ENTIRE R3|[IR-Lock](https://irlock.com/products/airpixel-air-commander-entire-r3?variant=41720690409523)|$279|1|$279|
+|AirPixel Wiring set EVO for Gremsy T3 S1 T7|[IR-Lock](https://irlock.com/products/airpixel-wiring-set-evo-for-gremsy-t3-s1-t7?variant=41754869104691)|$89|1|$89|
 
 <!--
 |Component|[Source](https:URL)|$XXX|1|$XXX|
