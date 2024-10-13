@@ -28,6 +28,7 @@ This page contains details on setting up the Gremsy T7 Gimbal with the drone.
 - [Gremsy T7 Firmware](https://gremsy.com/support/product-support/series-gremsy-t-s/gremsy-t7/gremsy-t7-download)
 - [Ardupilot to Gremsy HDMI Quick Release Wiring](https://ardupilot.org/copter/docs/common-gremsy-pixyu-gimbal.html)
 - [Gremsy GTune Desktop Software](https://github.com/Gremsy/gTuneDesktop/releases)
-- [Hard Enclosure for Purethermal Mini](https://cults3d.com/en/3d-model/gadget/hard-enclosure-for-purethermal-mini)
+- [PureThemal Mini Flir USB IR Camera Mount 3d Print](https://cults3d.com/en/3d-model/game/pure-thermal-mini-flir-usb-ir-camera-mount) - I had to scale this to 105% for it to fit the USB camera. I used this as the back, and the next file for the top.
+- [Hard Enclosure for Purethermal Mini 3d Print](https://cults3d.com/en/3d-model/gadget/hard-enclosure-for-purethermal-mini) - I had to scale this to 105% for it to fit the USB camera. I used this as the front, and the prior file for the back.
 - [AirPixel Air Commander MavCam for HereLink](https://airpixel.cz/docs/herelink-camera-control/)
 - [AirPixel Air Commander Mission Planner Camera Control Plugin](https://airpixel.cz/docs/missionplanner-camera-control-plugin/)
