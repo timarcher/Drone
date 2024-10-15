@@ -20,7 +20,10 @@ This page contains details on setting up the Gremsy T7 Gimbal with the drone.
 - To control the gimbal on the Herelink controller:
   - Ensure you install the latest QGroundControl release for the Herelink: [QGroundControl Herelink Releases](https://github.com/CubePilot/qgroundcontrol-herelink/releases)
   - Then follow [these instructions on Youtube](https://www.youtube.com/watch?v=a-cLzYD7HBk&t=43s) to install the custom APK file for QGroundControl on the Herelink.
-
+- Connecting to the AirPixel Air Commander Entire R3:
+  - Connect to its WiFi hotspot from your PC
+  - http://entire/ or http://192.168.10.1/
+  - 
 # Supporting Materials
 - [ArduPilot Configuration](../ArduPilot-Config/ArduPilot-Config.md) - This page contains a consolidated list of the all of the configuration done in ArduPilot throughout the videos.
 
@@ -32,3 +35,4 @@ This page contains details on setting up the Gremsy T7 Gimbal with the drone.
 - [Hard Enclosure for Purethermal Mini 3d Print](https://cults3d.com/en/3d-model/gadget/hard-enclosure-for-purethermal-mini) - I had to scale this to 105% for it to fit the USB camera. I used this as the front, and the prior file for the back.
 - [AirPixel Air Commander MavCam for HereLink](https://airpixel.cz/docs/herelink-camera-control/)
 - [AirPixel Air Commander Mission Planner Camera Control Plugin](https://airpixel.cz/docs/missionplanner-camera-control-plugin/)
+- [AirPixel Air Commander Firmware Updates](https://airpixel.cz/docs/firmware-update/)

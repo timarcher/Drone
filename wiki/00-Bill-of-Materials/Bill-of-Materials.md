@@ -138,6 +138,7 @@ This page contains the overall bill of materials/component list that was used to
 |4pcs 12mm Carbon Fiber Tube 12mmx10mmx330mm,6/8/10/14/16mm Available, 3K roll Wrapped Twill Matte Finish|[Amazon](https://www.amazon.com/gp/product/B09FZZ1JD8/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1)|$22|1|$22|
 |AirPixel AIR Commander ENTIRE R3|[IR-Lock](https://irlock.com/products/airpixel-air-commander-entire-r3?variant=41720690409523)|$279|1|$279|
 |AirPixel Wiring set EVO for Gremsy T3 S1 T7|[IR-Lock](https://irlock.com/products/airpixel-wiring-set-evo-for-gremsy-t3-s1-t7?variant=41754869104691)|$89|1|$89|
+|SanDisk 128GB Ultra microSDXC UHS-I Memory Card|[Amazon](https://www.amazon.com/gp/product/B0B7NTY2S6/)|$13|1|$13|
 
 <!--
 |Component|[Source](https:URL)|$XXX|1|$XXX|

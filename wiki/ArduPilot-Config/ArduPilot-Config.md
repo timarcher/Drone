@@ -91,6 +91,13 @@ You do not need to set these if you are going to use the settings below for the 
 |GPS1_TYPE|9|GPS type of 1st GPS.|
 |NTF_LED_TYPES|231|Controls what types of LEDs will be enabled.|
 
+If using multiple GPS', as in my drone, also need to set additional params:
+|Parameter Name|Value|Description|
+|---|---|---|
+|GPS1_CAN_OVRIDE|119|Node ID for the 1st GPS. Set appropriately for your vehicle.|
+|GPS2_TYPE|9|GPS type of 2nd GPS.|
+|GPS2_CAN_OVRIDE|118|Node ID for the 1st GPS. Set appropriately for your vehicle.|
+
 <!--
 |XXX|XXX|XXX|
 -->
