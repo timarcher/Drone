@@ -4,7 +4,7 @@ ATC_ANG_PIT_P,4.5  # reset to default to not interfere with sysID
 ATC_ANG_RLL_P,4.5  # reset to default to not interfere with sysID
 ATC_ANG_YAW_P,4.5  # reset to default to not interfere with sysID
 ATC_RAT_RLL_I,0.135  # prevent the rate controllers from compensating too much of the frequency-sweep signal
-ATC_RATE_FF_ENAB,1  # prevent the rate controllers from compensating too much of the frequency-sweep signal
+ATC_RATE_FF_ENAB,1  # Default value. Controls whether body-frame rate feedforward is enabled or disabled. 
 FLTMODE5,0  # Activate sysid instead of autotune
 LOG_BITMASK,524416  # attitude sample rate at loop rate
 LOG_DISARMED,0  # was only needed for wind speed estimation

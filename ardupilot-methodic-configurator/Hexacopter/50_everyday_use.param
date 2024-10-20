@@ -1,6 +1,7 @@
-ATC_THR_MIX_MAX,0.5  # according to autotune documentation this should be raised up-to 0.9 after the tune
-BATT_FS_LOW_ACT,2  # outdoors we want the drone to come back
-BATT2_FS_LOW_ACT,2  # outdoors we want the drone to come back
+ATC_THR_MIX_MAX,0.5  # Throttle vs attitude control prioritisation used during active flight (higher values mean we prioritise attitude control over throttle)
+BATT_FS_LOW_ACT,2  # Action to perform if the low battery failsafe is hit. 2 = RTL
+BATT2_FS_LOW_ACT,2  # Action to perform if the low battery failsafe is hit. 2 = RTL
 LOG_BITMASK,524416  # 2:GPS,3:System Performance,4:Control Tuning,6:RC input,7:IMU,8:Mission Commands,9:Battery Monitor,12:PID,13:Compass,17:Motors
-RTL_ALT,1500  # The default is too high for the kind of flights we do. This reduces the altitude for outdoors
-RTL_CLIMB_MIN,0  # always rise at least 1 meter as a visual indicator
+MNT1_TYPE,6  # For Gremsy. Reboot after changing this param.
+RTL_ALT,1500  # The minimum alt above home the vehicle will climb to before returning. If the vehicle is flying higher than this value it will return at its current altitude. Value is in Centimeters.
+RTL_CLIMB_MIN,0  # The vehicle will climb this many cm during the initial climb portion of the RTL.
