@@ -34,6 +34,7 @@ At this stage, I did a bunch of little modifications and cleanup to the overall 
     - Set RNGFND2_TYPE=24
   - If you are going to setup multiple rangefinders, then you must open the DroneCAN parameters for the device and set the CAN node ID to a unique number. Then you must set RNGFND1_ADDR to the node ID you assigned to the L431 device. For example I used 45 for my TFMini-S and 46 for my HereFlow rangefinder. Dont use an ID for an existing device listed in the Setup->Optional Hardware->DroneCAN/UAVCAN list either.
   - You dont want two identical lidar pointing in the same direction. The most likely outcome is that the lidar will become confused if they pickup the laser sent from the other lidar.
+- Configured the POS_X, POS_Y, and POS_Z parameters for the 2 GPS', rangefinder, and HereFlow.
 
 
 
