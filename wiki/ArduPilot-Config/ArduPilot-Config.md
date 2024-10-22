@@ -293,6 +293,12 @@ I have adjusted these parameters to be about half the default value to make my d
 |SERIAL2_PROTOCOL|2|Mavlink2|
 |SERIAL2_OPTIONS|1024|Don’t forward mavlink to/from|
 
+## Parameters - Board Boot Delay
+|Parameter Name|Value|Description|
+|---|---|---|
+|BRD_BOOT_DELAY|5000|This adds a delay in milliseconds to boot to ensure peripherals initialise fully. Value in milliseconds.|
+
+
 
 # Factory Reset the Parameters
 If, for some reason, you ever want to reset all of the parameters to their defaults you can follow any of the methods [listed here](https://ardupilot.org/copter/docs/common-parameter-reset.html).
