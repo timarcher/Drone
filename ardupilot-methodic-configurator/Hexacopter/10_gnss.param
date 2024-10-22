@@ -3,15 +3,15 @@ GPS_AUTO_SWITCH,2  # 1:UseBest selects the GPS with highest status, if both are 
 GPS1_TYPE,9  # Defined in component editor
 GPS1_CAN_OVRIDE,119  # Node ID for the 1st GPS. Set appropriately for your vehicle.
 GPS1_GNSS_MODE,0  # Set to allow all
-GPS1_POS_X,0
-GPS1_POS_Y,0
-GPS1_POS_Z,0
+GPS1_POS_X,-0.135  # X position of the second GPS antenna in body frame. Positive X is forward of the origin. Units in meters.
+GPS1_POS_Y,0.030  # Y position of the second GPS antenna in body frame. Positive Y is to the right of the origin. Units in meters.
+GPS1_POS_Z,-0.110  # Z position of the second GPS antenna in body frame. Positive Z is down from the origin. Units in meters.
 GPS2_TYPE,9  # DroneCAN Here4
 GPS2_CAN_OVRIDE,118  # Node ID for the 1st GPS. Set appropriately for your vehicle.
 GPS2_GNSS_MODE,0  # Set to allow all
-GPS2_POS_X,0
-GPS2_POS_Y,0
-GPS2_POS_Z,0
+GPS2_POS_X,0.090  # X position of the first GPS antenna in body frame. Positive X is forward of the origin. Units in meters.
+GPS2_POS_Y,-0.036  # Y position of the first GPS antenna in body frame. Positive Y is to the right of the origin. Units in meters.
+GPS2_POS_Z,-0.110  # Z position of the first GPS antenna in body frame. Positive Z is down from the origin. Units in meters.
 GPS_AUTO_CONFIG, 2  # Needed to enable RTK autocorrect, set to enable for DroneCAN as well.
 NTF_BUZZ_TYPES,5  # Controls what types of Buzzer will be enabled
 NTF_LED_TYPES,231  # Adds DroneCAN LED support for Here4

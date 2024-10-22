@@ -92,7 +92,7 @@ You do not need to set these if you are going to use the settings below for the 
 |NTF_LED_TYPES|231|Controls what types of LEDs will be enabled.|
 |GPS_AUTO_CONFIG|2|Needed to enable RTK autocorrect, set to enable for DroneCAN as well.|
 
-If using multiple GPS', as in my drone, also need to set additional params:
+If using multiple GPS', as in my drone, also need to set additional params. In my drone, GPS1 (Node 119) is the GPS at the rear of the vehicle, and GPS2 (Node 118) is the GPS at the front of the vehicle.
 |Parameter Name|Value|Description|
 |---|---|---|
 |GPS1_CAN_OVRIDE|119|Node ID for the 1st GPS. Set appropriately for your vehicle as the Node IDs might be different.|
@@ -104,12 +104,12 @@ If using multiple GPS', as in my drone, also need to set additional params:
 Additionally, you may wish to set the offsets of the sensors relative to the center of your Cube Orange.  Customize the value by measuring the offset from the center of your Cube Orange to the middle of the sensor.
 |Parameter Name|Value|Description|
 |---|---|---|
-|GPS1_POS_X|0.090|X position of the first GPS antenna in body frame. Positive X is forward of the origin. Units in meters.|
-|GPS1_POS_Y|-0.036|Y position of the first GPS antenna in body frame. Positive Y is to the right of the origin. Units in meters.|
-|GPS1_POS_Z|-0.110|Z position of the first GPS antenna in body frame. Positive Z is down from the origin. Units in meters.|
-|GPS2_POS_X|-0.135|X position of the second GPS antenna in body frame. Positive X is forward of the origin. Units in meters.|
-|GPS2_POS_Y|0.030|Y position of the second GPS antenna in body frame. Positive Y is to the right of the origin. Units in meters.|
-|GPS2_POS_Z|-0.110|Z position of the second GPS antenna in body frame. Positive Z is down from the origin. Units in meters.|
+|GPS1_POS_X|-0.135|X position of the second GPS antenna in body frame. Positive X is forward of the origin. Units in meters.|
+|GPS1_POS_Y|0.030|Y position of the second GPS antenna in body frame. Positive Y is to the right of the origin. Units in meters.|
+|GPS1_POS_Z|-0.110|Z position of the second GPS antenna in body frame. Positive Z is down from the origin. Units in meters.|
+|GPS2_POS_X|0.090|X position of the first GPS antenna in body frame. Positive X is forward of the origin. Units in meters.|
+|GPS2_POS_Y|-0.036|Y position of the first GPS antenna in body frame. Positive Y is to the right of the origin. Units in meters.|
+|GPS2_POS_Z|-0.110|Z position of the first GPS antenna in body frame. Positive Z is down from the origin. Units in meters.|
 
 
 <!--
