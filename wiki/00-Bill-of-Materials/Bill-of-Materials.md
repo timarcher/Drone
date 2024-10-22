@@ -139,6 +139,15 @@ This page contains the overall bill of materials/component list that was used to
 |AirPixel AIR Commander ENTIRE R3|[IR-Lock](https://irlock.com/products/airpixel-air-commander-entire-r3?variant=41720690409523)|$279|1|$279|
 |AirPixel Wiring set EVO for Gremsy T3 S1 T7|[IR-Lock](https://irlock.com/products/airpixel-wiring-set-evo-for-gremsy-t3-s1-t7?variant=41754869104691)|$89|1|$89|
 |SanDisk 128GB Ultra microSDXC UHS-I Memory Card|[Amazon](https://www.amazon.com/gp/product/B0B7NTY2S6/)|$13|1|$13|
+|NICEYRIG Camera Cage for Sony Alpha A6400 A6500 with Second Lock Point|[Amazon](https://www.amazon.com/gp/product/B082LT9Z82/)|$32|1|$32|
+|NICEYRIG Cable Lock Clamp for HDMI USB-C Power Cable|[Amazon](https://www.amazon.com/gp/product/B095K4DR8J)|$16|1|$16|
+|Stainless Steel D Shaft D-Ring 1/4" Tripod Screw|[Amazon](https://www.amazon.com/gp/product/B00KI3J7G2/)|$7|1|$7|
+|Sony Alpha a6500 Mirrorless Digital Camera w/ 2.95" LCD|Ebay|$550|1|$550|
+|Sony 16-50mm f/3.5-5.6 OSS Alpha E-Mount Retractable Zoom Lens|Ebay|$200|1|$200|
+|Screen Protector for Sony a6500|[Amazon](https://www.amazon.com/gp/product/B075T5BYHK/)|$7|1|$7|
+|SanDisk 128GB Extreme PRO SDXC UHS-I Memory Card|[Amazon](https://www.amazon.com/gp/product/B09X7FXHVJ/)|$23|1|$23|
+
+
 
 <!--
 |Component|[Source](https:URL)|$XXX|1|$XXX|

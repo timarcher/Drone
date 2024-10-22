@@ -94,9 +94,11 @@ You do not need to set these if you are going to use the settings below for the 
 If using multiple GPS', as in my drone, also need to set additional params:
 |Parameter Name|Value|Description|
 |---|---|---|
-|GPS1_CAN_OVRIDE|119|Node ID for the 1st GPS. Set appropriately for your vehicle.|
+|GPS1_CAN_OVRIDE|119|Node ID for the 1st GPS. Set appropriately for your vehicle as the Node IDs might be different.|
 |GPS2_TYPE|9|GPS type of 2nd GPS.|
-|GPS2_CAN_OVRIDE|118|Node ID for the 1st GPS. Set appropriately for your vehicle.|
+|GPS2_CAN_OVRIDE|118|Node ID for the 1st GPS. Set appropriately for your vehicle as the Node IDs might be different.|
+|GPS_AUTO_SWITCH|2|Set to blend the GPS' together.|
+
 
 <!--
 |XXX|XXX|XXX|

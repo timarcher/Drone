@@ -1,7 +1,7 @@
-This page contains details on setting up the Gremsy T7 Gimbal with the drone.
+This page contains details on setting up the Gremsy T7 Gimbal, a Sony a6500 Camera, and AirPixel Air Commander on the drone.
 
 # YouTube Video
-- [Hexacopter Drone Build Project – Part XX Gremsy T7 Gimbal](https://youtu.be/XXX)
+- [Hexacopter Drone Build Project – Part 16 Gimbal and Camera](https://youtu.be/XXX)
 
 # Notes
 - I replaced the stock 12mm payload carbon fiber tubes that came with the drone with longer 330mm ones from Amazon.
@@ -23,7 +23,8 @@ This page contains details on setting up the Gremsy T7 Gimbal with the drone.
 - Connecting to the AirPixel Air Commander Entire R3:
   - Connect to its WiFi hotspot from your PC
   - http://entire/ or http://192.168.10.1/
-  - 
+
+
 # Supporting Materials
 - [ArduPilot Configuration](../ArduPilot-Config/ArduPilot-Config.md) - This page contains a consolidated list of the all of the configuration done in ArduPilot throughout the videos.
 
@@ -31,8 +32,8 @@ This page contains details on setting up the Gremsy T7 Gimbal with the drone.
 - [Gremsy T7 Firmware](https://gremsy.com/support/product-support/series-gremsy-t-s/gremsy-t7/gremsy-t7-download)
 - [Ardupilot to Gremsy HDMI Quick Release Wiring](https://ardupilot.org/copter/docs/common-gremsy-pixyu-gimbal.html)
 - [Gremsy GTune Desktop Software](https://github.com/Gremsy/gTuneDesktop/releases)
-- [PureThemal Mini Flir USB IR Camera Mount 3d Print](https://cults3d.com/en/3d-model/game/pure-thermal-mini-flir-usb-ir-camera-mount) - I had to scale this to 105% for it to fit the USB camera. I used this as the back, and the next file for the top.
-- [Hard Enclosure for Purethermal Mini 3d Print](https://cults3d.com/en/3d-model/gadget/hard-enclosure-for-purethermal-mini) - I had to scale this to 105% for it to fit the USB camera. I used this as the front, and the prior file for the back.
 - [AirPixel Air Commander MavCam for HereLink](https://airpixel.cz/docs/herelink-camera-control/)
 - [AirPixel Air Commander Mission Planner Camera Control Plugin](https://airpixel.cz/docs/missionplanner-camera-control-plugin/)
 - [AirPixel Air Commander Firmware Updates](https://airpixel.cz/docs/firmware-update/)
+- [PureThemal Mini Flir USB IR Camera Mount 3d Print](https://cults3d.com/en/3d-model/game/pure-thermal-mini-flir-usb-ir-camera-mount) - I had to scale this to 105% for it to fit the USB camera. I used this as the back, and the next file for the top.
+- [Hard Enclosure for Purethermal Mini 3d Print](https://cults3d.com/en/3d-model/gadget/hard-enclosure-for-purethermal-mini) - I had to scale this to 105% for it to fit the USB camera. I used this as the front, and the prior file for the back.

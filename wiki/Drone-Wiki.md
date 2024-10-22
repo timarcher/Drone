@@ -26,8 +26,11 @@ Use the list below to follow my build journey step by step.
 1. [Tattu Smart Battery](12-Tattu-Smart-Battery/Tattu-Smart-Battery.md)
 1. [Electronics Installation](13-Electronics-Installation/Electronics-Installation.md)
 1. [Navigation Lights](14-Navigation-Lights/Navigation-Lights.md)
+1. [Peripheral Updates](15-Peripheral-Updates/Peripheral-Updates.md)
+1. [Gimbal and Camera](16-Gimbal-and-Camera/Gimbal-and-Camera.md)
 
 <!--1. [Methodic Configuration](XX-Methodic-Configuration/Methodic-Configuration.md)-->
+<!--1. [ROS Integration](XX-ROS-Integration/ROS-Integration.md)-->
 
 Future steps are coming soon!
 

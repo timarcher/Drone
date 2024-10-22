@@ -30,13 +30,15 @@ Performance characteristics are:
   - Now go into Mission Planner->Config->Full Parameter List
     - Set RNGFND2_TYPE=24
 - If you are going to setup multiple rangefinders, then you must open the DroneCAN parameters for the device and set the CAN node ID to a unique number. Then you must set RNGFND1_ADDR to the node ID you assigned to the L431 device. For example I used 45 for my TFMini-S and 46 for my HereFlow rangefinder. Dont use an ID for an existing device listed in the Setup->Optional Hardware->DroneCAN/UAVCAN list either.
-- You likely dont want two identical lidar pointing in the same direction. The most likely outcome is that the lidar will become confused if they pickup the laser sent from the other lidar.
+- You dont want two identical lidar pointing in the same direction. The most likely outcome is that the lidar will become confused if they pickup the laser sent from the other lidar.
 
 # Supporting Materials
 - [ArduPilot Configuration](../ArduPilot-Config/ArduPilot-Config.md) - This page contains a consolidated list of the all of the configuration done in ArduPilot throughout the videos.
 
 # References 
 - Ardupilot TFMini guide [can be found here](https://ardupilot.org/copter/docs/common-benewake-tfmini-lidar.html).
+- Download the latest firmware [from here for the L431 board (download the .bin file)](https://firmware.ardupilot.org/AP_Periph/stable/MatekL431-Rangefinder/)
+
 
 # Pictures
 ![Wiring Overview to Kore Carrier Board](./images/tfmini-wiring-01.png)

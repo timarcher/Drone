@@ -12,6 +12,6 @@ The Here 4 Base employs RTK (Real-Time Kinematic) technology to offer more preci
 - [ArduPilot Configuration](../ArduPilot-Config/ArduPilot-Config.md) - This page contains a consolidated list of the all of the configuration done in ArduPilot throughout the videos.
 
 # References 
-## Here 4 User Guides
 - User guide for the Here 4 GPS [can be found here](https://docs.cubepilot.org/user-guides/here-4/here-4-manual).
 - User guide for the Here 4 Base [can be found here](https://docs.cubepilot.org/user-guides/here-4/here-4-base).
+- [ArduPilot GPS Blending Document](https://ardupilot.org/copter/docs/common-gps-blending.html)
