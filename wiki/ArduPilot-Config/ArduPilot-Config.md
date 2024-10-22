@@ -90,6 +90,7 @@ You do not need to set these if you are going to use the settings below for the 
 |BRD_SAFETY_DEFLT|0|There is no safety switch on the Here4 GPS so we disable it. (BRD_SAFETYENABLE in older firmware versions)|
 |GPS1_TYPE|9|GPS type of 1st GPS.|
 |NTF_LED_TYPES|231|Controls what types of LEDs will be enabled.|
+|GPS_AUTO_CONFIG|2|Needed to enable RTK autocorrect, set to enable for DroneCAN as well.|
 
 If using multiple GPS', as in my drone, also need to set additional params:
 |Parameter Name|Value|Description|
@@ -98,6 +99,17 @@ If using multiple GPS', as in my drone, also need to set additional params:
 |GPS2_TYPE|9|GPS type of 2nd GPS.|
 |GPS2_CAN_OVRIDE|118|Node ID for the 1st GPS. Set appropriately for your vehicle as the Node IDs might be different.|
 |GPS_AUTO_SWITCH|2|Set to blend the GPS' together.|
+
+
+Additionally, you may wish to set the offsets of the sensors relative to the center of your Cube Orange.  Customize the value by measuring the offset from the center of your Cube Orange to the middle of the sensor.
+|Parameter Name|Value|Description|
+|---|---|---|
+|GPS1_POS_X|0.090|X position of the first GPS antenna in body frame. Positive X is forward of the origin. Units in meters.|
+|GPS1_POS_Y|-0.036|Y position of the first GPS antenna in body frame. Positive Y is to the right of the origin. Units in meters.|
+|GPS1_POS_Z|-0.110|Z position of the first GPS antenna in body frame. Positive Z is down from the origin. Units in meters.|
+|GPS2_POS_X|-0.135|X position of the second GPS antenna in body frame. Positive X is forward of the origin. Units in meters.|
+|GPS2_POS_Y|0.030|Y position of the second GPS antenna in body frame. Positive Y is to the right of the origin. Units in meters.|
+|GPS2_POS_Z|-0.110|Z position of the second GPS antenna in body frame. Positive Z is down from the origin. Units in meters.|
 
 
 <!--
@@ -140,6 +152,13 @@ You can optionally set the DID_OPTIONS bitmask value as well for EnforceArming, 
 |RNGFND1_GNDCLEAR|29|Optional - This parameter sets  the expected range measurement(in cm) that the range finder should return when the vehicle is on the ground.|
 |FLOW_TYPE|6|Enable optical flow camera.|
 
+Additionally, you may wish to set the offsets of the sensors relative to the center of your Cube Orange.  Customize the value by measuring the offset from the center of your Cube Orange to the middle of the sensor.
+|Parameter Name|Value|Description|
+|---|---|---|
+|FLOW_POS_X|-0.140|X position of the optical flow sensor focal point in body frame. Positive X is forward of the origin. Units in meters.|
+|FLOW_POS_Y|-0.075|Y position of the optical flow sensor focal point in body frame. Positive Y is to the right of the origin. Units in meters.|
+|FLOW_POS_Z|0.206|Z position of the optical flow sensor focal point in body frame. Positive Z is down from the origin. Units in meters.|
+
 
 ## Parameters - TFMini-S LiDAR
 |Parameter Name|Value|Description|
@@ -158,6 +177,13 @@ If using the Matek AP_PERIPH CAN Node L431 Board to convert your TFMini-S to a D
 |RNGFND2_MIN_CM|10|Minimum distance in centimeters that rangefinder can reliably read. 10 for TFminiPlus|
 |RNGFND2_MAX_CM|600|This is the distance in centimeters that the rangefinder can reliably read. 600 for outdoors.|
 |RNGFND2_GNDCLEAR|45|Optional - This parameter sets  the expected range measurement(in cm) that the range finder should return when the vehicle is on the ground.|
+
+Additionally, you may wish to set the offsets of the sensors relative to the center of your Cube Orange.  Customize the value by measuring the offset from the center of your Cube Orange to the middle of the sensor.
+|Parameter Name|Value|Description|
+|---|---|---|
+|RNGFND1_POS_X|-0.160|X position of the rangefinder in body frame. Positive X is forward of the origin. Units in meters.|
+|RNGFND1_POS_Y|0|Y position of the rangefinder in body frame. Positive Y is to the right of the origin. Units in meters.|
+|RNGFND1_POS_Z|0.211|Z position of the rangefinder in body frame. Positive Z is down from the origin. Units in meters.|
 
 
 

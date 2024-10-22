@@ -1,6 +1,6 @@
-BATT2_AMP_OFFSET,0.37  # Kore docs recommend 0.45 but this caused negative current readings on my board.|
+BATT2_AMP_OFFSET,0.37  # Kore docs recommend 0.45 but this caused negative current readings on my board.
 BATT2_AMP_PERVLT,50  # Setting I derived to work best with Kore carrier board
-BATT2_ARM_VOLT,44.3  # Minimum battery voltage required to arm the aircraft.|
+BATT2_ARM_VOLT,44.3  # Minimum battery voltage required to arm the aircraft.
 BATT2_CAPACITY,15800  # The Tattu 12s battery has 16000 mah.
 BATT2_CRT_MAH,0  # This is a redundant monitor for batt1. Battery capacity at which the critical battery failsafe is triggered. Set to 0 to disable battery remaining failsafe.
 BATT2_CRT_VOLT,42  # Battery voltage that triggers a critical battery failsafe.
