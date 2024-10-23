@@ -14,4 +14,5 @@ The Here 4 Base employs RTK (Real-Time Kinematic) technology to offer more preci
 # References 
 - User guide for the Here 4 GPS [can be found here](https://docs.cubepilot.org/user-guides/here-4/here-4-manual).
 - User guide for the Here 4 Base [can be found here](https://docs.cubepilot.org/user-guides/here-4/here-4-base).
-- [ArduPilot GPS Blending Document](https://ardupilot.org/copter/docs/common-gps-blending.html)
+- [ArduPilot GPS Blending Document](https://ardupilot.org/copter/docs/common-gps-blending.html).
+- [GNSS View Tool - use to see constellations in your area](https://app.qzss.go.jp/GNSSView/gnssview.html).

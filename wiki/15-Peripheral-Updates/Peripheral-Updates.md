@@ -45,4 +45,5 @@ At this stage, I did a bunch of little modifications and cleanup to the overall 
 
 # References 
 - Download the latest firmware [from here for the L431 board (download the .bin file)](https://firmware.ardupilot.org/AP_Periph/stable/MatekL431-Rangefinder/)
-- [ArduPilot GPS Blending Document](https://ardupilot.org/copter/docs/common-gps-blending.html)
+- [ArduPilot GPS Blending Wiki Page](https://ardupilot.org/copter/docs/common-gps-blending.html)
+- [ArduPilot Sensor Position Offset Compensation Wiki Page](https://ardupilot.org/copter/docs/common-sensor-offset-compensation.html)
