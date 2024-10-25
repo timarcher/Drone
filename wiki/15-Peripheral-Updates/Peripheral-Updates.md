@@ -1,7 +1,7 @@
-This page contains details on various updates made to the drone.
+This page contains details on a variety of miscellaneous updates made to the peripherals of the drone.
 
 # YouTube Video
-- [Hexacopter Drone Build Project – Part 15 Peripheral Updates](https://youtu.be/XXX)
+- [Hexacopter Drone Build Project – Part 15 Peripheral Updates](https://youtu.be/fCVuGHLcOwo)
 
 # Notes
 At this stage, I did a bunch of little modifications and cleanup to the overall hardware of the drone including:

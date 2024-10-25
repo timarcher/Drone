@@ -19,10 +19,10 @@ This page contains details on performing the methodic configuration steps for th
 - [Methodic Configurator releases and downloads can be found here](https://github.com/ArduPilot/MethodicConfigurator/releases)
 - [ArduPilot Web Tools](https://firmware.ardupilot.org/Tools/WebTools/)
 - [ArduPilot Hardware Report Utility](https://firmware.ardupilot.org/Tools/WebTools/HardwareReport/)
+- [ArduPilot Online Log Viewer](https://plotbeta.ardupilot.org/)
 - [ArduPilot Filter Review Tool](https://firmware.ardupilot.org/Tools/WebTools/FilterReview/)
-- [ArduPilot MAGFit Tool](https://plotbeta.ardupilot.org/)
-- [ArduPilot Online Log Viewer](https://firmware.ardupilot.org/Tools/WebTools/MAGFit/)
 - [Follow the instructions from Peter Hall on his Blog Post to configure the Harmonic Notch filter(s)](https://discuss.ardupilot.org/t/new-fft-filter-setup-and-review-web-tool/102572).
-- [QuikTune Documentation and Scripts](https://ardupilot.org/copter/docs/quiktune.html)
+- [ArduPilot MAGFit Tool](https://firmware.ardupilot.org/Tools/WebTools/MAGFit/)
+- [QuikTune LUA Script Documentation and Scripts](https://ardupilot.org/copter/docs/quiktune.html)
 - [Scripted MagFit flightpath generation](https://discuss.ardupilot.org/t/scripted-magfit-flightpath-generation/97536)
 - [Downloading and Analyzing Data Logs in Mission Planner](https://ardupilot.org/copter/docs/common-downloading-and-analyzing-data-logs-in-mission-planner.html)
