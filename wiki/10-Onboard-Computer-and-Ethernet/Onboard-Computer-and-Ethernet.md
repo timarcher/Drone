@@ -64,7 +64,6 @@ wget https://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180
 sudo mplayer -vo fbdev2 big_buck_bunny.mp4
 ```
 
-
 # Supporting Materials
 - [Raspberry Pi Imager](https://www.raspberrypi.com/software/) - Download and install the Raspberry Pi Imager from this website.
 - [PuTTY SSH Client](https://www.putty.org/) - Free SSH client you can use to connect to your Raspberry Pi.
