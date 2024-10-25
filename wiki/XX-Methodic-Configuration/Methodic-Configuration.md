@@ -1,7 +1,9 @@
 This page contains details on performing the methodic configuration steps for the ArduPilot software on the drone.
 
+# THIS PAGE IS INCOMPLETE AND A WORK IN PROGRESS
+
 # YouTube Video
-- [Hexacopter Drone Build Project – Part 14 Methodic Configuration](https://youtu.be/XXX)
+- [Hexacopter Drone Build Project – Part XX Methodic Configuration](https://youtu.be/XXX)
 - [Hexacopter Drone Build Project – First Flight](https://www.youtube.com/watch?v=HhvRLNxARRs)
 
 # Notes
