@@ -59,3 +59,11 @@ Future steps coming soon:
 - [How to methodically configure and tune any ArduCopter Blog Post](https://discuss.ardupilot.org/t/how-to-methodically-configure-and-tune-any-arducopter/110842)
 - [Measuring Vibration ArduPilot Article](https://ardupilot.org/copter/docs/common-measuring-vibration.html) - These instructions explain how to measure the vibration levels. If you find they are out-of-tolerance then follow the advice found on the ArduPilot Vibration Damping page.
 - [Log Analysis in Mission Planner](https://youtu.be/xhBd9KSAfzg?si=X1SPhqCtfS4Ki4Zp) - A video from Dan Benson offering a complete discussion of log analysis in mission planner. He uses a crash to illustrate how to use the log analysis.
+
+
+# Pictures
+![Hexacopter Pic 1](./.attachments/hexacopter-image1.jpg)
+
+![Hexacopter Pic 2](./.attachments/hexacopter-image2.jpg)
+
+![Frame](./01-Frame/images/frame1.jpg)
