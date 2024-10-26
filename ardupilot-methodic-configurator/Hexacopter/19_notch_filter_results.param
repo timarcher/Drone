@@ -1,6 +1,6 @@
-INS_HNTCH_ATT,30  # Notch filter attenuation
-INS_HNTCH_BW,14  # Half the base frequency INS_HNTCH_FREQ
-INS_HNTCH_FM_RAT,1  # Allowed undercutting of the base frequency of the first notch filter
-INS_HNTCH_FREQ,28  # the minimum frequency that the motors are expected to operate at
-INS_HNTCH_HMNCS,1  # 1st harmonic
-INS_HNTCH_OPTS,28  # Use update at loop rate, enable on all IMUs, triple notch
+INS_HNTCH_ATT,30  # Notch filter attenuation.
+INS_HNTCH_BW,14  # Half the base frequency INS_HNTCH_FREQ.
+INS_HNTCH_FM_RAT,1  # Allowed undercutting of the base frequency of the first notch filter.
+INS_HNTCH_FREQ,28  # the minimum frequency that the motors are expected to operate at.
+INS_HNTCH_HMNCS,1  # 1st harmonic.
+INS_HNTCH_OPTS,14  # Bitmaks set to: multi-source, update at loop rate, enable on all IMUs. Use either Mutli Source or Triple Notch, but not both at once!
