@@ -23,4 +23,5 @@ SCR_ENABLE,1  # Use lua scripting for VTOL-Quicktune, MagFit automation and Wind
 SERIAL2_BAUD,115  # Gremsy Gimbal Baudrate
 SERIAL2_PROTOCOL,2  # Gremsy Gimbal - Mavlink2
 SERIAL2_OPTIONS,1024  # Gremsy Gimbal - Don’t forward mavlink to/from
+SERIAL3_PROTOCOL,-1  # Disable serial 3. It defaulted to GPS, and we dont want any serial ports set to using GPS since we are using dual DroneCAN units for Yaw
 SERVO9_FUNCTION,56  # Flytron STROBON Cree v2 Lights. Configure for RC Pass thru. 56 = RCIN6 which means RC channel 6 gets output to SERVO9.

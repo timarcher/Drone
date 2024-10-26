@@ -167,7 +167,7 @@
             },
             "FC Connection": {
                 "Type": "CAN1",
-                "Protocol": "DroneCAN"
+                "Protocol": "uBlox-MovingBaseline-Base"
             },
             "Notes": "Here4 GPS"
         }

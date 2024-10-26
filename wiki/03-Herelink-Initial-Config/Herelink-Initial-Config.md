@@ -28,7 +28,7 @@ This page contains details on the initial unboxing and setup of the Herelink con
   - For roll, throttle and yaw channels, the green bars should move in the same direction as the transmitter’s physical sticks.
   - For pitch, the green bar should move in the opposite direction to the transmitter’s physical stick.
   - If one of the green bars moves in the incorrect direction reverse the channel in the transmitter itself. If it is not possible to reverse the channel in the transmitter you may reverse the channel in ArduPilot by checking the “Reversed” checkbox (Plane and Rover only). If the checkbox is not visible it is possible to reverse the channel by directly changing the RCx_REVERSED parameter (where “x” is the input channel from 1 to 4).
-    
+- Change the baud rate of the Air Unit from 57600 to 115200. To do this, open the herelink settings, go to Airunit, select 115200 for the baudrate and click Reset Baud.
 
 ## Downloading Offline Maps in QGroundControl
 You may wish to download maps locally for when you will be running missions in areas without internet connectivity. With the maps downloaded, you can plan missions in QGroundControl while offline in the field. The downloaded map tiles will be used automatically by QGroundControl when you're not connected to the internet.

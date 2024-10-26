@@ -35,8 +35,17 @@ At this stage, I did a bunch of little modifications and cleanup to the overall 
   - If you are going to setup multiple rangefinders, then you must open the DroneCAN parameters for the device and set the CAN node ID to a unique number. Then you must set RNGFND1_ADDR to the node ID you assigned to the L431 device. For example I used 45 for my TFMini-S and 46 for my HereFlow rangefinder. Dont use an ID for an existing device listed in the Setup->Optional Hardware->DroneCAN/UAVCAN list either.
   - You dont want two identical lidar pointing in the same direction. The most likely outcome is that the lidar will become confused if they pickup the laser sent from the other lidar.
 - Configured the POS_X, POS_Y, and POS_Z parameters for the 2 GPS', rangefinder, and HereFlow.
-
-
+- If you are going to install dual GPS units, you can take advantage of GPS for Yaw.
+- When using dual Here4 units to take advantage of GPS for yaw, set the following:
+  - Both units MUST be on the same physical CAN bus from the autopilot. I have mine connected to CAN1.
+  - The antennas must be separated by at least 30cm on the vehicle.
+  - Ensure no SERIAL ports are setup with GPS protocol (“5”). I had to set SERIAL3_PROTOCOL to -1.
+  - Set the following:
+    - GPS1_TYPE = 22 (“DroneCAN moving baseline base”)
+    - GPS2_TYPE = 23 (“DroneCAN moving baseline rover”)
+    - GPS_AUTO_CONFIG = 2 (AutoConfig DroneCAN)
+    - GPS_AUTO_SWITCH = 1
+    - Set the GPS1_POS_X/Y/Z and GPS2_POS_X/Y/Z parameters for the GPS antennas (see Sensor Position Offset are here). You must establish the relative positions of each GPS location on the vehicle with respect the vehicle’s motion.
 
 
 # Supporting Materials
@@ -47,3 +56,5 @@ At this stage, I did a bunch of little modifications and cleanup to the overall 
 - Download the latest firmware [from here for the L431 board (download the .bin file)](https://firmware.ardupilot.org/AP_Periph/stable/MatekL431-Rangefinder/)
 - [ArduPilot GPS Blending Wiki Page](https://ardupilot.org/copter/docs/common-gps-blending.html)
 - [ArduPilot Sensor Position Offset Compensation Wiki Page](https://ardupilot.org/copter/docs/common-sensor-offset-compensation.html)
+- [GPS for Yaw](https://ardupilot.org/copter/docs/common-gps-for-yaw.html).
+- [Supported GPS in ArduPilot](https://ardupilot.org/copter/docs/common-positioning-landing-page.html#common-positioning-landing-page)

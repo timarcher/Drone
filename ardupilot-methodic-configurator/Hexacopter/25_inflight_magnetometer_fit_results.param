@@ -24,7 +24,7 @@ COMPASS_OFS2_X,0  # Valued provided by the MAGFit tool https://firmware.ardupilo
 COMPASS_OFS2_Y,0  # Valued provided by the MAGFit tool https://firmware.ardupilot.org/Tools/WebTools/MAGFit/
 COMPASS_OFS2_Z,0  # Valued provided by the MAGFit tool https://firmware.ardupilot.org/Tools/WebTools/MAGFit/
 COMPASS_ORIENT,0  # Valued provided by the MAGFit tool https://firmware.ardupilot.org/Tools/WebTools/MAGFit/
-COMPASS_ORIENT2,0  # Valued provided by the MAGFit tool https://firmware.ardupilot.org/Tools/WebTools/MAGFit/
+COMPASS_ORIENT2,4  # Valued provided by the MAGFit tool https://firmware.ardupilot.org/Tools/WebTools/MAGFit/
 COMPASS_SCALE,1.101369  # Valued provided by the MAGFit tool https://firmware.ardupilot.org/Tools/WebTools/MAGFit/
 COMPASS_SCALE2,0  # Valued provided by the MAGFit tool https://firmware.ardupilot.org/Tools/WebTools/MAGFit/
 COMPASS_USE,1  # Use the external herelink compass.

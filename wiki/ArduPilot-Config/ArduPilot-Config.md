@@ -49,6 +49,15 @@ After flashing firmware for the first time, use Mission Planner to configure sev
 To set these parameters in mission planner, navigate to the Config tab, and then the Parameter List menu option.
 Note: If you are using a fresh installation of mission planner you will have to enable this page by setting Config->Planner->Layout to “Advanced”
 
+## Parameters - Herelink Telemetry
+I changed the default baud rate from 57600 to 115200.
+You must also change the baud rate on the air unit. To do this, open the herelink settings, go to Airunit, select 115200 for the baudrate and click Reset Baud.
+
+|Parameter Name|Value|Description|
+|---|---|---|
+|SERIAL1_BAUD|115|The MAVLink over Herelink telemetry, changed from default of 57600 to 115200.|
+
+
 ## Parameters - Kore carrier board voltage and current sensors
 The default params recommended for battery monitoring are on the Kore carrier board page.
 However, with the defaults I was getting negative current readings. Per this post I set the BATT_AMP_OFFSET to 0.37. There is also a recommendation to set BATT_AMP_PERVOLT to 67 but I did not do that.
@@ -98,8 +107,7 @@ If using multiple GPS', as in my drone, also need to set additional params. In m
 |GPS1_CAN_OVRIDE|119|Node ID for the 1st GPS. Set appropriately for your vehicle as the Node IDs might be different.|
 |GPS2_TYPE|9|GPS type of 2nd GPS.|
 |GPS2_CAN_OVRIDE|118|Node ID for the 1st GPS. Set appropriately for your vehicle as the Node IDs might be different.|
-|GPS_AUTO_SWITCH|2|Set to blend the GPS' together.|
-
+|GPS_AUTO_SWITCH|1|Set to Use Best.|
 
 Additionally, you may wish to set the offsets of the sensors relative to the center of your Cube Orange.  Customize the value by measuring the offset from the center of your Cube Orange to the middle of the sensor.
 |Parameter Name|Value|Description|
@@ -107,9 +115,27 @@ Additionally, you may wish to set the offsets of the sensors relative to the cen
 |GPS1_POS_X|-0.135|X position of the second GPS antenna in body frame. Positive X is forward of the origin. Units in meters.|
 |GPS1_POS_Y|0.030|Y position of the second GPS antenna in body frame. Positive Y is to the right of the origin. Units in meters.|
 |GPS1_POS_Z|-0.110|Z position of the second GPS antenna in body frame. Positive Z is down from the origin. Units in meters.|
-|GPS2_POS_X|0.090|X position of the first GPS antenna in body frame. Positive X is forward of the origin. Units in meters.|
+|GPS2_POS_X|0.138|X position of the first GPS antenna in body frame. Positive X is forward of the origin. Units in meters.|
 |GPS2_POS_Y|-0.036|Y position of the first GPS antenna in body frame. Positive Y is to the right of the origin. Units in meters.|
 |GPS2_POS_Z|-0.110|Z position of the first GPS antenna in body frame. Positive Z is down from the origin. Units in meters.|
+
+
+New RTK can be used to estimate yaw, in addition to providing position information. This removes the need for a compass which may suffer from magnetic interference from the ground or the vehicle’s motors and ESCs. Set the following to use this as well:
+|Parameter Name|Value|Description|
+|---|---|---|
+|GPS1_TYPE|22|DroneCAN moving baseline base|
+|GPS2_TYPE|23|DroneCAN moving baseline rover|
+|GPS_AUTO_CONFIG|2|Autoconfig DroneCAN|
+|GPS_AUTO_SWITCH|1|Use Best|
+
+> Be sure you set the GPS1_POS_X/Y/Z and GPS2_POS_X/Y/Z parameters for the GPS antennas (see Sensor Position Offset are here) as described above. You must establish the relative positions of each GPS location on the vehicle with respect the vehicle’s motion.
+
+
+I have my 2nd Here4 GPS mounted backwards at the front of the drone (to position it slightly further away from the onboard electronics). I need to set the appropriate orientation then:
+|Parameter Name|Value|Description|
+|---|---|---|
+|COMPASS_ORIENT2|4|Compass is rotated 180 degrees and pointing backwards, so we set this to Yaw180.|
+
 
 
 <!--
