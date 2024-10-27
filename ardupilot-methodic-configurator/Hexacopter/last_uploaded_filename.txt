@@ -1,1 +1,1 @@
-14_logging.param
+10_gnss.param

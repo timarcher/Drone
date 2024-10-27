@@ -1,11 +1,10 @@
 INS_HNTCH_ATT,30  # Determined using notch filter web tool.
-INS_HNTCH_BW,35  # Determined using notch filter web tool.
+INS_HNTCH_BW,25  # Determined using notch filter web tool.
 INS_HNTCH_ENABLE,1  # Use the first notch filter to filter the noise created by the motors/propellers.
-INS_HNTCH_FM_RAT, .7  # The minimum ratio below the configured frequency to take throttle based notch filters when flying at a throttle level below the reference throttle.
-INS_HNTCH_FREQ,70  # Determined using notch filter web tool.
-INS_HNTCH_HMNCS,7  # Apply notch filter to 1st 3 harmonics.
-INS_HNTCH_MODE,3  # Use the ESC RPM telemetry to dynamicaly track noise created by the motors/propellers.
-INS_HNTCH_OPTS,6  # Bitmask set to: multi-source, update at loop rate. Use either Multi Source or Triple Notch, but not both at once!
+INS_HNTCH_FM_RAT,1  # The minimum ratio below the configured frequency to take throttle based notch filters when flying at a throttle level below the reference throttle.
+INS_HNTCH_FREQ,45  # Determined using notch filter web tool.
+INS_HNTCH_HMNCS,1  # Apply notch filter to 1st 3 harmonics.
+INS_HNTCH_MODE,3  # Use the ESC RPM telemetry to dynamically track noise created by the motors/propellers.
+INS_HNTCH_OPTS,14  # Bitmask set to: multi-source, update at loop rate, enable on all IMUs. Use either Multi Source or Triple Notch, but not both at once!
 INS_HNTCH_REF,1  # Set to 1 when using ESC telemetry.
 INS_RAW_LOG_OPT,0  # Once notch tuning is done, clear the INS_RAW_LOG_OPT parameter to avoid large logs from being saved unnecessarily.
-
