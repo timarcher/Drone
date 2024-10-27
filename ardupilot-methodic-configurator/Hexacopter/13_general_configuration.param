@@ -13,7 +13,9 @@ INS_POS2_Y,0  # Y position of the second IMU accelerometer in body frame. Positi
 LAND_ALT_LOW,1000  # Altitude during Landing at which vehicle slows to LAND_SPEED. Value is centimeters.
 LAND_SPEED,40  # The descent speed for the final stage of landing in cm/s
 LAND_SPEED_HIGH, 0  # The descent speed for the first stage of landing in cm/s. If this is zero then WPNAV_SPEED_DN is used
-LOIT_BRK_DELAY,0.5  # Default value is 1. Loiter brake start delay (in seconds)
+LOIT_BRK_DELAY,0.1  # Default value is 1. Loiter brake start delay (in seconds), make the drone break faster when releasing the sticks.
+LOIT_ACC_MAX,420  # Default is 500. Loiter maximum correction acceleration in cm/s/s. Higher values cause the copter to correct position errors more aggressively. This is a big drone so we slow it down a bit.
+LOIT_BRK_ACCEL,225  # Default is 250. Loiter braking acceleration in cm/s/s. Higher values stop the copter more quickly when the stick is centered. This is a big drone so we slow it down a bit.
 NTF_DISPLAY_TYPE,1  # Onboard OLED display. SSD1306 OLED Connected to I2C.
 PILOT_TKOFF_ALT,0  # Altitude that altitude control modes will climb to when a takeoff is triggered with the throttle stick. Leave at 0 for default. Set to 100 to climb to 1m on take-off. Value in centimeters.
 RNGFND1_GNDCLEAR,29  # TFMini-S LiDAR. Optional - This parameter sets  the expected range measurement(in cm) that the range finder should return when the vehicle is on the ground.
