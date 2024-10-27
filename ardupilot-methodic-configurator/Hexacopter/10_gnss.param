@@ -1,4 +1,5 @@
 BRD_SAFETY_DEFLT,0  # There is no safety switch on the Here4 GPS so we disable it. (BRD_SAFETYENABLE in older firmware versions)|
+EK3_SRC1_YAW,3  # GPS with Compass Fallback
 GPS_AUTO_CONFIG,2  # Needed to enable RTK autocorrect, set to enable for DroneCAN as well.
 GPS_AUTO_SWITCH,1  # 1:UseBest selects the GPS with highest status, if both are equal the GPS with highest satellite count is used 4:Use primary if 3D fix or better, will revert to 'UseBest' behaviour if 3D fix is lost on primary. 2: Blend
 GPS1_CAN_OVRIDE,119  # Node ID for the 1st GPS. Set appropriately for your vehicle.

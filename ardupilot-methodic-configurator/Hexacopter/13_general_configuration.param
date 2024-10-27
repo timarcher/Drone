@@ -11,6 +11,9 @@ INS_POS1_Y,0  # Y position of the first IMU accelerometer in body frame. Positiv
 INS_POS2_X,0  # X position of the second IMU accelerometer in body frame. Positive X is forward of the origin.
 INS_POS2_Y,0  # Y position of the second IMU accelerometer in body frame. Positive Y is to the right of the origin.
 LAND_ALT_LOW,1000  # Altitude during Landing at which vehicle slows to LAND_SPEED. Value is centimeters.
+LAND_SPEED,40  # The descent speed for the final stage of landing in cm/s
+LAND_SPEED_HIGH, 0  # The descent speed for the first stage of landing in cm/s. If this is zero then WPNAV_SPEED_DN is used
+LOIT_BRK_DELAY,0.5  # Default value is 1. Loiter brake start delay (in seconds)
 NTF_DISPLAY_TYPE,1  # Onboard OLED display. SSD1306 OLED Connected to I2C.
 PILOT_TKOFF_ALT,0  # Altitude that altitude control modes will climb to when a takeoff is triggered with the throttle stick. Leave at 0 for default. Set to 100 to climb to 1m on take-off. Value in centimeters.
 RNGFND1_GNDCLEAR,29  # TFMini-S LiDAR. Optional - This parameter sets  the expected range measurement(in cm) that the range finder should return when the vehicle is on the ground.
@@ -29,3 +32,4 @@ SERIAL2_PROTOCOL,2  # Gremsy Gimbal - Mavlink2
 SERIAL2_OPTIONS,1024  # Gremsy Gimbal - Don’t forward mavlink to/from
 SERIAL3_PROTOCOL,-1  # Disable serial 3. It defaulted to GPS, and we dont want any serial ports set to using GPS since we are using dual DroneCAN units for Yaw
 SERVO9_FUNCTION,56  # Flytron STROBON Cree v2 Lights. Configure for RC Pass thru. 56 = RCIN6 which means RC channel 6 gets output to SERVO9.
+WPNAV_SPEED_DN,100  # Defines the speed in cm/s which the aircraft will attempt to maintain while descending during a WP mission.

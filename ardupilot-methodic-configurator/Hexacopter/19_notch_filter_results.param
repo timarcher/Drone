@@ -4,3 +4,4 @@ INS_HNTCH_FM_RAT,1  # Allowed undercutting of the base frequency of the first no
 INS_HNTCH_FREQ,28  # the minimum frequency that the motors are expected to operate at.
 INS_HNTCH_HMNCS,1  # 1st harmonic.
 INS_HNTCH_OPTS,14  # Bitmaks set to: multi-source, update at loop rate, enable on all IMUs. Use either Mutli Source or Triple Notch, but not both at once!
+INS_RAW_LOG_OPT,0  # Once notch tuning is done, clear the INS_RAW_LOG_OPT parameter to avoid large logs from being saved unnecessarily.
