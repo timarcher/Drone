@@ -29,9 +29,11 @@ This page contains details on setting up the Gremsy T7 Gimbal, a Sony a6500 Came
 - [ArduPilot Configuration](../ArduPilot-Config/ArduPilot-Config.md) - This page contains a consolidated list of the all of the configuration done in ArduPilot throughout the videos.
 
 # References 
-- [Gremsy T7 Firmware](https://gremsy.com/support/product-support/series-gremsy-t-s/gremsy-t7/gremsy-t7-download)
 - [Ardupilot to Gremsy HDMI Quick Release Wiring](https://ardupilot.org/copter/docs/common-gremsy-pixyu-gimbal.html)
 - [Gremsy GTune Desktop Software](https://github.com/Gremsy/gTuneDesktop/releases)
+- [Gremsy T7 Firmware Releases and Downloads](https://github.com/Gremsy/T7-Firmware/releases)
+- [Gremsy T7 Firmware Upgrade Instructions](https://gremsy.com/support/product-support/series-gremsy-t-s/gremsy-t7/gremsy-t7-download)
+- [AirPixel Air Commander Setup with Gremsy Gimbal](https://airpixel.cz/docs/gremsy-evo-installation-for-pixhawk/)
 - [AirPixel Air Commander MavCam for HereLink](https://airpixel.cz/docs/herelink-camera-control/)
 - [AirPixel Air Commander Mission Planner Camera Control Plugin](https://airpixel.cz/docs/missionplanner-camera-control-plugin/)
 - [AirPixel Air Commander Firmware Updates](https://airpixel.cz/docs/firmware-update/)
