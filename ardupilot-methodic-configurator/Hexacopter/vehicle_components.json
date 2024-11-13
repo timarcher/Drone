@@ -128,7 +128,7 @@
             "Firmware": {},
             "FC Connection": {
                 "Type": "CAN1",
-                "Protocol": "Normal"
+                "Protocol": "DroneCAN"
             },
             "Notes": "ESCs and Motors are an all in one unit."
         },
@@ -172,5 +172,5 @@
             "Notes": "Here4 GPS"
         }
     },
-    "Program version": "0.9.6"
+    "Program version": "0.9.12"
 }

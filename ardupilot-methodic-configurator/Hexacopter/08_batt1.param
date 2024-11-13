@@ -8,7 +8,7 @@ BATT_FS_LOW_ACT,2  # Return and land at home or rally point
 BATT_FS_VOLTSRC,0  # Let the firmware handle the nasty business of variable and battery dependent internal resistance
 BATT_LOW_MAH,0  # Battery capacity at which the low battery failsafe is triggered. Set to 0 to disable battery remaining failsafe.
 BATT_LOW_VOLT,43.2  # (Low voltage + 0.0) x no. of cells
-BATT_MONITOR,8  # DroneCAN
+BATT_MONITOR,8  # Selected in component editor window
 BATT_SERIAL_NUM,-1  # Leave at -1 unless you have multiple DroneCAN batteries in the drone.
 CAN_D2_PROTOCOL,1  # Enable dronecan.
 CAN_P2_DRIVER,2  # Set to the second driver.
