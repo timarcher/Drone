@@ -23,6 +23,11 @@ This page contains details on setting up the Gremsy T7 Gimbal, a Sony a6500 Came
 - Connecting to the AirPixel Air Commander Entire R3:
   - Connect to its WiFi hotspot from your PC
   - http://entire/ or http://192.168.10.1/
+- Sony A6500 Camera Configuration
+  - Enable RemoteCtrl function in the Camera menu for the Air Commander IR light to be able to control the menu.
+    - Camera Menu -> Setup (toolbox icon) -> Setup4 screen -> Scroll to the Remote Ctrl setting and make sure it’s set to On.
+  - Turn the camera USB mode to MASS STORAGE. 
+    - Camera Menu -> Setup (toolbox icon) -> Setup4 screen -> USB Connection. Set to Mass Storage and confirm OK.
 
 
 # Supporting Materials
