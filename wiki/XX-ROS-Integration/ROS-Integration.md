@@ -24,7 +24,7 @@ sudo apt install ros-jazzy-mavros ros-jazzy-mavros-extras
 wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
 sudo bash ./install_geographiclib_datasets.sh
 ```
-- Verify the installation:
+- Verify the geographic lib installation:
 ```sh
 ls /usr/share/GeographicLib/geoids/
 # You should see the egm96-5.pgm file, among others, in this directory.

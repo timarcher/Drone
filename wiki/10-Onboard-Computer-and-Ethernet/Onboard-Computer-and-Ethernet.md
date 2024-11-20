@@ -3,6 +3,7 @@ This page contains details on the installation of a Raspberry Pi 5 companion com
 # YouTube Video
 - [Hexacopter Drone Build Project – Part 10 Onboard Computer and Ethernet](https://youtu.be/5UbClGg2NsM)
 
+
 # Notes
 - 192.168.43.1 is Herelink controller IP address when you connect to it through it's WiFi access point mode from a ground control station (i.e., a laptop or computer).
 - There is no dhcp provided by the Herelink Air Units. You need to manual set an ip address inside the range eg 192.168.144.0, subnet mask 255.255.255.0. For example, use 192.168.144.50. This will put you within the IP range of the airunit and GCS unit, so they are accessible from the airunit ethernet port.
@@ -20,6 +21,19 @@ This page contains details on the installation of a Raspberry Pi 5 companion com
     - To do it permanently, simply leave in the routes section in the static IP configuration as shown below.
 - URL for the RTSP video stream is: rtsp://192.168.43.1:8554/fpv_stream or rtsp://192.168.144.11:8554/fpv_stream
   - You can connect to that using a tool such as VLC Media Player
+
+
+# Sudo Setup
+- Make it so the ubuntu user can sudo without a password
+```sh
+sudo visudo
+```
+Add this line at the end (replace ubuntu with the userid you want to sudo without a password)
+
+```sudo
+ubuntu ALL=(ALL) NOPASSWD: ALL
+```
+
 
 # Setting An IP Address on the Raspberry Pi
 The following commands will give your Raspberry Pi a static IP address that will allow it to communicate with the Herelink Air Unit, Controller, and the Ground Control Station (if connected through the WiFi AP on the Herelink controller). 
@@ -41,6 +55,19 @@ network:
 - After saving the file, apply the Netplan configuration with the following command: `sudo netplan apply`
 - Verify the configuration. You can check the IP address assignment by using the ip command: `ip addr show eth0`
 
+
+# Updating Ubuntu Server to Ubuntu Desktop
+```sh
+sudo apt update
+sudo apt upgrade
+sudo apt install ubuntu-desktop -y
+sudo apt install xrdp -y
+sudo usermod -aG sudo ubuntu
+sudo systemctl set-default graphical.target
+sudo reboot
+```
+
+
 # Python and Pymavlink
 You may wish to interact with your drone from your companion computer using Python. This section shows the basics of how to communicate with the ArduPilot flight controller.
 
@@ -59,10 +86,11 @@ You may wish to interact with your drone from your companion computer using Pyth
 # Stream a video to the Console
 You can use these commands to install mplayer, download a sample mp4, and stream it to the console so that it displays on your Herelink.
 ```sh
-sudo apt install mplayer
+sudo apt install mplayer -y
 wget https://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4 -O big_buck_bunny.mp4
 sudo mplayer -vo fbdev2 big_buck_bunny.mp4
 ```
+
 
 # Display an RTSP Stream
 Install ffplay or vlc:
