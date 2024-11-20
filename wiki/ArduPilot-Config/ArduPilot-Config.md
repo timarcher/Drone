@@ -314,10 +314,13 @@ I have adjusted these parameters to be about half the default value to make my d
 ## Parameters - Gremsy T7 Gimbal
 |Parameter Name|Value|Description|
 |---|---|---|
+|CAM1_TYPE|5|Camera shutter (trigger) type of MAVLink.|
+|MNT1_DEFLT_MODE|3|Mount default operating mode on startup and after control is returned from autopilot. 3 is RC Targeting.|
 |MNT1_TYPE|6|For Gremsy. Reboot after changing this param.|
-|SERIAL2_BAUD|115|Communication at 115200 bps|
+|MNT1_RC_RATE|90|Pilot rate control's maximum rate. Deg/s.|
+|SERIAL2_BAUD|921|Communication at 115200 bps|
 |SERIAL2_PROTOCOL|2|Mavlink2|
-|SERIAL2_OPTIONS|1024|Don’t forward mavlink to/from|
+|SERIAL2_OPTIONS|0|Default|
 
 ## Parameters - Board Boot Delay
 |Parameter Name|Value|Description|

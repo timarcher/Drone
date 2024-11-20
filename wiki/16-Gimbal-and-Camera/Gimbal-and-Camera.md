@@ -12,22 +12,32 @@ This page contains details on setting up the Gremsy T7 Gimbal, a Sony a6500 Came
     NOTE: Users should load the recommended gimbal parameters and perform an AUTO-TUNE process.
     Open gTune --> SETTINGS --> STIFFNESS --> AUTOTUNE
 - Tuning the stiffness: Increase the stiffness setting 5-10 points at a time until oscillation appears then reduce 5 points until oscillation subsides. Slowly increase this setting until you feel an oscillation in the tilt axis, then reduce the setting until the oscillation subsides.
-  - I have my settings at: Tilt 30, Roll 35, Pan 50. Gyro Filter 2, and Output Filter 3
-- The gimbal serial connection gets connected to the Telemetry 2 port on the Kore carrier board. See [this page for the wiring diagram](https://ardupilot.org/copter/docs/common-gremsy-pixyu-gimbal.html).
+  - I have my settings at: Tilt 25, Roll 45, Pan 45. Gyro Filter 2, and Output Filter 3
+- The gimbal serial connection gets connected to the Telemetry 2 port on the Kore carrier board. See [this page for the wiring diagram](https://ardupilot.org/copter/docs/common-gremsy-pixyu-gimbal.html). We change this to a baud rate of 921,600 per the Air Commander documentation.
 - In the Gremsy GTuneDesktop app, change these options:
   - Settings -> Controls -> Mavlink - Set to enabled
+    - Configure COM2 baudrate to 921600bps (used for connection to Cube)
+    - Configure COM4 baudrate to 230400bps (used for ENTIRE connection)
   - Also go to the settings button in top left under mode, and unselect the "Reduce Drift by Drone" option, Pan Axis will be disabled.
-- To control the gimbal on the Herelink controller:
-  - Ensure you install the latest QGroundControl release for the Herelink: [QGroundControl Herelink Releases](https://github.com/CubePilot/qgroundcontrol-herelink/releases)
-  - Then follow [these instructions on Youtube](https://www.youtube.com/watch?v=a-cLzYD7HBk&t=43s) to install the custom APK file for QGroundControl on the Herelink.
-- Connecting to the AirPixel Air Commander Entire R3:
-  - Connect to its WiFi hotspot from your PC
-  - http://entire/ or http://192.168.10.1/
 - Sony A6500 Camera Configuration
   - Enable RemoteCtrl function in the Camera menu for the Air Commander IR light to be able to control the menu.
     - Camera Menu -> Setup (toolbox icon) -> Setup4 screen -> Scroll to the Remote Ctrl setting and make sure it’s set to On.
   - Turn the camera USB mode to MASS STORAGE. 
     - Camera Menu -> Setup (toolbox icon) -> Setup4 screen -> USB Connection. Set to Mass Storage and confirm OK.
+- Connecting to the AirPixel Air Commander Entire R3:
+  - Connect to its WiFi hotspot from your PC
+  - http://entire/ or http://192.168.10.1/
+  - Open ENTIRE’s MENU web page and set UNI-C port to
+    - MavLink mode
+    - 230400 bps
+  - Enable GeoTagging via MENU->Logging mode-> Direct EXIF (or SD card)
+  - Enable HotShoe capturing via MENU->Capture detection->Hotshoe sync
+    - Now you can also preview GPS data and gimbal angles in the Entire’s GUI
+    - MENU->(Geotagging)Settings->GPS Data Preview
+    - Data shown in the preview are updated online and should react to gimbal movements
+- To control the gimbal on the Herelink controller:
+  - Ensure you install the latest QGroundControl release for the Herelink: [QGroundControl Herelink Releases](https://github.com/CubePilot/qgroundcontrol-herelink/releases)
+  - Then follow [these instructions on Youtube](https://www.youtube.com/watch?v=a-cLzYD7HBk&t=43s) to install the custom APK file for QGroundControl on the Herelink.
 
 
 # Supporting Materials

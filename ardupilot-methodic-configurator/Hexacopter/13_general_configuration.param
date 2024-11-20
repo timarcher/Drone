@@ -29,9 +29,9 @@ RTL_ALT,1500  # The minimum alt above home the vehicle will climb to before retu
 RTL_LOIT_TIME,5000  # Time (in milliseconds) to loiter above home before beginning final descent. Value is in milliseconds.
 SCHED_LOOP_RATE,400  # Rate of the main loop in hertz. Keep default.
 SCR_ENABLE,1  # Use lua scripting for VTOL-Quicktune, MagFit automation and Windspeed Estimation automation
-SERIAL2_BAUD,115  # Gremsy Gimbal Baudrate
+SERIAL2_BAUD,921  # Gremsy Gimbal Baudrate, set to 921600 per Air Commander instructions.
 SERIAL2_PROTOCOL,2  # Gremsy Gimbal - Mavlink2
-SERIAL2_OPTIONS,1024  # Gremsy Gimbal - Don’t forward mavlink to/from
+SERIAL2_OPTIONS,0  # Gremsy Gimbal
 SERIAL3_PROTOCOL,-1  # Disable serial 3. It defaulted to GPS, and we dont want any serial ports set to using GPS since we are using dual DroneCAN units for Yaw
 SERVO9_FUNCTION,56  # Flytron STROBON Cree v2 Lights. Configure for RC Pass thru. 56 = RCIN6 which means RC channel 6 gets output to SERVO9.
 WPNAV_SPEED_DN,100  # Defines the speed in cm/s which the aircraft will attempt to maintain while descending during a WP mission.

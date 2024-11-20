@@ -64,6 +64,19 @@ wget https://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180
 sudo mplayer -vo fbdev2 big_buck_bunny.mp4
 ```
 
+# Display an RTSP Stream
+Install ffplay or vlc:
+```sh
+sudo apt install vlc -y
+sudo apt install ffmpeg -y
+```
+
+Launch the stream:
+```sh
+vlc rtsp://192.168.144.11:8554/fpv_stream
+ffplay rtsp://192.168.144.11:8554/fpv_stream
+```
+
 # Supporting Materials
 - [Raspberry Pi Imager](https://www.raspberrypi.com/software/) - Download and install the Raspberry Pi Imager from this website.
 - [PuTTY SSH Client](https://www.putty.org/) - Free SSH client you can use to connect to your Raspberry Pi.
