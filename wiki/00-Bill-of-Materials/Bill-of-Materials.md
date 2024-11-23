@@ -146,6 +146,10 @@ This page contains the overall bill of materials/component list that was used to
 |Sony 16-50mm f/3.5-5.6 OSS Alpha E-Mount Retractable Zoom Lens|Ebay|$200|1|$200|
 |Screen Protector for Sony a6500|[Amazon](https://www.amazon.com/gp/product/B075T5BYHK/)|$7|1|$7|
 |SanDisk 128GB Extreme PRO SDXC UHS-I Memory Card|[Amazon](https://www.amazon.com/gp/product/B09X7FXHVJ/)|$23|1|$23|
+|Standard SD SDHC Male to SD Female Extension Memory Card Kit Soft Flat FPC Cable Extender 25cm Compatible for GPS Camera|[Amazon](https://www.amazon.com/gp/product/B01M22RI5U/)|$9|1|$9|
+|HDMI 1.4 Type D Micro HDMI Male to Micro HDMI Female M/F Extension Cable 30cm|[Amazon](https://www.amazon.com/gp/product/B00S6B8TCQ/)|$7|1|$7|
+|1/4oz, 0.25oz, Black, Adhesive Stick on Wheel Weights, EasyPeel Type|[Amazon](https://www.amazon.com/gp/product/B085LCFFZS/)|$8|1|$8|
+
 
 
 
