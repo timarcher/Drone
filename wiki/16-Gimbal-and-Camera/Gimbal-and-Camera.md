@@ -24,6 +24,8 @@ This page contains details on setting up the Gremsy T7 Gimbal, a Sony a6500 Came
     - Camera Menu -> Setup (toolbox icon) -> Setup4 screen -> Scroll to the Remote Ctrl setting and make sure it’s set to On.
   - Turn the camera USB mode to MASS STORAGE. 
     - Camera Menu -> Setup (toolbox icon) -> Setup4 screen -> USB Connection. Set to Mass Storage and confirm OK.
+  - Enable Info Display on the Camera HDMI Output
+    - Camera Menu -> Setup (toolbox icon) -> Setup4 screen -> HDMI. Change Info Display to On.
 - Connecting to the AirPixel Air Commander Entire R3:
   - Connect to its WiFi hotspot from your PC
   - http://entire/ or http://192.168.10.1/
@@ -38,6 +40,7 @@ This page contains details on setting up the Gremsy T7 Gimbal, a Sony a6500 Came
 - To control the gimbal on the Herelink controller:
   - Ensure you install the latest QGroundControl release for the Herelink: [QGroundControl Herelink Releases](https://github.com/CubePilot/qgroundcontrol-herelink/releases)
   - Then follow [these instructions on Youtube](https://www.youtube.com/watch?v=a-cLzYD7HBk&t=43s) to install the custom APK file for QGroundControl on the Herelink.
+  - Also install [AirPixel Air Commander MavCam for HereLink](https://airpixel.cz/docs/herelink-camera-control/)
 
 
 # Supporting Materials
