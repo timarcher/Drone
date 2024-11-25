@@ -6,19 +6,21 @@ This page contains details on setting up the Gremsy T7 Gimbal, a Sony a6500 Came
 # Notes
 - I replaced the stock 12mm payload carbon fiber tubes that came with the drone with longer 330mm ones from Amazon.
 - I bought a longer 6-Pin JST-GH Twisted Pair - MRC0212 - 1000mm length cable from 3DR in order to make the serial connection from the gimbal to the Kore carrier board. Its a 6 pin connector and wire designed for I2C, but I removed 3 wires and swapped TX/RX on one end to make it work for the gimbal.
-- Ensure you load the latest firmware, 7.7.1 or later! Download from https://github.com/Gremsy/T7-Firmware/releases
-  - NOTE: Gyro MUST be calibrated after upgrading completely.
-    Open gTune --> SETTINGS --> GYRO --> CALIBRATE
-    NOTE: Users should load the recommended gimbal parameters and perform an AUTO-TUNE process.
-    Open gTune --> SETTINGS --> STIFFNESS --> AUTOTUNE
-- Tuning the stiffness: Increase the stiffness setting 5-10 points at a time until oscillation appears then reduce 5 points until oscillation subsides. Slowly increase this setting until you feel an oscillation in the tilt axis, then reduce the setting until the oscillation subsides.
-  - I have my settings at: Tilt 25, Roll 45, Pan 45. Gyro Filter 2, and Output Filter 3
-- The gimbal serial connection gets connected to the Telemetry 2 port on the Kore carrier board. See [this page for the wiring diagram](https://ardupilot.org/copter/docs/common-gremsy-pixyu-gimbal.html). We change this to a baud rate of 921,600 per the Air Commander documentation.
-- In the Gremsy GTuneDesktop app, change these options:
-  - Settings -> Controls -> Mavlink - Set to enabled
-    - Configure COM2 baudrate to 921600bps (used for connection to Cube)
-    - Configure COM4 baudrate to 230400bps (used for ENTIRE connection)
-  - Also go to the settings button in top left under mode, and unselect the "Reduce Drift by Drone" option, Pan Axis will be disabled.
+- The gimbal serial connection gets connected to the Telemetry 2 port on the Kore carrier board. See [this page for the wiring diagram](https://ardupilot.org/copter/docs/common-gremsy-pixyu-gimbal.html). We change this to a baud rate of 921,600 per the Air Commander documentation in ArudPilot by setting SERIAL2_BAUD = 921.
+- Gremsy Gimbal Configuration
+  - Ensure you load the latest firmware, 7.7.1 or later! Download from https://github.com/Gremsy/T7-Firmware/releases
+    - NOTE: Gyro MUST be calibrated after upgrading completely.
+      Open gTune --> SETTINGS --> GYRO --> CALIBRATE
+      NOTE: Users should load the recommended gimbal parameters and perform an AUTO-TUNE process.
+      Open gTune --> SETTINGS --> STIFFNESS --> AUTOTUNE
+  - Tuning the stiffness: Increase the stiffness setting 5-10 points at a time until oscillation appears then reduce 5 points until oscillation subsides. Slowly increase this setting until you feel an oscillation in the tilt axis, then reduce the setting until the oscillation subsides.
+    - I have my stiffness settings at: Tilt 25, Roll 45, Pan 45. Gyro Filter 2, and Output Filter 3
+  - In the Gremsy GTuneDesktop app, change these options:
+    - Settings -> Controls -> Mavlink - Set to enabled
+      - Configure COM2 baudrate to 921600bps (used for connection to Cube)
+      - Configure COM4 baudrate to 230400bps (used for ENTIRE connection)
+    - Settings -> Rotatrion - I set Tilt up to -20. I didnt want it to be able to tilt up a bunch.
+    - Also go to the settings button in top left under mode, and unselect the "Reduce Drift by Drone" option, Pan Axis will be disabled.
 - Sony A6500 Camera Configuration
   - Enable RemoteCtrl function in the Camera menu for the Air Commander IR light to be able to control the menu.
     - Camera Menu -> Setup (toolbox icon) -> Setup4 screen -> Scroll to the Remote Ctrl setting and make sure it’s set to On.
@@ -26,22 +28,58 @@ This page contains details on setting up the Gremsy T7 Gimbal, a Sony a6500 Came
     - Camera Menu -> Setup (toolbox icon) -> Setup4 screen -> USB Connection. Set to Mass Storage and confirm OK.
   - Enable Info Display on the Camera HDMI Output
     - Camera Menu -> Setup (toolbox icon) -> Setup4 screen -> HDMI. Change Info Display to On.
-- Connecting to the AirPixel Air Commander Entire R3:
+  - Disable AutoReview
+    - Camera Menu -> Camera Settings 2 -> Auto Review. Change to off.
+  - Change Type of Image Captured
+    - Camera Menu -> Camera Settings 1 -> Quality. Change to Raw + JPEG for both RAW and JPG files, or Extra Fine for best JPG only quality.
+- AirPixel Air Commander Entire R3 Configuration:
   - Connect to its WiFi hotspot from your PC
   - http://entire/ or http://192.168.10.1/
   - Open ENTIRE’s MENU web page and set UNI-C port to
     - MavLink mode
     - 230400 bps
-  - Enable GeoTagging via MENU->Logging mode-> Direct EXIF (or SD card)
-  - Enable HotShoe capturing via MENU->Capture detection->Hotshoe sync
-    - Now you can also preview GPS data and gimbal angles in the Entire’s GUI
-    - MENU->(Geotagging)Settings->GPS Data Preview
+  - Enable GeoTagging via MENU -> Logging mode-> Direct EXIF (or SD card)
+  - Enable HotShoe capturing via MENU -> Capture detection -> Hotshoe sync
+  - Set Time Zone to your local time zone
+    - MENU -> Settings -> Time Zone Offset
+  - Set other options for Geotagging
+    - MENU -> Settings
+      - XMP Geotagging Section
+        - Set geotag roll/pitch/yaw to on
+        - Set geotag gps accuracy to on
+    - TEXT Log Features Section
+      - Append UTC Time to on
+      - Append FIX type and HDOP to on
+      - Append GPSAccuracy to on
+      - Append RangeFinder to on
+  - Now you can also preview GPS data and gimbal angles in the Entire’s GUI
+    - MENU -> Settings -> GPS Data Preview
     - Data shown in the preview are updated online and should react to gimbal movements
+  - Enable slow zoom for the Sony Zoom Lens
+    - MENU -> Miscellaneous -> SONY Options -> Use Slower Zooming (set to checked)
+  - Have the Air Commander Restart Camera After It Initializes. I noticed that if I dont do this, there are times where the Air Commander was unable to control the camera after first powering on the drone.
+    -  MENU -> Miscellaneous -> SONY Options -> Send Power Toggle After Start-Up (set to checked)
+  - Do a self test
+    - MENU -> Configuration Test
 - To control the gimbal on the Herelink controller:
   - Ensure you install the latest QGroundControl release for the Herelink: [QGroundControl Herelink Releases](https://github.com/CubePilot/qgroundcontrol-herelink/releases)
   - Then follow [these instructions on Youtube](https://www.youtube.com/watch?v=a-cLzYD7HBk&t=43s) to install the custom APK file for QGroundControl on the Herelink.
   - Also install [AirPixel Air Commander MavCam for HereLink](https://airpixel.cz/docs/herelink-camera-control/)
-
+- HereLink QGroundControl Setup
+  - Tap on the gimbal settings in top right menu.
+  - Check Enable on Screen Camera Control
+  - Set Control Type to Click to Point
+  - Check show gimbal Azimuth in map
+  - Uncheck show gimbal Azimuth instead of local yaw on top toolbar indicator
+- AirPixel Air Commander MavCam for HereLink Setup
+  - Swipe up on the widget to see the Control Menu
+  - Swipe right on the widget for Settings
+    - Check HW Photo Button
+    - Check HW Video Button
+    - Check HW Wheel
+    - Check Joystick
+- Install the Air Commander Mission Planner Camera Controller Plugin
+  - [Air Commander Mission Planner Camera Controller Plugin](https://airpixel.cz/docs/missionplanner-camera-control-plugin/)
 
 # Supporting Materials
 - [ArduPilot Configuration](../ArduPilot-Config/ArduPilot-Config.md) - This page contains a consolidated list of the all of the configuration done in ArduPilot throughout the videos.

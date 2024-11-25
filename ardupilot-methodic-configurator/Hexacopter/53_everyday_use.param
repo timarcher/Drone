@@ -5,9 +5,14 @@ BATT_FS_LOW_ACT,2  # Action to perform if the low battery failsafe is hit. 2 = R
 BATT2_FS_LOW_ACT,2  # Action to perform if the low battery failsafe is hit. 2 = RTL
 CAM1_TYPE,5  # Camera shutter (trigger) type of MAVLink.
 LOG_BITMASK,524416  # 2:GPS,3:System Performance,4:Control Tuning,6:RC input,7:IMU,8:Mission Commands,9:Battery Monitor,12:PID,13:Compass,17:Motors
-MNT1_DEFLT_MODE,3  # Mount default operating mode on startup and after control is returned from autopilot. 3 is RC Targeting.
-MNT1_TYPE,6  # For Gremsy. Reboot after changing this param.
+MNT1_DEFLT_MODE,2  # Mount default operating mode on startup and after control is returned from autopilot. 2 is MavLink targeting. 3 is RC Targeting.
+MNT1_OPTIONS,2  # Return to neutral position on RC failsafe.
+MNT1_PITCH_MAX,20  # Mount Pitch angle maximum.
+MNT1_PITCH_MIN,-90  # Mount Pitch angle minimum.
 MNT1_RC_RATE,90  # Per Air Commander Documentation. Pilot rate control's maximum rate. Deg/s.
+MNT1_TYPE,6  # For Gremsy. Reboot after changing this param.
+MNT1_YAW_MIN,-90  # Mount Yaw angle minimum. Limited to avoid cable from getting pulled too tight.
+MNT1_YAW_MAX,90  # Mount Yaw angle maximum. Limited to avoid cable from getting pulled too tight.
 QUIK_ENABLE,0  # Disable the VTOL-Quicktune lua script we used earlier, no longer needed.
 RTL_ALT,1500  # The minimum alt above home the vehicle will climb to before returning. If the vehicle is flying higher than this value it will return at its current altitude. Value is in Centimeters.
 RTL_CLIMB_MIN,0  # The vehicle will climb this many cm during the initial climb portion of the RTL. Value is in centimeters.
