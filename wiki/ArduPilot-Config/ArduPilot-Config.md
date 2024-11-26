@@ -282,7 +282,7 @@ A fence is a virtual boundary set in the flight control system that restricts th
 |Parameter Name|Value|Description|
 |---|---|---|
 |FENCE_ACTION|4|4 = Brake or Land. Set to 0 for report only.|
-|FENCE_ALT_MAX|120|Maximum altitude allowed before geofence triggers. Value is in meters. I set to 30 when initially testing drone.|
+|FENCE_ALT_MAX|30|Maximum altitude allowed before geofence triggers. Value is in meters. I set to 30 when initially testing drone.|
 |FENCE_ALT_MIN|-10|Minimum altitude allowed before geofence triggers. Value is in meters.|
 |FENCE_AUTOENABLE|0|Auto-enable of fences. Set to Disabled.|
 |FENCE_ENABLE|1|Allows you to enable (1) or disable (0) the fence functionality.|
