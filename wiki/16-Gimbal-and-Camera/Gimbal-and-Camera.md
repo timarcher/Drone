@@ -33,6 +33,7 @@ This page contains details on setting up the Gremsy T7 Gimbal, a Sony a6500 Came
     - Camera Menu -> Camera Settings 2 -> Auto Review. Change to off.
   - Change Type of Image Captured
     - Camera Menu -> Camera Settings 1 -> Quality. Change to Raw + JPEG for both RAW and JPG files, or Extra Fine for best JPG only quality.
+  - Exit the menu after changing the above. Be sure to physically power off the camera using its own power switch on the top of the camera. If you dont, the settings changed above will not save.
 - AirPixel Air Commander Entire R3 Configuration:
   - Connect to its WiFi hotspot from your PC
   - http://entire/ or http://192.168.10.1/
