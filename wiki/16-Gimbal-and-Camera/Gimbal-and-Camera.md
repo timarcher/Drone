@@ -19,8 +19,8 @@ This page contains details on setting up the Gremsy T7 Gimbal, a Sony a6500 Came
   - In the Gremsy GTuneDesktop app, change these options:
     - Settings -> Controls -> Mavlink - Set to enabled
       - Configure COM2 baudrate to 921600bps (used for connection to Cube)
-      - Configure COM4 baudrate to 230400bps (used for ENTIRE connection)
-    - Settings -> Rotatrion - I set Tilt up to -20. I didnt want it to be able to tilt up a bunch.
+      - Configure COM4 baudrate to 230400bps (used for Air Commander ENTIRE connection)
+    - Settings -> Rotation - I set Tilt up to -20. I didnt want it to be able to tilt up a bunch.
     - Also go to the settings button in top left under mode, and unselect the "Reduce Drift by Drone" option, Pan Axis will be disabled.
 - Sony A6500 Camera Configuration
   - Enable RemoteCtrl function in the Camera menu for the Air Commander IR light to be able to control the menu.
