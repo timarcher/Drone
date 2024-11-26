@@ -7,6 +7,7 @@ This page contains details on setting up the Gremsy T7 Gimbal, a Sony a6500 Came
 - I replaced the stock 12mm payload carbon fiber tubes that came with the drone with longer 330mm ones from Amazon.
 - I bought a longer 6-Pin JST-GH Twisted Pair - MRC0212 - 1000mm length cable from 3DR in order to make the serial connection from the gimbal to the Kore carrier board. Its a 6 pin connector and wire designed for I2C, but I removed 3 wires and swapped TX/RX on one end to make it work for the gimbal.
 - The gimbal serial connection gets connected to the Telemetry 2 port on the Kore carrier board. See [this page for the wiring diagram](https://ardupilot.org/copter/docs/common-gremsy-pixyu-gimbal.html). We change this to a baud rate of 921,600 per the Air Commander documentation in ArudPilot by setting SERIAL2_BAUD = 921.
+  - Set your ArduPilot parameters as defined under the section Parameters - Gremsy T7 Gimbal in the [ArduPilot Configuration](../ArduPilot-Config/ArduPilot-Config.md#) wiki page.
 - Gremsy Gimbal Configuration
   - Ensure you load the latest firmware, 7.7.1 or later! Download from https://github.com/Gremsy/T7-Firmware/releases
     - NOTE: Gyro MUST be calibrated after upgrading completely.
