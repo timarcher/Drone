@@ -327,7 +327,6 @@ I have adjusted these parameters to be about half the default value to make my d
 |SERIAL2_PROTOCOL|2|Mavlink2|
 |SERIAL2_OPTIONS|0|Default|
 
-http://192.168.200.101/
 
 ## Parameters - Board Boot Delay
 |Parameter Name|Value|Description|
