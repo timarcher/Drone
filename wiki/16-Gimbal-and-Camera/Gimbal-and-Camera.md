@@ -1,7 +1,7 @@
 This page contains details on setting up the Gremsy T7 Gimbal, a Sony a6500 Camera, and AirPixel Air Commander on the drone.
 
 # YouTube Video
-- [Hexacopter Drone Build Project – Part 16 Gimbal and Camera](https://youtu.be/XXX)
+- [Hexacopter Drone Build Project – Part 16 Gimbal and Camera](https://youtu.be/ZaLEz2Q5GR8)
 
 # Notes
 - I replaced the stock 12mm payload carbon fiber tubes that came with the drone with longer 330mm ones from Amazon.
