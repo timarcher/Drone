@@ -265,12 +265,13 @@ On the HereLink controller I configured the A, B, and Home buttons to control my
 
 
 ## Parameters - RC Failsafe
-- In Mission Planner go to the Setup->FailSafe tab. Configure the radio failsafe to Enabled always RTL, and an FS Pwm of 975
+- In Mission Planner go to the Setup -> FailSafe tab. Configure the radio failsafe to Enabled always RTL, and an FS PWM of 975
+- [Failsafe documentation is available here](https://ardupilot.org/copter/docs/failsafe-landing-page.html).
 
 |Parameter Name|Value|Description|
 |---|---|---|
 |RC_FS_TIMEOUT|1|RC failsafe will trigger this many seconds after loss of RC.|
-|FS_THR_ENABLE|1|The throttle failsafe allows you to configure a software failsafe activated by a setting on the throttle input channel. Set to Enabled, always RTL.|
+|FS_THR_ENABLE|1|The throttle failsafe allows you to configure a software failsafe activated by a setting on the throttle input channel. Set to Enabled, always RTL. If the GPS position is not usable, the copter will change to Land Mode instead.|
 |FS_THR_VALUE|975|The PWM level in microseconds on channel 3 below which throttle failsafe triggers.|
 
 

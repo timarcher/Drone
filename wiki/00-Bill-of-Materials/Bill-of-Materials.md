@@ -22,6 +22,8 @@ This page contains the overall bill of materials/component list that was used to
 |20mm Aluminum Round Tube Mount Clamp w/Hardware Anodized Black|[Amazon](https://www.amazon.com/gp/product/B0CZG1L7F9/)|$10|1|$10|
 |M2.5 Series Hex Brass Spacer/Standoffs + Nuts + Screws w/Storage Case for Raspberry Pi 5/4B/3B+/3B/3A+/Zero W/2W Accessories Kit|[Amazon](https://www.amazon.com/gp/product/B0756CW6Y2/)|$10|2|$20|
 |PATIKIL 12pcs M3 Standoffs, M3 45+6mm Spacer Standoffs Steel Threaded Standoffs Screws Kit 3mm ID 5mm OD Metric Male Female Thread Adapters|[Amazon](https://www.amazon.com/gp/product/B0D492547D/)|$10|2|$20|
+|Aluminum Male-Female Threaded Hex Standoff - 6mm Hex, 40mm Long, M3 x 0.50 mm Thread|[McMaster-Carr](https://www.mcmaster.com/98952A444/)|$3.16|16|$51|
+
 
 
 <!--
@@ -124,8 +126,8 @@ This page contains the overall bill of materials/component list that was used to
 |5pcs JR Y Connector Servo Extension Cable 3 Pin JR Plug Splitters 1 Male to 4 Female Servo Y Extension Connector|[Amazon](https://www.amazon.com/gp/product/B0BC5QNDTC/)|$9|1|$9|
 |20Pcs Micro JST GH 4Pin 1.25mm Male to Male Connector, GH1.25 Terminal Connector Wire Cable 15cm 28AWG|[Amazon](https://www.amazon.com/gp/product/B0C2ZQHZ9T/)|$10|1|$10|
 |5 Pairs JST Plug to JR Connector Male Female Cable 10cm Servo Adapter Wire for RC Plane Helicopter Car (JST to JR-10pcs)|[Amazon](https://www.amazon.com/gp/product/B0CQXB94HX/)|$7|1|$7|
-|Matek AP_PERIPH CAN Node L431 Board|[Amazon](https://www.amazon.com/gp/product/B0BC16ZRCB/)|$21|1|$21|
-
+|Matek AP_PERIPH CAN Node L431 Board|[Amazon](https://www.amazon.com/gp/product/B0BC16ZRCB/)|$21|2|$42|
+|Lightware SF45/B LiDAR|[Amazon](https://lightwarelidar.com/shop/sf45-b-50-m/)|$450|1|$450|
 
 
 # Electronics - Gimbal and Camera
