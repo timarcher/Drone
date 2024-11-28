@@ -1,10 +1,10 @@
-ATC_THR_MIX_MAX,0.5  # Throttle vs attitude control prioritisation used during active flight (higher values mean we prioritise attitude control over throttle)
+ATC_THR_MIX_MAX,0.5  # Throttle vs attitude control prioritization used during active flight (higher values mean we prioritise attitude control over throttle)
 BATT_ARM_VOLT,44.3  # Minimum battery voltage required to arm the aircraft. Step 8 will reset this higher, so we set it back here to allow for takeoff when battery is at a lower capacity.
 BATT2_ARM_VOLT,44.3  # Minimum battery voltage required to arm the aircraft. Step 8 will reset this higher, so we set it back here to allow for takeoff when battery is at a lower capacity.
 BATT_FS_LOW_ACT,2  # Action to perform if the low battery failsafe is hit. 2 = RTL
 BATT2_FS_LOW_ACT,2  # Action to perform if the low battery failsafe is hit. 2 = RTL
 CAM1_TYPE,5  # Camera shutter (trigger) type of MAVLink.
-LOG_BITMASK,524416  # 2:GPS,3:System Performance,4:Control Tuning,6:RC input,7:IMU,8:Mission Commands,9:Battery Monitor,12:PID,13:Compass,17:Motors
+LOG_BITMASK,2277374  # 2:GPS,3:System Performance,4:Control Tuning,6:RC input,7:IMU,8:Mission Commands,9:Battery Monitor,12:PID,13:Compass,17:Motors
 MNT1_DEFLT_MODE,2  # Mount default operating mode on startup and after control is returned from autopilot. 2 is MavLink targeting. 3 is RC Targeting.
 MNT1_OPTIONS,2  # Return to neutral position on RC failsafe.
 MNT1_PITCH_MAX,20  # Mount Pitch angle maximum.

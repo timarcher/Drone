@@ -1,5 +1,5 @@
 INS_LOG_BAT_MASK,7  # Bitmap of which IMUs to log batch data for. Log for all 3 IMUs on the Cube.
 INS_LOG_BAT_OPT,4  # Logs measured data both before and after the filters for Filter Review Webtool usage
 INS_RAW_LOG_OPT,9  # Log primary gyro only, pre and post filter to get more Notch filter data.
-LOG_BITMASK,2242524  # Logs Notch filter data and other control signals
+LOG_BITMASK,2277374  # Logs Notch filter data and other control signals
 LOG_FILE_DSRMROT,1  # One .bin log file per flight, not per battery/reboot

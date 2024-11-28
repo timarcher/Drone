@@ -3,14 +3,14 @@
     "Components": {
         "Flight Controller": {
             "Product": {
-                "Manufacturer": "CubePilot",
+                "Manufacturer": "Hex/ProfiCNC",
                 "Model": "CubeOrangePlus",
                 "URL": "https://docs.cubepilot.org/user-guides/autopilot/the-cube-module-overview",
                 "Version": "CubeOrange+"
             },
             "Firmware": {
                 "Type": "ArduCopter",
-                "Version": "4.6.0 dev"
+                "Version": "4.6.0 beta"
             },
             "Notes": "This is a custom build firmware with OpenDroneID enabled."
         },
@@ -172,5 +172,5 @@
             "Notes": "Here4 GPS"
         }
     },
-    "Program version": "0.9.14"
+    "Program version": "0.9.16"
 }

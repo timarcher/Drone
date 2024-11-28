@@ -21,6 +21,7 @@ This page contains details on setting up the Gremsy T7 Gimbal, a Sony a6500 Came
       - Configure COM2 baudrate to 921600bps (used for connection to Cube)
       - Configure COM4 baudrate to 230400bps (used for Air Commander ENTIRE connection)
     - Settings -> Rotation - I set Tilt up to -20. I didnt want it to be able to tilt up a bunch.
+    - Settings -> Follow - Change toggle swith to Pan. Set Speed to 30 so the gimbal yaw will follow the drone yaw faster.
     - Also go to the settings button in top left under mode, and unselect the "Reduce Drift by Drone" option, Pan Axis will be disabled.
 - Sony A6500 Camera Configuration
   - Enable RemoteCtrl function in the Camera menu for the Air Commander IR light to be able to control the menu.
@@ -34,6 +35,7 @@ This page contains details on setting up the Gremsy T7 Gimbal, a Sony a6500 Came
   - Change Type of Image Captured
     - Camera Menu -> Camera Settings 1 -> Quality. Change to Raw + JPEG for both RAW and JPG files, or Extra Fine for best JPG only quality.
   - Exit the menu after changing the above. Be sure to physically power off the camera using its own power switch on the top of the camera. If you dont, the settings changed above will not save.
+  - To format the memory card, go to Camera Menu -> Setup (toolbox icon) -> Setup6 screen -> Format
 - AirPixel Air Commander Entire R3 Configuration:
   - Connect to its WiFi hotspot from your PC
   - http://entire/ or http://192.168.10.1/
@@ -80,6 +82,7 @@ This page contains details on setting up the Gremsy T7 Gimbal, a Sony a6500 Came
     - Check HW Video Button
     - Check HW Wheel
     - Check Joystick
+  - Press the GTG button in MavCam widget (for Geotagging control). Set Takeoff detection to enabled.
 - Install the Air Commander Mission Planner Camera Controller Plugin
   - [Air Commander Mission Planner Camera Controller Plugin](https://airpixel.cz/docs/missionplanner-camera-control-plugin/)
 
