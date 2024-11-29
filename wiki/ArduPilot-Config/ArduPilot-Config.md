@@ -15,6 +15,20 @@ You will need to build your own custom firmware from [custom.ardupilot.org](http
 - Select the apj file you downloaded and flash it to the board
 
 
+# All Firmware and Software Versions
+This section lists all the firmware and software versions I am using in this build:
+|Component|Version|Link|
+|---|---|---|
+|ArduCopter|4.6.0|https://custom.ardupilot.org/|
+|Gremsy T7 Gimbal|7.8.3|https://github.com/Gremsy/T7-Firmware/releases|
+|AirPixel Air Commander Entire R3|1.946|https://airpixel.cz/docs/firmware-update/|
+|HereLink QGroundControl|4.4.2|https://github.com/CubePilot/qgroundcontrol-herelink/releases|
+|MavCam HL|9?|https://airpixel.cz/docs/herelink-camera-control/|
+|Gremsy gTuneDesktop|1.4.9.4|https://github.com/Gremsy/gTuneDesktop/releases|
+|AP_Periph MatekL431-Rangefinder|Feb 25 2024|https://firmware.ardupilot.org/AP_Periph/stable/MatekL431-Rangefinder/|
+|Mission Planner|Latest Beta Release|https://ardupilot.org/planner/docs/mission-planner-installation.html|
+
+
 # Initial Setup
 After flashing firmware for the first time, use Mission Planner to configure several items:
 - Go to Setup tab.

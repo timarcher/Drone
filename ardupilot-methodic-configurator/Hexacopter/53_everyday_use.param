@@ -1,3 +1,4 @@
+ATC_THR_MIX_MAN,0.5  # Throttle vs attitude control prioritization used during active flight (higher values mean we prioritise attitude control over throttle)
 ATC_THR_MIX_MAX,0.5  # Throttle vs attitude control prioritization used during active flight (higher values mean we prioritise attitude control over throttle)
 BATT_ARM_VOLT,44.3  # Minimum battery voltage required to arm the aircraft. Step 8 will reset this higher, so we set it back here to allow for takeoff when battery is at a lower capacity.
 BATT2_ARM_VOLT,44.3  # Minimum battery voltage required to arm the aircraft. Step 8 will reset this higher, so we set it back here to allow for takeoff when battery is at a lower capacity.

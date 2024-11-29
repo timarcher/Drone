@@ -98,5 +98,6 @@ This page contains details on setting up the Gremsy T7 Gimbal, a Sony a6500 Came
 - [AirPixel Air Commander MavCam for HereLink](https://airpixel.cz/docs/herelink-camera-control/)
 - [AirPixel Air Commander Mission Planner Camera Control Plugin](https://airpixel.cz/docs/missionplanner-camera-control-plugin/)
 - [AirPixel Air Commander Firmware Updates](https://airpixel.cz/docs/firmware-update/)
+- [QGroundControl Herelink Releases](https://github.com/CubePilot/qgroundcontrol-herelink/releases)
 - [PureThemal Mini Flir USB IR Camera Mount 3d Print](https://cults3d.com/en/3d-model/game/pure-thermal-mini-flir-usb-ir-camera-mount) - I had to scale this to 105% for it to fit the USB camera. I used this as the back, and the next file for the top.
 - [Hard Enclosure for Purethermal Mini 3d Print](https://cults3d.com/en/3d-model/gadget/hard-enclosure-for-purethermal-mini) - I had to scale this to 105% for it to fit the USB camera. I used this as the front, and the prior file for the back.
