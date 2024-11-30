@@ -41,6 +41,10 @@ Future steps coming soon:
 - [Ardupilot Config](Arudpilot.md)
 -->
 
+# Flight Checklist
+- [Flight Checklist](Flight-Checklist/Flight-Checklist.md) - This page contains a simple checklist of items to work through before flying.
+
+
 # Full ArduPilot Configuration Summary
 - [ArduPilot Configuration](ArduPilot-Config/ArduPilot-Config.md) - This page contains a consolidated list of the all of the configuration done in ArduPilot throughout the videos.
 

@@ -8,7 +8,9 @@ This page contains a checklist to work through prior to flying the drone.
 1.	Drone Battery Charged
 1.	Review ArduPilot Configuration Below. Everything set appropriately for flight modes and failsafes?
 1.	Will the Gimbal be needed? If not set MNT1_TYPE to 0.
+1.	Field Equipment Packed? See list below.
 1.	Field Tools Packed? See list below.
+
 
 # Ground Control Station (GCS) Prep Checklist
 1.	Enable Phone Mobile HotSpot
@@ -19,6 +21,7 @@ This page contains a checklist to work through prior to flying the drone.
 1.	Connect Here4 Base to Laptop
 1.	Connect Coax Cable from Here4 Base to GPS Antenna
 1.	Start Mission Planner and Get a Ground Unit Fix
+
 
 # Drone Flight Checklist
 1.	Arms Extended
@@ -42,6 +45,7 @@ This page contains a checklist to work through prior to flying the drone.
 1.	Did GPS Get a Fix?
 1.	Is Automated Mission Uploaded Correctly?
 1.	Do we want Fence On or Off?
+
  
 # ArduPilot Configuration to Review
 ## Important ArduPilot FailSafe Params
@@ -55,9 +59,11 @@ This page contains a checklist to work through prior to flying the drone.
 - FS_THR_VALUE=975 The PWM level in microseconds on channel 3 below which throttle failsafe triggers.
 - RC_FS_TIMEOUT=1 RC failsafe will trigger this many seconds after loss of RC.
 
+
 ## Important ArduPilot RTL Params
 - RTL_ALT=1500 The minimum alt above home the vehicle will climb to before returning. If the vehicle is flying higher than this value it will return at its current altitude. Value is in Centimeters.
 - RTL_LOIT_TIME=5000 Time (in milliseconds) to loiter above home before beginning final descent. Value is in milliseconds.
+
 
 # HereLink Button Setup
 ## HereLink Button Setup - Flight Modes
@@ -69,9 +75,11 @@ On the HereLink controller I configured the A, B, and Home buttons to control my
 -  Flight Mode 5 - Smart_RTL - PWM 1621-1749 - Mapped to button home short press, active value 1675
 -  Flight Mode 6 - Land - PWM 1750+ - Mapped to button home long press, active value 1800
 
+
 ## HereLink Button Setup - Other Buttons
 - D Short Press – Channel 6 – Enable/Disable Navigation Lights
 - D Long Press – Channel 7 – Enable/Disable Fence Mode
+
 
 # Fence Setup
 In Mission Planner go to the Config->GeoFence tab. Configure the GeoFence settings to control the distance your drone is allowed to go from it's launch point.
@@ -85,6 +93,24 @@ In Mission Planner go to the Config->GeoFence tab. Configure the GeoFence settin
 - FENCE_TYPE 7 Bitmask. Set to Max Altitude, Circle Centered on Home, and Inclusion/Exclusion Circles+Polygons 
 
 
+# Field Equipment to Pack
+- Drone
+- Battery
+- Herelink Controller
+- Here4 Base
+- RTK GPS Antenna and Tripod
+- Coax Cable to Connect Antenna to Here4 Base
+- Laptop
+- USB Cable to Connect to Flight Controller
+- Travel Router/Wifi 
+- Travel Router Battery Power
+- Cellular Phone with Hotspot
+- USB Charger
+- Drone Battery Charger
+- Sunglasses
+- Bug Spray
+
+
 # Field Tool List
 - Hex Drivers – 2.5mm, 2mm, and 1.5mm
 - Nut Drivers – 7mm, 5.5mm, 5mm
@@ -96,5 +122,3 @@ In Mission Planner go to the Config->GeoFence tab. Configure the GeoFence settin
 - #1 Phillips Screwdriver
 - Flat Head Screwdriver
 - Metric Ruler
-- USB Cable to Connect to Flight Controller
-- Laptop
