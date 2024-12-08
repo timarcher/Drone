@@ -109,6 +109,8 @@ In Mission Planner go to the Config->GeoFence tab. Configure the GeoFence settin
 - Drone Battery Charger
 - Sunglasses
 - Bug Spray
+- Small Folding Table
+- Chair
 
 
 # Field Tool List

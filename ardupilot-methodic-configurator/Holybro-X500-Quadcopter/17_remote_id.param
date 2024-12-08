@@ -1,0 +1,3 @@
+DID_ENABLE,1  # Enable Open Drone ID
+DID_CANDRIVER,1  # DroneCAN driver index, 0 to disable DroneCAN.
+DID_OPTIONS,2  # 6 sets AllowNonGPSPosition and LockUASIDOnFirstBasicIDRx. First setup the above two params, setup your Drone ID info in mission planner, verify it shows in Drone Scanner, and then set this bit. After your DID_UAS_ID is persisted, the LockUASIDOnFirstBasicIDRx will be unchecked in the params and this value set back to a 2.

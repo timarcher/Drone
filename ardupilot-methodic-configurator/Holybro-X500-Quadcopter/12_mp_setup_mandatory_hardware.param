@@ -1,0 +1,129 @@
+AHRS_TRIM_X,0.020646
+AHRS_TRIM_Y,0.002396
+ATC_ACCEL_P_MAX,35400
+ATC_ACCEL_R_MAX,35400
+ATC_ACCEL_Y_MAX,14400
+ATC_RAT_PIT_FLTD,10  # INS_GYRO_FILTER / 2
+ATC_RAT_PIT_FLTT,10  # INS_GYRO_FILTER / 2
+ATC_RAT_RLL_FLTD,10  # INS_GYRO_FILTER / 2
+ATC_RAT_RLL_FLTT,10  # INS_GYRO_FILTER / 2
+ATC_RAT_YAW_FLTE,2
+ATC_RAT_YAW_FLTT,10  # INS_GYRO_FILTER / 2
+COMPASS_CAL_FIT,100
+COMPASS_DEC,-0.062099
+COMPASS_DIA_X,1
+COMPASS_DIA_Y,1
+COMPASS_DIA_Z,1
+COMPASS_EXTERNAL,1
+COMPASS_ODI_X,0
+COMPASS_ODI_Y,0
+COMPASS_ODI_Z,0
+COMPASS_OFS_X,-51.473476
+COMPASS_OFS_Y,-139.105179
+COMPASS_OFS_Z,33.336861
+COMPASS_ORIENT,0
+COMPASS_ORIENT2,4
+COMPASS_PRIO1_ID,96003
+COMPASS_PRIO2_ID,95747
+COMPASS_SCALE,1
+COMPASS_USE,1  # Use the external herelink compass.
+COMPASS_USE2,1  # Use the external herelink compass.
+COMPASS_USE3,0  # Disable the internal compass, it seems to be much less accurate.
+FENCE_ACTION,4  # 4 = Brake or Land. Set to 0 for report only.
+FENCE_ALT_MAX,30  # Maximum altitude allowed before geofence triggers. Value is in meters. I set to 30 when initially testing drone.
+FENCE_ALT_MIN,-10  # Minimum altitude allowed before geofence triggers. Value is in meters.
+FENCE_AUTOENABLE,0  # Auto-enable of fences. Set to Disabled.
+FENCE_ENABLE,1  # Allows you to enable (1) or disable (0) the fence functionality.
+FENCE_MARGIN,2  # Distance that autopilot's should maintain from the fence to avoid a breach. Value is in meters.
+FENCE_RADIUS,100  # Circle fence radius which when breached will cause an RTL. Value is in meters.
+FENCE_TYPE,7  # Bitmask. Set to Max Altitude, Circle Centered on Home, and Inclusion/Exclusion Circles+Polygons
+FLTMODE_CH,5  # RC Channel to use for flight mode control. Default is 5.
+FLTMODE1,5  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is <= 1230. Set to Loiter.
+FLTMODE2,15  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1230, <= 1360. Set to AutoTune.
+FLTMODE3,2  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1360, <= 1490. Set to AltHold.
+FLTMODE4,3  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1490, <= 1620. Set to Auto (For running missions).
+FLTMODE5,6  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1620, <= 1749. Set to RTL.
+FLTMODE6,9  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >=1750. Set to Land.
+FRAME_CLASS,2  # Hexacopter
+FRAME_TYPE,1  # X type
+INS_ACC2OFFS_X,0.037244
+INS_ACC2OFFS_Y,-0.021742
+INS_ACC2OFFS_Z,0.175504
+INS_ACC2SCAL_X,1.000767
+INS_ACC2SCAL_Y,1.001492
+INS_ACC2SCAL_Z,0.998255
+INS_ACC3OFFS_X,0.011302
+INS_ACC3OFFS_Y,-0.065703
+INS_ACC3OFFS_Z,0.106388
+INS_ACC3SCAL_X,1.002015
+INS_ACC3SCAL_Y,1.001198
+INS_ACC3SCAL_Z,0.999382
+INS_ACCOFFS_X,0.060966
+INS_ACCOFFS_Y,-0.034303
+INS_ACCOFFS_Z,0.003075
+INS_ACCSCAL_X,1.001326
+INS_ACCSCAL_Y,1.002313
+INS_ACCSCAL_Z,0.998051
+INS_GYR2OFFS_X,0.001395
+INS_GYR2OFFS_Y,0.005825
+INS_GYR2OFFS_Z,-0.004288
+INS_GYR3OFFS_X,-0.01005
+INS_GYR3OFFS_Y,0.008677
+INS_GYR3OFFS_Z,0.002373
+INS_GYRO_FILTER,20
+INS_GYROFFS_X,0.001997
+INS_GYROFFS_Y,-0.000698
+INS_GYROFFS_Z,0.000687
+INS_USE3,1
+MOT_BAT_VOLT_MAX,50.400002  # Battery voltage compensation maximum voltage. Set to 4.2 * cell count.
+MOT_BAT_VOLT_MIN,39.599998  # Battery voltage minimum compensation voltage. Set to 3.3 * cell count.
+MOT_SPIN_ARM,0.05
+MOT_SPIN_MAX,0.95
+MOT_SPIN_MIN,0.09
+MOT_THST_EXPO,0.74
+MOT_THST_HOVER,0.182634
+RC1_MAX,1927
+RC1_MIN,1102
+RC1_TRIM,1515
+RC10_MAX,2000
+RC10_MIN,1000
+RC10_TRIM,1000
+RC11_TRIM,1000
+RC12_TRIM,1000
+RC13_TRIM,1500
+RC14_TRIM,1500
+RC15_TRIM,1500
+RC16_TRIM,1927
+RC2_MAX,1927
+RC2_MIN,1102
+RC2_REVERSED,0
+RC2_TRIM,1515
+RC3_MAX,1927
+RC3_MIN,1102
+RC3_TRIM,1515
+RC4_MAX,1927
+RC4_MIN,1102
+RC4_TRIM,1515
+RC5_MAX,2000
+RC5_MIN,1000
+RC5_TRIM,1000
+RC6_MAX,2000
+RC6_MIN,1000
+RC6_TRIM,1000
+RC7_MAX,2000
+RC7_MIN,1000
+RC7_TRIM,1000
+RC8_MAX,2000
+RC8_MIN,1000
+RC8_TRIM,1000
+RC9_MAX,2000
+RC9_MIN,1000
+RC9_TRIM,1000
+RCMAP_PITCH,2
+RCMAP_ROLL,1
+RCMAP_THROTTLE,3
+RCMAP_YAW,4
+SERVO1_FUNCTION,33  # Left Motor
+SERVO2_FUNCTION,34
+SERVO3_FUNCTION,35  # Right Motor
+SERVO4_FUNCTION,36
