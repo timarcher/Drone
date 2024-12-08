@@ -1,10 +1,6 @@
 ARMING_CHECK,1  # Perform all arming checks. If you have a problem fix its source. Do NOT change this
 BRD_BOOT_DELAY,5000  # This adds a delay in milliseconds to boot to ensure peripherals initialise fully. Value in milliseconds.
 BRD_RTC_TZ_MIN,0  # UTC Time Zone. Adds offset in +- minutes from UTC to calculate local time.
-FLOW_POS_X,-0.140  # X position of the optical flow sensor focal point in body frame. Positive X is forward of the origin. Units in meters.
-FLOW_POS_Y,-0.075  # Y position of the optical flow sensor focal point in body frame. Positive Y is to the right of the origin. Units in meters.
-FLOW_POS_Z,0.206  # Z position of the optical flow sensor focal point in body frame. Positive Z is down from the origin. Units in meters.
-FLOW_TYPE,6  # HereFlow. Enable optical flow camera.
 INS_ACCEL_FILTER,10  # Filter cutoff frequency for accelerometers. The default is 20 and that lets too much noise in.
 INS_POS1_X,0  # X position of the first IMU Accelerometer in body frame. Positive X is forward of the origin.
 INS_POS1_Y,0  # Y position of the first IMU accelerometer in body frame. Positive Y is to the right of the origin.
@@ -12,26 +8,18 @@ INS_POS2_X,0  # X position of the second IMU accelerometer in body frame. Positi
 INS_POS2_Y,0  # Y position of the second IMU accelerometer in body frame. Positive Y is to the right of the origin.
 LAND_ALT_LOW,1000  # Altitude during Landing at which vehicle slows to LAND_SPEED. Value is centimeters.
 LAND_SPEED,40  # The descent speed for the final stage of landing in cm/s
-LAND_SPEED_HIGH, 0  # The descent speed for the first stage of landing in cm/s. If this is zero then WPNAV_SPEED_DN is used
-LOIT_BRK_DELAY,0.1  # Default value is 1. Loiter brake start delay (in seconds), make the drone break faster when releasing the sticks.
+LAND_SPEED_HIGH,0  # The descent speed for the first stage of landing in cm/s. If this is zero then WPNAV_SPEED_DN is used
 LOIT_ACC_MAX,420  # Default is 500. Loiter maximum correction acceleration in cm/s/s. Higher values cause the copter to correct position errors more aggressively. This is a big drone so we slow it down a bit.
 LOIT_BRK_ACCEL,225  # Default is 250. Loiter braking acceleration in cm/s/s. Higher values stop the copter more quickly when the stick is centered. This is a big drone so we slow it down a bit.
-NTF_DISPLAY_TYPE,1  # Onboard OLED display. SSD1306 OLED Connected to I2C.
+LOIT_BRK_DELAY,0.1  # Default value is 1. Loiter brake start delay (in seconds), make the drone break faster when releasing the sticks.
 PILOT_TKOFF_ALT,0  # Altitude that altitude control modes will climb to when a takeoff is triggered with the throttle stick. Leave at 0 for default. Set to 100 to climb to 1m on take-off. Value in centimeters.
-RNGFND1_GNDCLEAR,29  # TFMini-S LiDAR. Optional - This parameter sets  the expected range measurement(in cm) that the range finder should return when the vehicle is on the ground.
-RNGFND1_MAX_CM,600  # TFMini-S LiDAR. This is the distance in centimeters that the rangefinder can reliably read. 600 for outdoors.
-RNGFND1_MIN_CM,10  # TFMini-S LiDAR. Minimum distance in centimeters that rangefinder can reliably read. 10 for TFminiPlus
-RNGFND1_POS_X,-0.160  # X position of the rangefinder in body frame. Positive X is forward of the origin. Units in meters.
-RNGFND1_POS_Y,0  # Y position of the rangefinder in body frame. Positive Y is to the right of the origin. Units in meters.
-RNGFND1_POS_Z,0.211  # Z position of the rangefinder in body frame. Positive Z is down from the origin. Units in meters.
-RNGFND1_TYPE,24  # TFMini-S LiDAR. Type of connected rangefinder. 20=Benewake-Serial. Reboot flight controller after setting this for rest of the params to show.
+RNGFND1_TYPE,0  # No rangefinder
 RTL_ALT,1500  # The minimum alt above home the vehicle will climb to before returning. If the vehicle is flying higher than this value it will return at its current altitude. Value is in Centimeters.
 RTL_LOIT_TIME,5000  # Time (in milliseconds) to loiter above home before beginning final descent. Value is in milliseconds.
 SCHED_LOOP_RATE,400  # Rate of the main loop in hertz. Keep default.
 SCR_ENABLE,1  # Use lua scripting for VTOL-Quicktune, MagFit automation and Windspeed Estimation automation
-SERIAL2_BAUD,921  # Gremsy Gimbal Baudrate, set to 921600 per Air Commander instructions.
-SERIAL2_PROTOCOL,2  # Gremsy Gimbal - Mavlink2
-SERIAL2_OPTIONS,0  # Gremsy Gimbal
-SERIAL3_PROTOCOL,-1  # Disable serial 3. It defaulted to GPS, and we dont want any serial ports set to using GPS since we are using dual DroneCAN units for Yaw
-SERVO9_FUNCTION,56  # Flytron STROBON Cree v2 Lights. Configure for RC Pass thru. 56 = RCIN6 which means RC channel 6 gets output to SERVO9.
+SERIAL2_BAUD,57  # Baud rate for SBus Telemtry
+SERIAL2_OPTIONS,0  # Default
+SERIAL2_PROTOCOL,10  # FrSky SPort Passthrough. Telemetry gets sent back to radio for Yaapu telemetry widget.
+SERIAL3_PROTOCOL,-1  # Disable serial 3. It defaulted to GPS
 WPNAV_SPEED_DN,100  # Defines the speed in cm/s which the aircraft will attempt to maintain while descending during a WP mission.

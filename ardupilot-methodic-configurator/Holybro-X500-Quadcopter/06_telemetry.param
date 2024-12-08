@@ -1,5 +1,5 @@
 BRD_SER1_RTSCTS,2  # Set to Auto.
-SERIAL1_BAUD,115  # The MAVLink over Herelink telemetry, changed from default of 57600 to 115200.
+SERIAL1_BAUD,57  # The MAVLink over Herelink telemetry, changed from default of 57600 to 115200.
 SERIAL1_PROTOCOL,2  # Use MAVLink 2 for telemetry
 SR0_EXT_STAT,0  # Extended status stream rate in hertz.
 SR0_EXTRA1,0  # MAVLink Stream rate of ATTITUDE, SIMSTATE (SIM only), AHRS2 and PID_TUNING

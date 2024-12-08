@@ -1,5 +1,4 @@
 ARMING_RUDDER,2  # Allow arm or disarm by rudder input.
-BRD_ALT_CONFIG,0  # Stay at default. This is used to select an alternative hardware config.
 FLTMODE_CH,5  # RC channel to use for flight mode control. 5 is the default, so we stay with that.
 FS_THR_ENABLE,1  # The throttle failsafe allows you to configure a software failsafe activated by a setting on the throttle input channel. Set to Enabled, always RTL. If the GPS position is not usable, the copter will change to Land Mode instead.
 FS_THR_VALUE,975  # The PWM level in microseconds on channel 3 below which throttle failsafe triggers.
@@ -12,4 +11,3 @@ RC8_OPTION,0  # Do nothing. Function assigned to rc channel 6. For example, we c
 RC9_OPTION,0  # Do nothing. Function assigned to rc channel 6. For example, we could pick things like "Motor Emergency Stop", "Lost rover Sound", etc
 RSSI_TYPE,0  # Set to disabled. Used to configure radio receiver RSSI type.
 SERVO9_FUNCTION,56  # Configure for RC Pass thru. 56 = RCIN6 which means RC channel 6 gets output to SERVO9.
-

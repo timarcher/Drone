@@ -3,10 +3,10 @@
     "Components": {
         "Flight Controller": {
             "Product": {
-                "Manufacturer": "Hex/ProfiCNC",
-                "Model": "CubeOrangePlus",
-                "URL": "https://docs.cubepilot.org/user-guides/autopilot/the-cube-module-overview",
-                "Version": "CubeOrange+"
+                "Manufacturer": "Holybro",
+                "Model": "Pixhawk5X",
+                "URL": "https://ardupilot.org/copter/docs/common-holybro-ph5x.html",
+                "Version": "Pixhawk5X"
             },
             "Firmware": {
                 "Type": "ArduCopter",
@@ -16,49 +16,49 @@
         },
         "Frame": {
             "Product": {
-                "Manufacturer": "RJX Hobby",
-                "Model": "RJX1300mm 6-Axis Carbon Fiber",
-                "URL": "https://www.rjxhobby.com/rjx1300mm-6-axis-carbon-fiber-umbrella-folding-hexacopter-frame-with",
-                "Version": "RJX1300B"
+                "Manufacturer": "Holybro",
+                "Model": "X500 V2",
+                "URL": "https://holybro.com/products/x500-v2-kits?srsltid=AfmBOopqoQ06cbw18uUtBKBrXOI0Rb58vbqtS5OwQew6JuedVk8Ywtwy",
+                "Version": "X500V2"
             },
             "Specifications": {
                 "TOW min Kg": 0.6,
                 "TOW max Kg": 0.6
             },
-            "Notes": "A 1300mm carbon fiber frame."
+            "Notes": "A 500mm carbon fiber frame."
         },
         "RC Controller": {
             "Product": {
-                "Manufacturer": "CubePilot",
-                "Model": "Herelink HD Video Transmission System (V1.1)",
-                "URL": "https://docs.cubepilot.org/user-guides/herelink/herelink-overview",
-                "Version": "1.1"
+                "Manufacturer": "RadioMaster",
+                "Model": "TX16S",
+                "URL": "https://www.radiomasterrc.com/products/tx16s-mark-ii-max-radio-controller",
+                "Version": "Mark2"
             },
             "Firmware": {
-                "Type": "HereLink",
-                "Version": "RU01240301"
+                "Type": "EdgeTx",
+                "Version": "2.10.5"
             },
-            "Notes": "HereLink Video Transmission System."
+            "Notes": "RadioMaster Controller with EdgeTX firmware loaded on it"
         },
         "RC Transmitter": {
             "Product": {
-                "Manufacturer": "CubePilot",
-                "Model": "Herelink controller",
-                "URL": "https://docs.cubepilot.org/user-guides/herelink/herelink-overview",
-                "Version": "1.1"
+                "Manufacturer": "RadioMaster",
+                "Model": "TX16S",
+                "URL": "https://www.radiomasterrc.com/products/tx16s-mark-ii-max-radio-controller",
+                "Version": "Mark2"
             },
             "Firmware": {
-                "Type": "",
-                "Version": ""
+                "Type": "EdgeTx",
+                "Version": "2.10.5"
             },
-            "Notes": "This RC transmitter is integrated inside the Herelink above."
+            "Notes": "RadioMaster Controller with EdgeTX firmware loaded on it"
         },
         "RC Receiver": {
             "Product": {
-                "Manufacturer": "CubePilot",
-                "Model": "Herelink AirUnit",
-                "URL": "https://docs.cubepilot.org/user-guides/herelink/herelink-overview",
-                "Version": "1.1"
+                "Manufacturer": "FrSky",
+                "Model": "FrSky Taranis Receiver X8R 8 Channel 2.4ghz ACCST&RSSI&SBUS",
+                "URL": "https://www.frsky-rc.com/product/x8r/",
+                "Version": "NA"
             },
             "Firmware": {
                 "Type": "",
@@ -72,10 +72,10 @@
         },
         "Telemetry": {
             "Product": {
-                "Manufacturer": "CubePilot",
-                "Model": "Herelink",
-                "URL": "https://docs.cubepilot.org/user-guides/herelink/herelink-overview",
-                "Version": "1.1"
+                "Manufacturer": "Holybro",
+                "Model": "SiK Telemetry Radio V3",
+                "URL": "https://holybro.com/products/sik-telemetry-radio-v3?srsltid=AfmBOop9nfFjAuxKsRjKB9hMyD-CNzvtIO1WufbWWi4P-VVpErf2IFj1",
+                "Version": "NA"
             },
             "Firmware": {
                 "Type": "",
@@ -85,27 +85,27 @@
                 "Type": "SERIAL1",
                 "Protocol": "MAVLink2"
             },
-            "Notes": "Integrated in the Herelink controller and AirUnit."
+            "Notes": "915Mhz Radio Link"
         },
         "Battery Monitor": {
             "Product": {
-                "Manufacturer": "Tattu",
-                "Model": "Tattu Plus 1.0 Compact Version 16000mAh 44.4V 15C 12S1P Lipo Smart Battery Pack With AS150U Plug",
-                "URL": "https://genstattu.com/tattu-plus-1-0-compact-version-16000mah-44-4v-15c-12s1p-lipo-smart-battery-pack-with-as150u-plug/",
-                "Version": ""
+                "Manufacturer": "Holybro",
+                "Model": "PM02D",
+                "URL": "https://holybro.com/products/pm02d-power-module?srsltid=AfmBOoqgY22TA_aOI8tv0wq5pZC0ryRoYYU_fAmVYWFuvY9Y_pGFWkWh",
+                "Version": "PM02D"
             },
             "Firmware": {},
             "FC Connection": {
-                "Type": "CAN2",
-                "Protocol": "DroneCAN-BatteryInfo"
+                "Type": "I2C2",
+                "Protocol": "INA2XX"
             },
-            "Notes": "This is a smart battery with an integrated DroneCAN enabled BMS."
+            "Notes": "Uses the holybro PM02D which supplies voltage info via I2C. This PM uses I2C digital signal data output, Compatible with Pixhawk 5X/6X Series."
         },
         "Battery": {
             "Product": {
                 "Manufacturer": "Tattu",
-                "Model": "Tattu Plus 1.0 Compact Version 16000mAh 44.4V 15C 12S1P Lipo Smart Battery Pack With AS150U Plug",
-                "URL": "https://genstattu.com/tattu-plus-1-0-compact-version-16000mah-44-4v-15c-12s1p-lipo-smart-battery-pack-with-as150u-plug/",
+                "Model": "Tattu Plus 10000mAh 6S 22.2V 25C Lipo Battery with AS150+XT150 Plug (new version)",
+                "URL": "https://genstattu.com/tattu-plus-22-2v-25c-6s-liPo-battery-10000-mah-with-as150-xt150-plug.html",
                 "Version": ""
             },
             "Specifications": {
@@ -113,30 +113,30 @@
                 "Volt per cell max": 4.2,
                 "Volt per cell low": 3.6,
                 "Volt per cell crit": 3.55,
-                "Number of cells": 12,
-                "Capacity mAh": 15800
+                "Number of cells": 6,
+                "Capacity mAh": 10000
             },
-            "Notes": "Tattu Plus 1.0 Compact Version 16000mAh 44.4V 15C 12S1P Lipo Smart Battery Pack With AS150U Plug."
+            "Notes": "Tattu Plus 10000mAh 6S 22.2V 25C Lipo Battery with AS150+XT150 Plug (new version)"
         },
         "ESC": {
             "Product": {
-                "Manufacturer": "Hobbywing",
-                "Model": "XRotor X6 Plus system",
-                "URL": "https://www.hobbywingdirect.com/products/xrotor-x6-plus",
+                "Manufacturer": "Holybro",
+                "Model": "ESCs - BLHeli S ESC 20A",
+                "URL": "https://holybro.com/products/x500-v2-kits",
                 "Version": ""
             },
             "Firmware": {},
             "FC Connection": {
-                "Type": "CAN1",
-                "Protocol": "DroneCAN"
+                "Type": "Main Out",
+                "Protocol": "Normal"
             },
             "Notes": "ESCs and Motors are an all in one unit."
         },
         "Motors": {
             "Product": {
-                "Manufacturer": "Hobbywing",
-                "Model": "XRotor X6 Plus system",
-                "URL": "https://www.hobbywingdirect.com/products/xrotor-x6-plus",
+                "Manufacturer": "Holybro",
+                "Model": "2216 KV920 Motor",
+                "URL": "https://holybro.com/products/x500-v2-kits",
                 "Version": ""
             },
             "Specifications": {},
@@ -144,15 +144,15 @@
         },
         "Propellers": {
             "Product": {
-                "Manufacturer": "Hobbywing",
-                "Model": "XRotor 2480 Propeller",
-                "URL": "https://www.hobbywingdirect.com/products/xrotor-2480-propeller",
+                "Manufacturer": "Holybro",
+                "Model": "1045 Propellers",
+                "URL": "https://holybro.com/products/x500-v2-kits",
                 "Version": ""
             },
             "Specifications": {
-                "Diameter_inches": 24
+                "Diameter_inches": 10
             },
-            "Notes": "Propellers designed for use with XRotor X6 motors."
+            "Notes": "10\" Propellers included in the Holybro X500 kit."
         },
         "GNSS Receiver": {
             "Product": {
@@ -167,7 +167,7 @@
             },
             "FC Connection": {
                 "Type": "CAN1",
-                "Protocol": "uBlox-MovingBaseline-Base"
+                "Protocol": "DroneCAN"
             },
             "Notes": "Here4 GPS"
         }

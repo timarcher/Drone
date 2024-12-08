@@ -1,6 +1,2 @@
-CAN_D1_PROTOCOL,1  # Enable dronecan.
-CAN_D1_UC_ESC_BM,63  # Bitmask that determines which autopilot servo/motor output signals are sent to the DroneCAN ESCs. 63 = ESC 1 through 6.
-CAN_D1_UC_OPTION,128  # Set options for the DroneCAN driver for Hobbywing ESC.
-CAN_P1_DRIVER,1  # Set to the first driver.
 MOT_HOVER_LEARN,2  # So that it can tune the throttle controller on 20_throttle_controller.param file
 MOT_PWM_TYPE,0  # Specified in component editor window

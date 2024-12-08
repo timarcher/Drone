@@ -1,10 +1,10 @@
 INS_FAST_SAMPLE,7  # Mask of IMUs to enable fast sampling on, if available. All 3 IMUs can run fast on the CubeOrange flight controller
-INS_GYRO_RATE,2  # Gyro rate for IMUs with fast sampling enabled. The gyro rate is the sample rate at which the IMU filters operate and needs to be at least double the maximum filter frequency. The CubeOrange can do 4KHz here.
+INS_GYRO_RATE,1  # Gyro rate for IMUs with fast sampling enabled. The gyro rate is the sample rate at which the IMU filters operate and needs to be at least double the maximum filter frequency. We do 2Khz since we have a slower F7 board.
 INS_HNTCH_ATT,40  # Notch filter attenuation starting point. It must be improved after the first flight (by the next file).
-INS_HNTCH_BW,7  # For ESC telemetry, set to 1/4 the base frequency INS_HNTCH_FREQ. It must be improved after the first flight (by the next file).
+INS_HNTCH_BW,14  # For ESC telemetry, set to 1/4 the base frequency INS_HNTCH_FREQ. It must be improved after the first flight (by the next file).
 INS_HNTCH_ENABLE,1  # Use the first notch filter to filter the noise created by the motors/propellers
-INS_HNTCH_FREQ,28  # Use 1.4 * INS_GYRO_FILTER as a first guess
+INS_HNTCH_FREQ,58.8  # Use 1.4 * INS_GYRO_FILTER as a first guess
 INS_HNTCH_HMNCS,1  # Apply notch filter to 1st harmonic, the base frequency.
-INS_HNTCH_MODE,3  # Use the ESC RPM telemetry to dynamically track noise created by the motors/propellers.
-INS_HNTCH_OPTS,14  # Bitmask set to: multi-source, update at loop rate, enable on all IMUs. Use either Multi Source or Triple Notch, but not both at once!
-INS_HNTCH_REF,1  # Set to 1 when using ESC telemetry.
+INS_HNTCH_MODE,1  # Use the ESC RPM telemetry to dynamically track noise created by the motors/propellers.
+INS_HNTCH_OPTS,28  # Bitmask set to: update at loop rate, enable on all IMUs, triple notch. Use either Multi Source or Triple Notch, but not both at once!
+INS_HNTCH_REF,0  # Dynamic updates on the notch filter.
