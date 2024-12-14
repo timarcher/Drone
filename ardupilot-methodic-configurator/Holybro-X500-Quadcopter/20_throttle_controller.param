@@ -1,4 +1,4 @@
 ATC_THR_MIX_MAN,0.5  # because we have learned the MOT_THST_HOVER value
 ATC_THR_MIX_MAX,0.5  # Throttle vs attitude control prioritization used during active flight (higher values mean we prioritise attitude control over throttle)
-PSC_ACCZ_I,0.36815  # Use 2 * MOT_THST_HOVER assuming MOT_THST_HOVER has been correctly learned
-PSC_ACCZ_P,0.184075  # Use MOT_THST_HOVER assuming MOT_THST_HOVER has been correctly learned
+PSC_ACCZ_I,0.335822  # Use 2 * MOT_THST_HOVER assuming MOT_THST_HOVER has been correctly learned
+PSC_ACCZ_P,0.167911  # Use MOT_THST_HOVER assuming MOT_THST_HOVER has been correctly learned

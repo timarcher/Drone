@@ -346,7 +346,7 @@ I have adjusted these parameters to be about half the default value to make my d
 ## Parameters - Board Boot Delay
 |Parameter Name|Value|Description|
 |---|---|---|
-|BRD_BOOT_DELAY|5000|This adds a delay in milliseconds to boot to ensure peripherals initialise fully. Value in milliseconds.|
+|BRD_BOOT_DELAY|3000|This adds a delay in milliseconds to boot to ensure peripherals initialise fully. Value in milliseconds.|
 
 
 

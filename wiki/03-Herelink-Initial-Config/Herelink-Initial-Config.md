@@ -10,7 +10,7 @@ This page contains details on the initial unboxing and setup of the Herelink con
 - In the Joystick settings, 
   - Change the default channel for the wheel at the top from channel 5 to 16. This is because ArduPilot is setup for channel 5 to control flight modes.
   - Check the Wheel Acc setting
-  - Reverse the hardwheel wheel as well so when you push it to the right it outputs a higher pulse on sbus out.
+  - Reverse the hand wheel as well so when you push it to the right it outputs a higher pulse on sbus out.
 - Flight Mode Mapping
   - On the HereLink controller in the settings area, go to the buttons tab.
   - Map a short press of button A to channel 5. Set it to a toggle (T) button. Set default value to 1000, and active value to 2000. Then in Mission Planner go toi Setup->Flight Modes. You can then set Flight Mode 1 to Stabilize and Flight Mode 6 to Loiter.

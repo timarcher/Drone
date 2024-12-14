@@ -3,10 +3,10 @@
     "Components": {
         "Flight Controller": {
             "Product": {
-                "Manufacturer": "Holybro",
-                "Model": "Pixhawk5X",
-                "URL": "https://ardupilot.org/copter/docs/common-holybro-ph5x.html",
-                "Version": "Pixhawk5X"
+                "Manufacturer": "Hex/ProfiCNC",
+                "Model": "CubeOrangePlus",
+                "URL": "https://docs.cubepilot.org/user-guides/autopilot/the-cube-module-overview",
+                "Version": "CubeOrange+"
             },
             "Firmware": {
                 "Type": "ArduCopter",

@@ -8,6 +8,6 @@ BATT_FS_VOLTSRC,0  # Let the firmware handle the nasty business of variable and 
 BATT_I2C_BUS,1  # Selected in component editor window
 BATT_LOW_MAH,0  # Battery capacity at which the low battery failsafe is triggered. Set to 0 to disable battery remaining failsafe.
 BATT_LOW_VOLT,21.6  # (Low voltage + 0.0) x no. of cells
-BATT_MONITOR,21  # Selected in component editor window, 21=INA2XX for Holybro PM02D Module
+BATT_MONITOR,21  # Selected in component editor window
 MOT_BAT_VOLT_MAX,25.2  # Battery voltage compensation maximum voltage. Set to 4.2 * cell count.
 MOT_BAT_VOLT_MIN,19.8  # Battery voltage minimum compensation voltage. Set to 3.3 * cell count.
