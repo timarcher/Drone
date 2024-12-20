@@ -128,6 +128,7 @@ This page contains the overall bill of materials/component list that was used to
 |5 Pairs JST Plug to JR Connector Male Female Cable 10cm Servo Adapter Wire for RC Plane Helicopter Car (JST to JR-10pcs)|[Amazon](https://www.amazon.com/gp/product/B0CQXB94HX/)|$7|1|$7|
 |Matek AP_PERIPH CAN Node L431 Board|[Amazon](https://www.amazon.com/gp/product/B0BC16ZRCB/)|$21|2|$42|
 |Lightware SF45/B LiDAR|[Amazon](https://lightwarelidar.com/shop/sf45-b-50-m/)|$450|1|$450|
+|WS2812B LED Strip Light 3.3FT/1M 144LEDs/m|[Amazon](https://www.amazon.com/gp/product/B097BXQF8J/)|$10|1|$10|
 
 
 # Electronics - Gimbal and Camera

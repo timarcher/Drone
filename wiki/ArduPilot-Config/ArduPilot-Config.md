@@ -26,6 +26,7 @@ This section lists all the firmware and software versions I am using in this bui
 |MavCam HL|9?|https://airpixel.cz/docs/herelink-camera-control/|
 |Gremsy gTuneDesktop|1.4.9.4|https://github.com/Gremsy/gTuneDesktop/releases|
 |AP_Periph MatekL431-Rangefinder|Feb 25 2024|https://firmware.ardupilot.org/AP_Periph/stable/MatekL431-Rangefinder/|
+|AP_Periph MatekL431-Proximity|Feb 25 2024|https://firmware.ardupilot.org/AP_Periph/stable/MatekL431-Proximity/|
 |Mission Planner|Latest Beta Release|https://ardupilot.org/planner/docs/mission-planner-installation.html|
 
 

@@ -57,6 +57,7 @@ network:
 
 
 # Updating Ubuntu Server to Ubuntu Desktop
+After installing Ubuntu server, you may wish to enable the graphical desktop. You can do that by running the commands below:
 ```sh
 sudo apt update
 sudo apt upgrade
@@ -103,6 +104,16 @@ Launch the stream:
 ```sh
 vlc rtsp://192.168.144.11:8554/fpv_stream
 ffplay rtsp://192.168.144.11:8554/fpv_stream
+```
+
+# Install I2C Tools
+If you want to connect devices to the I2C bus on the Raspberry Pi, you will want the I2C tools to be able to view devices attached to the bus:
+```sh
+sudo apt install -y i2c-tools
+```
+And then you can run a command like to view devices on I2C bus #1:
+```sh
+i2cdetect -y 1
 ```
 
 # Supporting Materials
