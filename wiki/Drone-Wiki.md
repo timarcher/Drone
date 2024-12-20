@@ -28,6 +28,8 @@ Use the list below to follow my build journey step by step.
 1. [Navigation Lights](14-Navigation-Lights/Navigation-Lights.md)
 1. [Peripheral Updates](15-Peripheral-Updates/Peripheral-Updates.md)
 1. [Gimbal and Camera](16-Gimbal-and-Camera/Gimbal-and-Camera.md)
+1. [Obstacle Avoidance LiDAR](17-Obstacle-Avoidance-LiDAR/Obstacle-Avoidance-LiDAR.md)
+1. [Scanning Lights / Cylon Pattern](18-Scanning-Lights/Scanning-Lights.md)
 
 <!--1. [Methodic Configuration](XX-Methodic-Configuration/Methodic-Configuration.md)-->
 <!--1. [ROS Integration](XX-ROS-Integration/ROS-Integration.md)-->
