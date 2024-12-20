@@ -11,4 +11,4 @@ RC7_OPTION,0  # Do nothing. Function assigned to rc channel 7. For example, we c
 RC8_OPTION,0  # Do nothing. Function assigned to rc channel 8. For example, we could pick things like "Motor Emergency Stop", "Lost rover Sound", etc
 RC9_OPTION,0  # Do nothing. Function assigned to rc channel 9. For example, we could pick things like "Motor Emergency Stop", "Lost rover Sound", etc
 RSSI_TYPE,0  # Set to disabled. Used to configure radio receiver RSSI type.
-SERVO9_FUNCTION,56  # Configure for RC Pass thru. 56 = RCIN6 which means RC channel 6 gets output to SERVO9.
+
