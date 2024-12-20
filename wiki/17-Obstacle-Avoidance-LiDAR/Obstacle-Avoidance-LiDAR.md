@@ -1,4 +1,4 @@
-This page contains details on setting up the Lightware S45/B LiDAR.
+This page contains details on setting up the LightWare S45/B LiDAR.
 
 # YouTube Video
 - [Hexacopter Drone Build Project – Part 17 Obstacle Avoidance LiDAR](https://youtu.be/XXX)
@@ -6,7 +6,7 @@ This page contains details on setting up the Lightware S45/B LiDAR.
 # Notes
 - I connected the LiDAR to an Matek L431 AP_PERIPH board. This allows me to convert the serial interface of the LiDAR to DroneCAN.
 
-- Setup the Lightware SF45/B LiDAR to be a DroneCAN device using a [Matek AP_PERIPH CAN Node L431 Board](https://www.mateksys.com/?portfolio=can-l431)
+- Setup the LightWare SF45/B LiDAR to be a DroneCAN device using a [Matek AP_PERIPH CAN Node L431 Board](https://www.mateksys.com/?portfolio=can-l431)
   - You must first install the latest firmware to enable seeing the proximity sensor parameters.
   - Download the latest firmware from here for the L431 board (download the .bin file): https://firmware.ardupilot.org/AP_Periph/stable/MatekL431-Proximity/
   - In Mission Planner, go to Setup->Optional Hardware->DroneCAN/UAVCAN
@@ -37,5 +37,5 @@ This page contains details on setting up the Lightware S45/B LiDAR.
 
 # References 
 - [Ardupilot LightWare SF45/B 350 Lidar Setup Page](https://ardupilot.org/copter/docs/common-lightware-sf45b.html)
-- [Lightware Studio](https://lightwarelidar.com/resources-software/) - use this for testing your LiDAR through your PC and a USB connection.
+- [LightWare Studio](https://lightwarelidar.com/resources-software/) - use this for testing your LiDAR through your PC and a USB connection.
 - Download the latest proximity sensor firmware [from here for the L431 board (download the .bin file)](https://firmware.ardupilot.org/AP_Periph/stable/MatekL431-Proximity/)

@@ -89,17 +89,17 @@
         },
         "Battery Monitor": {
             "Product": {
-                "Manufacturer": "Holybro",
-                "Model": "PM02D",
-                "URL": "https://holybro.com/products/pm02d-power-module?srsltid=AfmBOoqgY22TA_aOI8tv0wq5pZC0ryRoYYU_fAmVYWFuvY9Y_pGFWkWh",
-                "Version": "PM02D"
+                "Manufacturer": "CubePilot",
+                "Model": "Power Brick Mini",
+                "URL": "https://irlock.com/products/power-brick-mini",
+                "Version": "1"
             },
             "Firmware": {},
             "FC Connection": {
-                "Type": "I2C2",
-                "Protocol": "INA2XX"
+                "Type": "Analog",
+                "Protocol": "Analog Voltage and Current"
             },
-            "Notes": "Uses the holybro PM02D which supplies voltage info via I2C. This PM uses I2C digital signal data output, Compatible with Pixhawk 5X/6X Series."
+            "Notes": "Uses the standard cube orange power brick mini."
         },
         "Battery": {
             "Product": {

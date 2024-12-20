@@ -18,7 +18,6 @@ RTL_ALT,1500  # The minimum alt above home the vehicle will climb to before retu
 RTL_LOIT_TIME,5000  # Time (in milliseconds) to loiter above home before beginning final descent. Value is in milliseconds.
 SCHED_LOOP_RATE,400  # Rate of the main loop in hertz. Keep default.
 SCR_ENABLE,1  # Use lua scripting for VTOL-Quicktune, MagFit automation and Windspeed Estimation automation
-SCR_HEAP_SIZE, 60000  #  reduced from default 102400 to 60000 to avoid "ekf3 allocation failed" memory errors. The pixhawk 5x just doesnt have enough memory.
 SERIAL2_BAUD,57  # Baud rate for SBus Telemtry
 SERIAL2_OPTIONS,0  # Default
 SERIAL2_PROTOCOL,10  # FrSky SPort Passthrough. Telemetry gets sent back to radio for Yaapu telemetry widget.
