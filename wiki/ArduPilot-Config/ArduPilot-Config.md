@@ -344,11 +344,31 @@ I have adjusted these parameters to be about half the default value to make my d
 |SERIAL2_OPTIONS|0|Default|
 
 
+## Parameters - LightWare SF45/B Proximity Sensor
+If using the Matek AP_PERIPH CAN Node L431 Board to convert your LightWare sensor to a DroneCAN device, then set these parameters is Mission Planner on the Cube:
+|Parameter Name|Value|Description|
+|---|---|---|
+|PRX1_TYPE|14|Type of connected proximity sensor. 14=DroneCAN. Reboot flight controller after setting this for rest of the params to show.|
+|AVOID_ALT_MIN|0|Minimum altitude above which proximity based avoidance will start working. This requires a valid downward facing rangefinder reading to work. Set zero to disable.|
+|AVOID_BEHAVE|1|Avoidance behaviour of stop.|
+|AVOID_DIST_MAX|5|Distance from object at which obstacle avoidance will begin in non-GPS modes.|
+|AVOID_ENABLE|3|Bitmask for Fence and Proximity.|
+|AVOID_MARGIN|2|Vehicle will attempt to stay at least this distance (in meters) from objects while in GPS modes.|
+
+And set these parameters on the Matek L431 Device:
+|Parameter Name|Value|Description|
+|---|---|---|
+|PRX_BAUDRATE|115200|Baudrate to communicate with the sensor at.|
+|PRX_PORT|2|Serial Port on the Matek L431.|
+|PRX1_TYPE|8|LightWare SF45/B.|
+|PRX1_ORIENT|0|Normal orientation (i.e., not upside down).|
+|PRX1_YAW_CORR|0|Proximity sensor yaw correction. (its facing forward)|
+
+
 ## Parameters - Board Boot Delay
 |Parameter Name|Value|Description|
 |---|---|---|
 |BRD_BOOT_DELAY|3000|This adds a delay in milliseconds to boot to ensure peripherals initialise fully. Value in milliseconds.|
-
 
 
 # Factory Reset the Parameters

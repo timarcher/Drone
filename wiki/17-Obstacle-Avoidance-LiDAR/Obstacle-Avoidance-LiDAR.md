@@ -1,7 +1,7 @@
 This page contains details on setting up the LightWare S45/B LiDAR.
 
 # YouTube Video
-- [Hexacopter Drone Build Project – Part 17 Obstacle Avoidance LiDAR](https://youtu.be/XXX)
+- [Hexacopter Drone Build Project – Part 17 Obstacle Avoidance LiDAR](https://youtu.be/x13RS9YKt_g)
 
 # Notes
 - I connected the LiDAR to an Matek L431 AP_PERIPH board. This allows me to convert the serial interface of the LiDAR to DroneCAN.
@@ -25,7 +25,7 @@ This page contains details on setting up the LightWare S45/B LiDAR.
     - Set PRX1_TYPE=14
 - You can set various obstacle avoidance settings on the flight controller as well. I left all the defaults in place, which were:
   - AVOID_ALT_MIN=0 (Minimum altitude above which proximity based avoidance will start working. This requires a valid downward facing rangefinder reading to work. Set zero to disable)
-  - AVOID_BEHAVE=0 (Avoidance behaviour of stop)
+  - AVOID_BEHAVE=1 (Avoidance behaviour of stop)
   - AVOID_DIST_MAX=5 (Distance from object at which obstacle avoidance will begin in non-GPS modes)
   - AVOID_ENABLE=3 (Bitmask for Fence and Proximity)
   - AVOID_MARGIN=2 (Vehicle will attempt to stay at least this distance (in meters) from objects while in GPS modes)
