@@ -14,7 +14,6 @@ This page contains details on setting up the LightWare S45/B LiDAR.
   - In the menu button on the row for your device, press update. Select No when it asks to search the internet for an update.
   - You will be prompted for the firmware file to load. Select the .bin file downloaded earlier.
   - After updating, select the menu button again to open the parameters for the L431 node.
-  - Set RNGFND1_TYPE to 20 and press write params.
   - Refresh params in the L431 and then also set:
     - PRX_BAUDRATE=115200
     - PRX_PORT=2
