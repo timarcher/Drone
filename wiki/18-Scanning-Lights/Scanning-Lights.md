@@ -13,8 +13,8 @@ This page contains details on how I added an WS2812B LED light strip and connect
 sudo apt update
 sudo apt install python3-pip
 
-python3 -m venv cylon_leds
-source cylon_leds/bin/activate
+python3 -m venv scanning_leds
+source scanning_leds/bin/activate
 
 pip3 install pi5neo
 ```
@@ -46,7 +46,7 @@ python3 led_test.py
 - Deactive and remove the virtual environment (optional):
 ```sh
 deactivate
-rm -rf cylon_leds
+rm -rf scanning_leds
 ```
 
 
