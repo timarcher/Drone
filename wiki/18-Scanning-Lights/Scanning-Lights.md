@@ -1,7 +1,7 @@
 This page contains details on how I added an WS2812B LED light strip and connected it to the Raspberry Pi to create a scanning pattern, similar to the lights from a Cylon or Knight Rider car, on the face of the drone.
 
 # YouTube Video
-- [Hexacopter Drone Build Project – Part 18 Scanning Lights](https://youtu.be/XXX)
+- [Hexacopter Drone Build Project – Part 18 Scanning Lights](https://youtu.be/pLxJSA_ptMY)
 
 # Notes
 - Connect the 5v wire from the LED light strip to the 5v supply coming from the BEC. Also connect the ground wire to the 5v BEC, AND connect it to the ground pin on the raspberry pi. (The device needs a common ground for good data transfers.)
