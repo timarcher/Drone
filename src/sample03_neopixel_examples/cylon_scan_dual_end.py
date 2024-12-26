@@ -5,7 +5,7 @@ from pi5neo import Pi5Neo
 import time
 
 # User-Configurable Variables
-NUM_LEDS = 50                           # Total number of LEDs
+NUM_LEDS = 89                           # Total number of LEDs (I have 97 LEDs, but I use 90 to make it look centered, the last 6 in back dont get lit up)
 SPI_DEVICE = '/dev/spidev0.0'           # SPI device
 SPI_SPEED = 800                         # SPI speed in kHz
 DELAY = 0.01                            # Delay between updates (speed of movement)

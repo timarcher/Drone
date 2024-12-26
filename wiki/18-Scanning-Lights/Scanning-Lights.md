@@ -23,8 +23,11 @@ pip3 install pi5neo
 ```sh
 from pi5neo import Pi5Neo
 
-# Initialize the Pi5Neo class with 10 LEDs and an SPI speed of 800kHz
-neo = Pi5Neo('/dev/spidev0.0', 20, 800)
+# User-Configurable Variables
+NUM_LEDS = 97               # Total number of LEDs
+
+# Initialize the Pi5Neo class with the specified number of LEDs and an SPI speed of 800kHz
+neo = Pi5Neo('/dev/spidev0.0', NUM_LEDS, 800)
 
 # Fill the strip with a red color
 neo.fill_strip(255, 0, 0)
@@ -48,6 +51,7 @@ rm -rf cylon_leds
 
 
 # Sample Scripts
+- [This script](../../src/sample03_neopixel_examples/loading_bar.py) will just start at one end and light up one LED at a time making a loading bar type of effect. Mainly used to use the functions to interface with the light strip.
 - [This script](../../src/sample03_neopixel_examples/cylon_scan.py) will make a scanning LED pattern where the strip is lit up in red, and 7 LEDs will "scan" back and forth in a blue color.
 - [This script](../../src/sample03_neopixel_examples/cylon_scan_dual_end.py) will make a scanning LED pattern where the strip is lit up in red, and the scanning LEDs start at each end of the strip, move toward the center, and then reverse direction back to each end.
 
