@@ -1,7 +1,7 @@
-This page contains details on how I added an WS2812B LED light strip and connected it to the Raspberry Pi to create a Cylon light effect on the face of the drone.
+This page contains details on how I added an WS2812B LED light strip and connected it to the Raspberry Pi to create a scanning pattern, similar to the lights from a Cylon or Knight Rider car, on the face of the drone.
 
 # YouTube Video
-- [Hexacopter Drone Build Project – Part 18 Cylon Lights](https://youtu.be/XXX)
+- [Hexacopter Drone Build Project – Part 18 Scanning Lights](https://youtu.be/XXX)
 
 # Notes
 - Connect the 5v wire from the LED light strip to the 5v supply coming from the BEC. Also connect the ground wire to the 5v BEC, AND connect it to the ground pin on the raspberry pi. (The device needs a common ground for good data transfers.)
@@ -54,7 +54,11 @@ rm -rf cylon_leds
 
 # Supporting Materials
 - [ArduPilot Configuration](../ArduPilot-Config/ArduPilot-Config.md) - This page contains a consolidated list of the all of the configuration done in ArduPilot throughout the videos.
-
+- [3d Printed Lid](../../3d-print-files/drone-top-lid/Drone%20Top%20Lid.stl) - This is the lid to 3d print with mounting holes for the LiDAR.
+- [3d Printed Led Channel for Lid](../../3d-print-files/drone-top-lid/Drone%20Top%20Lid%20LED%20Channel.stl) - This is the channel for the LEDs that fits around the lid.
+- [3d Printed Led Channel Cover](../../3d-print-files/drone-top-lid/Drone%20Top%20Lid%20LED%20Face.stl) - This is the cover to the LED channel. Print this with translucent material.
 
 # References 
-- 
+
+Raspberry Pi 5 Pinout
+![Raspberry Pi 5 Pinout](./images/Raspberry-Pi-5-Pinout.jpg)

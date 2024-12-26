@@ -33,6 +33,7 @@ This page contains details on setting up the LightWare S45/B LiDAR.
 
 # Supporting Materials
 - [ArduPilot Configuration](../ArduPilot-Config/ArduPilot-Config.md) - This page contains a consolidated list of the all of the configuration done in ArduPilot throughout the videos.
+- [3d Printed Lid](../../3d-print-files/drone-top-lid/Drone%20Top%20Lid.stl) - This is the lid to 3d print with mounting holes for the LiDAR.
 
 # References 
 - [Ardupilot LightWare SF45/B 350 Lidar Setup Page](https://ardupilot.org/copter/docs/common-lightware-sf45b.html)
