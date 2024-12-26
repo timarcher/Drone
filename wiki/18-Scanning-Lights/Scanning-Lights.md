@@ -41,7 +41,7 @@ neo.update_strip()
 python3 led_test.py
 ```
 
-- Deactive and remove the virtual environment (optional):
+- Deactivate and remove the virtual environment (optional):
 ```sh
 deactivate
 rm -rf scanning_leds
@@ -49,7 +49,7 @@ rm -rf scanning_leds
 
 
 # Sample Scripts
-- [This script](../../src/sample03_neopixel_examples/loading_bar.py) will just start at one end and light up one LED at a time making a loading bar type of effect. Mainly used to use the functions to interface with the light strip.
+- [This script](../../src/sample03_neopixel_examples/loading_bar.py) will just start at one end and light up one LED at a time making a loading bar type of effect. Mainly used to demo the functions that interface with the light strip.
 - [This script](../../src/sample03_neopixel_examples/cylon_scan.py) will make a scanning LED pattern where the strip is lit up in red, and 7 LEDs will "scan" back and forth in a blue color.
 - [This script](../../src/sample03_neopixel_examples/cylon_scan_dual_end.py) will make a scanning LED pattern where the strip is lit up in red, and the scanning LEDs start at each end of the strip, move toward the center, and then reverse direction back to each end.
 
