@@ -6,8 +6,6 @@ This page contains details on how I added an WS2812B LED light strip and connect
 # Notes
 - Connect the 5v wire from the LED light strip to the 5v supply coming from the BEC. Also connect the ground wire to the 5v BEC, AND connect it to the ground pin on the raspberry pi. (The device needs a common ground for good data transfers.)
 - Connect the data line from the LED light strip to GPIO10 (MOSI) on the raspberry pi. Put a 330 ohm resistor in series between the LED light strip and the Raspberry Pi GPIO pin.
-- NeoPixels must be connected to GPIO10, GPIO12, GPIO18 or GPIO21 to work! GPIO18 is the standard pin.
-- Sound must be disabled to use GPIO18. This can be done in /boot/firmware/config.txt by changing "dtparam=audio=on" to "dtparam=audio=off" and rebooting.
 - Create a python environment and install the [Pi5Neo library](https://pypi.org/project/Pi5Neo/).
 ```sh
 sudo apt update
