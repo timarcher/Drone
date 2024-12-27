@@ -10,6 +10,7 @@ This page contains a checklist to work through prior to flying the drone.
 1.	Will the Gimbal be needed? If not set MNT1_TYPE to 0.
 1.	Field Equipment Packed? See list below.
 1.	Field Tools Packed? See list below.
+1.	Clean rangefinder, proximity sensor, and camera lens.
 
 
 # Ground Control Station (GCS) Prep Checklist
@@ -77,6 +78,7 @@ On the HereLink controller I configured the A, B, and Home buttons to control my
 
 
 ## HereLink Button Setup - Other Buttons
+- C Short Press – Channel 8 – Enable/Disable Proximity Avoidance
 - D Short Press – Channel 6 – Enable/Disable Navigation Lights
 - D Long Press – Channel 7 – Enable/Disable Fence Mode
 
@@ -101,7 +103,7 @@ In Mission Planner go to the Config->GeoFence tab. Configure the GeoFence settin
 - RTK GPS Antenna and Tripod
 - Coax Cable to Connect Antenna to Here4 Base
 - Laptop
-- USB Cable to Connect to Flight Controller
+- USB Cable to Connect to Flight Controller - both Micro USB and USB-C
 - Travel Router/Wifi 
 - Travel Router Battery Power
 - Cellular Phone with Hotspot
@@ -111,6 +113,7 @@ In Mission Planner go to the Config->GeoFence tab. Configure the GeoFence settin
 - Bug Spray
 - Small Folding Table
 - Chair
+- 4x4 sheet of plywood to field list for takeoff pad
 
 
 # Field Tool List
@@ -124,3 +127,6 @@ In Mission Planner go to the Config->GeoFence tab. Configure the GeoFence settin
 - #1 Phillips Screwdriver
 - Flat Head Screwdriver
 - Metric Ruler
+- Cordless Drill
+- Drill Bits
+

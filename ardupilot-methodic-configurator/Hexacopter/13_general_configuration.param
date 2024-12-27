@@ -1,4 +1,9 @@
 ARMING_CHECK,1  # Perform all arming checks. If you have a problem fix its source. Do NOT change this
+AVOID_ALT_MIN,0  # Minimum altitude above which proximity based avoidance will start working. This requires a valid downward facing rangefinder reading to work. Set zero to disable.
+AVOID_BEHAVE,1  # Avoidance behaviour of stop.
+AVOID_DIST_MAX,5  # Distance from object at which obstacle avoidance will begin in non-GPS modes.
+AVOID_ENABLE,3  # Bitmask for Fence and Proximity.
+AVOID_MARGIN,2  # Vehicle will attempt to stay at least this distance (in meters) from objects while in GPS modes.
 BRD_BOOT_DELAY,3000  # This adds a delay in milliseconds to boot to ensure peripherals initialise fully. Value in milliseconds.
 BRD_RTC_TZ_MIN,0  # UTC Time Zone. Adds offset in +- minutes from UTC to calculate local time.
 FLOW_POS_X,-0.140  # X position of the optical flow sensor focal point in body frame. Positive X is forward of the origin. Units in meters.
@@ -18,6 +23,7 @@ LOIT_ACC_MAX,420  # Default is 500. Loiter maximum correction acceleration in cm
 LOIT_BRK_ACCEL,225  # Default is 250. Loiter braking acceleration in cm/s/s. Higher values stop the copter more quickly when the stick is centered. This is a big drone so we slow it down a bit.
 NTF_DISPLAY_TYPE,1  # Onboard OLED display. SSD1306 OLED Connected to I2C.
 PILOT_TKOFF_ALT,0  # Altitude that altitude control modes will climb to when a takeoff is triggered with the throttle stick. Leave at 0 for default. Set to 100 to climb to 1m on take-off. Value in centimeters.
+PRX1_TYPE,14  # Type of connected proximity sensor. 14=DroneCAN.
 RNGFND1_GNDCLEAR,29  # TFMini-S LiDAR. Optional - This parameter sets  the expected range measurement(in cm) that the range finder should return when the vehicle is on the ground.
 RNGFND1_MAX_CM,600  # TFMini-S LiDAR. This is the distance in centimeters that the rangefinder can reliably read. 600 for outdoors.
 RNGFND1_MIN_CM,10  # TFMini-S LiDAR. Minimum distance in centimeters that rangefinder can reliably read. 10 for TFminiPlus

@@ -30,6 +30,9 @@ This page contains details on setting up the LightWare S45/B LiDAR.
   - AVOID_ENABLE=3 (Bitmask for Fence and Proximity)
   - AVOID_MARGIN=2 (Vehicle will attempt to stay at least this distance (in meters) from objects while in GPS modes)
 - To see what the proximity sensor sees, in Mission Planner press CTRL-F. Press the button in the popup window labeled "Proximity".
+- ArduPilot recommends setting up an RC Channel to be able to turn on and off proximity avoidance.
+  - Set RC8_OPTION=40
+  - I then mapped Channel 8 to button C on the HereLink controller. 
 
 # Supporting Materials
 - [ArduPilot Configuration](../ArduPilot-Config/ArduPilot-Config.md) - This page contains a consolidated list of the all of the configuration done in ArduPilot throughout the videos.
