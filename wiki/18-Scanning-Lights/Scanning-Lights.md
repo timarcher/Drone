@@ -61,6 +61,8 @@ rm -rf scanning_leds
 - [3d Printed Led Channel Cover](../../3d-print-files/drone-top-lid/Drone%20Top%20Lid%20LED%20Face.stl) - This is the cover to the LED channel. Print this with translucent material.
 
 # References 
+NA
 
+# Pictures
 Raspberry Pi 5 Pinout
 ![Raspberry Pi 5 Pinout](./images/Raspberry-Pi-5-Pinout.jpg)

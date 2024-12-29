@@ -1,3 +1,15 @@
+# USE THIS SCRIPT WITH CAUTION!!
+#
+# This script shows the basics of how to communicate with the ArduPilot flight controller and control your drone.
+# It assumes you have a HereLink Air Unit at IP 192.168.144.10 and the Raspberry Pi can connect to it.
+# In the main function below, this script demos several actions:
+# 1) Set flight mode to Loiter
+# 2) Arm the drone
+# 3) Takeoff to altitude of 3 meters
+# 4) Read telemetry for 10 seconds and print out values
+# 5) Land the drone
+
+
 import time
 import signal
 import traceback
@@ -141,7 +153,14 @@ def set_message_rate(drone, message_id, rate_hz):
 # Example function to parse telemetry data
 #
 def read_telemetry(drone):
+    start_time = time.time()  # Record the start time
+    timeout = 10  # Set timeout in seconds
+
     while True:
+        if time.time() - start_time > timeout:
+            print("Telemetry reading stopped after 10 seconds.")
+            break
+
         msg = drone.recv_match(blocking=False)
         if not msg:
             continue
@@ -204,15 +223,15 @@ def main():
       print(drone.mode_mapping())
 
       # Set flight mode - STABILIZE, LOITER 
-      if not set_flight_mode(drone, "STABILIZE"):
+      if not set_flight_mode(drone, "LOITER"):
           return
 
       # Arm the drone
       if not arm_drone(drone):
           return
 
-      # Send a takeoff command to 10 meters altitude
-      if not send_takeoff_command(drone, 5):
+      # Send a takeoff command to 3 meters altitude
+      if not send_takeoff_command(drone, 3):
           return
 
       # Start reading telemetry data

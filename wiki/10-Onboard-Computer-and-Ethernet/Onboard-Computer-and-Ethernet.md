@@ -21,6 +21,20 @@ This page contains details on the installation of a Raspberry Pi 5 companion com
     - To do it permanently, simply leave in the routes section in the static IP configuration as shown below.
 - URL for the RTSP video stream is: rtsp://192.168.43.1:8554/fpv_stream or rtsp://192.168.144.11:8554/fpv_stream
   - You can connect to that using a tool such as VLC Media Player
+- I've found trying to download logs to the Raspberry Pi using Mavlink and Ethernet is very slow. It gets data in 90 byte chunks. For this reason, I added a serial link between the Raspberry Pi and the Kore carrier board.
+  - One end connects to the GPS2 (SER4/I2C2) port. This is SERIAL4 in ArduPilot then.
+  - TX from the Kore connects to RX on the Raspberry Pi (Pin 10, GPIO15/RXD).
+  - RX from the Kore connects to TX on the Raspberry Pi (Pin 8, GPIO14/TXD).
+  - Ground from the Kore connects to Groun on the Raspberry Pi. (Pin 39)
+  - Then set these ArduPilot parameters:
+    - SERIAL4_PROTOCOL = 2 to enable MAVLink 2 on the serial port.
+    - SERIAL4_BAUD = 921
+  - On the raspberry pi you also have to edit `/boot/firmware/config.txt` and set these two params:
+      enable_uart=1
+      dtoverlay=uart0
+  - To test if it's working, you can try to connect with mavproxy:
+    - ```pip3 install mavproxy```
+    - ```mavproxy.py --master=/dev/ttyAMA0 --baudrate=921600```
 
 
 # Sudo Setup
@@ -126,7 +140,11 @@ i2cdetect -y 1
 # References 
 - Herelink air unit to botblox switch wiring is shown [on this page](https://ardupilot.org/copter/docs/common-ethernet-vehicle.html).
 - ArduPilot discussion post on Ethernet Connected Ardupilot Vehicle Example [can be found here](https://discuss.ardupilot.org/t/ethernet-connected-ardupilot-vehicle-example/117942).
+- [Communicating with Raspberry Pi via MAVLink and Serial Port Wiring](https://ardupilot.org/dev/docs/raspberry-pi-via-mavlink.html)
 
 
 # Pictures
 ![Herelink Network Overview](./images/herelink-network-overview.png)
+
+Raspberry Pi 5 Pinout
+![Raspberry Pi 5 Pinout](./images/Raspberry-Pi-5-Pinout.jpg)

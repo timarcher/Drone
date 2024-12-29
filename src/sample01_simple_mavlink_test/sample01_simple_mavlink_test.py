@@ -1,3 +1,8 @@
+# This script shows the basics of how to communicate with the ArduPilot flight controller.
+# It prints out info from the flight controller. It assumes you have a HereLink Air Unit 
+# at IP 192.168.144.10 and the Raspberry Pi can connect to it.
+# It simply calls the read_telemetry function to print out several stats from the flight controller.
+
 import time
 import signal
 import traceback
