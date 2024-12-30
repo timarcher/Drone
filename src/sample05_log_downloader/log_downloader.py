@@ -1,20 +1,23 @@
 # This script will automatically download logs from the flight controller.
 # It assumes you have a HereLink Air Unit at IP 192.168.144.10 and the Raspberry Pi can connect to it.
 
+import sys
 import time
 import signal
 import logging
+import datetime
 from logging.handlers import RotatingFileHandler
 from pathlib import Path
 import os
 import time
+import json
 from pymavlink import mavutil
 
 # Parameters for the script
 #connection_string = "udpout:192.168.144.10:14552"  # MAVLink connection string to the HereLink
 #baud_rate = 0
 
-connection_string = "udp:127.0.0.1:14550"           # MAVLink connection string to the local MavProxy
+connection_string = "udp:127.0.0.1:14554"           # MAVLink connection string to the local MavProxy
 baud_rate = 0
 
 #connection_string = "/dev/ttyAMA0"                 # MAVLink connection string to the serial/UART connection
@@ -45,6 +48,8 @@ logging.basicConfig(
 # Connect to drone
 #
 def connect(connection_string, baud_rate):
+    logging.info(f"Connecting to {connection_string}")
+
     if baud_rate > 0:
         drone = mavutil.mavlink_connection(connection_string, baud=baud_rate, mavlink_version=2)
     else:
@@ -112,15 +117,63 @@ def set_message_rate(drone, message_id, rate_hz):
         0, 0, 0, 0, 0
     )
 
+    # Wait for a response (blocking) to the MAV_CMD_SET_MESSAGE_INTERVAL command and print result
+    response = drone.recv_match(type='COMMAND_ACK', blocking=True)
+    if response and response.command == mavutil.mavlink.MAV_CMD_SET_MESSAGE_INTERVAL and response.result == mavutil.mavlink.MAV_RESULT_ACCEPTED:
+        logging.info(f"set_message_rate command accepted. {response}")
+    else:
+        logging.info(f"set_message_rate command failed. {response}")
+
 #
 # Determine if the drone is disarmed
 #
 def is_drone_disarmed(connection):
     """Check if the drone is disarmed."""
-    msg = connection.recv_match(type='HEARTBEAT', blocking=True, timeout=5)
-    if msg:
-        return msg.base_mode & mavutil.mavlink.MAV_MODE_FLAG_SAFETY_ARMED == 0
+    max_retries = 5
+    retries = 0
+    while retries < max_retries:
+        msg = connection.recv_match(type='HEARTBEAT', blocking=True, timeout=5)
+        if msg:
+            #logging.info(f"Checking if drone is disarmed. base_mode: {msg.base_mode} MAV_MODE_FLAG_SAFETY_ARMED: {mavutil.mavlink.MAV_MODE_FLAG_SAFETY_ARMED} - Logic check: {msg.base_mode & mavutil.mavlink.MAV_MODE_FLAG_SAFETY_ARMED}.")
+            return msg.base_mode & mavutil.mavlink.MAV_MODE_FLAG_SAFETY_ARMED == 0
+
+        retries += 1
+        logging.info(f"Checking if the drone is disarmed. Attempt {retries} timed out. No HEARTBEAT received. Retrying...")
+        time.sleep(1)  # Sleep for 1 second before retrying
+
+    logging.info(f"Timeout occurred checking is drone is disarmed. Assuming drone is armed.")
     return False
+
+#
+# Read the download status file
+#
+def read_download_status_file(json_file):
+    """Read progress from the JSON file."""
+    if not Path(json_file).exists():
+        return 0, 0  # Default values
+
+    try:
+        with open(json_file, 'r') as file:
+            data = json.load(file)
+            return data.get("start_offset", 0), data.get("bytes_received", 0)
+    except Exception as e:
+        logging.error(f"Error reading download status file: {e}")
+    return 0, 0
+
+#
+# Write the download status file
+#
+def write_download_status_file(json_file, log_filename, start_offset, bytes_received):
+    """Write progress to the JSON file."""
+    try:
+        with open(json_file, 'w') as file:
+            json.dump({
+                "log_filename": log_filename,
+                "start_offset": start_offset,
+                "bytes_received": bytes_received
+            }, file)
+    except Exception as e:
+        logging.error(f"Error writing download status file: {e}")
 
 #
 # Download a log file from the flight controller
@@ -130,53 +183,85 @@ def download_log(connection, log, log_filename):
     try:
 
         log_filename_tmp = f"{log_filename}.tmp"
+        log_download_status_filename = f"{log_filename}.status.json"
 
         # Check if MAVLink2 is enabled
         #if not connection.mavlink20():
         #    raise RuntimeError("MAVLink2 is required for faster downloads. Ensure MAVLink2 is enabled.")
 
         logging.info(f"Downloading log ID {log.id} ({log.size} bytes)...")
-        start_offset = 0
-        bytes_received = 0
-        chunk_size = 1024  # Maximum safe payload size for MAVLink2 LOG_DATA
+
+        # Initialize start_offset and bytes_received from progress file
+        start_offset, bytes_received = read_download_status_file(log_download_status_filename)      
+
+        if start_offset > 0:
+            logging.warning(f"Download will resume for {log_filename_tmp} from offset {start_offset}. {bytes_received} bytes were previously downloaded.")
+
+        # Check and trim existing temporary file if necessary
+        if Path(log_filename_tmp).exists():
+            existing_size = Path(log_filename_tmp).stat().st_size
+            if existing_size > bytes_received:
+                logging.warning(f"Trimming {log_filename_tmp} from {existing_size} to {bytes_received} bytes.")
+                with open(log_filename_tmp, "r+b") as log_file:
+                    log_file.truncate(bytes_received)
+
+        chunk_size = 90  # Maximum safe payload size for MAVLink2 LOG_DATA
         
         chunks_downloaded = 0
-        with open(log_filename_tmp, "wb") as log_file:
+        num_log_data_timeouts = 0
+        
+        buffer = bytearray()  # Buffer to accumulate data before writing
+
+        # Request the next chunk of the log
+        connection.mav.log_request_data_send(
+            target_system=connection.target_system,
+            target_component=connection.target_component,
+            id=log.id,
+            ofs=start_offset,
+            count=0xFFFFFFFF
+        )
+
+        with open(log_filename_tmp, "ab") as log_file:
             while start_offset < log.size:
                 # Check if the drone becomes armed during the download
-                if chunks_downloaded % 100 == 0:
-                    if not is_drone_disarmed(connection):
-                       raise Exception("Drone became armed. Stopping log download.")
-
-                # Request the next chunk of the log
-                connection.mav.log_request_data_send(
-                    target_system=connection.target_system,
-                    target_component=connection.target_component,
-                    id=log.id,
-                    ofs=start_offset,
-                    count=chunk_size
-                )
+                if chunks_downloaded % 20000 == 0:
+                   if not is_drone_disarmed(connection):
+                      raise Exception("Drone became armed. Stopping log download.")
 
                 # Wait for LOG_DATA message
-                msg = connection.recv_match(type='LOG_DATA', blocking=True, timeout=2)
+                msg = connection.recv_match(type='LOG_DATA', blocking=True, timeout=0.1)
                 if not msg:
                     logging.warning(f"Timeout waiting for log data at offset {start_offset}. Retrying...")
+                    num_log_data_timeouts += 1
+                    if num_log_data_timeouts > 10:
+                        raise Exception(f"Timeout occurred downloading log id {log.id} to file {log_filename}.")
                     continue
 
+                # We received valid log data, reset the timeout counter
+                num_log_data_timeouts = 0
+
+                # Calculate the number of valid bytes since the message payload size is fixed at 90 bytes
+                valid_bytes = min(log.size - start_offset, len(msg.data))
+                
                 # Write the received data to the file
-                log_file.write(bytes(msg.data))
-                start_offset += len(msg.data)
-                bytes_received += len(msg.data)
+                valid_data = bytes(msg.data[:valid_bytes])  # Trim to valid bytes
+
+                # Accumulate valid data in the buffer
+                buffer.extend(valid_data)
+
+                start_offset += len(valid_data)
+                bytes_received += len(valid_data)
                 chunks_downloaded += 1
 
-                # Logging progress
-                if chunks_downloaded % 100 == 0:
+                # Logging progress and incrementally write to file
+                if chunks_downloaded % 10000 == 0 or bytes_received == log.size:
                     percent_complete = (bytes_received / log.size) * 100
                     logging.info(f"Log {log.id}: {bytes_received} / {log.size} bytes ({percent_complete:.2f}% complete)")
+                    
+                    log_file.write(buffer)
+                    buffer.clear()
 
-        # Final percent complete message
-        percent_complete = (bytes_received / log.size) * 100
-        logging.info(f"Log {log.id}: {bytes_received} / {log.size} bytes ({percent_complete:.2f}% complete)")
+                    write_download_status_file(log_download_status_filename, log_filename, start_offset, bytes_received)
 
         # If the log file already exists, then remove it before we rename the temporary file
         # just downloaded to the log filename
@@ -188,11 +273,15 @@ def download_log(connection, log, log_filename):
 
         logging.info(f"Log {log.id} downloaded successfully to {log_filename}.")
 
+        # Remove progress file after successful download
+        if Path(log_download_status_filename).exists():
+            Path(log_download_status_filename).unlink()
+
     except Exception as e:
         logging.error(f"Error downloading log {log.id}: {e}", exc_info=True)
         try:
-            if Path(log_filename_tmp).exists():
-                Path(log_filename_tmp).unlink()            
+            #if Path(log_filename_tmp).exists():
+            #    Path(log_filename_tmp).unlink()            
 
             if Path(log_filename).exists():
                 Path(log_filename).unlink()
@@ -228,7 +317,12 @@ def download_logs(connection):
         if not msg:
             break
         logs.append(msg)
-        logging.info(f"Log ID: {msg.id}, Size: {msg.size}, TimeUTC: {msg.time_utc}, NumLogs: {msg.num_logs}, LastLogNum: {msg.last_log_num}")
+        # Convert the timestamp to a datetime object
+        log_date = datetime.datetime.fromtimestamp(msg.time_utc, datetime.timezone.utc)
+        # Format the datetime object as a string
+        formatted_log_date_string = log_date.strftime("%m/%d/%Y %H:%M:%S")
+  
+        logging.info(f"Log ID: {msg.id}, Size: {msg.size}, Date: {formatted_log_date_string}, TimeUTC: {msg.time_utc}, NumLogs: {msg.num_logs}, LastLogNum: {msg.last_log_num}")
 
     # Filter logs (e.g., skip the latest ongoing log)
     # (Logic is removed for now)
@@ -244,16 +338,21 @@ def download_logs(connection):
         if not is_drone_disarmed(connection):
            raise Exception("Drone became armed. Stopping log download.")
 
+        # If the log never got a valid date/time to it, skip it. 315532800 = 01/01/1980 00:00:00
+        #if log.time_utc == 315532800:
+        #    logging.info(f"Skipping Log ID {log.id} since its time_utc is invalid (315532800 = 01/01/1980 00:00:00).")
+        #    continue
+
         # Check if the log file already exists
-        log_filename = f"{log_output_directory}/log_{log.id}.bin"
+        log_filename = f"{log_output_directory}/log_{log.id:08}.bin"
         if Path(f"{log_filename}").exists():
             # See if the log file is the same size in bytes
             local_log_file_size = os.path.getsize(log_filename)
-            if local_log_file_size == msg.size:
+            if local_log_file_size == log.size:
                 logging.info(f"Log ID {log.id} already exists. Skipping download.")
                 continue
             else:
-                logging.info(f"Log ID {log.id} already exists but file sizes are different. File will be downloaded and the local log file overwritten.")
+                logging.info(f"Log ID {log.id} already exists but file sizes are different. File will be downloaded and the local log file overwritten. Local log file size is {local_log_file_size} bytes, remote log file size is {log.size} bytes.")
 
         download_log(connection, log, log_filename)
 
@@ -262,35 +361,45 @@ def download_logs(connection):
 # Main program logic
 #
 def main():
-    logging.info(f"Log Download Script starting.")
+    drone = None
 
-    while True:
-        logging.info(f"About to check if there are new logs to download.")
+    try:
+        logging.info(f"Log Download Script starting.")
 
-        drone = connect(connection_string, baud_rate)
-        logging.info(f"Mavlink connection established to drone.")
+        while True:
+            logging.info(f"About to check if there are new logs to download.")
 
-        # Register signal handler for graceful shutdown
-        signal.signal(signal.SIGINT, lambda sig, frame: signal_handler(sig, frame, drone))
-        signal.signal(signal.SIGTERM, lambda sig, frame: signal_handler(sig, frame, drone))
+            drone = connect(connection_string, baud_rate)
+            logging.info(f"Mavlink connection established to drone.")
 
-        # Set the rate for LOG_DATA to 5 Hz
-        #logging.info(f"Setting message rate: {mavutil.mavlink.MAVLINK_MSG_ID_LOG_DATA}")
-        #set_message_rate(drone, mavutil.mavlink.MAVLINK_MSG_ID_LOG_DATA, 50)
+            # Register signal handler for graceful shutdown
+            signal.signal(signal.SIGINT, lambda sig, frame: signal_handler(sig, frame, drone))
+            signal.signal(signal.SIGTERM, lambda sig, frame: signal_handler(sig, frame, drone))
 
-        try:
-            Path(f"{log_output_directory}").mkdir(parents=True, exist_ok=True)
-            download_logs(drone)
-        except Exception as e:
-            logging.error(f"An error occurred: {e}", exc_info=True)
-            #traceback.print_exc()
-        finally:
+            # Set the rate for LOG_DATA to 5 Hz
+            #logging.info(f"Setting message rate: {mavutil.mavlink.MAVLINK_MSG_ID_LOG_DATA}")
+            #set_message_rate(drone, mavutil.mavlink.MAVLINK_MSG_ID_LOG_DATA, 50)
+
+            try:
+                Path(f"{log_output_directory}").mkdir(parents=True, exist_ok=True)
+                download_logs(drone)
+            except Exception as e:
+                logging.error(f"An error occurred: {e}", exc_info=True)
+                #traceback.print_exc()
+            finally:
+                close_connection(drone)
+
+            logging.info(f"Finished processing logs. Script will now sleep for {loop_sleep_time_seconds} seconds.")
+            time.sleep(loop_sleep_time_seconds)
+
+    except Exception as e:
+        logging.error(f"An error occurred: {e}", exc_info=True)
+        #traceback.print_exc()
+        sys.exit(1)
+    finally:
+        logging.info(f"Script finished.")
+        if drone:
             close_connection(drone)
-
-        logging.info(f"Finished processing logs. Script will now sleep for {loop_sleep_time_seconds} seconds.")
-        time.sleep(loop_sleep_time_seconds)
-
-    logging.info(f"Log Download Script finished.")
 
 
 if __name__ == "__main__":

@@ -36,10 +36,11 @@ Wants=network-online.target
 Type=simple
 User=ubuntu
 WorkingDirectory=/home/ubuntu/drone_scripts
-ExecStartPre=/bin/sleep 5
+#ExecStartPre=/bin/sleep 60
 ExecStart=/home/ubuntu/drone_scripts/drone_scripts_env/bin/python3 /home/ubuntu/drone_scripts/log_downloader.py
-Restart=on-failure
-TimeoutStartSec=30
+#Restart=on-failure
+Restart=always
+TimeoutStartSec=120
 Environment="PATH=/home/ubuntu/drone_scripts/drone_scripts_env/bin/python3:/usr/bin:/bin"
 StandardOutput=journal
 StandardError=journal

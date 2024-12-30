@@ -39,10 +39,11 @@ Wants=network-online.target
 Type=simple
 User=ubuntu
 WorkingDirectory=/home/ubuntu/drone_scripts
-ExecStartPre=/bin/sleep 3
-ExecStart=/home/ubuntu/drone_scripts/drone_scripts_env/bin/mavproxy.py --master=/dev/ttyAMA0 --baudrate 921600 --out=udp:127.0.0.1:14550 --cmd="set flushlogs True" --state-basedir="/home/ubuntu/drone_scripts" --logfile=mav.tlog --console --daemon
-Restart=on-failure
-TimeoutStartSec=30
+#ExecStartPre=/bin/sleep 30
+ExecStart=/home/ubuntu/drone_scripts/drone_scripts_env/bin/mavproxy.py --master=/dev/ttyAMA0 --baudrate 921600 --out=udp:127.0.0.1:14550 --out=udp:127.0.0.1:14551 --out=udp:127.0.0.1:14552 --out=udp:127.0.0.1:14553 --out=udp:127.0.0.1:14554 --cmd="set flushlogs True" --state-basedir="/home/ubuntu/drone_scripts" --logfile=mav.tlog --daemon
+#Restart=on-failure
+Restart=always
+TimeoutStartSec=60
 Environment="PATH=/home/ubuntu/drone_scripts/drone_scripts_env/bin/python3:/usr/bin:/bin"
 StandardOutput=journal
 StandardError=journal
