@@ -17,7 +17,7 @@ from pymavlink import mavutil
 #connection_string = "udpout:192.168.144.10:14552"  # MAVLink connection string to the HereLink
 #baud_rate = 0
 
-connection_string = "udp:127.0.0.1:14554"           # MAVLink connection string to the local MavProxy
+connection_string = "udp:127.0.0.1:14550"           # MAVLink connection string to the local MavProxy
 baud_rate = 0
 
 #connection_string = "/dev/ttyAMA0"                 # MAVLink connection string to the serial/UART connection
@@ -224,12 +224,12 @@ def download_log(connection, log, log_filename):
         with open(log_filename_tmp, "ab") as log_file:
             while start_offset < log.size:
                 # Check if the drone becomes armed during the download
-                if chunks_downloaded % 20000 == 0:
-                   if not is_drone_disarmed(connection):
-                      raise Exception("Drone became armed. Stopping log download.")
+                #if chunks_downloaded % 20000 == 0:
+                #   if not is_drone_disarmed(connection):
+                #      raise Exception("Drone became armed. Stopping log download.")
 
                 # Wait for LOG_DATA message
-                msg = connection.recv_match(type='LOG_DATA', blocking=True, timeout=0.1)
+                msg = connection.recv_match(type='LOG_DATA', blocking=True, timeout=0.5)
                 if not msg:
                     logging.warning(f"Timeout waiting for log data at offset {start_offset}. Retrying...")
                     num_log_data_timeouts += 1
