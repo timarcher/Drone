@@ -21,10 +21,12 @@ This page contains details on setting up the LightWare S45/B LiDAR.
     - PRX1_ORIENT=0
     - PRX1_YAW_CORR=0
     - PRX1_IGN_ANG1 and PRX1_IGN_WID1 parameters allow defining zones around the vehicle that should be ignored. For example to avoid a 20deg area to the right, set PRX1_IGN_ANG1 to 90 and PRX1_IGN_WID1 to 20.
-  - Now go into Mission Planner->Config->Full Parameter List
-    - Set PRX1_TYPE=14
-- You can set various obstacle avoidance settings on the flight controller as well. I left all the defaults in place, which were:
-  - AVOID_ALT_MIN=0 (Minimum altitude above which proximity based avoidance will start working. This requires a valid downward facing rangefinder reading to work. Set zero to disable)
+  - Now go into Mission Planner->Config->Full Parameter List and set:
+    - PRX1_TYPE=14
+    - PRX1_MIN=0.2
+    - PRX1_MAX=40
+- You can set various obstacle avoidance settings on the flight controller as well. I left most of the defaults in place (except for AVOID_ALT_MIN), which were:
+  - AVOID_ALT_MIN=1.5 (Minimum altitude (in meters) above which proximity based avoidance will start working. This requires a valid downward facing rangefinder reading to work. Set zero to disable.)
   - AVOID_BEHAVE=1 (Avoidance behaviour of stop)
   - AVOID_DIST_MAX=5 (Distance from object at which obstacle avoidance will begin in non-GPS modes)
   - AVOID_ENABLE=3 (Bitmask for Fence and Proximity)

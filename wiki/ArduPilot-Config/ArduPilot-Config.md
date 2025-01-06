@@ -349,7 +349,9 @@ If using the Matek AP_PERIPH CAN Node L431 Board to convert your LightWare senso
 |Parameter Name|Value|Description|
 |---|---|---|
 |PRX1_TYPE|14|Type of connected proximity sensor. 14=DroneCAN. Reboot flight controller after setting this for rest of the params to show.|
-|AVOID_ALT_MIN|0|Minimum altitude above which proximity based avoidance will start working. This requires a valid downward facing rangefinder reading to work. Set zero to disable.|
+|PRX1_MIN|0.2|Minimum expected range for Proximity Sensor. Setting this to 0 will set value to manufacturer reported range.|
+|PRX1_MAX|40|Maximum expected range for Proximity Sensor. Setting this to 0 will set value to manufacturer reported range.|
+|AVOID_ALT_MIN|1.5|Minimum altitude (in meters) above which proximity based avoidance will start working. This requires a valid downward facing rangefinder reading to work. Set zero to disable.|
 |AVOID_BEHAVE|1|Avoidance behaviour of stop.|
 |AVOID_DIST_MAX|5|Distance from object at which obstacle avoidance will begin in non-GPS modes.|
 |AVOID_ENABLE|3|Bitmask for Fence and Proximity.|
