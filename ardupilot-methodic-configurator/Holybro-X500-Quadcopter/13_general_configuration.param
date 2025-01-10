@@ -22,4 +22,6 @@ SERIAL2_BAUD,57  # Baud rate for SBus Telemtry
 SERIAL2_OPTIONS,0  # Default
 SERIAL2_PROTOCOL,10  # FrSky SPort Passthrough. Telemetry gets sent back to radio for Yaapu telemetry widget.
 SERIAL3_PROTOCOL,-1  # Disable serial 3. It defaulted to GPS
+SERIAL4_PROTOCOL,2  # Enable MAVLink 2 on the serial port. This is connected to the onboard computer.
+SERIAL4_BAUD,921  # 921600 baud
 WPNAV_SPEED_DN,100  # Defines the speed in cm/s which the aircraft will attempt to maintain while descending during a WP mission.

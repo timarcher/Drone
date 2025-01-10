@@ -152,7 +152,7 @@ def set_gimbal_pitch_yaw(connection, pitch_degrees=0, yaw_degrees=0):
     )
 
     # Wait for a response (blocking) to the MAV_CMD_DO_GIMBAL_MANAGER_PITCHYAW command and print result
-    response = connection.recv_match(type='COMMAND_ACK', blocking=True, timeout=5)
+    response = connection.recv_match(type='COMMAND_ACK', blocking=True, timeout=10)
     if response:
         logging.info(f"Received COMMAND_ACK: {response}")
         if response.command == mavutil.mavlink.MAV_CMD_DO_GIMBAL_MANAGER_PITCHYAW and response.result == mavutil.mavlink.MAV_RESULT_ACCEPTED:

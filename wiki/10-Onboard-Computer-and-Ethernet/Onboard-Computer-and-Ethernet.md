@@ -29,12 +29,7 @@ This page contains details on the installation of a Raspberry Pi 5 companion com
   - Then set these ArduPilot parameters:
     - SERIAL4_PROTOCOL = 2 to enable MAVLink 2 on the serial port.
     - SERIAL4_BAUD = 921
-  - On the raspberry pi you also have to edit `/boot/firmware/config.txt` and set these two params:
-      enable_uart=1
-      dtoverlay=uart0
-  - To test if it's working, you can try to connect with mavproxy:
-    - ```pip3 install mavproxy```
-    - ```mavproxy.py --master=/dev/ttyAMA0 --baudrate=921600```
+  - Then on the Raspberry Pi, follow the instructions in the `Raspberry Pi Serial Port Setup` section below.
 
 
 # Sudo Setup
@@ -80,6 +75,55 @@ sudo apt install xrdp -y
 sudo usermod -aG sudo ubuntu
 sudo systemctl set-default graphical.target
 sudo reboot
+```
+
+
+# Raspberry Pi Serial Port Setup
+To setup the serial port on the Raspberry Pi top be able to connect it to the flight controller, you need to do some configuration on the Pi:
+1. Edit /boot/firmware/config.txt
+  - On the Raspberry Pi 5 you have to edit `/boot/firmware/config.txt` and set these two params:
+  ```
+  enable_uart=1
+  dtoverlay=uart0
+  ```
+  - And on a Raspberry Pi 4 you have to edit `/boot/firmware/config.txt` and set these three params instead:
+  ```
+  enable_uart=1
+  dtoverlay=uart0
+  dtoverlay=disable-bt
+  ```
+2. Remove ModemManager, it will conflict with your serial port:
+```sh
+sudo apt remove modemmanager
+```
+3. Ensure permissions are set correctly on /dev/ttyAMA0
+```sh
+sudo chown root:dialout /dev/ttyAMA0
+sudo chmod 660 /dev/ttyAMA0
+```
+4. Add user to the dialout group:
+```sh
+sudo usermod -aG dialout ubuntu
+```
+5. Disable agetty on /dev/ttyAMA0
+agetty is typically used for serial console access. If you don't need this, disable it. It is possible it isn't enabled already, if not then that's OK:
+```sh
+sudo systemctl stop serial-getty@ttyAMA0.service
+sudo systemctl disable serial-getty@ttyAMA0.service
+```
+6. Remove serial console access from the boot configuration:
+```sh
+sudo vi /boot/firmware/cmdline.txt
+```
+Remove any reference to console=serial0,115200 or console=ttyAMA0.
+7. Reboot
+```sh
+sudo reboot
+```
+8. To test if it's working, you can try to connect with mavproxy:
+```sh
+pip3 install mavproxy
+mavproxy.py --master=/dev/ttyAMA0 --baudrate=921600
 ```
 
 
