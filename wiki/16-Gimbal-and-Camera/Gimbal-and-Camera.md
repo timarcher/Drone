@@ -26,8 +26,24 @@ This page contains details on setting up the Gremsy T7 Gimbal, a Sony a6500 Came
 - Sony A6500 Camera Configuration
   - Enable RemoteCtrl function in the Camera menu for the Air Commander IR light to be able to control the menu.
     - Camera Menu -> Setup (toolbox icon) -> Setup4 screen -> Scroll to the Remote Ctrl setting and make sure it’s set to On.
-  - Turn the camera USB mode to MASS STORAGE. 
-    - Camera Menu -> Setup (toolbox icon) -> Setup4 screen -> USB Connection. Set to Mass Storage and confirm OK.
+  - Turn the camera USB mode to the appropriate mode:
+    - MASS STORAGE mode is used for geotagging. This mode prevents you from controlling the cameras ISO, Shutter Speed and Aperture. Use this for mapping type of work.
+      - Camera Menu -> Setup (toolbox icon) -> Setup4 screen -> USB Connection. Set to Mass Storage and confirm OK.
+    - PC REMOTE mode is prevents you from geotagging, but you can control the camera's ISO, Shutter Speed and Aperture. Use this mode for photo and video work.
+      - Camera Menu -> Setup (toolbox icon) -> Setup4 screen -> USB Connection. Set to PC Remote and confirm OK.
+      - You will also need the Air Commander Entire to not be in Direct Exif Geotagging mode for this to work. (Enable GeoTagging via MENU -> Logging mode-> Direct EXIF (or SD card))
+    - If you want to have BOTH geotagging AND camera control, then you need to setup the camera in mass storage mode and configure [wifi for camera control on the Air Commander](https://airpixel.cz/docs/wifi-for-camera-control/). This connected on my A6500 Camera, but it did not work as advertised...Try at your will, but it may not work as you expect.
+      - To do this, in the camera enable wifi remote control: MENU → (Application) → [Application List] → [Smart Remote Embedded].
+      - Then, login to the Entire admin control. 
+        - Switch Entire to WiFi control mode. Manage Entire to connect the Camera WiFi hotspot:MENU -> WiFi connection
+        - Select first empty slot
+        - Click to New Scan and wait  until scan is not ready
+        - From drop down list selelct camera WiFi hotspot
+        - Write down password from the camera
+        - Click to Connect
+        - Entire will connect the camera. During camera connection, Entire will disable own hotspot, so you’ll be disconnected. During connection Entire blinks quickly Blue/Green.
+        - Once connection is done, Entire will go Blue or Green, then you can connect back from your phone or PC.
+        - You can also add the "Sony Imagine Edge" mobile app to your phone and connect to your camera.
   - Enable Info Display on the Camera HDMI Output
     - Camera Menu -> Setup (toolbox icon) -> Setup4 screen -> HDMI. Change Info Display to On.
   - Disable AutoReview
@@ -61,8 +77,10 @@ This page contains details on setting up the Gremsy T7 Gimbal, a Sony a6500 Came
     - Data shown in the preview are updated online and should react to gimbal movements
   - Enable slow zoom for the Sony Zoom Lens
     - MENU -> Miscellaneous -> SONY Options -> Use Slower Zooming (set to checked)
-  - Have the Air Commander Restart Camera After It Initializes. I noticed that if I dont do this, there are times where the Air Commander was unable to control the camera after first powering on the drone.
+  - Have the Air Commander Restart Camera After It Initializes. I noticed that if I dont do this, there are times where the Air Commander was unable to control the camera after first powering on the drone. (I am on the fence if this actually helps. I currently have this disabled.)
     -  MENU -> Miscellaneous -> SONY Options -> Send Power Toggle After Start-Up (set to checked)
+  -  MENU -> Miscellaneous -> Dont Reconnect USB After Photo
+     -  I set this to checked per the docs at https://airpixel.cz/docs/sony-camera-control/
   - Do a self test
     - MENU -> Configuration Test
 - To control the gimbal on the Herelink controller:
@@ -95,6 +113,8 @@ This page contains details on setting up the Gremsy T7 Gimbal, a Sony a6500 Came
 - [Gremsy T7 Firmware Releases and Downloads](https://github.com/Gremsy/T7-Firmware/releases)
 - [Gremsy T7 Firmware Upgrade Instructions](https://gremsy.com/support/product-support/series-gremsy-t-s/gremsy-t7/gremsy-t7-download)
 - [AirPixel Air Commander Setup with Gremsy Gimbal](https://airpixel.cz/docs/gremsy-evo-installation-for-pixhawk/)
+- [AirPixel Air Commander Sony Camera Control](https://airpixel.cz/docs/sony-camera-control/)
+- [AirPixel Air Commander Using WiFi for camera control](https://airpixel.cz/docs/wifi-for-camera-control/)
 - [AirPixel Air Commander MavCam for HereLink](https://airpixel.cz/docs/herelink-camera-control/)
 - [AirPixel Air Commander Mission Planner Camera Control Plugin](https://airpixel.cz/docs/missionplanner-camera-control-plugin/)
 - [AirPixel Air Commander Firmware Updates](https://airpixel.cz/docs/firmware-update/)
