@@ -20,7 +20,6 @@ The Here 4 Base employs RTK (Real-Time Kinematic) technology to offer more preci
     - GPS_AUTO_CONFIG = 2 (AutoConfig DroneCAN)
     - GPS_AUTO_SWITCH = 1
     - Set the GPS1_POS_X/Y/Z and GPS2_POS_X/Y/Z parameters for the GPS antennas (see Sensor Position Offset are here). You must establish the relative positions of each GPS location on the vehicle with respect the vehicle’s motion.
-    - I also set these values in the GPS units themselves. To do this you open Mission Planner, connect to the DroneCAN interface to see the devices on the CAN bus, and use the menu icon to set the params in the Here 4 unit itself. The only difference is on GPS1 set GPS1_TYPE=17 (uBlox-MovingBaseline-Base) and on GPS2 set GPS1_TYPE=18 (uBlox-MovingBaseline-Rover).
 
 # Supporting Materials
 - [ArduPilot Configuration](../ArduPilot-Config/ArduPilot-Config.md) - This page contains a consolidated list of the all of the configuration done in ArduPilot throughout the videos.
