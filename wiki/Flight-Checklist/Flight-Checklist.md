@@ -78,6 +78,10 @@ On the HereLink controller I configured the A, B, and Home buttons to control my
 
 
 ## HereLink Button Setup - Other Buttons
+- A Short Press - Loiter Flight Mode
+- B Short Press - AltHold Flight Mode
+- Home Short Press - RTL  Flight Mode
+- Home Long Press - Land Flight Mode
 - C Short Press – Channel 8 – Enable/Disable Proximity Avoidance
 - D Short Press – Channel 6 – Enable/Disable Navigation Lights
 - D Long Press – Channel 7 – Enable/Disable Fence Mode

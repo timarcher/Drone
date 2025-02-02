@@ -52,6 +52,9 @@ This page contains details on setting up the Gremsy T7 Gimbal, a Sony a6500 Came
     - Camera Menu -> Camera Settings 1 -> Quality. Change to Raw + JPEG for both RAW and JPG files, or Extra Fine for best JPG only quality.
   - Exit the menu after changing the above. Be sure to physically power off the camera using its own power switch on the top of the camera. If you dont, the settings changed above will not save.
   - To format the memory card, go to Camera Menu -> Setup (toolbox icon) -> Setup6 screen -> Format
+  - Some notes on Camera exposure settings:
+    - Higher focal length (ie 50mm vs 35mm) is more detail, less field of view. Lower focal length is higher field of view and less detail.
+    - Settings for mapping are ISO 200, shutter speed 1/1000, and aperture f/2.8
 - AirPixel Air Commander Entire R3 Configuration:
   - Connect to its WiFi hotspot from your PC
   - http://entire/ or http://192.168.10.1/
@@ -121,3 +124,4 @@ This page contains details on setting up the Gremsy T7 Gimbal, a Sony a6500 Came
 - [QGroundControl Herelink Releases](https://github.com/CubePilot/qgroundcontrol-herelink/releases)
 - [PureThemal Mini Flir USB IR Camera Mount 3d Print](https://cults3d.com/en/3d-model/game/pure-thermal-mini-flir-usb-ir-camera-mount) - I had to scale this to 105% for it to fit the USB camera. I used this as the back, and the next file for the top.
 - [Hard Enclosure for Purethermal Mini 3d Print](https://cults3d.com/en/3d-model/gadget/hard-enclosure-for-purethermal-mini) - I had to scale this to 105% for it to fit the USB camera. I used this as the front, and the prior file for the back.
+- [PTGui](https://ptgui.com/) - software you can create high quality panoramas with.

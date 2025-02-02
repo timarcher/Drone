@@ -28,9 +28,9 @@ This page contains details on setting up the LightWare S45/B LiDAR.
 - You can set various obstacle avoidance settings on the flight controller as well. I left most of the defaults in place (except for AVOID_ALT_MIN), which were:
   - AVOID_ALT_MIN=1.5 (Minimum altitude (in meters) above which proximity based avoidance will start working. This requires a valid downward facing rangefinder reading to work. Set zero to disable.)
   - AVOID_BEHAVE=1 (Avoidance behaviour of stop)
-  - AVOID_DIST_MAX=5 (Distance from object at which obstacle avoidance will begin in non-GPS modes)
+  - AVOID_DIST_MAX=3 (Distance from object at which obstacle avoidance will begin in non-GPS modes)
   - AVOID_ENABLE=3 (Bitmask for Fence and Proximity)
-  - AVOID_MARGIN=2 (Vehicle will attempt to stay at least this distance (in meters) from objects while in GPS modes)
+  - AVOID_MARGIN=3 (Vehicle will attempt to stay at least this distance (in meters) from objects while in GPS modes)
 - To see what the proximity sensor sees, in Mission Planner press CTRL-F. Press the button in the popup window labeled "Proximity".
 - ArduPilot recommends setting up an RC Channel to be able to turn on and off proximity avoidance.
   - Set RC8_OPTION=40

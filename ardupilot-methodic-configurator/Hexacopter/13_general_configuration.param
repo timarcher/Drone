@@ -1,9 +1,9 @@
 ARMING_CHECK,1  # Perform all arming checks. If you have a problem fix its source. Do NOT change this
 AVOID_ALT_MIN,1.5  # Minimum altitude (in meters) above which proximity based avoidance will start working. This requires a valid downward facing rangefinder reading to work. Set zero to disable.
 AVOID_BEHAVE,1  # Avoidance behaviour of stop.
-AVOID_DIST_MAX,5  # Distance from object at which obstacle avoidance will begin in non-GPS modes.
+AVOID_DIST_MAX,3  # Distance from object at which obstacle avoidance will begin in non-GPS modes.
 AVOID_ENABLE,3  # Bitmask for Fence and Proximity.
-AVOID_MARGIN,2  # Vehicle will attempt to stay at least this distance (in meters) from objects while in GPS modes.
+AVOID_MARGIN,3  # Vehicle will attempt to stay at least this distance (in meters) from objects while in GPS modes.
 BRD_BOOT_DELAY,3000  # This adds a delay in milliseconds to boot to ensure peripherals initialise fully. Value in milliseconds.
 BRD_RTC_TZ_MIN,0  # UTC Time Zone. Adds offset in +- minutes from UTC to calculate local time.
 FLOW_POS_X,-0.140  # X position of the optical flow sensor focal point in body frame. Positive X is forward of the origin. Units in meters.

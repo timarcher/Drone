@@ -116,7 +116,7 @@ You do not need to set these if you are going to use the settings below for the 
 |NTF_LED_TYPES|231|Controls what types of LEDs will be enabled.|
 |GPS_AUTO_CONFIG|2|Needed to enable RTK autocorrect, set to enable for DroneCAN as well.|
 
-If using multiple GPS', as in my drone, also need to set additional params. In my drone, GPS1 (Node 119) is the GPS at the rear of the vehicle, and GPS2 (Node 118) is the GPS at the front of the vehicle.
+If using multiple GPS', as in my drone, also need to set additional params. In my drone, GPS1 (Node 119) is the GPS on the right middle arm of the vehicle, and GPS2 (Node 118) is the GPS on the left middle arm of the vehicle.
 |Parameter Name|Value|Description|
 |---|---|---|
 |GPS1_CAN_OVRIDE|119|Node ID for the 1st GPS. Set appropriately for your vehicle as the Node IDs might be different.|
@@ -127,13 +127,14 @@ If using multiple GPS', as in my drone, also need to set additional params. In m
 Additionally, you may wish to set the offsets of the sensors relative to the center of your Cube Orange.  Customize the value by measuring the offset from the center of your Cube Orange to the middle of the sensor.
 |Parameter Name|Value|Description|
 |---|---|---|
-|GPS1_POS_X|-0.135|X position of the second GPS antenna in body frame. Positive X is forward of the origin. Units in meters.|
-|GPS1_POS_Y|0.030|Y position of the second GPS antenna in body frame. Positive Y is to the right of the origin. Units in meters.|
-|GPS1_POS_Z|-0.110|Z position of the second GPS antenna in body frame. Positive Z is down from the origin. Units in meters.|
-|GPS2_POS_X|0.138|X position of the first GPS antenna in body frame. Positive X is forward of the origin. Units in meters.|
-|GPS2_POS_Y|-0.036|Y position of the first GPS antenna in body frame. Positive Y is to the right of the origin. Units in meters.|
-|GPS2_POS_Z|-0.110|Z position of the first GPS antenna in body frame. Positive Z is down from the origin. Units in meters.|
-
+|GPS1_POS_X|0.07|X position of the second GPS antenna in body frame. Positive X is forward of the origin. Units in meters.|
+|GPS1_POS_Y|0.2413|Y position of the second GPS antenna in body frame. Positive Y is to the right of the origin. Units in meters.|
+|GPS1_POS_Z|0.01|Z position of the second GPS antenna in body frame. Positive Z is down from the origin. Units in meters.|
+|GPS1_GNSS_MODE|5|Constellations to be used. 0=Set to allow all. 65=GPS and Galileo|
+|GPS2_POS_X|0.07|X position of the first GPS antenna in body frame. Positive X is forward of the origin. Units in meters.|
+|GPS2_POS_Y|-0.2413|Y position of the first GPS antenna in body frame. Positive Y is to the right of the origin. Units in meters.|
+|GPS2_POS_Z|0.01|Z position of the first GPS antenna in body frame. Positive Z is down from the origin. Units in meters.|
+|GPS2_GNSS_MODE|5|Constellations to be used. 0=Set to allow all. 65=GPS and Galileo|
 
 New RTK can be used to estimate yaw, in addition to providing position information. This removes the need for a compass which may suffer from magnetic interference from the ground or the vehicle’s motors and ESCs. Set the following to use this as well:
 |Parameter Name|Value|Description|
@@ -144,14 +145,6 @@ New RTK can be used to estimate yaw, in addition to providing position informati
 |GPS_AUTO_SWITCH|1|Use Best|
 
 > Be sure you set the GPS1_POS_X/Y/Z and GPS2_POS_X/Y/Z parameters for the GPS antennas (see Sensor Position Offset are here) as described above. You must establish the relative positions of each GPS location on the vehicle with respect the vehicle’s motion.
-
-
-I have my 2nd Here4 GPS mounted backwards at the front of the drone (to position it slightly further away from the onboard electronics). I need to set the appropriate orientation then:
-|Parameter Name|Value|Description|
-|---|---|---|
-|COMPASS_ORIENT2|4|Compass is rotated 180 degrees and pointing backwards, so we set this to Yaw180.|
-
-
 
 <!--
 |XXX|XXX|XXX|
@@ -353,9 +346,9 @@ If using the Matek AP_PERIPH CAN Node L431 Board to convert your LightWare senso
 |PRX1_MAX|40|Maximum expected range for Proximity Sensor. Setting this to 0 will set value to manufacturer reported range.|
 |AVOID_ALT_MIN|1.5|Minimum altitude (in meters) above which proximity based avoidance will start working. This requires a valid downward facing rangefinder reading to work. Set zero to disable.|
 |AVOID_BEHAVE|1|Avoidance behaviour of stop.|
-|AVOID_DIST_MAX|5|Distance from object at which obstacle avoidance will begin in non-GPS modes.|
+|AVOID_DIST_MAX|3|Distance from object at which obstacle avoidance will begin in non-GPS modes.|
 |AVOID_ENABLE|3|Bitmask for Fence and Proximity.|
-|AVOID_MARGIN|2|Vehicle will attempt to stay at least this distance (in meters) from objects while in GPS modes.|
+|AVOID_MARGIN|3|Vehicle will attempt to stay at least this distance (in meters) from objects while in GPS modes.|
 
 And set these parameters on the Matek L431 Device:
 |Parameter Name|Value|Description|
