@@ -72,4 +72,6 @@ Future steps coming soon:
 
 ![Hexacopter Pic 2](./.attachments/hexacopter-image2.jpg)
 
+![Hexacopter Pic 3](./.attachments/hexacopter-image3.jpg)
+
 ![Frame](./01-Frame/images/frame1.jpg)
