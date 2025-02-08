@@ -8,6 +8,6 @@ For details [click here to access the wiki and documentation home folder.](./wik
 
 ![Hexacopter Pic 2](./wiki/.attachments/hexacopter-image2.jpg)
 
-![Hexacopter Pic 3](./.attachments/hexacopter-image3.jpg)
+![Hexacopter Pic 3](./wiki/.attachments/hexacopter-image3.jpg)
 
 ![Frame](./wiki/01-Frame/images/frame1.jpg)
