@@ -19,7 +19,9 @@ This page contains details on the installation of a Raspberry Pi 5 companion com
   - Companion computer needs a static route for 192.168.43.0/24 via 192.168.144.11
     - To do this temporarily, run the command: `sudo ip route add 192.168.43.0/24 via 192.168.144.11`
     - To do it permanently, simply leave in the routes section in the static IP configuration as shown below.
-- URL for the RTSP video stream is: rtsp://192.168.43.1:8554/fpv_stream or rtsp://192.168.144.11:8554/fpv_stream
+- RTSP URLs:
+  - for the RTSP video stream on the Herelink Controller is: rtsp://192.168.43.1:8554/fpv_stream or rtsp://192.168.144.11:8554/fpv_stream
+  - for the RTSP video stream on the Herelink Air Unit is: rtsp://192.168.144.10:8554/H264Video
   - You can connect to that using a tool such as VLC Media Player
 - I've found trying to download logs to the Raspberry Pi using Mavlink and Ethernet is very slow. It gets data in 90 byte chunks. For this reason, I added a serial link between the Raspberry Pi and the Kore carrier board.
   - One end connects to the GPS2 (SER4/I2C2) port. This is SERIAL4 in ArduPilot then.
@@ -160,8 +162,12 @@ sudo apt install ffmpeg -y
 
 Launch the stream:
 ```sh
+# To pull it from the controller:
 vlc rtsp://192.168.144.11:8554/fpv_stream
 ffplay rtsp://192.168.144.11:8554/fpv_stream
+
+# To pull it from the air unit:
+ffplay rtsp://192.168.144.10:8554/H264Video
 ```
 
 # Install I2C Tools
