@@ -3,7 +3,7 @@
     "Components": {
         "Flight Controller": {
             "Product": {
-                "Manufacturer": "Hex/ProfiCNC",
+                "Manufacturer": "Hex/ProfiCNC,CubePilot",
                 "Model": "CubeOrangePlus",
                 "URL": "https://docs.cubepilot.org/user-guides/autopilot/the-cube-module-overview",
                 "Version": "CubeOrange+"
@@ -11,6 +11,9 @@
             "Firmware": {
                 "Type": "ArduCopter",
                 "Version": "4.6.0 beta"
+            },
+            "Specifications": {
+                "MCU Series": "STM32H7xx"
             },
             "Notes": "This is a custom build firmware with OpenDroneID enabled."
         },
@@ -137,10 +140,10 @@
                 "Manufacturer": "Hobbywing",
                 "Model": "XRotor X6 Plus system",
                 "URL": "https://www.hobbywingdirect.com/products/xrotor-x6-plus",
-                "Version": ""
+                "Version": "X6 Plus"
             },
             "Specifications": {},
-            "Notes": ""
+            "Notes": "6218-150KV"
         },
         "Propellers": {
             "Product": {
@@ -172,5 +175,5 @@
             "Notes": "Here4 GPS"
         }
     },
-    "Program version": "1.0.19"
+    "Program version": "1.1.1"
 }
