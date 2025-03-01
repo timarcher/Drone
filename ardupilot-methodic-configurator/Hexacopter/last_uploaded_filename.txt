@@ -1,1 +1,1 @@
-13_general_configuration.param
+10_gnss.param
