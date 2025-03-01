@@ -139,6 +139,7 @@ Additionally, you may wish to set the offsets of the sensors relative to the cen
 New RTK can be used to estimate yaw, in addition to providing position information. This removes the need for a compass which may suffer from magnetic interference from the ground or the vehicle’s motors and ESCs. Set the following to use this as well:
 |Parameter Name|Value|Description|
 |---|---|---|
+|EK3_SRC1_YAW|3|GPS with compass fallback|
 |GPS1_TYPE|22|DroneCAN moving baseline base|
 |GPS2_TYPE|23|DroneCAN moving baseline rover|
 |GPS_AUTO_CONFIG|2|Autoconfig DroneCAN|
