@@ -19,7 +19,9 @@ The Here 4 Base employs RTK (Real-Time Kinematic) technology to offer more preci
     - GPS2_TYPE = 23 (“DroneCAN moving baseline rover”)
     - GPS_AUTO_CONFIG = 2 (AutoConfig DroneCAN)
     - GPS_AUTO_SWITCH = 1
+    - EK3_SRC1_YAW = 3 (GPS with compass fallback)
     - Set the GPS1_POS_X/Y/Z and GPS2_POS_X/Y/Z parameters for the GPS antennas (see Sensor Position Offset are here). You must establish the relative positions of each GPS location on the vehicle with respect the vehicle’s motion.
+    - You will also need to set the GPS1_CAN_OVRIDE and GPS2_CAN_OVRIDE so that the same gps units also map to GPS 1 and GPS2.
 
 # Supporting Materials
 - [ArduPilot Configuration](../ArduPilot-Config/ArduPilot-Config.md) - This page contains a consolidated list of the all of the configuration done in ArduPilot throughout the videos.
