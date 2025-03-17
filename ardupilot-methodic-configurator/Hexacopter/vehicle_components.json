@@ -25,8 +25,8 @@
                 "Version": "RJX1300B"
             },
             "Specifications": {
-                "TOW min Kg": 0.6,
-                "TOW max Kg": 0.6
+                "TOW min Kg": 10.5,
+                "TOW max Kg": 11.3
             },
             "Notes": "A 1300mm carbon fiber frame."
         },
@@ -175,5 +175,5 @@
             "Notes": "Here4 GPS"
         }
     },
-    "Program version": "1.1.4"
+    "Program version": "1.2.2"
 }
