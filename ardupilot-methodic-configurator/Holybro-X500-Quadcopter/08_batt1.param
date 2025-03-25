@@ -10,5 +10,5 @@ BATT_LOW_MAH,0  # Battery capacity at which the low battery failsafe is triggere
 BATT_LOW_VOLT,21.6  # (Low voltage + 0.0) x no. of cells
 BATT_MONITOR,4  # Selected in component editor window
 BATT_VOLT_PIN,14  # Cube Orange
-MOT_BAT_VOLT_MAX,25.2  # Battery voltage compensation maximum voltage. Set to 4.2 * cell count.
-MOT_BAT_VOLT_MIN,19.8  # Battery voltage minimum compensation voltage. Set to 3.3 * cell count.
+MOT_BAT_VOLT_MAX,25.2  # (Max voltage + 0.0) x no. of cells
+MOT_BAT_VOLT_MIN,21.3  # (Critical voltage + 0.0) x no. of cells

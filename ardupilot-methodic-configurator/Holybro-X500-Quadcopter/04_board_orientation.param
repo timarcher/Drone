@@ -1,8 +1,8 @@
 AHRS_ORIENTATION,0  # Point forward in the direction of travel
 BRD_HEAT_TARG,45  # Reset to default after offline IMU temperature calibration
 CAN_D1_PROTOCOL,1  # Enable dronecan.
-CAN_P1_DRIVER,1  # Set to the first driver.
 CAN_D2_PROTOCOL,1  # Enable dronecan.
+CAN_P1_DRIVER,1  # Set to the first driver.
 CAN_P2_DRIVER,2  # Set to the second driver.
+LOG_BITMASK,145118  # Log all but fast att, Nav, Mission, OF, camera, fast IMU, raw, IMU, video stabilization. These are not needed now
 LOG_DISARMED,0  # Log disarmed was only required for offline IMU temperature calibration
-LOG_BITMASK,2277374  # Reset logging level after temp calibration to a starting point.

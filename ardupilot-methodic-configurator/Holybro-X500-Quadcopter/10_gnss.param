@@ -3,7 +3,7 @@ EK3_SRC1_YAW,1  # Compass
 GPS_AUTO_CONFIG,2  # Needed to enable RTK autocorrect, set to enable for DroneCAN as well.
 GPS_AUTO_SWITCH,1  # 1:UseBest selects the GPS with highest status, if both are equal the GPS with highest satellite count is used 4:Use primary if 3D fix or better, will revert to 'UseBest' behaviour if 3D fix is lost on primary. 2: Blend
 GPS1_GNSS_MODE,0  # Set to allow all
-GPS1_POS_X,0.130  # X position of the second GPS antenna in body frame. Positive X is forward of the origin. Units in meters.
+GPS1_POS_X,0.13  # X position of the second GPS antenna in body frame. Positive X is forward of the origin. Units in meters.
 GPS1_POS_Y,0  # Y position of the second GPS antenna in body frame. Positive Y is to the right of the origin. Units in meters.
 GPS1_POS_Z,-0.065  # Z position of the second GPS antenna in body frame. Positive Z is down from the origin. Units in meters.
 GPS1_TYPE,9  # Defined in component editor, 9=DroneCAN Here4, 22=GPS for Yaw/DroneCAN moving baseline base
