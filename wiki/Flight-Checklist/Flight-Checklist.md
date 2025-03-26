@@ -62,8 +62,8 @@ This page contains a checklist to work through prior to flying the drone.
 
 
 ## Important ArduPilot RTL Params
-- RTL_ALT=1500 The minimum alt above home the vehicle will climb to before returning. If the vehicle is flying higher than this value it will return at its current altitude. Value is in Centimeters.
-- RTL_LOIT_TIME=5000 Time (in milliseconds) to loiter above home before beginning final descent. Value is in milliseconds.
+- RTL_ALT=1500 - The minimum alt above home the vehicle will climb to before returning. If the vehicle is flying higher than this value it will return at its current altitude. Value is in Centimeters.
+- RTL_LOIT_TIME=5000 - Time (in milliseconds) to loiter above home before beginning final descent. Value is in milliseconds.
 
 
 # HereLink Button Setup
@@ -80,7 +80,8 @@ On the HereLink controller I configured the A, B, and Home buttons to control my
 ## HereLink Button Setup - Other Buttons
 - A Short Press - Loiter Flight Mode
 - B Short Press - AltHold Flight Mode
-- Home Short Press - RTL  Flight Mode
+- B Long Press - Stabilize Flight Mode
+- Home Short Press - RTL Flight Mode
 - Home Long Press - Land Flight Mode
 - C Short Press – Channel 8 – Enable/Disable Proximity Avoidance
 - D Short Press – Channel 6 – Enable/Disable Navigation Lights

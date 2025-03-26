@@ -36,12 +36,14 @@ Use the list below to follow my build journey step by step.
 
 Future steps are coming soon!
 
-<!--
-Future steps coming soon:
 
-- [Battery](Battery.md)
-- [Ardupilot Config](Arudpilot.md)
--->
+# Drone Weight
+The weight of this drone is as follows:
+- 21.64 lb without battery or payload (just frame, motors, electronics, etc).
+- 31.30 lb with battery (The battery is 9.66 lb).
+- 27.15 lb with payload and no battery (5.51 lb payload). The payload is the Gremsy T7 Gimbal, Sony A6500 Camera, and supporting electronics.
+- 36.85 lb with battery and payload
+
 
 # Flight Checklist
 - [Flight Checklist](Flight-Checklist/Flight-Checklist.md) - This page contains a simple checklist of items to work through before flying.
