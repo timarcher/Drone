@@ -51,6 +51,7 @@ The weight of this drone is as follows:
 
 # Full ArduPilot Configuration Summary
 - [ArduPilot Configuration](ArduPilot-Config/ArduPilot-Config.md) - This page contains a consolidated list of the all of the configuration done in ArduPilot throughout the videos.
+- However, I would recommend you use the [ArduPilot Methodic Configurator](https://ardupilot.github.io/MethodicConfigurator/TUNING_GUIDE_ArduCopter) with [these config files](../ardupilot-methodic-configurator/Hexacopter/) that I have created. This is how I setup and tuned the drone in its final stages.
 
 
 # ArduPilot Tools

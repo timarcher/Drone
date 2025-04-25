@@ -28,6 +28,11 @@ This section lists all the firmware and software versions I am using in this bui
 |AP_Periph MatekL431-Rangefinder|Feb 25 2024|https://firmware.ardupilot.org/AP_Periph/stable/MatekL431-Rangefinder/|
 |AP_Periph MatekL431-Proximity|Feb 25 2024|https://firmware.ardupilot.org/AP_Periph/stable/MatekL431-Proximity/|
 |Mission Planner|Latest Beta Release|https://ardupilot.org/planner/docs/mission-planner-installation.html|
+|ArduPilot Methodic Configurator|Latest Release|https://github.com/ArduPilot/MethodicConfigurator/releases|
+|Here4 GPS Firmware|1.14.6|https://github.com/CubePilot/GNSSPeriph-release/releases|
+|Tattu TA3200 LiPo Charger Firmware|3/20/2025, v1.3.29|https://www.grepow.com/downloads.html|
+
+
 
 
 # Initial Setup
@@ -105,7 +110,6 @@ You do not need to set these if you are going to use the settings below for the 
 |CAN_P2_DRIVER|2|2nd Driver.|
 |CAN_D1_PROTOCOL|1|DroneCAN.|
 |CAN_D2_PROTOCOL|1|DroneCAN.|
-
 
 
 ## Parameters - Here4 GPS
