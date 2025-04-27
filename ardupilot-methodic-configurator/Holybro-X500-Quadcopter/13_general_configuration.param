@@ -31,3 +31,4 @@ SERIAL5_PROTOCOL,1  # For ADSB receiver
 SR0_ADSB,2  # Set ADSB stream rate to ground station (usb connection)
 SR1_ADSB,2  # Set ADSB stream rate to ground station (telem 1)
 WPNAV_SPEED_DN,100  # Defines the speed in cm/s which the aircraft will attempt to maintain while descending during a WP mission.
+WPNAV_SPEED,450  # Defines the speed in cm/s which the aircraft will attempt to maintain during a WP mission.
