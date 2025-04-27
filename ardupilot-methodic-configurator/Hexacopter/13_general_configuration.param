@@ -6,9 +6,9 @@ AVOID_ENABLE,3  # Bitmask for Fence and Proximity.
 AVOID_MARGIN,3  # Vehicle will attempt to stay at least this distance (in meters) from objects while in GPS modes.
 BRD_BOOT_DELAY,3000  # This adds a delay in milliseconds to boot to ensure peripherals initialise fully. Value in milliseconds.
 BRD_RTC_TZ_MIN,0  # UTC Time Zone. Adds offset in +- minutes from UTC to calculate local time.
-FLOW_POS_X,-0.14  # X position of the optical flow sensor focal point in body frame. Positive X is forward of the origin. Units in meters.
-FLOW_POS_Y,-0.075  # Y position of the optical flow sensor focal point in body frame. Positive Y is to the right of the origin. Units in meters.
-FLOW_POS_Z,0.206  # Z position of the optical flow sensor focal point in body frame. Positive Z is down from the origin. Units in meters.
+FLOW_POS_X,-0.24  # X position of the optical flow sensor focal point in body frame. Positive X is forward of the origin. Units in meters.
+FLOW_POS_Y,-0.035  # Y position of the optical flow sensor focal point in body frame. Positive Y is to the right of the origin. Units in meters.
+FLOW_POS_Z,0.203  # Z position of the optical flow sensor focal point in body frame. Positive Z is down from the origin. Units in meters.
 FLOW_TYPE,6  # HereFlow. Enable optical flow camera.
 INS_ACCEL_FILTER,10  # Filter cutoff frequency for accelerometers. The default is 20 and that lets too much noise in.
 INS_POS1_X,0  # X position of the first IMU Accelerometer in body frame. Positive X is forward of the origin.
@@ -29,14 +29,14 @@ PRX1_TYPE,14  # Type of connected proximity sensor. 14=DroneCAN.
 RNGFND1_GNDCLEAR,29  # TFMini-S LiDAR. Optional - This parameter sets  the expected range measurement(in cm) that the range finder should return when the vehicle is on the ground.
 RNGFND1_MAX_CM,600  # TFMini-S LiDAR. This is the distance in centimeters that the rangefinder can reliably read. 600 for outdoors.
 RNGFND1_MIN_CM,10  # TFMini-S LiDAR. Minimum distance in centimeters that rangefinder can reliably read. 10 for TFminiPlus
-RNGFND1_POS_X,-0.16  # X position of the rangefinder in body frame. Positive X is forward of the origin. Units in meters.
+RNGFND1_POS_X,-0.245  # X position of the rangefinder in body frame. Positive X is forward of the origin. Units in meters.
 RNGFND1_POS_Y,0  # Y position of the rangefinder in body frame. Positive Y is to the right of the origin. Units in meters.
-RNGFND1_POS_Z,0.211  # Z position of the rangefinder in body frame. Positive Z is down from the origin. Units in meters.
+RNGFND1_POS_Z,0.208  # Z position of the rangefinder in body frame. Positive Z is down from the origin. Units in meters.
 RNGFND1_TYPE,24  # TFMini-S LiDAR. Type of connected rangefinder. 20=Benewake-Serial. Reboot flight controller after setting this for rest of the params to show.
 RTL_ALT,1500  # The minimum alt above home the vehicle will climb to before returning. If the vehicle is flying higher than this value it will return at its current altitude. Value is in Centimeters.
 RTL_LOIT_TIME,5000  # Time (in milliseconds) to loiter above home before beginning final descent. Value is in milliseconds.
 SCHED_LOOP_RATE,400  # Rate of the main loop in hertz. Keep default.
-SCR_ENABLE,1  # Use lua scripting for VTOL-Quicktune, MagFit automation and Windspeed Estimation automation
+SCR_ENABLE,1  # Use lua scripting for VTOL-Quicktune, MagFit automation and wind speed estimation automation
 SERIAL2_BAUD,921  # Gremsy Gimbal Baudrate, set to 921600 per Air Commander instructions.
 SERIAL2_OPTIONS,0  # Gremsy Gimbal
 SERIAL2_PROTOCOL,2  # Gremsy Gimbal - Mavlink2

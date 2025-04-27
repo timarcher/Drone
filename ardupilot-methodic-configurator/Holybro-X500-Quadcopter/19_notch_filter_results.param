@@ -2,10 +2,9 @@ INS_HNTCH_ATT,40  # Determined using notch filter web tool.
 INS_HNTCH_BW,14  # Determined using notch filter web tool. Value is INS_HNTCH_FREQ/6. Higher bandwidth values can be a bit too wide for when we have selected “multi source” which means one notch per motor. The notch filter can quickly get a bit out of control and introduce lag if the bandwidth is too wide.
 INS_HNTCH_ENABLE,1  # Use the first notch filter to filter the noise created by the motors/propellers.
 INS_HNTCH_FM_RAT,0.7  # The minimum ratio below the configured frequency to take throttle based notch filters when flying at a throttle level below the reference throttle.  If you want throttle based notch filtering to be effective at a throttle up to 30% below the configured notch frequency then set this parameter to 0.7.
-INS_HNTCH_FREQ,58  # Determined using notch filter web tool. Set below the base hover frequency of 41Hz per ESC telemetry docs.
-INS_HNTCH_HMNCS,2  # Apply notch filter to 2nd harmonic only (adding any more and we exceed the limit of 54 notches the Cube Orange supports if we enable filtering on all IMUs).
-INS_HNTCH_MODE,1  # Throttle bases filtering
+INS_HNTCH_FREQ,58  # Determined using notch filter web tool.
+INS_HNTCH_HMNCS,1  # Apply notch filter to 1st harmonic only (adding any more and we exceed the limit of 54 notches the Cube Orange supports if we enable filtering on all IMUs).
+INS_HNTCH_MODE,1  # Throttle based filtering
 INS_HNTCH_OPTS,14  # Bitmask set to: multi-source, update at loop rate, enable on all IMUs. We do not update at loop rate due to a big drone, and enable on all IMUs for redundancy. Use either Multi Source or Triple Notch, but not both at once! For drones with rapidly changing motor speeds, enabling "Update at loop rate" may improve performance, as it provides more accurate, timely filtering. However, if motor speed is generally steady, disabling this option can reduce CPU usage without significant impact on filtering effectiveness.
-INS_HNTCH_REF,0.2  # Dynamic updates on the notch filter. Should be the expected MOT_THST_HOVER because there is no ESC telemetry.
+INS_HNTCH_REF,0.249214  # Dynamic updates on the notch filter. Should be the expected MOT_THST_HOVER because there is no ESC telemetry.
 INS_RAW_LOG_OPT,0  # Once notch tuning is done, clear the INS_RAW_LOG_OPT parameter to avoid large logs from being saved unnecessarily.
-LOG_BITMASK,2277374  # Logs Notch filter data and other control signals

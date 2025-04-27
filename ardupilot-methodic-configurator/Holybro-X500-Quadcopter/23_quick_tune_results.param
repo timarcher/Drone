@@ -1,9 +1,9 @@
-ATC_RAT_PIT_D,0.003533  # Setting value after running QuickTune LUA script
-ATC_RAT_PIT_I,0.115798  # Setting value after running QuickTune LUA script
-ATC_RAT_PIT_P,0.115798  # Setting value after running QuickTune LUA script
-ATC_RAT_RLL_D,0.00288  # Setting value after running QuickTune LUA script
-ATC_RAT_RLL_I,0.108  # Setting value after running QuickTune LUA script
-ATC_RAT_RLL_P,0.108  # Setting value after running QuickTune LUA script
+ATC_RAT_PIT_D,0.005151  # Setting value after running QuickTune LUA script
+ATC_RAT_PIT_I,0.107942  # Setting value after running QuickTune LUA script
+ATC_RAT_PIT_P,0.107942  # Setting value after running QuickTune LUA script
+ATC_RAT_RLL_D,0.002907  # Setting value after running QuickTune LUA script
+ATC_RAT_RLL_I,0.07793  # Setting value after running QuickTune LUA script
+ATC_RAT_RLL_P,0.07793  # Setting value after running QuickTune LUA script
 ATC_RAT_YAW_D,0.01  # Setting value after running QuickTune LUA script
 ATC_RAT_YAW_FLTD,21  # Setting value after running QuickTune LUA script
 ATC_RAT_YAW_I,0.05  # Setting value after running QuickTune LUA script

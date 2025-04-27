@@ -8,4 +8,4 @@ INS_HNTCH_FREQ,58.8  # Use 1.4 * INS_GYRO_FILTER as a first guess
 INS_HNTCH_HMNCS,1  # Apply notch filter to 1st harmonic, the base frequency.
 INS_HNTCH_MODE,1  # Throttle bases filtering
 INS_HNTCH_OPTS,14  # Bitmask set to: multi-source, update at loop rate, enable on all IMUs. We do not update at loop rate due to a big drone, and enable on all IMUs for redundancy. Use either Multi Source or Triple Notch, but not both at once! For drones with rapidly changing motor speeds, enabling "Update at loop rate" may improve performance, as it provides more accurate, timely filtering. However, if motor speed is generally steady, disabling this option can reduce CPU usage without significant impact on filtering effectiveness.
-INS_HNTCH_REF,0.2  # Dynamic updates on the notch filter. Should be the expected MOT_THST_HOVER because there is no ESC telemetry.
+INS_HNTCH_REF,0.257948  # Dynamic updates on the notch filter. Should be the expected MOT_THST_HOVER because there is no ESC telemetry.

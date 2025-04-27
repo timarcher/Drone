@@ -1,3 +1,4 @@
+ADSB_LIST_RADIUS,0  # Show everything we can detected by ADSB, so we disable the radius. Default is 2000 meters.
 ADSB_TYPE,1  # Enable ADSB
 ARMING_CHECK,1  # Perform all arming checks. If you have a problem fix its source. Do NOT change this
 BRD_BOOT_DELAY,3000  # This adds a delay in milliseconds to boot to ensure peripherals initialise fully. Value in milliseconds.

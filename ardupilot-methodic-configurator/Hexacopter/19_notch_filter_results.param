@@ -8,4 +8,3 @@ INS_HNTCH_MODE,3  # Use the ESC RPM telemetry to dynamically track noise created
 INS_HNTCH_OPTS,14  # Bitmask set to: multi-source, update at loop rate, enable on all IMUs. We do not update at loop rate due to a big drone, and enable on all IMUs for redundancy. Use either Multi Source or Triple Notch, but not both at once! For drones with rapidly changing motor speeds, enabling "Update at loop rate" may improve performance, as it provides more accurate, timely filtering. However, if motor speed is generally steady, disabling this option can reduce CPU usage without significant impact on filtering effectiveness.
 INS_HNTCH_REF,1  # Set to 1 when using ESC telemetry.
 INS_RAW_LOG_OPT,0  # Once notch tuning is done, clear the INS_RAW_LOG_OPT parameter to avoid large logs from being saved unnecessarily.
-LOG_BITMASK,2277374  # Logs Notch filter data and other control signals
