@@ -1,1 +1,1 @@
-10_gnss.param
+04_board_orientation.param
