@@ -70,17 +70,18 @@ This page contains a checklist to work through prior to flying the drone.
 ## HereLink Button Setup - Flight Modes
 On the HereLink controller I configured the A, B, and Home buttons to control my flight modes using the following steps:
 -  Flight Mode 1 - Loiter - PWM 0-1230 - Mapped to button A short press, active value 1100, mark as default button
--  Flight Mode 2 - AutoTune - PWM 1231-1360 - Mapped to button A long press, active value 1300
+-  Flight Mode 2 - Stabilize - PWM 1231-1360 - Mapped to button A long press, active value 1300
 -  Flight Mode 3 - AltHold - PWM 1361-1490 - Mapped to button B short press, active value 1425
--  Flight Mode 4 - Stabilize - PWM 1491-1620 - Mapped to button B long press, active value 1550
+-  Flight Mode 4 - Auto - PWM 1491-1620 - Mapped to button B long press, active value 1550
 -  Flight Mode 5 - Smart_RTL - PWM 1621-1749 - Mapped to button home short press, active value 1675
 -  Flight Mode 6 - Land - PWM 1750+ - Mapped to button home long press, active value 1800
 
 
 ## HereLink Button Setup - Other Buttons
 - A Short Press - Loiter Flight Mode
+- A Long Press - Stabilize Flight Mode
 - B Short Press - AltHold Flight Mode
-- B Long Press - Stabilize Flight Mode
+- B Long Press - Auto Flight Mode
 - Home Short Press - RTL Flight Mode
 - Home Long Press - Land Flight Mode
 - C Short Press – Channel 8 – Enable/Disable Proximity Avoidance

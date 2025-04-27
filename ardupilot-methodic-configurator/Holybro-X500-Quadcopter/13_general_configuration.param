@@ -19,7 +19,7 @@ RNGFND1_TYPE,0  # No rangefinder
 RTL_ALT,1500  # The minimum alt above home the vehicle will climb to before returning. If the vehicle is flying higher than this value it will return at its current altitude. Value is in Centimeters.
 RTL_LOIT_TIME,5000  # Time (in milliseconds) to loiter above home before beginning final descent. Value is in milliseconds.
 SCHED_LOOP_RATE,400  # Rate of the main loop in hertz. Keep default.
-SCR_ENABLE,1  # Use lua scripting for VTOL-Quicktune, MagFit automation and Windspeed Estimation automation
+SCR_ENABLE,1  # Use lua scripting for VTOL-Quicktune, MagFit automation and wind speed estimation automation
 SERIAL2_BAUD,57  # Baud rate for SBus Telemtry
 SERIAL2_OPTIONS,0  # Default
 SERIAL2_PROTOCOL,10  # FrSky SPort Passthrough. Telemetry gets sent back to radio for Yaapu telemetry widget.
@@ -30,5 +30,5 @@ SERIAL5_BAUD,57  # For ADSB receiver
 SERIAL5_PROTOCOL,1  # For ADSB receiver
 SR0_ADSB,2  # Set ADSB stream rate to ground station (usb connection)
 SR1_ADSB,2  # Set ADSB stream rate to ground station (telem 1)
-WPNAV_SPEED_DN,100  # Defines the speed in cm/s which the aircraft will attempt to maintain while descending during a WP mission.
 WPNAV_SPEED,450  # Defines the speed in cm/s which the aircraft will attempt to maintain during a WP mission.
+WPNAV_SPEED_DN,100  # Defines the speed in cm/s which the aircraft will attempt to maintain while descending during a WP mission.
