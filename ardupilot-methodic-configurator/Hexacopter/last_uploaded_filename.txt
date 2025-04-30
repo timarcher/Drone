@@ -1,1 +1,1 @@
-22_quick_tune_setup.param
+24_inflight_magnetometer_fit_setup.param
