@@ -2,9 +2,10 @@
 - First ensure you have ubuntu desktop installed.
 - Install packages needed:
 ```sh
-sudo apt install gstreamer1.0-tools gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly
-sudo apt install v4l-utils
-sudo apt install fbset
+sudo apt update
+sudo apt install -y ffmpeg gstreamer1.0-tools gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly
+sudo apt install -y v4l-utils
+sudo apt install -y fbset
 ```
 - Stop the Login Screen Service
 ```sh
@@ -53,6 +54,22 @@ sudo gst-launch-1.0 v4l2src device=/dev/video4 ! videoconvert ! x264enc tune=zer
 udpsrc port=5600 ! application/x-rtp, encoding-name=H264, payload=96 ! rtph264depay ! avdec_h264 ! videoconvert ! autovideosink
 ```
 
+# Setup a Lightweight RTSP Server on the Linux Machine
+- Download a lightweigth RTSP server and install it:
+```
+mkdir ~/rtsp
+cd ~/rtsp
+wget https://github.com/bluenviron/mediamtx/releases/download/v1.12.0/mediamtx_v1.12.0_linux_amd64.tar.gz
+tar -zxpvf mediamtx_v1.12.0_linux_arm64v8.tar.gz
+./mediatx
+```
+- Use ffmpeg to send your video to the server
+```
+ffmpeg -f v4l2 -i /dev/video4 -vcodec libx264 -preset ultrafast -tune zerolatency -f rtsp rtsp://localhost:8554/mystream
+```
+- Now connect to the stream
+  - From VLC: rtsp://<your-linux-pc-ip>:8554/mystream
+  - From Mission Planner: rtspsrc location=rtsp://<your-linux-pc-ip>:8554/mystream latency=0 ! rtph264depay ! avdec_h264 ! videoconvert ! autovideosink
 
 # Use OpenCV to Display to the HDMI Port
 - Install dependencies:
