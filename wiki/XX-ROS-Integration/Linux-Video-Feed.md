@@ -36,6 +36,22 @@ sudo ffmpeg -f v4l2 -video_size 1280x720 -framerate 15 -i /dev/video4 -pix_fmt r
 sudo systemctl start display-manager
 ```
 
+# Use Gstreamer to Broadcast to VLC Media Player
+- On the linux machine run command:
+```
+sudo gst-launch-1.0 v4l2src device=/dev/video4 ! videoconvert ! x264enc tune=zerolatency bitrate=500 speed-preset=superfast ! mpegtsmux ! udpsink host=IP_OF_MACHINE_TO_STREAM_TO port=5000
+```
+- And on the PC running VLC media player do Media > Open Network Stream, and then enter udp://@:5000
+
+# Use Gstreamer to Stream To Mission Planner on Another PC
+- On the linux machine run command:
+```
+sudo gst-launch-1.0 v4l2src device=/dev/video4 ! videoconvert ! x264enc tune=zerolatency bitrate=500 speed-preset=superfast ! rtph264pay config-interval=1 pt=96 ! udpsink host=<MISSION_PLANNER_COMPUTER_IP> port=5600
+```
+- Mission planner might automatically pick up the video feed when it is stated. But if not, right click on the HUD display > Video > Set Gstreamer Source. Enter this in there:
+```
+udpsrc port=5600 ! application/x-rtp, encoding-name=H264, payload=96 ! rtph264depay ! avdec_h264 ! videoconvert ! autovideosink
+```
 
 
 # Use OpenCV to Display to the HDMI Port
