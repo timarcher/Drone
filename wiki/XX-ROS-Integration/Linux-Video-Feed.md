@@ -49,6 +49,10 @@ sudo gst-launch-1.0 v4l2src device=/dev/video4 ! videoconvert ! x264enc tune=zer
 ```
 sudo gst-launch-1.0 v4l2src device=/dev/video4 ! videoconvert ! x264enc tune=zerolatency bitrate=500 speed-preset=superfast ! rtph264pay config-interval=1 pt=96 ! udpsink host=<MISSION_PLANNER_COMPUTER_IP> port=5600
 ```
+An alternative if have a raspberry pi CSI camera is to use libcamerasrc:
+```
+sudo gst-launch-1.0 libcamerasrc ! video/x-raw,width=1280,height=720,framerate=30/1 ! videoconvert ! x264enc tune=zerolatency bitrate=500 speed-preset=superfast ! rtph264pay config-interval=1 pt=96 ! udpsink host=192.168.1.55 port=5600
+```
 - Mission planner might automatically pick up the video feed when it is stated. But if not, right click on the HUD display > Video > Set Gstreamer Source. Enter this in there:
 ```
 udpsrc port=5600 ! application/x-rtp, encoding-name=H264, payload=96 ! rtph264depay ! avdec_h264 ! videoconvert ! autovideosink
