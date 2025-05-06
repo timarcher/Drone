@@ -6,7 +6,7 @@ To setup this script, you must do the following:
 mkdir ~/drone_scripts
 cd ~/drone_scripts
 ```
-2. Copy the files to your linux machine into the diorectry ~/drone_scripts: requirements.txt and mavproxy.py
+2. Copy the files to your linux machine into the directory ~/drone_scripts: requirements.txt and mavproxy.py
 3. Setup your Python environment.
 ```sh
 sudo apt update
