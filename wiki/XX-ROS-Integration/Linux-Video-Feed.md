@@ -54,6 +54,14 @@ An alternative if have a raspberry pi CSI camera is to use libcamerasrc:
 ```
 gst-launch-1.0 libcamerasrc ! videoconvert ! x264enc tune=zerolatency bitrate=500 speed-preset=superfast ! rtph264pay config-interval=1 pt=96 ! udpsink host=puter port=5600
 ```
+
+You can also use the tee command to send to multiple computers:
+```
+gst-launch-1.0 libcamerasrc ! videoconvert ! x264enc tune=zerolatency bitrate=500 speed-preset=superfast ! rtph264pay config-interval=1 pt=96 ! tee name=t \
+  t. ! queue ! udpsink host=tims-pc01 port=5600 \
+  t. ! queue ! udpsink host=puter port=5600
+```
+
 - Mission planner might automatically pick up the video feed when it is started. But if not, right click on the HUD display > Video > Set Gstreamer Source. Enter this in there:
 ```
 udpsrc port=5600 ! application/x-rtp, encoding-name=H264, payload=96 ! rtph264depay ! avdec_h264 ! videoconvert ! autovideosink
