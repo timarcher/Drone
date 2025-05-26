@@ -1,4 +1,2 @@
-ATC_RAT_RLL_FLTD,10  # Set to 10 per the autotune docs for copters with at least 13in props. See https://ardupilot.org/copter/docs/autotune.html
-ATC_RAT_RLL_FLTT,10  # Set to 10 per the autotune docs for copters with at least 13in props. See https://ardupilot.org/copter/docs/autotune.html
 AUTOTUNE_AGGR,0.075  # Autotune Aggressiveness. .1=agressive, .075=medium, .05=weak. Default is .1
 AUTOTUNE_AXES,1  # Autotune roll axis
