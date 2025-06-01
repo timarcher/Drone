@@ -23,6 +23,8 @@ This page contains details on the setup of the Tattu smart battery. Tattu Plus b
   - Connect the USB cable between the charger and your computer.
   - Press update on the charger firmware update software.
   - Restart the charger and note the new firmware version.
+- You enter setup mode on the TA3200 Charger by following these steps (which can be found from [Tattu on Youtube here](https://www.youtube.com/watch?v=xU64uayYcXM)):
+  - Quickly press the Left -> Up -> Down buttons in sequence
 
 # Supporting Materials
 - [ArduPilot Configuration](../ArduPilot-Config/ArduPilot-Config.md) - This page contains a consolidated list of the all of the configuration done in ArduPilot throughout the videos.
