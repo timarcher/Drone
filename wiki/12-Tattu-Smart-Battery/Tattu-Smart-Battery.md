@@ -16,6 +16,13 @@ This page contains details on the setup of the Tattu smart battery. Tattu Plus b
   - CAN_H is the white wire
   - CAN_L is the yellow wire
   - The red wire is NOT connected. 
+- TA3200 Charger Firmware updates are done by following these steps (which can be found from [Tattu on Youtube here](https://www.youtube.com/watch?v=PMu2slkg2XQ)):
+  - Download latest firmware from the [Tattu downloads page](https://www.grepow.com/downloads.html). It will be under the "TA3200 LiPo Charger Firmware Upgrade Package"
+  - Open the update software.
+  - Press the left button and holding the button while you power on the charger.
+  - Connect the USB cable between the charger and your computer.
+  - Press update on the charger firmware update software.
+  - Restart the charger and note the new firmware version.
 
 # Supporting Materials
 - [ArduPilot Configuration](../ArduPilot-Config/ArduPilot-Config.md) - This page contains a consolidated list of the all of the configuration done in ArduPilot throughout the videos.

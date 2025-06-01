@@ -30,7 +30,7 @@ This section lists all the firmware and software versions I am using in this bui
 |Mission Planner|Latest Beta Release|https://ardupilot.org/planner/docs/mission-planner-installation.html|
 |ArduPilot Methodic Configurator|Latest Release|https://github.com/ArduPilot/MethodicConfigurator/releases|
 |Here4 GPS Firmware|1.14.6|https://github.com/CubePilot/GNSSPeriph-release/releases|
-|Tattu TA3200 LiPo Charger Firmware|3/20/2025, v1.3.29|https://www.grepow.com/downloads.html|
+|Tattu TA3200 LiPo Charger Firmware|5/28/2025, v1.4.2|https://www.grepow.com/downloads.html|
 
 
 
