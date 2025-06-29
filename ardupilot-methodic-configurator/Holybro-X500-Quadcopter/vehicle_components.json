@@ -10,7 +10,7 @@
             },
             "Firmware": {
                 "Type": "ArduCopter",
-                "Version": "4.6.0 official"
+                "Version": "4.6.2 beta"
             },
             "Specifications": {
                 "MCU Series": "STM32H7xx"
@@ -175,5 +175,5 @@
             "Notes": "Here4 GPS"
         }
     },
-    "Program version": "1.4.8"
+    "Program version": "1.5.0"
 }
