@@ -30,7 +30,7 @@ sudo tailscale up --advertise-routes=192.168.144.0/24 --accept-routes
 # Access Drone Via MavProxy
 1. Have both a windows machine with tailscale on it and your raspberry pi on the drone conencted to the same Tailnet.
 2. Ensure you have Mavproxy running on your drone, configured to send UDP traffic to the IP address of the windows PC:
-/home/ubuntu/drone_scripts/drone_scripts_env/bin/mavproxy.py --master=/dev/ttyAMA0 --baudrate 921600 --out=udp:100.89.90.72:14555 --cmd="set flushlogs True" --state-basedir="/home/ubuntu/drone_scripts" --logfile=mav.tlog --daemon
+/home/ubuntu/drone_scripts/drone_scripts_env/bin/mavproxy.py --master=/dev/ttyAMA0 --baudrate 921600 --out=udp:100.111.69.17:14555 --cmd="set flushlogs True" --state-basedir="/home/ubuntu/drone_scripts" --logfile=mav.tlog --daemon
 3. In mission planner, connect via UDP and when prompted for the port enter 14555.
 
 
