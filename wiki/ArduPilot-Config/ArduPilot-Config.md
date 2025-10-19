@@ -19,9 +19,9 @@ You will need to build your own custom firmware from [custom.ardupilot.org](http
 This section lists all the firmware and software versions I am using in this build:
 |Component|Version|Link|
 |---|---|---|
-|ArduCopter|4.6.0|https://custom.ardupilot.org/|
+|ArduCopter|4.6.2|https://custom.ardupilot.org/|
 |Gremsy T7 Gimbal|7.8.3|https://github.com/Gremsy/T7-Firmware/releases|
-|AirPixel Air Commander Entire R3|1.956|https://airpixel.cz/docs/firmware-update/|
+|AirPixel Air Commander Entire R3|1.979|https://airpixel.cz/docs/firmware-update/|
 |HereLink QGroundControl|4.4.2|https://github.com/CubePilot/qgroundcontrol-herelink/releases|
 |MavCam HL|9?|https://airpixel.cz/docs/herelink-camera-control/|
 |Gremsy gTuneDesktop|1.4.9.5|https://github.com/Gremsy/gTuneDesktop/releases|
@@ -29,9 +29,9 @@ This section lists all the firmware and software versions I am using in this bui
 |AP_Periph MatekL431-Proximity|Jun 3 2025|https://firmware.ardupilot.org/AP_Periph/stable/MatekL431-Proximity/|
 |Mission Planner|Latest Beta Release|https://ardupilot.org/planner/docs/mission-planner-installation.html|
 |ArduPilot Methodic Configurator|Latest Release|https://github.com/ArduPilot/MethodicConfigurator/releases|
-|Here4 GPS Firmware|1.14.6|https://github.com/CubePilot/GNSSPeriph-release/releases|
+|Here4 GPS Firmware|1.15.5|https://github.com/CubePilot/GNSSPeriph-release/releases|
 |Tattu TA3200 LiPo Charger Firmware|5/28/2025, v1.4.2|https://www.grepow.com/downloads.html|
-|LightWare Studio|1.20.4|https://lightwarelidar.com/resources-software/|
+|LightWare Studio|1.20.9|https://lightwarelidar.com/resources-software/|
 |LightWare SF45 Firmware|External (Motor Controller) 1.3.0 / Internal (LiDAR) 1.1.2|Use LightWare Studio to get latest|
 
 
