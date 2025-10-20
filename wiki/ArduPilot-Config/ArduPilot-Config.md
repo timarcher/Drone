@@ -20,7 +20,7 @@ This section lists all the firmware and software versions I am using in this bui
 |Component|Version|Link|
 |---|---|---|
 |ArduCopter|4.6.2|https://custom.ardupilot.org/|
-|Gremsy T7 Gimbal|7.8.3|https://github.com/Gremsy/T7-Firmware/releases|
+|Gremsy T7 Gimbal|7.8.7|https://github.com/Gremsy/T7-Firmware/releases|
 |AirPixel Air Commander Entire R3|1.979|https://airpixel.cz/docs/firmware-update/|
 |HereLink QGroundControl|4.4.2|https://github.com/CubePilot/qgroundcontrol-herelink/releases|
 |MavCam HL|9?|https://airpixel.cz/docs/herelink-camera-control/|
