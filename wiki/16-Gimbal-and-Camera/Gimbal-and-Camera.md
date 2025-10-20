@@ -32,7 +32,7 @@ This page contains details on setting up the Gremsy T7 Gimbal, a Sony a6500 Came
     - PC REMOTE mode is prevents you from geotagging, but you can control the camera's ISO, Shutter Speed and Aperture. Use this mode for photo and video work.
       - Camera Menu -> Setup (toolbox icon) -> Setup4 screen -> USB Connection. Set to PC Remote and confirm OK.
       - You will also need the Air Commander Entire to not be in Direct Exif Geotagging mode for this to work. (Enable GeoTagging via MENU -> Logging mode-> Direct EXIF (or SD card))
-    - If you want to have BOTH geotagging AND camera control, then you need to setup the camera in mass storage mode and configure [wifi for camera control on the Air Commander](https://airpixel.cz/docs/wifi-for-camera-control/). This connected on my A6500 Camera, but it did not work as advertised...Try at your will, but it may not work as you expect.
+    - If you want to have BOTH geotagging AND camera control, then you need to setup the camera in mass storage mode and configure [wifi for camera control on the Air Commander](https://airpixel.cz/docs/wifi-for-camera-control/). This connected on my A6500 Camera, but it did not work as advertised...Try at your will, but it may not work as you expect. EDIT 10/20/25 - I had to use USB mode instead of WiFi mode in order to be able to take both pictures and video. Video would not work when in WiFi mode.
       - To do this, in the camera enable wifi remote control: MENU → (Application) → [Application List] → [Smart Remote Embedded].
       - Then, login to the Entire admin control. 
         - Switch Entire to WiFi control mode. Manage Entire to connect the Camera WiFi hotspot:MENU -> WiFi connection
