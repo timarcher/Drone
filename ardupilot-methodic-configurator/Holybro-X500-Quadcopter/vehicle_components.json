@@ -5,8 +5,8 @@
             "Product": {
                 "Manufacturer": "Hex/ProfiCNC,CubePilot",
                 "Model": "CubeOrangePlus",
-                "URL": "https://docs.cubepilot.org/user-guides/autopilot/the-cube-module-overview",
-                "Version": "CubeOrange+"
+                "Version": "CubeOrange+",
+                "URL": "https://docs.cubepilot.org/user-guides/autopilot/the-cube-module-overview"
             },
             "Firmware": {
                 "Type": "ArduCopter",
@@ -21,21 +21,112 @@
             "Product": {
                 "Manufacturer": "Holybro",
                 "Model": "X500 V2",
-                "URL": "https://holybro.com/products/x500-v2-kits?srsltid=AfmBOopqoQ06cbw18uUtBKBrXOI0Rb58vbqtS5OwQew6JuedVk8Ywtwy",
-                "Version": "X500V2"
+                "Version": "X500V2",
+                "URL": "https://holybro.com/products/x500-v2-kits?srsltid=AfmBOopqoQ06cbw18uUtBKBrXOI0Rb58vbqtS5OwQew6JuedVk8Ywtwy"
             },
             "Specifications": {
                 "TOW min Kg": 2.998246,
-                "TOW max Kg": 2.998246
+                "TOW max Kg": 2.998246,
+                "Frame class": "Quad"
             },
             "Notes": "A 500mm carbon fiber frame."
+        },
+        "Battery Monitor": {
+            "Product": {
+                "Manufacturer": "CubePilot",
+                "Model": "Power Brick Mini",
+                "Version": "1",
+                "URL": "https://irlock.com/products/power-brick-mini"
+            },
+            "Firmware": {},
+            "FC Connection": {
+                "Type": "Analog",
+                "Protocol": "Analog Voltage and Current"
+            },
+            "Notes": "Uses the standard cube orange power brick mini."
+        },
+        "Battery": {
+            "Product": {
+                "Manufacturer": "Tattu",
+                "Model": "Tattu Plus 10000mAh 6S 22.2V 25C Lipo Battery with AS150+XT150 Plug (new version)",
+                "Version": "",
+                "URL": "https://genstattu.com/tattu-plus-22-2v-25c-6s-liPo-battery-10000-mah-with-as150-xt150-plug.html"
+            },
+            "Specifications": {
+                "Chemistry": "Lipo",
+                "Volt per cell max": 4.2,
+                "Volt per cell arm": 3.9333,
+                "Volt per cell low": 3.6,
+                "Volt per cell crit": 3.55,
+                "Volt per cell min": 3.55,
+                "Number of cells": 6,
+                "Capacity mAh": 10000
+            },
+            "Notes": "Tattu Plus 10000mAh 6S 22.2V 25C Lipo Battery with AS150+XT150 Plug (new version)"
+        },
+        "ESC": {
+            "Product": {
+                "Manufacturer": "Holybro",
+                "Model": "ESCs - BLHeli S ESC 20A",
+                "Version": "",
+                "URL": "https://holybro.com/products/x500-v2-kits"
+            },
+            "Firmware": {},
+            "FC->ESC Connection": {
+                "Type": "Main Out",
+                "Protocol": "Normal"
+            },
+            "ESC->FC Telemetry": {
+                "Type": "None",
+                "Protocol": "None"
+            },
+            "Notes": "ESCs and Motors are an all in one unit."
+        },
+        "Motors": {
+            "Product": {
+                "Manufacturer": "Holybro",
+                "Model": "2216 KV920 Motor",
+                "Version": "",
+                "URL": "https://holybro.com/products/x500-v2-kits"
+            },
+            "Specifications": {},
+            "Notes": ""
+        },
+        "Propellers": {
+            "Product": {
+                "Manufacturer": "Holybro",
+                "Model": "1045 Propellers",
+                "Version": "",
+                "URL": "https://holybro.com/products/x500-v2-kits"
+            },
+            "Specifications": {
+                "Diameter_inches": 10
+            },
+            "Notes": "10\" Propellers included in the Holybro X500 kit."
+        },
+        "GNSS Receiver": {
+            "Product": {
+                "Manufacturer": "CubePilot",
+                "Model": "Here4",
+                "Version": "",
+                "URL": "https://docs.cubepilot.org/user-guides/here-4/here-4-manual"
+            },
+            "Firmware": {
+                "Type": "UBlox",
+                "Version": "1.13.2"
+            },
+            "FC Connection": {
+                "Type": "CAN1",
+                "Protocol": "DroneCAN"
+            },
+            "Notes": "Here4 GPS"
         },
         "RC Controller": {
             "Product": {
                 "Manufacturer": "RadioMaster",
                 "Model": "TX16S",
-                "URL": "https://www.radiomasterrc.com/products/tx16s-mark-ii-max-radio-controller",
-                "Version": "Mark2"
+                "Version": "Mark2",
+                "URL": "https://www.radiomasterrc.com/products/tx16s-mark-ii-max-radio-controller"
             },
             "Firmware": {
                 "Type": "EdgeTx",
@@ -47,8 +138,8 @@
             "Product": {
                 "Manufacturer": "RadioMaster",
                 "Model": "TX16S",
-                "URL": "https://www.radiomasterrc.com/products/tx16s-mark-ii-max-radio-controller",
-                "Version": "Mark2"
+                "Version": "Mark2",
+                "URL": "https://www.radiomasterrc.com/products/tx16s-mark-ii-max-radio-controller"
             },
             "Firmware": {
                 "Type": "EdgeTx",
@@ -60,8 +151,8 @@
             "Product": {
                 "Manufacturer": "FrSky",
                 "Model": "FrSky Taranis Receiver X8R 8 Channel 2.4ghz ACCST&RSSI&SBUS",
-                "URL": "https://www.frsky-rc.com/product/x8r/",
-                "Version": "NA"
+                "Version": "NA",
+                "URL": "https://www.frsky-rc.com/product/x8r/"
             },
             "Firmware": {
                 "Type": "",
@@ -77,8 +168,8 @@
             "Product": {
                 "Manufacturer": "Holybro",
                 "Model": "SiK Telemetry Radio V3",
-                "URL": "https://holybro.com/products/sik-telemetry-radio-v3?srsltid=AfmBOop9nfFjAuxKsRjKB9hMyD-CNzvtIO1WufbWWi4P-VVpErf2IFj1",
-                "Version": "NA"
+                "Version": "NA",
+                "URL": "https://holybro.com/products/sik-telemetry-radio-v3?srsltid=AfmBOop9nfFjAuxKsRjKB9hMyD-CNzvtIO1WufbWWi4P-VVpErf2IFj1"
             },
             "Firmware": {
                 "Type": "",
@@ -89,91 +180,7 @@
                 "Protocol": "MAVLink2"
             },
             "Notes": "915Mhz Radio Link"
-        },
-        "Battery Monitor": {
-            "Product": {
-                "Manufacturer": "CubePilot",
-                "Model": "Power Brick Mini",
-                "URL": "https://irlock.com/products/power-brick-mini",
-                "Version": "1"
-            },
-            "Firmware": {},
-            "FC Connection": {
-                "Type": "Analog",
-                "Protocol": "Analog Voltage and Current"
-            },
-            "Notes": "Uses the standard cube orange power brick mini."
-        },
-        "Battery": {
-            "Product": {
-                "Manufacturer": "Tattu",
-                "Model": "Tattu Plus 10000mAh 6S 22.2V 25C Lipo Battery with AS150+XT150 Plug (new version)",
-                "URL": "https://genstattu.com/tattu-plus-22-2v-25c-6s-liPo-battery-10000-mah-with-as150-xt150-plug.html",
-                "Version": ""
-            },
-            "Specifications": {
-                "Chemistry": "Lipo",
-                "Volt per cell max": 4.2,
-                "Volt per cell low": 3.6,
-                "Volt per cell crit": 3.55,
-                "Number of cells": 6,
-                "Capacity mAh": 10000
-            },
-            "Notes": "Tattu Plus 10000mAh 6S 22.2V 25C Lipo Battery with AS150+XT150 Plug (new version)"
-        },
-        "ESC": {
-            "Product": {
-                "Manufacturer": "Holybro",
-                "Model": "ESCs - BLHeli S ESC 20A",
-                "URL": "https://holybro.com/products/x500-v2-kits",
-                "Version": ""
-            },
-            "Firmware": {},
-            "FC Connection": {
-                "Type": "Main Out",
-                "Protocol": "Normal"
-            },
-            "Notes": "ESCs and Motors are an all in one unit."
-        },
-        "Motors": {
-            "Product": {
-                "Manufacturer": "Holybro",
-                "Model": "2216 KV920 Motor",
-                "URL": "https://holybro.com/products/x500-v2-kits",
-                "Version": ""
-            },
-            "Specifications": {},
-            "Notes": ""
-        },
-        "Propellers": {
-            "Product": {
-                "Manufacturer": "Holybro",
-                "Model": "1045 Propellers",
-                "URL": "https://holybro.com/products/x500-v2-kits",
-                "Version": ""
-            },
-            "Specifications": {
-                "Diameter_inches": 10
-            },
-            "Notes": "10\" Propellers included in the Holybro X500 kit."
-        },
-        "GNSS Receiver": {
-            "Product": {
-                "Manufacturer": "CubePilot",
-                "Model": "Here4",
-                "URL": "https://docs.cubepilot.org/user-guides/here-4/here-4-manual",
-                "Version": ""
-            },
-            "Firmware": {
-                "Type": "UBlox",
-                "Version": "1.13.2"
-            },
-            "FC Connection": {
-                "Type": "CAN1",
-                "Protocol": "DroneCAN"
-            },
-            "Notes": "Here4 GPS"
         }
     },
-    "Program version": "2.0.0"
+    "Program version": "3.0.3"
 }
