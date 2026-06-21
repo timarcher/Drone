@@ -1,0 +1,174 @@
+AHRS_TRIM_X,-0.026791
+AHRS_TRIM_Y,-0.01597
+ATC_ACCEL_P_MAX,328671.46875  # Derived from vehicle component editor propeller size
+ATC_ACCEL_R_MAX,513770.78125  # Derived from vehicle component editor propeller size
+ATC_ACCEL_Y_MAX,387010.96875  # Derived from vehicle component editor propeller size
+ATC_ANG_PIT_P,29.631266  # higher value mean a tighter tune
+ATC_ANG_RLL_P,36  # higher value mean a tighter tune
+ATC_ANG_YAW_P,28.02326  # higher value mean a tighter tune
+ATC_INPUT_TC,0.2  # Attitude control input time constant. Low numbers lead to sharper response, higher numbers to softer response. 0.5:Very Soft,0.2:Soft,0.15:Medium,0.1:Crisp,0.05:Very Crisp
+ATC_RAT_PIT_D,0.003493  # Setting value after running QuickTune LUA script
+ATC_RAT_PIT_FLTD,50.5  # INS_GYRO_FILTER / 2
+ATC_RAT_PIT_FLTT,50.5  # INS_GYRO_FILTER / 2
+ATC_RAT_PIT_I,0.212828  # Setting value after running QuickTune LUA script
+ATC_RAT_PIT_P,0.212828  # Setting value after running QuickTune LUA script
+ATC_RAT_RLL_D,0.001478  # Setting value after running QuickTune LUA script
+ATC_RAT_RLL_FLTD,50.5  # INS_GYRO_FILTER / 2
+ATC_RAT_RLL_FLTT,50.5  # INS_GYRO_FILTER / 2
+ATC_RAT_RLL_I,0.081693  # Setting value after running QuickTune LUA script
+ATC_RAT_RLL_P,0.081693  # Setting value after running QuickTune LUA script
+ATC_RAT_YAW_D,0.00883  # if == to AUTOTUNE_MIN_D, autotune failed
+ATC_RAT_YAW_FLTD,25.25  # Use INS_GYRO_FILTER / 4 as a first guess
+ATC_RAT_YAW_FLTE,1.629012  # Initial value, will be improved at a later step
+ATC_RAT_YAW_FLTT,50.5  # INS_GYRO_FILTER / 2
+ATC_RAT_YAW_I,0.03589  # Setting value after running QuickTune LUA script
+ATC_RAT_YAW_P,0.358901  # Setting value after running QuickTune LUA script
+ATC_THR_MIX_MAN,0.5  # Because ALTHOLD flight mode was used for more than 30 seconds to correctly learn the MOT_THST_HOVER value
+AUTOTUNE_AGGR,0.1  # Autotune Aggressiveness. .1=agressive, .075=medium, .05=weak. Default is .1
+AUTOTUNE_AXES,3  # Autotune roll and pitch axis
+BATT_ARM_VOLT,22.0002  # Only arm above this voltage, to avoid taking off with insufficient battery capacity
+BATT_CAPACITY,1600  # Total battery capacity specified in the component editor
+BATT_CRT_VOLT,20.4  # Critical failsafe voltage x nr. of cells
+BATT_FS_CRT_ACT,1  # Land ASAP
+BATT_FS_LOW_ACT,2  # Return and land at home or rally point
+BATT_LOW_VOLT,21.6  # Low failsafe voltage x nr. of cells
+BRD_BOOT_DELAY,3000  # This adds a delay in milliseconds to boot to ensure peripherals initialise fully. Value in milliseconds.
+COMPASS_DEC,-0.062097
+COMPASS_EXTERNAL,1
+COMPASS_OFS_Z,-10.140164  # Valued provided by the MAGFit tool https://firmware.ardupilot.org/Tools/WebTools/MAGFit/
+COMPASS_ORIENT,2  # Valued provided by the MAGFit tool https://firmware.ardupilot.org/Tools/WebTools/MAGFit/
+COMPASS_PRIO1_ID,855305
+COMPASS_PRIO2_ID,855297
+COMPASS_SCALE,1.024439  # Valued provided by the MAGFit tool https://firmware.ardupilot.org/Tools/WebTools/MAGFit/
+COMPASS_USE2,0  # Disable the internal compass, it seems to be much less accurate.
+DISARM_DELAY,4  # Lowered for quicker landing detection. On this small drone it bounces around after landing.
+EK3_SRC2_VELXY,5  # Optical Flow horizontal velocity backup
+FENCE_ACTION,4  # 4 = Brake or Land. Set to 0 for report only.
+FENCE_ALT_MAX,30  # Maximum altitude allowed before geofence triggers. Value is in meters. I set to 30 when initially testing drone.
+FENCE_ENABLE,1  # Allows you to enable (1) or disable (0) the fence functionality.
+FENCE_MARGIN,3  # Distance that autopilot's should maintain from the fence to avoid a breach. Value is in meters.
+FENCE_RADIUS,100  # Circle fence radius which when breached will cause an RTL. Value is in meters.
+FLOW_FXSCALER,-36  # X-axis scale correction (calibrated; template default=0)
+FLOW_FYSCALER,-118  # Y-axis scale correction (calibrated; template default=0)
+FLOW_TYPE,5  # Enable optical flow camera.
+FLTMODE_CH,6  # RC Channel to use for flight mode control. Default is 5.
+FLTMODE1,5  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is <= 1230. Set to Loiter.
+FLTMODE2,2  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1230, <= 1360. Set to AltHold.
+FLTMODE4,15  # Restore Auto mode — file 14 set this to AutoTune (15)
+FLTMODE5,6  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1620, <= 1749. Set to RTL.
+FLTMODE6,9  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >=1750. Set to Land.
+FRAME_CLASS,1  # Quadcopter
+INS_ACCEL_FILTER,10  # Filter cutoff frequency for accelerometers. The default is 20 and that lets too much noise in.
+INS_FAST_SAMPLE,7  # Mask of IMUs to enable fast sampling on, if available.
+INS_GYRO_FILTER,101  # Derived from vehicle component editor propeller size
+INS_GYRO_RATE,2  # Gyro rate for IMUs with fast sampling enabled. The gyro rate is the sample rate at which the IMU filters operate and needs to be at least double the maximum filter frequency. The CubeOrange can do 4KHz here.
+INS_HNTCH_BW,35  # Determined using notch filter web tool. Value is INS_HNTCH_FREQ/6. Higher bandwidth values can be a bit too wide for when we have selected “multi source” which means one notch per motor. The notch filter can quickly get a bit out of control and introduce lag if the bandwidth is too wide.
+INS_HNTCH_ENABLE,1  # Use the first notch filter to filter the noise created by the motors/propellers.
+INS_HNTCH_FM_RAT,0.7  # The minimum ratio below the configured frequency to take throttle based notch filters when flying at a throttle level below the reference throttle.  If you want throttle based notch filtering to be effective at a throttle up to 30% below the configured notch frequency then set this parameter to 0.7.
+INS_HNTCH_FREQ,141.399994  # Determined using notch filter web tool.
+INS_HNTCH_HMNCS,3  # Apply notch filter to 1st and 2nd harmonics
+INS_HNTCH_MODE,3  # ESC Telemetry
+INS_HNTCH_OPTS,14  # Bitmask set to: multi-source, update at loop rate, enable on all IMUs. Enable on all IMUs for redundancy. Use either Multi Source or Triple Notch, but not both at once! For drones with rapidly changing motor speeds, enabling "Update at loop rate" may improve performance, as it provides more accurate, timely filtering. However, if motor speed is generally steady, disabling this option can reduce CPU usage without significant impact on filtering effectiveness.
+INS_HNTCH_REF,1  # ESC Telemetry
+LAND_SPEED,40  # The descent speed for the final stage of landing in cm/s
+LOG_BITMASK,145118  # 2:GPS,3:System Performance,4:Control Tuning,6:RC input,7:IMU,8:Mission Commands,9:Battery Monitor,12:PID,13:Compass,17:Motors
+LOG_FILE_DSRMROT,1  # One .bin log file per flight, not per battery/reboot
+LOIT_ACC_MAX,420  # Loiter correction accel (file 16=420; AMC standard 500)
+LOIT_BRK_ACCEL,225  # Loiter braking accel (file 16=225; moderate)
+LOIT_BRK_DELAY,0.1  # Default value is 1. Loiter brake start delay (in seconds), make the drone break faster when releasing the sticks.
+MAGH_MIN_SPEED,2.5  # Starting speed for the mission; slowly adjusts to the general speed in auto-missions
+MOT_BAT_VOLT_MAX,25.200001  # To correctly scale the PID gains. Voltage of a healthy, fully charged battery immediately after takeoff. Read from a flight log
+MOT_BAT_VOLT_MIN,19.799999  # Battery voltage minimum compensation voltage. Set to 3.3 * cell count.
+MOT_HOVER_LEARN,1  # The vehicle TOW weight does not change, so no need to save it
+MOT_PWM_TYPE,6  # DShot600 — corrected from template default of 7 (DShot1200)
+MOT_SPIN_ARM,0.03  # Point at which the motors start to spin expressed as a number from 0 to 1 in the entire output range. Should be lower than MOT_SPIN_MIN.
+MOT_SPIN_MIN,0.055  # Point at which the thrust starts expressed as a number from 0 to 1 in the entire output range. Should be higher than MOT_SPIN_ARM.
+MOT_THST_EXPO,0.5  # Motor thrust curve exponent (0.0 for linear to 1.0 for second order curve)
+MOT_THST_HOVER,0.14406  # Hover learn will improve this initial guess
+NTF_BUZZ_TYPES,3  # Check the "DShot" checkbox to enable usingthe motors as buzzers
+NTF_LED_TYPES,125127  # Check the "DShot" checkbox to enable controlling the ESCs LEDs
+PSC_ACCZ_I,0.30546  # Use 2 * MOT_THST_HOVER assuming MOT_THST_HOVER has been correctly learned
+PSC_ACCZ_P,0.15273  # Use MOT_THST_HOVER assuming MOT_THST_HOVER has been correctly learned
+QUIK_ENABLE,1  # Disable the VTOL-Quicktune lua script, no longer needed post-AutoTune
+QUIK_GAIN_MARGIN,70
+QUIK_MAX_REDUCE,25
+QUIK_OSC_SMAX,3
+RC_OPTIONS,288  # The default is 32. Change to 288 to enable pass-through for CRSF telemetry.
+RC1_MAX,2011
+RC1_MIN,988
+RC10_MAX,2000
+RC10_MIN,999
+RC10_OPTION,31  # Motor Emergency Stop.
+RC10_TRIM,999
+RC11_MAX,2000
+RC11_MIN,999
+RC11_OPTION,30  # Lost copter sound
+RC11_TRIM,999
+RC12_MAX,2000
+RC12_MIN,999
+RC12_TRIM,999
+RC14_MAX,2000
+RC14_MIN,999
+RC14_TRIM,2000
+RC15_MAX,2011
+RC15_MIN,2001
+RC15_TRIM,2011
+RC2_MAX,2011
+RC2_MIN,988
+RC3_MAX,2011
+RC3_MIN,988
+RC4_MAX,2008
+RC4_MIN,988
+RC4_TRIM,1499
+RC5_MAX,2000
+RC5_MIN,999
+RC5_TRIM,2000
+RC6_MAX,2000
+RC6_MIN,999
+RC6_TRIM,999
+RC7_MAX,2000
+RC7_MIN,999
+RC7_OPTION,11  # Enable/Disable fence
+RC7_TRIM,2000
+RC8_MAX,2000
+RC8_MIN,999
+RC8_OPTION,300  # RC switch will be used to start/stop the tune set RCx_OPTION = 300 where "x" is the RC input channel number.
+RC8_TRIM,999
+RC9_MAX,2000
+RC9_MIN,999
+RC9_OPTION,171  # Do nothing. Function assigned to rc channel 9. For example, we could pick things like "Motor Emergency Stop", "Lost rover Sound", etc
+RC9_TRIM,999
+RCMAP_PITCH,3
+RCMAP_ROLL,4
+RCMAP_THROTTLE,2
+RCMAP_YAW,1
+RNGFND1_GNDCLEAR,5  # Optional - This parameter sets the expected range measurement(in cm) that the range finder should return when the vehicle is on the ground.
+RNGFND1_MAX_CM,600  # Maximum distance in centimeters that rangefinder can reliably read.
+RNGFND1_MIN_CM,2  # Minimum distance in centimeters that rangefinder can reliably read.
+RNGFND1_TYPE,10  # Type of connected rangefinder. Reboot flight controller after setting this for rest of the params to show.
+RSSI_TYPE,3  # Indicate RSSI is provided by the receiver protocol.
+SCR_ENABLE,1  # Use lua scripting for MagFit flight path automation
+SERIAL2_BAUD,4  # The required baud rate for SmartAudio.
+SERIAL2_OPTIONS,4  # For half-duplex communication, which SmartAudio requires.
+SERIAL2_PROTOCOL,37  # Enable the SmartAudio protocol.
+SERIAL4_BAUD,115  # The baud rate used for Serial4. 115200 baud.
+SERIAL4_OPTIONS,1024  # Dont forward mavlink to/from for 4.6.3
+SERIAL4_PROTOCOL,1  # What protocol Serial4 port should be used for. Lidar and Flow.
+SERIAL7_PROTOCOL,-1  # Disable orphaned UART; ESC uses bidirectional DShot, not UART telemetry
+SERVO_BLH_BDMASK,15  # Mask of channels which support bi-directional dshot telemetry.
+SERVO_DSHOT_ESC,4  # BLHeli_S/BlueJay EDT
+SERVO1_FUNCTION,34  # Left Motor
+SERVO2_FUNCTION,35  # Motor 3
+SERVO3_FUNCTION,36  # Right Motor
+SERVO4_FUNCTION,33  # Motor 1
+TKOFF_RPM_MIN,200  # Setup dead motor takeoff prevention. Get the RPMs when the motor is armed. Then set TKOFF_RPM_MIN to an RPM slightly less than this value. https://ardupilot.org/copter/docs/tkoff-rpm-min.html
+VTX_BAND,4  # Race Band
+VTX_CHANNEL,7  # Channel 8.
+VTX_ENABLE,1  # Enable VTX support. Reboot flight controller after setting.
+VTX_OPTIONS,10  # Pitmode until armed and Unlocked options.
+VTX_POWER,100  # Change from 25 to 100mw.
+WPNAV_ACCEL,125  # Mission horizontal accel (file 16=125; 2 m/s/s)
+WPNAV_ACCEL_Z,75  # Defines the vertical acceleration in cm/s/s used during missions.
+WPNAV_SPEED,450  # Mission speed (file 16=450; 5 m/s)
+WPNAV_SPEED_DN,100  # Mission descent speed (file 16=100; 1.5 m/s)
+WPNAV_SPEED_UP,150  # Mission climb speed (file 16=150; 2 m/s)

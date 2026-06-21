@@ -1,4 +1,5 @@
 ATC_THR_MIX_MAN,0.5  # Because ALTHOLD flight mode was used for more than 30 seconds to correctly learn the MOT_THST_HOVER value
 ATC_THR_MIX_MAX,0.5  # Throttle vs attitude control prioritization used during active flight (higher values mean we prioritise attitude control over throttle)
-PSC_ACCZ_I,0.30546  # Use 2 * MOT_THST_HOVER assuming MOT_THST_HOVER has been correctly learned
-PSC_ACCZ_P,0.15273  # Use MOT_THST_HOVER assuming MOT_THST_HOVER has been correctly learned
+MOT_BAT_VOLT_MAX,25.200001  # To correctly scale the PID gains. Voltage of a healthy, fully charged battery immediately after takeoff. Read from a flight log
+PSC_ACCZ_I,0.28812  # Use 2 * MOT_THST_HOVER assuming MOT_THST_HOVER has been correctly learned
+PSC_ACCZ_P,0.14406  # Use MOT_THST_HOVER assuming MOT_THST_HOVER has been correctly learned

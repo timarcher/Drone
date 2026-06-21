@@ -1,8 +1,5 @@
 # Everyday use configuration. Finalizes operational state.
 FLTMODE4,3  # Restore Auto mode — file 14 set this to AutoTune (15)
 LOG_BITMASK,2277374  # 2:GPS,3:System Performance,4:Control Tuning,6:RC input,7:IMU,8:Mission Commands,9:Battery Monitor,12:PID,13:Compass,17:Motors
-PILOT_Y_RATE,45  # 45 deg/s max yaw; reduces from current 202.5 for conservative cinewhoop flying
 QUIK_ENABLE,0  # Disable the VTOL-Quicktune lua script, no longer needed post-AutoTune
-RTL_ALT,500  # 5m RTL altitude; file 16 set 1500 (15m is excessive for near-pilot FPV)
-RTL_CLIMB_MIN,100  # Rise 1m before horizontal RTL movement for obstacle clearance
 SERIAL7_PROTOCOL,-1  # Disable orphaned UART; ESC uses bidirectional DShot, not UART telemetry

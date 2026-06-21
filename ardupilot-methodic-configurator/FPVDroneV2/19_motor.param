@@ -1,1 +1,2 @@
-ESC_HW_POLES,14  # iFlight XING 2205 FPV NextGen motor pole count
+#The flight controller will not accept the below value so we commented it out.
+#ESC_HW_POLES,14  # iFlight XING 2205 FPV NextGen motor pole count
