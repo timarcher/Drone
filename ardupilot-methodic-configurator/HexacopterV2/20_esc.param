@@ -1,0 +1,5 @@
+MOT_SPIN_ARM,0.05  # Point at which the motors start to spin expressed as a number from 0 to 1 in the entire output range. Should be lower than MOT_SPIN_MIN.
+MOT_SPIN_MAX,0.95  # Point at which the thrust saturates expressed as a number from 0 to 1 in the entire output range
+MOT_SPIN_MIN,0.09  # Point at which the thrust starts expressed as a number from 0 to 1 in the entire output range. Should be higher than MOT_SPIN_ARM.
+MOT_THST_EXPO,0.74  # Motor thrust curve exponent (0.0 for linear to 1.0 for second order curve)
+TKOFF_RPM_MIN,200  # Setup dead motor takeoff prevention. Get the RPMs when the motor is armed. Then set TKOFF_RPM_MIN to an RPM slightly less than this value. https://ardupilot.org/copter/docs/tkoff-rpm-min.html

@@ -1,0 +1,8 @@
+FS_THR_ENABLE,1  # The throttle failsafe allows you to configure a software failsafe activated by a setting on the throttle input channel. Set to Enabled, always RTL. If the GPS position is not usable, the copter will change to Land Mode instead.
+FS_THR_VALUE,975  # The PWM level in microseconds on channel 3 below which throttle failsafe triggers. FS_THR_VALUE must be at least 10 steps lower than RC3_MIN, which is 982.
+RC_FS_TIMEOUT,1  # RC failsafe will trigger this many seconds after loss of RC.
+RC_OPTIONS,288  # The default is 32. Change to 288 to enable pass-through for CRSF telemetry.
+RC_PROTOCOLS,1  # Selected in the component editor
+RSSI_TYPE,3  # Indicate RSSI is provided by the receiver protocol.
+SERIAL6_BAUD,57  # 57 (57600) is fine. ArduPilot switches it internally to the correct CRSF baud of 400000.
+SERIAL6_PROTOCOL,23  # CRSF RCIN, which should be the default.

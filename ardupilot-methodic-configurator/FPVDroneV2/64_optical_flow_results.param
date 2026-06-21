@@ -1,0 +1,3 @@
+# Optical flow calibration results from in-flight calibration.
+FLOW_FXSCALER,-36  # X-axis scale correction (calibrated; template default=0)
+FLOW_FYSCALER,-118  # Y-axis scale correction (calibrated; template default=0)

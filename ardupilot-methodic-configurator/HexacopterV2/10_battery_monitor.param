@@ -1,0 +1,11 @@
+BATT2_AMP_OFFSET,0.37  # Kore docs recommend 0.45 but this caused negative current readings on my board.
+BATT2_AMP_PERVLT,50  # Setting I derived to work best with Kore carrier board
+BATT2_CURR_PIN,15  # Kore docs recommend 3, but I had to set to 15 to work with Cube Orange Plus.
+BATT2_MONITOR,3  # Monitoring the analog voltage only. The remaining capacity is more accurately measured through the smart battery, and so also trying to measure current through the Kore carrier board will show a remaining capacity on the 2nd battery monitor that is wrong because it resets between flight controller reboots.
+BATT2_SERIAL_NUM,-1  # Leave at -1.
+BATT2_VOLT_MULT,15.2  # Setting I derived to work best with Kore carrier board
+BATT2_VOLT_PIN,14  # Kore docs recommend 2, but I had to set to 14 to work with Cube Orange Plus.
+BATT_MONITOR,8  # Selected in component editor window
+BATT_SERIAL_NUM,-1  # Leave at -1 unless you have multiple DroneCAN batteries in the drone.
+CAN_D2_PROTOCOL,1  # Enable dronecan.
+CAN_P2_DRIVER,2  # Set to the second driver.

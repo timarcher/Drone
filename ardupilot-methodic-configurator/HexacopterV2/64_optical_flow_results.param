@@ -1,0 +1,4 @@
+# STUB - Fill in after performing optical flow calibration flight.
+FLOW_FXSCALER,0
+FLOW_FYSCALER,0
+FLOW_ORIENT_YAW,0

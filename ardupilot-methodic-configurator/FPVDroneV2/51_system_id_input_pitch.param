@@ -1,0 +1,3 @@
+# SKIP — System Identification (SysID) is an advanced optional step. DO NOT UPLOAD.
+# These files reset ATC_ANG_*_P to ~4.5, erasing AutoTune results from file 44.
+# Reference: https://ardupilot.org/copter/docs/systemid-mode-operation.html

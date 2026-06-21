@@ -1,0 +1,6 @@
+FS_THR_ENABLE,1  # The throttle failsafe allows you to configure a software failsafe activated by a setting on the throttle input channel. Set to Enabled, always RTL. If the GPS position is not usable, the copter will change to Land Mode instead.
+FS_THR_VALUE,950  # The PWM level in microseconds on channel 3 below which throttle failsafe triggers. FS_THR_VALUE must be at least 10 steps lower than RC3_MIN, which is 982.
+RC_FS_TIMEOUT,1  # RC failsafe will trigger this many seconds after loss of RC.
+RC_OPTIONS,32  # Stay at default. This is set to Arming check throttle for 0 input.
+RC_PROTOCOLS,1  # Selected in the component editor
+RSSI_TYPE,0  # Set to disabled. Used to configure radio receiver RSSI type.

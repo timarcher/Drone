@@ -1,0 +1,3 @@
+# SKIP — Optical flow as PRIMARY navigation is for indoor/GPS-denied use only.
+# This file would overwrite RC8 (QuikTune option 300) and RC9 (EKF source option 171).
+# GPS primary is in file 12. Optical flow backup is in file 63. Do NOT upload.

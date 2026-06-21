@@ -1,0 +1,10 @@
+DISARM_DELAY,4  # Lowered for quicker landing detection. On this small drone it bounces around after landing.
+MOT_PWM_MAX,2000  # Digital ESC protocol maximum is per definition 2000
+MOT_PWM_MIN,1000  # Digital ESC protocol minimum is per definition 1000
+MOT_SPIN_ARM,0.03  # Point at which the motors start to spin expressed as a number from 0 to 1 in the entire output range. Should be lower than MOT_SPIN_MIN.
+MOT_SPIN_MAX,0.95  # Point at which the thrust saturates expressed as a number from 0 to 1 in the entire output range
+MOT_SPIN_MIN,0.055  # Point at which the thrust starts expressed as a number from 0 to 1 in the entire output range. Should be higher than MOT_SPIN_ARM.
+MOT_THST_EXPO,0.50  # Motor thrust curve exponent (0.0 for linear to 1.0 for second order curve)
+SERVO_BLH_BDMASK,15
+SERVO_DSHOT_ESC,4
+TKOFF_RPM_MIN,200  # Setup dead motor takeoff prevention. Get the RPMs when the motor is armed. Then set TKOFF_RPM_MIN to an RPM slightly less than this value. https://ardupilot.org/copter/docs/tkoff-rpm-min.html

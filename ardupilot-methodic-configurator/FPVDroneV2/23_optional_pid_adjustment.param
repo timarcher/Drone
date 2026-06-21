@@ -1,0 +1,1 @@
+ATC_INPUT_TC,0.2  # Attitude control input time constant. Low numbers lead to sharper response, higher numbers to softer response. 0.5:Very Soft,0.2:Soft,0.15:Medium,0.1:Crisp,0.05:Very Crisp

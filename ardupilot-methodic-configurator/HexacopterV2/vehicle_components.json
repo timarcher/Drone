@@ -1,0 +1,186 @@
+{
+    "Format version": 1,
+    "Components": {
+        "Flight Controller": {
+            "Product": {
+                "Manufacturer": "Hex/ProfiCNC,CubePilot",
+                "Model": "CubeOrangePlus",
+                "Version": "CubeOrange+",
+                "URL": "https://docs.cubepilot.org/user-guides/autopilot/the-cube-module-overview"
+            },
+            "Firmware": {
+                "Type": "ArduCopter",
+                "Version": "4.6.2 beta"
+            },
+            "Specifications": {
+                "MCU Series": "STM32H7xx"
+            },
+            "Notes": "This is a custom build firmware with OpenDroneID enabled."
+        },
+        "Frame": {
+            "Product": {
+                "Manufacturer": "RJX Hobby",
+                "Model": "RJX1300mm 6-Axis Carbon Fiber",
+                "Version": "RJX1300B",
+                "URL": "https://www.rjxhobby.com/rjx1300mm-6-axis-carbon-fiber-umbrella-folding-hexacopter-frame-with"
+            },
+            "Specifications": {
+                "TOW min Kg": 14.19744,
+                "TOW max Kg": 16.714879,
+                "Frame class": "Hexa"
+            },
+            "Notes": "A 1300mm carbon fiber frame."
+        },
+        "Battery Monitor": {
+            "Product": {
+                "Manufacturer": "Tattu",
+                "Model": "Tattu Plus 1.0 Compact Version 16000mAh 44.4V 15C 12S1P Lipo Smart Battery Pack With AS150U Plug",
+                "Version": "",
+                "URL": "https://genstattu.com/tattu-plus-1-0-compact-version-16000mah-44-4v-15c-12s1p-lipo-smart-battery-pack-with-as150u-plug/"
+            },
+            "Firmware": {},
+            "FC Connection": {
+                "Type": "CAN2",
+                "Protocol": "DroneCAN-BatteryInfo"
+            },
+            "Notes": "This is a smart battery with an integrated DroneCAN enabled BMS."
+        },
+        "Battery": {
+            "Product": {
+                "Manufacturer": "Tattu",
+                "Model": "Tattu Plus 1.0 Compact Version 16000mAh 44.4V 15C 12S1P Lipo Smart Battery Pack With AS150U Plug",
+                "Version": "",
+                "URL": "https://genstattu.com/tattu-plus-1-0-compact-version-16000mah-44-4v-15c-12s1p-lipo-smart-battery-pack-with-as150u-plug/"
+            },
+            "Specifications": {
+                "Chemistry": "Lipo",
+                "Volt per cell max": 4.2,
+                "Volt per cell arm": 3.9417,
+                "Volt per cell low": 3.6,
+                "Volt per cell crit": 3.55,
+                "Volt per cell min": 3.55,
+                "Number of cells": 12,
+                "Capacity mAh": 15800
+            },
+            "Notes": "Tattu Plus 1.0 Compact Version 16000mAh 44.4V 15C 12S1P Lipo Smart Battery Pack With AS150U Plug."
+        },
+        "ESC": {
+            "Product": {
+                "Manufacturer": "Hobbywing",
+                "Model": "XRotor X6 Plus system",
+                "Version": "",
+                "URL": "https://www.hobbywingdirect.com/products/xrotor-x6-plus"
+            },
+            "Firmware": {},
+            "FC->ESC Connection": {
+                "Type": "CAN1",
+                "Protocol": "DroneCAN"
+            },
+            "ESC->FC Telemetry": {
+                "Type": "CAN1",
+                "Protocol": "DroneCAN"
+            },
+            "Notes": "ESCs and Motors are an all in one unit."
+        },
+        "Motors": {
+            "Product": {
+                "Manufacturer": "Hobbywing",
+                "Model": "XRotor X6 Plus system",
+                "Version": "X6 Plus",
+                "URL": "https://www.hobbywingdirect.com/products/xrotor-x6-plus"
+            },
+            "Specifications": {},
+            "Notes": "6218-150KV"
+        },
+        "Propellers": {
+            "Product": {
+                "Manufacturer": "Hobbywing",
+                "Model": "XRotor 2480 Propeller",
+                "Version": "",
+                "URL": "https://www.hobbywingdirect.com/products/xrotor-2480-propeller"
+            },
+            "Specifications": {
+                "Diameter_inches": 24
+            },
+            "Notes": "Propellers designed for use with XRotor X6 motors."
+        },
+        "GNSS Receiver": {
+            "Product": {
+                "Manufacturer": "CubePilot",
+                "Model": "Here4",
+                "Version": "",
+                "URL": "https://docs.cubepilot.org/user-guides/here-4/here-4-manual"
+            },
+            "Firmware": {
+                "Type": "UBlox",
+                "Version": "1.13.2"
+            },
+            "FC Connection": {
+                "Type": "CAN1",
+                "Protocol": "DroneCAN"
+            },
+            "Notes": "Here4 GPS"
+        },
+        "RC Controller": {
+            "Product": {
+                "Manufacturer": "CubePilot",
+                "Model": "Herelink HD Video Transmission System (V1.1)",
+                "Version": "1.1",
+                "URL": "https://docs.cubepilot.org/user-guides/herelink/herelink-overview"
+            },
+            "Firmware": {
+                "Type": "HereLink",
+                "Version": "RU01240301"
+            },
+            "Notes": "HereLink Video Transmission System."
+        },
+        "RC Transmitter": {
+            "Product": {
+                "Manufacturer": "CubePilot",
+                "Model": "Herelink controller",
+                "Version": "1.1",
+                "URL": "https://docs.cubepilot.org/user-guides/herelink/herelink-overview"
+            },
+            "Firmware": {
+                "Type": "",
+                "Version": ""
+            },
+            "Notes": "This RC transmitter is integrated inside the Herelink above."
+        },
+        "RC Receiver": {
+            "Product": {
+                "Manufacturer": "CubePilot",
+                "Model": "Herelink AirUnit",
+                "Version": "1.1",
+                "URL": "https://docs.cubepilot.org/user-guides/herelink/herelink-overview"
+            },
+            "Firmware": {
+                "Type": "",
+                "Version": ""
+            },
+            "FC Connection": {
+                "Type": "RCin/SBUS",
+                "Protocol": "All"
+            },
+            "Notes": "This receiver is on the vehicle and is connected to the flight controller."
+        },
+        "Telemetry": {
+            "Product": {
+                "Manufacturer": "CubePilot",
+                "Model": "Herelink",
+                "Version": "1.1",
+                "URL": "https://docs.cubepilot.org/user-guides/herelink/herelink-overview"
+            },
+            "Firmware": {
+                "Type": "",
+                "Version": ""
+            },
+            "FC Connection": {
+                "Type": "SERIAL1",
+                "Protocol": "MAVLink2"
+            },
+            "Notes": "Integrated in the Herelink controller and AirUnit."
+        }
+    },
+    "Program version": "3.0.3"
+}

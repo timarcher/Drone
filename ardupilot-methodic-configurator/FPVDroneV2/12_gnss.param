@@ -1,0 +1,10 @@
+BRD_SAFETY_DEFLT,0  # There is no safety switch on the Here4 GPS so we disable it. (BRD_SAFETYENABLE in older firmware versions)|
+EK3_SRC1_YAW,1  # Compass
+GPS_AUTO_CONFIG,1  # Default
+GPS_AUTO_SWITCH,1  # 1:UseBest selects the GPS with highest status, if both are equal the GPS with highest satellite count is used 4:Use primary if 3D fix or better, will revert to 'UseBest' behaviour if 3D fix is lost on primary. 2: Blend
+GPS1_GNSS_MODE,0  # Set to allow all
+GPS1_POS_X,0  # X position of the second GPS antenna in body frame. Positive X is forward of the origin. Units in meters.
+GPS1_POS_Y,0  # Y position of the second GPS antenna in body frame. Positive Y is to the right of the origin. Units in meters.
+GPS1_POS_Z,0  # Z position of the second GPS antenna in body frame. Positive Z is down from the origin. Units in meters.
+GPS1_TYPE,1  # Auto. For M10 modules, ArduPilot is typically able to auto-detect and configure the GPS, so this is the recommended setting.
+SERIAL3_PROTOCOL,5  # Treat the data coming from UART3 as a GPS protocol.

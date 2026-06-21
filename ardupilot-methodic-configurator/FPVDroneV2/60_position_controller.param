@@ -1,0 +1,18 @@
+# Position controller. Conservative pilot profile. Overrides file 16 LOIT/WPNAV values.
+ANGLE_MAX,4000  # 40° max lean; conservative pilot preference
+LOG_BITMASK,145150  # Adds navigation logging for PSC_VELXY_FF tuning flight
+LOIT_ACC_MAX,500  # Loiter correction accel (file 16=420; AMC standard 500)
+LOIT_BRK_ACCEL,250  # Loiter braking accel (file 16=225; moderate)
+PILOT_ACCEL_Z,200  # Throttle accel in AltHold (default=250; lower for gradual altitude changes)
+PILOT_SPEED_DN,150  # Max descent in AltHold/Loiter (default=0=inherit; explicit 1.5 m/s limit)
+PSC_JERK_Z,8  # Vertical jerk limit (default=5; smooth altitude hold)
+PSC_POSZ_P,1.2  # Altitude P gain (default=1.0; AMC=1.5; moderate)
+PSC_VELXY_FF,0.85  # Velocity feed-forward; tune from log PSCN.AE/PSCN.VE ratio at hover
+WPNAV_ACCEL,200  # Mission horizontal accel (file 16=125; 2 m/s/s)
+WPNAV_ACCEL_C,400  # Mission cornering accel (2x WPNAV_ACCEL; was 0)
+WPNAV_ACCEL_Z,100  # Mission vertical accel (file 16=75; moderate)
+WPNAV_JERK,2  # Mission path jerk limit (file 16=1; smoother transitions)
+WPNAV_SPEED,500  # Mission speed (file 16=450; 5 m/s)
+WPNAV_SPEED_DN,150  # Mission descent speed (file 16=100; 1.5 m/s)
+WPNAV_SPEED_UP,200  # Mission climb speed (file 16=150; 2 m/s)
+WP_NAVALT_MIN,2  # Min altitude for horizontal navigation in missions (default=0)

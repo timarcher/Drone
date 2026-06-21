@@ -1,0 +1,7 @@
+ARMING_RUDDER,2  # Allow arm or disarm by rudder input.
+FLTMODE_CH,5  # RC channel to use for flight mode control. 5 is the default, so we stay with that.
+RC5_OPTION,0  # Do nothing. Leave unassigned as flight mode is setup on channel 5 by default.
+RC6_OPTION,11  # Enable/Disable fence
+RC7_OPTION,0  # Do nothing. Function assigned to rc channel 7. For example, we could pick things like "Motor Emergency Stop", "Lost rover Sound", etc
+RC8_OPTION,0  # Do nothing. Function assigned to rc channel 8. For example, we could pick things like "Motor Emergency Stop", "Lost rover Sound", etc
+RC9_OPTION,0  # Do nothing. Function assigned to rc channel 9. For example, we could pick things like "Motor Emergency Stop", "Lost rover Sound", etc

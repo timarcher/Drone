@@ -1,0 +1,28 @@
+BRD_BOOT_DELAY,3000  # This adds a delay in milliseconds to boot to ensure peripherals initialise fully. Value in milliseconds.
+BRD_RTC_TZ_MIN,0  # UTC Time Zone. Adds offset in +- minutes from UTC to calculate local time.
+FLOW_TYPE,5  # Enable optical flow camera.
+INS_ACCEL_FILTER,10  # Filter cutoff frequency for accelerometers. The default is 20 and that lets too much noise in.
+INS_POS1_X,0  # X position of the first IMU Accelerometer in body frame. Positive X is forward of the origin.
+INS_POS1_Y,0  # Y position of the first IMU accelerometer in body frame. Positive Y is to the right of the origin.
+INS_POS2_X,0  # X position of the second IMU accelerometer in body frame. Positive X is forward of the origin.
+INS_POS2_Y,0  # Y position of the second IMU accelerometer in body frame. Positive Y is to the right of the origin.
+#MAV4_OPTIONS,2  # Dont forward mavlink to/from only for 4.7, replaces serial4_options
+PILOT_TKOFF_ALT,0  # Altitude that altitude control modes will climb to when a takeoff is triggered with the throttle stick. Leave at 0 for default. Set to 100 to climb to 1m on take-off. Value in centimeters.
+RNGFND1_GNDCLEAR,5  # Optional - This parameter sets the expected range measurement(in cm) that the range finder should return when the vehicle is on the ground.
+RNGFND1_MAX_CM,600  # Maximum distance in centimeters that rangefinder can reliably read.
+RNGFND1_MIN_CM,2  # Minimum distance in centimeters that rangefinder can reliably read.
+RNGFND1_ORIENT,25
+RNGFND1_TYPE,10  # Type of connected rangefinder. Reboot flight controller after setting this for rest of the params to show.
+SCHED_LOOP_RATE,400  # Rate of the main loop in hertz. Keep default.
+SCR_ENABLE,1  # Use lua scripting for VTOL-Quicktune, MagFit automation and wind speed estimation automation
+SERIAL2_BAUD,4  # The required baud rate for SmartAudio.
+SERIAL2_OPTIONS,4  # For half-duplex communication, which SmartAudio requires.
+SERIAL2_PROTOCOL,37  # Enable the SmartAudio protocol.
+SERIAL4_BAUD,115  # The baud rate used for Serial4. 115200 baud.
+SERIAL4_OPTIONS,1024 # Dont forward mavlink to/from for 4.6.3
+SERIAL4_PROTOCOL,1  # What protocol Serial4 port should be used for. Lidar and Flow.
+VTX_BAND,4  # Race Band
+VTX_CHANNEL,7  # Channel 8.
+VTX_ENABLE,1  # Enable VTX support. Reboot flight controller after setting.
+VTX_OPTIONS,10  # Pitmode until armed and Unlocked options.
+VTX_POWER,100  # Change from 25 to 100mw.

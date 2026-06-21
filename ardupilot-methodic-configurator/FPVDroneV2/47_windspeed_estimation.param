@@ -1,0 +1,3 @@
+EK3_DRAG_BCOEF_X,0  # Windspeed estimation disabled
+EK3_DRAG_BCOEF_Y,0  # Windspeed estimation disabled
+EK3_DRAG_MCOEF,0  # Windspeed estimation disabled

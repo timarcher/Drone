@@ -1,0 +1,8 @@
+# Optical flow as EKF3 velocity backup (SRC2). GPS remains primary (SRC1 unchanged).
+# EK3_SRC numbering: 0=None, 1=Baro, 3=GPS, 5=OpticalFlow (VELXY only)
+EK3_FLOW_DELAY,10  # Measurement latency compensation in ms (default 10)
+EK3_SRC2_POSXY,0  # None — optical flow cannot provide absolute position
+EK3_SRC2_POSZ,1  # Baro — altitude maintained as backup
+EK3_SRC2_VELXY,5  # Optical Flow horizontal velocity backup
+EK3_SRC2_VELZ,0  # None
+EK3_SRC2_YAW,0  # None

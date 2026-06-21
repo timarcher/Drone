@@ -1,0 +1,1 @@
+ESC_HW_POLES,14  # Motor pole count. Not functionally used with DroneCAN ESCs (RPM is reported digitally over CAN, not via DShot bidirectional).

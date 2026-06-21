@@ -1,0 +1,6 @@
+BATT_AMP_PERVLT,40.200001  # Number of amps that a 1V reading on the current sensor corresponds to. From MicoAir743v2 docs.
+BATT_CURR_PIN,11  # Based on MicoAir docs
+BATT_MONITOR,4  # Selected in component editor window
+BATT_VOLT_MULT,21.120001  # Used to convert the voltage sensing pin reading to the actual battery voltage. From MicoAir743v2 docs.
+BATT_VOLT_PIN,10  # Based on MicoAir docs
+BATT2_MONITOR,0  # No second battery monitor

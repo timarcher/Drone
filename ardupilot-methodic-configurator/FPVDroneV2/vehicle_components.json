@@ -1,0 +1,186 @@
+{
+    "Format version": 1,
+    "Components": {
+        "Flight Controller": {
+            "Product": {
+                "Manufacturer": "ArduPilot,AET,Airvolute,Aocoda-RC-H743Dual,CSKY,GreenSight,Japan Aviation Electronics Industry Ltd.,Taiphoon,mRo,ORBITH743,Horizon31,Dheeran labs,PrincipIoT,Qiotek,Sierra Aerospace,SkySakura",
+                "Model": "MicoAir743v2",
+                "Version": "V2",
+                "URL": "https://store.micoair.com/product/micoair743-v2/"
+            },
+            "Firmware": {
+                "Type": "ArduCopter",
+                "Version": "4.6.3 official"
+            },
+            "Specifications": {
+                "MCU Series": "STM32H7xx"
+            },
+            "Notes": ""
+        },
+        "Frame": {
+            "Product": {
+                "Manufacturer": "iFlight",
+                "Model": "Protek 35",
+                "Version": "1.4",
+                "URL": "https://www.getfpv.com/iflight-protek35-v1-4-cinewhoop-frame-kit.html"
+            },
+            "Specifications": {
+                "TOW min Kg": 0.5,
+                "TOW max Kg": 0.5,
+                "Frame class": "Quad"
+            },
+            "Notes": ""
+        },
+        "Battery Monitor": {
+            "Product": {
+                "Manufacturer": "",
+                "Model": "",
+                "Version": "",
+                "URL": ""
+            },
+            "Firmware": {},
+            "FC Connection": {
+                "Type": "Analog",
+                "Protocol": "Analog Voltage and Current"
+            },
+            "Notes": "Built into the flight controller."
+        },
+        "Battery": {
+            "Product": {
+                "Manufacturer": "Tattu",
+                "Model": "TATTU R-Line 22.2V 160C 1600mAh",
+                "Version": "",
+                "URL": "https://www.amazon.com/dp/B013I9SAHO"
+            },
+            "Specifications": {
+                "Chemistry": "Lipo",
+                "Volt per cell max": 4.2,
+                "Volt per cell arm": 3.6667,
+                "Volt per cell low": 3.6,
+                "Volt per cell crit": 3.4,
+                "Volt per cell min": 3.2,
+                "Number of cells": 6,
+                "Capacity mAh": 1600
+            },
+            "Notes": "TATTU R-Line Version 6.0 6S Lipo Battery 22.2V 160C 1600mAh Lipo Battery Pack with XT60 Plug for Racing(ST stick version)"
+        },
+        "ESC": {
+            "Product": {
+                "Manufacturer": "MicoAir",
+                "Model": "MicoAir743 V2 60A Bluejay 30\u00d730 FC&ESC Stack",
+                "Version": "",
+                "URL": "https://store.micoair.com/product/micoair743-v2/"
+            },
+            "Firmware": {},
+            "FC->ESC Connection": {
+                "Type": "Main Out",
+                "Protocol": "DShot600"
+            },
+            "ESC->FC Telemetry": {
+                "Type": "None",
+                "Protocol": "None"
+            },
+            "Notes": ""
+        },
+        "Motors": {
+            "Product": {
+                "Manufacturer": "iFlight",
+                "Model": "XING 2205 FPV NextGen Motor - 2300KV Brushless Motor",
+                "Version": "",
+                "URL": "https://pyrodrone.com/products/iflight-xing-2205-fpv-nextgen-motor-2300kv"
+            },
+            "Specifications": {},
+            "Notes": ""
+        },
+        "Propellers": {
+            "Product": {
+                "Manufacturer": "Gemfan ",
+                "Model": "Ducted Propeller D90 3.5 inch M5 Shaft 3-Blade Props",
+                "Version": "",
+                "URL": "https://www.amazon.com/dp/B0CKY88TDK"
+            },
+            "Specifications": {
+                "Diameter_inches": 3.5
+            },
+            "Notes": "Ducted propellers"
+        },
+        "GNSS Receiver": {
+            "Product": {
+                "Manufacturer": "MicoAir",
+                "Model": "M10G-5883 GPS Module",
+                "Version": "",
+                "URL": "https://store.micoair.com/product/m9-m10-gps-module/"
+            },
+            "Firmware": {
+                "Type": "",
+                "Version": ""
+            },
+            "FC Connection": {
+                "Type": "SERIAL3",
+                "Protocol": "AUTO"
+            },
+            "Notes": ""
+        },
+        "RC Controller": {
+            "Product": {
+                "Manufacturer": "RadioMaster",
+                "Model": "TX16S",
+                "Version": "Mark2",
+                "URL": "https://www.radiomasterrc.com/products/tx16s-mark-ii-max-radio-controller"
+            },
+            "Firmware": {
+                "Type": "EdgeTx",
+                "Version": "2.10.5"
+            },
+            "Notes": "RadioMaster Controller with EdgeTX firmware loaded on it"
+        },
+        "RC Transmitter": {
+            "Product": {
+                "Manufacturer": "RadioMaster",
+                "Model": "TX16S",
+                "Version": "Mark2",
+                "URL": "https://www.radiomasterrc.com/products/tx16s-mark-ii-max-radio-controller"
+            },
+            "Firmware": {
+                "Type": "EdgeTx",
+                "Version": "2.10.5"
+            },
+            "Notes": "RadioMaster Controller with EdgeTX firmware loaded on it"
+        },
+        "RC Receiver": {
+            "Product": {
+                "Manufacturer": "RadioMaster",
+                "Model": "RadioMaster 2.4GHz RP1 ELRS FPV Receiver ExpressLRS Nano Receiver",
+                "Version": "NA",
+                "URL": "https://www.amazon.com/dp/B0BZY2M4BS"
+            },
+            "Firmware": {
+                "Type": "",
+                "Version": ""
+            },
+            "FC Connection": {
+                "Type": "SERIAL6",
+                "Protocol": "All"
+            },
+            "Notes": "This receiver is on the vehicle and is connected to the flight controller."
+        },
+        "Telemetry": {
+            "Product": {
+                "Manufacturer": "",
+                "Model": "",
+                "Version": "",
+                "URL": ""
+            },
+            "Firmware": {
+                "Type": "",
+                "Version": ""
+            },
+            "FC Connection": {
+                "Type": "None",
+                "Protocol": "None"
+            },
+            "Notes": "We use CRSF telemetry through the receiver."
+        }
+    },
+    "Program version": "4.2.0"
+}

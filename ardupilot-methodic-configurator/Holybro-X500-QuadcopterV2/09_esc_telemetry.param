@@ -1,0 +1,2 @@
+MOT_HOVER_LEARN,2  # So that it can tune the throttle controller on 20_throttle_controller.param file
+MOT_PWM_TYPE,0  # Specified in component editor window

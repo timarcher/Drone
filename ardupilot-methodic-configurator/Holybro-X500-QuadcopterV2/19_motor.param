@@ -1,0 +1,1 @@
+ESC_HW_POLES,14  # Holybro 2216 KV920 motor pole count. Not functionally used with PWM ESCs (no ESC telemetry).

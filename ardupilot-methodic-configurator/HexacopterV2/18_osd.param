@@ -1,0 +1,1 @@
+OSD_TYPE,0  # No video OSD on Hexacopter. OLED display is configured via NTF_DISPLAY_TYPE in 15_general_configuration.param.
