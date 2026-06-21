@@ -43,6 +43,45 @@ Read `$VEHICLE_DIR/vehicle_components.json` fully. Extract and note:
 
 ---
 
+### Vehicle Catalog — HexacopterV2
+
+Use these facts when evaluating `HexacopterV2/` — do not re-derive from vehicle_components.json each time.
+
+- **Frame:** RJX 1300mm hex-X, 14.2–16.7 kg TOW (36.85 lb with 12S battery + Gremsy T7 + Sony A6500 payload)
+- **FC:** CubeOrangePlus, 3 IMUs (IMU1/2 heated to 60°C, IMU3 non-heated to 48°C)
+- **Battery:** Tattu Plus 12S 16000mAh (params use 15800 mAh); DroneCAN smart battery on CAN2; analog backup via Kore carrier board on BATT2; `BATT_CURR_MULT=-1` (Tattu reports inverted current direction)
+- **Voltage table (12S):** MAX=50.4, ARM≈47.3 (step 11 / 3.94V/cell), LOW=43.2 (3.6V), CRT=42.6 (3.55V)
+- **ESC:** Hobbywing XRotor X6 Plus DroneCAN on CAN1; `MOT_PWM_TYPE=0` (not DShot — DroneCAN handles protocol); `CAN_D1_UC_ESC_BM=63` (all 6 ESCs); `ESC_HW_POLES=14` (not functionally used; RPM reported digitally over CAN)
+- **GPS:** Dual Here4 via DroneCAN on CAN1; `GPS1_CAN_OVRIDE=119`, `GPS2_CAN_OVRIDE=118`; `GPS_AUTO_SWITCH=1`
+- **RC/Telemetry:** Herelink HD on SERIAL1; `SERIAL1_BAUD=115` (115200); `BRD_SER1_RTSCTS=2`
+- **Props:** 24 inch → `INS_GYRO_FILTER=20Hz`; initial notch guess 28Hz (must be refined from log); `ATC_ACCEL_R/P_MAX=35400`, `ATC_ACCEL_Y_MAX=14400`
+- **Gimbal:** Gremsy T7 on serial (921600 baud), `MNT1_TYPE=6`; Camera: Sony A6500, `CAM1_TYPE=5`
+- **Companion Pi:** SERIAL4 at 921600 baud, MAVLink2
+- **Sensors:** HereFlow optical flow; TFMini-S LiDAR; DroneCAN proximity sensor type 14
+- **No ADSB receiver** — do not set `ADSB_TYPE` or any ADSB-related serial protocol in this config
+- **Upload status:** Last completed step 25 — not autotuned; initial PID estimates only
+
+### Vehicle Catalog — Holybro-X500-QuadcopterV2
+
+Use these facts when evaluating `Holybro-X500-QuadcopterV2/` — do not re-derive from vehicle_components.json each time.
+
+- **Frame:** Holybro X500 V2, 500mm, ~3 kg TOW; test/dev platform for validating params before applying to the hexacopter
+- **FC:** CubeOrangePlus, 3 IMUs
+- **Battery:** Tattu 6S 10000mAh; analog Cube Orange Power Brick Mini on BATT1; **no BATT2**
+- **Voltage table (6S):** MAX=25.2, ARM≈23.6 (3.93V/cell), LOW=21.6 (3.6V), CRT=21.3 (3.55V)
+- **ESC:** Holybro BLHeli_S 20A on standard PWM main outputs; `MOT_PWM_TYPE=0`; **no ESC telemetry** → `INS_HNTCH_MODE=1` (throttle-based notch)
+- **GPS:** Single Here4 via DroneCAN on CAN1; no GPS2; `CAN_D2/P2` enabled in step 05 but **no device on CAN2** (artifact of AI conversion — harmless)
+- **RC:** RadioMaster TX16S + FrSky X8R SBUS on RCin; `SERIAL2_PROTOCOL=10` (FrSky SPort Passthrough for Yaapu telemetry)
+- **Telemetry:** Holybro SiK 915MHz on SERIAL1 at 57600 baud
+- **Props:** 10 inch 1045 → `INS_GYRO_FILTER=42Hz`; notch tuned to 58Hz from log
+- **No gimbal, no camera** — X500 is a test platform only
+- **Companion Pi:** SERIAL4 at 921600 baud, MAVLink2
+- **ADSB:** ADSB receiver IS installed; `ADSB_TYPE=1`, `SERIAL5_PROTOCOL=1` in step 15 is correct
+- **Upload status:** Last completed step 44 (full autotune done); steps 45–66 pending
+- **CRITICAL KNOWN BUG:** `66_everyday_use.param` is a direct copy of the Hexacopter file — contains `BATT_ARM_VOLT=44.3` (impossible for 6S, max 25.2V → drone **cannot arm**), plus gimbal/camera params that don't exist on this vehicle. This file **must be rewritten** before use.
+
+---
+
 ### Step 3 — Check upload status and complete.param staleness
 
 1. Read `$VEHICLE_DIR/last_uploaded_filename.txt`
@@ -258,8 +297,72 @@ If yes:
 - After editing, note which files need to be re-uploaded to the FC via AMC.
 - **Never** upload files 50–56 (SysID) without explicit user understanding that this will
   temporarily reset autotune gains during the test flights.
+- **Never set a param to its ArduPilot default value** — if the value matches the firmware
+  default, omit it entirely. Only params that differ from the default belong in the config files.
+  Check defaults at https://ardupilot.org/copter/docs/parameters-Copter-stable-V4.6.3.html
 
 ---
+
+## Reference: Known-Good Values — HexacopterV2 (RJX 1300mm, 12S, AMC 4.6.3)
+
+| Parameter | Value | Notes |
+|---|---|---|
+| `MOT_BAT_VOLT_MAX` | 50.4 | 12 × 4.2V |
+| `MOT_BAT_VOLT_MIN` | 42.6 | 12 × 3.55V (= BATT_CRT_VOLT; consider lowering to 40–41) |
+| `BATT_ARM_VOLT` | 47.3 | 12 × 3.94V (step 11); step 66 lowers to 44.3 = 3.69V/cell ⚠️ |
+| `BATT_LOW_VOLT` | 43.2 | 12 × 3.6V |
+| `BATT_CRT_VOLT` | 42.6 | 12 × 3.55V |
+| `BATT_CAPACITY` | 15800 | Tattu 12S 16000mAh |
+| `BATT_CURR_MULT` | -1 | Tattu inverted current — do not remove |
+| `CAN_D1_UC_ESC_BM` | 63 | All 6 ESCs (bitmask 0b00111111) |
+| `CAN_D1_UC_OPTION` | 128 | Hobbywing ESC DroneCAN option |
+| `GPS1_CAN_OVRIDE` | 119 | DroneCAN node ID for GPS1 |
+| `GPS2_CAN_OVRIDE` | 118 | DroneCAN node ID for GPS2 |
+| `INS_GYRO_FILTER` | 20 | 24-inch props |
+| `INS_HNTCH_FREQ` | 28 | Initial estimate only — tune from first hover log |
+| `MOT_PWM_TYPE` | 0 | Standard (DroneCAN ESCs, not DShot) |
+| `MOT_THST_EXPO` | 0.74 | From component editor; validate from hover data |
+| `MOT_THST_HOVER` | ~0.3–0.5 | Expected range for 35-lb hex; 0.2 is unlearned estimate |
+| `MOT_SPIN_ARM` | 0.05 | |
+| `MOT_SPIN_MIN` | 0.09 | |
+| `TKOFF_RPM_MIN` | 200 | Dead motor detection |
+| `SERIAL1_BAUD` | 115 | Herelink 115200 baud |
+| `MNT1_TYPE` | 6 | Gremsy T7 |
+| `CAM1_TYPE` | 5 | Sony A6500 via MAVLink |
+| `LAND_SPEED` | 25 | Recommend for 35-lb aircraft (default 50 cm/s causes hard landings) |
+
+## Reference: Known-Good Values — Holybro X500 QuadcopterV2 (6S, AMC 4.6.3)
+
+| Parameter | Value | Notes |
+|---|---|---|
+| `MOT_BAT_VOLT_MAX` | 25.2 | 6 × 4.2V |
+| `MOT_BAT_VOLT_MIN` | 21.3 | 6 × 3.55V (step 14 accidentally set 19.8 — fix to 21.3) |
+| `BATT_ARM_VOLT` | 23.6 | 6 × 3.93V; step 66 MUST NOT set 44.3 (hexacopter value) |
+| `BATT_LOW_VOLT` | 21.6 | 6 × 3.6V |
+| `BATT_CRT_VOLT` | 21.3 | 6 × 3.55V |
+| `BATT_CAPACITY` | 10000 | Tattu 6S |
+| `INS_GYRO_FILTER` | 42 | 10-inch props |
+| `INS_HNTCH_MODE` | 1 | Throttle-based (no ESC telemetry on BLHeli_S PWM) |
+| `INS_HNTCH_FREQ` | 58 | Tuned from log |
+| `INS_HNTCH_BW` | 14 | FREQ/4 |
+| `INS_HNTCH_REF` | 0.249 | Hover throttle reference |
+| `MOT_PWM_TYPE` | 0 | Standard PWM (BLHeli_S) |
+| `MOT_THST_EXPO` | 0.65 | 10-inch props |
+| `MOT_THST_HOVER` | ~0.244 | Learned (step 24 PSC_ACCZ_P=0.244 confirms this) |
+| `MOT_SPIN_ARM` | 0.1 | |
+| `MOT_SPIN_MIN` | 0.15 | |
+| `PSC_ACCZ_P` | 0.244 | = learned MOT_THST_HOVER |
+| `PSC_ACCZ_I` | 0.488 | = 2× MOT_THST_HOVER |
+| `ATC_RAT_RLL_P/I` | 0.093694 | Final autotune (step 44) |
+| `ATC_RAT_PIT_P/I` | 0.140066 | Final autotune (step 44) |
+| `ATC_RAT_YAW_P` | 0.86697 | Final autotune (step 42) |
+| `ATC_RAT_RLL_SMAX` | 50 | Add to step 66 (not set by AutoTune) |
+| `ATC_RAT_PIT_SMAX` | 50 | Add to step 66 (not set by AutoTune) |
+| `ATC_RAT_YAW_SMAX` | 10 | Add to step 66 (not set by AutoTune) |
+| `PSC_ACCZ_SMAX` | 15 | Add to step 66 (not set by AutoTune) |
+| `TKOFF_RPM_MIN` | 100 | Add to step 66 (not explicitly set) |
+| `SERIAL1_BAUD` | 57 | SiK 915MHz 57600 baud |
+| `SERIAL2_PROTOCOL` | 10 | FrSky SPort for Yaapu telemetry |
 
 ## Reference: Known-Good Values for This Drone (iFlight Protek 35, 6S, AMC 4.6.3)
 
@@ -363,3 +466,62 @@ If yes:
 17. **Safety double-check before any upload**: Verify no RC_OPTION=0 (removes switch function),
     FLOW_TYPE≠0 (disables sensor), FLTMODE≠15 (AutoTune stuck on), ATC_ANG_*_P≠4.5 (SysID
     template). Always regenerate complete.param after all uploads. Errors have real consequences.
+
+18. **X500 `66_everyday_use.param` was copied from the Hexacopter file** — it contains
+    `BATT_ARM_VOLT=44.3V` (6S maximum is 25.2V, so this is **physically impossible** — drone
+    will never arm), plus `MNT1_TYPE=6` and all gimbal params, and `CAM1_TYPE=5`. Always
+    verify voltage thresholds match the actual cell count when editing file 66. Cross-check:
+    cell_count × 4.2 = `MOT_BAT_VOLT_MAX`; if arm voltage exceeds that, the file is wrong.
+
+19. **DroneCAN ESCs use `MOT_PWM_TYPE=0`** — not DShot. The DroneCAN driver handles the
+    ESC protocol over CAN. DShot types (6=DShot600, 7=DShot1200) only apply to ESCs wired
+    directly to servo PWM outputs. Do not set `MOT_PWM_TYPE=6` for a hexacopter with
+    DroneCAN ESCs like the Hobbywing XRotor X6 Plus.
+
+20. **`ESC_HW_POLES` is not functionally used with DroneCAN ESCs** — RPM is reported
+    digitally over CAN from the ESC firmware itself, not derived from back-EMF counting.
+    The value is still correct to set (for documentation), but it does not affect notch
+    filter behavior. With `INS_HNTCH_MODE=3`, ArduPilot uses the CAN-reported RPM directly.
+
+21. **For 24-inch props, `INS_HNTCH_FREQ=28Hz` is only the initial pre-flight estimate**
+    (= 1.4 × `INS_GYRO_FILTER`=20). Actual motor noise at hover for 150KV motors at 12S
+    is approximately 67–100 Hz (RPM ≈ 4000–6000 → Hz = RPM/60). The 28 Hz filter will
+    miss the actual noise band entirely. Always do a log-analyzed hover and use the notch
+    filter web tool to find the true fundamental before relying on this filter.
+
+22. **`CAN_D1_UC_ESC_BM` bitmask** — for a 6-motor hexacopter the correct value is 63
+    (0b00111111, ESCs 1–6). For a 4-motor quadcopter it would be 15 (0b00001111, ESCs 1–4).
+    Verify this when reviewing hexacopter vs quadcopter configs to avoid missing motors.
+
+23. **`BATT_CURR_MULT=-1` for the Tattu Plus smart battery** — the Tattu Plus DroneCAN
+    battery reports current with inverted polarity that ArduPilot reads as negative. Without
+    this multiplier, current draw and mAh consumed appear negative, and remaining capacity
+    calculations are inverted. Do not remove this param from the hexacopter config.
+
+24. **Large drone hover throttle is far from the `MOT_THST_HOVER=0.2` initial estimate** —
+    a 35-pound hexacopter with 24-inch props at 12S will likely hover at 30–50% throttle
+    (`MOT_THST_HOVER≈0.3–0.5`). `PSC_ACCZ_P/I` calculated in step 24 at 0.186/0.372 (from
+    the 0.2 estimate) will need significant updating after the real hover throttle is learned
+    via `MOT_HOVER_LEARN=2`. Do not fly the hexacopter without at minimum completing step 29
+    (QuickTune) to let the system learn the actual value.
+
+25. **X500 `FLTMODE3=3` and `FLTMODE4=3` are duplicates (both Auto)** — both RC switch
+    positions 3 and 4 do the same thing. Set `FLTMODE4=16` (PosHold) or `FLTMODE4=0`
+    (Stabilize) for additional utility and emergency manual override capability.
+
+26. **SMAX params must be set manually after AutoTune** — `ATC_RAT_*_SMAX` and
+    `PSC_ACCZ_SMAX` remain at 0 (disabled) until QuickTune sets them (typically ~50).
+    For the X500 which used AutoTune (not QuickTune), these were never set. Add to step 66:
+    `ATC_RAT_RLL_SMAX=50`, `ATC_RAT_PIT_SMAX=50`, `ATC_RAT_YAW_SMAX=10`, `PSC_ACCZ_SMAX=15`.
+    Without SMAX, rate oscillations from disturbances have no slew-rate protection.
+
+27. **Never explicitly set a param that already matches the ArduPilot default** — unless
+    the intent is to protect it from a future firmware default change or it is being set to
+    a non-default value elsewhere in the sequence. Repeating defaults in param files:
+    (a) makes files harder to read and audit, (b) silently breaks the AMC "no-repeat" workflow,
+    and (c) makes firmware upgrades harder because stale defaults block clean migration.
+    **How to apply:** Before adding any param to any step file, look up its ArduPilot 4.6.3
+    default in the official param list. If the value you're setting equals the default and you
+    have no intention of changing it, omit it entirely. Only include a param when its value
+    is genuinely different from the default, or when an earlier step set it to X and this step
+    deliberately changes it to Y.
