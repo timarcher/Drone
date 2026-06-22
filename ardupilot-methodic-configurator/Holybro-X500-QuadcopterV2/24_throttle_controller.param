@@ -1,4 +1,6 @@
-ATC_THR_MIX_MAN,0.5  # because we have learned the MOT_THST_HOVER value
-ATC_THR_MIX_MAX,0.5  # Throttle vs attitude control prioritization used during active flight (higher values mean we prioritise attitude control over throttle)
-PSC_ACCZ_I,0.487726  # Use 2 * MOT_THST_HOVER assuming MOT_THST_HOVER has been correctly learned
-PSC_ACCZ_P,0.243863  # Use MOT_THST_HOVER assuming MOT_THST_HOVER has been correctly learned
+ATC_THR_MIX_MAN,0.5  # Because ALTHOLD flight mode was used for more than 30 seconds to correctly learn the MOT_THST_HOVER value
+ATC_THR_MIX_MAX,0.5  # Throttle vs attitude priority during active flight. Will be raised to 0.9 in step 45 post-autotune.
+MOT_BAT_VOLT_MAX,25.2  # Motor voltage compensation upper bound. 4.2V/cell × 6 = full charge. No PID compensation applied at this voltage. Confirm against flight log resting voltage.
+MOT_BAT_VOLT_MIN,21.3  # Override step 14's MP default of 3.3V/cell (19.8V), which is below BATT_CRT_VOLT. Sets the compensation lower bound to BATT_CRT_VOLT so compensation covers the actual flight voltage range.
+PSC_ACCZ_I,0.481392  # Use 2 * MOT_THST_HOVER assuming MOT_THST_HOVER has been correctly learned
+PSC_ACCZ_P,0.240696  # Use MOT_THST_HOVER assuming MOT_THST_HOVER has been correctly learned

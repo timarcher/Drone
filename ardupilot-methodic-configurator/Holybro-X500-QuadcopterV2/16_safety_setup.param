@@ -1,9 +1,22 @@
 ARMING_CHECK,1  # Perform all arming checks. If you have a problem fix its source. Do NOT change this
-ATC_RAT_PIT_SMAX,0
-ATC_RAT_RLL_SMAX,0
-ATC_RAT_YAW_SMAX,0
-FENCE_TYPE,7
-FS_EKF_ACTION,1
-LAND_ALT_LOW,1000
-PSC_ACCZ_SMAX,0
-RTL_ALT,1500
+ATC_RAT_PIT_SMAX,0  # Pitch rate slew limit — 0=disabled. QuickTune will set an appropriate value after motor characterization.
+ATC_RAT_RLL_SMAX,0  # Roll rate slew limit — 0=disabled. QuickTune will set an appropriate value after motor characterization.
+ATC_RAT_YAW_SMAX,0  # Yaw rate slew limit — 0=disabled. QuickTune will set an appropriate value after motor characterization.
+FENCE_TYPE,7  # Bitmask. Bit 0=Max altitude, Bit 1=Circle centered on home, Bit 2=Inclusion/Exclusion polygons. All three enabled.
+FS_EKF_ACTION,1  # EKF failsafe action. 1=Land immediately. Default is 2 (AltHold) which allows uncontrolled drift — Land is safer.
+LAND_ALT_LOW,1000  # Altitude (cm) at which the vehicle slows from LAND_SPEED_HIGH to LAND_SPEED for final descent.
+LAND_SPEED,40  # Final landing descent speed in cm/s.
+LAND_SPEED_HIGH,0  # Initial landing descent speed in cm/s. 0=use WPNAV_SPEED_DN instead.
+LOIT_ACC_MAX,420  # Loiter max horizontal correction acceleration in cm/s/s. Slightly below the 500 default for smoother behavior.
+LOIT_BRK_ACCEL,225  # Loiter braking acceleration in cm/s/s. Slightly below the 250 default for smoother stops.
+LOIT_BRK_DELAY,0.1  # Loiter brake start delay in seconds. Reduced from the 1.0 default for tighter stick-release response.
+PSC_ACCZ_SMAX,0  # Vertical acceleration slew limit — 0=disabled. QuickTune will set an appropriate value after motor characterization.
+RTL_ALT,1500  # Minimum altitude (cm) above home the vehicle climbs to before returning. Stays at current altitude if already higher.
+RTL_LOIT_TIME,5000  # Time (ms) to loiter above home before beginning final descent.
+WP_NAVALT_MIN,2  # Minimum altitude (m) for lateral navigation. Below this altitude, lateral navigation is suppressed to avoid ground obstacles during takeoff and landing.
+WPNAV_ACCEL,125  # Horizontal acceleration (cm/s/s) used during WP missions.
+WPNAV_ACCEL_Z,75  # Vertical acceleration (cm/s/s) used during WP missions.
+WPNAV_RADIUS,100  # Waypoint acceptance radius (cm). Vehicle considers a WP reached when within this distance.
+WPNAV_SPEED,500  # Target horizontal speed (cm/s) during WP missions.
+WPNAV_SPEED_DN,100  # Target descent speed (cm/s) during WP missions.
+WPNAV_SPEED_UP,150  # Target climb speed (cm/s) during WP missions.

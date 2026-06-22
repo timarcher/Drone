@@ -1,9 +1,1 @@
-# STUB - Template defaults. DO NOT UPLOAD without review.
-# This switches the EKF primary source from GNSS to optical flow.
-# If uploaded as-is, GNSS-based stabilization would be disabled.
-EK3_SRC_OPTIONS,1
-EK3_SRC1_POSXY,3
-EK3_SRC1_POSZ,1
-EK3_SRC1_VELXY,3
-EK3_SRC1_VELZ,3
-EK3_SRC1_YAW,1
+# SKIP — No optical flow sensor installed. GNSS remains the sole position source.

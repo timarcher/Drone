@@ -1,8 +1,8 @@
-ATC_RAT_PIT_NEF,0
-ATC_RAT_PIT_NTF,0
-ATC_RAT_RLL_NEF,0
-ATC_RAT_RLL_NTF,0
-ATC_RAT_YAW_NEF,0
-ATC_RAT_YAW_NTF,0
-PSC_ACCZ_NEF,0
-PSC_ACCZ_NTF,0
+ATC_RAT_PIT_NEF,0  # Pitch rate notch filter center frequency (Hz). 0=disabled. Batch log analysis showed no PID notch needed.
+ATC_RAT_PIT_NTF,0  # Pitch rate notch filter target frequency (Hz). 0=disabled.
+ATC_RAT_RLL_NEF,0  # Roll rate notch filter center frequency (Hz). 0=disabled. Batch log analysis showed no PID notch needed.
+ATC_RAT_RLL_NTF,0  # Roll rate notch filter target frequency (Hz). 0=disabled.
+ATC_RAT_YAW_NEF,0  # Yaw rate notch filter center frequency (Hz). 0=disabled. Batch log analysis showed no PID notch needed.
+ATC_RAT_YAW_NTF,0  # Yaw rate notch filter target frequency (Hz). 0=disabled.
+PSC_ACCZ_NEF,0  # Z-axis acceleration notch filter center frequency (Hz). 0=disabled.
+PSC_ACCZ_NTF,0  # Z-axis acceleration notch filter target frequency (Hz). 0=disabled.

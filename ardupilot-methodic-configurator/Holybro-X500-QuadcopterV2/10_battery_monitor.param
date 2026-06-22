@@ -1,6 +1,6 @@
-BATT2_MONITOR,0  # No second battery monitor
 BATT_AMP_PERVLT,39.876999  # Number of amps that a 1V reading on the current sensor corresponds to. From 00_default.param (Cube Orange Power Module).
-BATT_CURR_PIN,15  # Cube Orange
+BATT_CURR_PIN,15  # Analog current input pin 15 on CubeOrangePlus for the CubePilot Power Brick Mini.
 BATT_MONITOR,4  # Selected in component editor window
-BATT_VOLT_MULT,12.02  # Used to convert the voltage sensing pin reading to the actual battery voltage. From 00_default.param (Cube Orange Power Module).
-BATT_VOLT_PIN,14  # Cube Orange
+BATT_VOLT_MULT,12.02  # Voltage scaling factor to convert ADC pin reading to actual battery voltage. From CubePilot Power Brick Mini calibration.
+BATT_VOLT_PIN,14  # Analog voltage input pin 14 on CubeOrangePlus for the CubePilot Power Brick Mini.
+BATT2_MONITOR,0  # No second battery monitor

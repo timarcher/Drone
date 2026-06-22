@@ -1,4 +1,1 @@
-# STUB - Template defaults. Fill in after performing optical flow calibration flight.
-FLOW_FXSCALER,0
-FLOW_FYSCALER,0
-FLOW_ORIENT_YAW,0
+# SKIP — No optical flow sensor installed. No calibration results to record.
