@@ -1,4 +1,5 @@
-# STUB - Fill in after performing optical flow calibration flight.
-FLOW_FXSCALER,0
-FLOW_FYSCALER,0
-FLOW_ORIENT_YAW,0
+# Optical flow calibration results — update after performing an in-flight calibration.
+# Perform a hover flight with FLOW logging enabled, use the ArduPilot optical flow calibration tool,
+# then fill in the calibrated scaler values below.
+# FLOW_FXSCALER,0   # X-axis scale correction (replace 0 with calibrated value)
+# FLOW_FYSCALER,0   # Y-axis scale correction (replace 0 with calibrated value)

@@ -1,19 +1,6 @@
-# STUB - Template defaults for EK3 source switching. DO NOT UPLOAD without review.
-# NOTE: FLOW_TYPE=6 (HereFlow) is already configured in 15_general_configuration.param.
-# This step switches the EKF to USE optical flow as the primary position source.
-# Calibration results (FLOW_FXSCALER, FLOW_FYSCALER) must be obtained via a
-# calibration flight before enabling optical flow as EKF source.
-EK3_FLOW_DELAY,10
-EK3_SRC_OPTIONS,1
-EK3_SRC1_POSXY,3
-EK3_SRC1_POSZ,1
-EK3_SRC1_VELXY,3
-EK3_SRC1_VELZ,3
-EK3_SRC1_YAW,1
-EK3_SRC2_POSXY,0
-EK3_SRC2_POSZ,1
-EK3_SRC2_VELXY,0
-EK3_SRC2_VELZ,0
-EK3_SRC2_YAW,0
-FLOW_ORIENT_YAW,0
-FLOW_TYPE,6  # HereFlow sensor - already configured in 15_general_configuration.param
+# Configures EKF3 to use optical flow (HereFlow) as a velocity backup source (SRC2).
+# GNSS remains the primary source (SRC1). An optical flow calibration flight is required
+# before source switching will be accurate (see 64_optical_flow_results.param).
+# FLOW_TYPE=6 (HereFlow) is already set in 15_general_configuration.param.
+# All EK3_SRC* params not listed here are at firmware defaults and do not need to be set.
+EK3_SRC2_VELXY,5  # Optical flow horizontal velocity for backup source. 5=OpticalFlow. Firmware default is 0 (disabled) — this is the only non-default change needed for optical flow backup.

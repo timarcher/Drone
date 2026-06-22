@@ -1,11 +1,11 @@
-BATT2_AMP_OFFSET,0.37  # Kore docs recommend 0.45 but this caused negative current readings on my board.
-BATT2_AMP_PERVLT,50  # Setting I derived to work best with Kore carrier board
-BATT2_CURR_PIN,15  # Kore docs recommend 3, but I had to set to 15 to work with Cube Orange Plus.
-BATT2_MONITOR,3  # Monitoring the analog voltage only. The remaining capacity is more accurately measured through the smart battery, and so also trying to measure current through the Kore carrier board will show a remaining capacity on the 2nd battery monitor that is wrong because it resets between flight controller reboots.
-BATT2_SERIAL_NUM,-1  # Leave at -1.
-BATT2_VOLT_MULT,15.2  # Setting I derived to work best with Kore carrier board
-BATT2_VOLT_PIN,14  # Kore docs recommend 2, but I had to set to 14 to work with Cube Orange Plus.
 BATT_MONITOR,8  # Selected in component editor window
-BATT_SERIAL_NUM,-1  # Leave at -1 unless you have multiple DroneCAN batteries in the drone.
-CAN_D2_PROTOCOL,1  # Enable dronecan.
-CAN_P2_DRIVER,2  # Set to the second driver.
+BATT_SERIAL_NUM,-1  # No serial number filtering for BATT1. Connects to any DroneCAN battery detected on CAN2.
+BATT2_AMP_OFFSET,0.37  # Analog current sensor zero-offset in amps for Kore carrier board. (Kore docs suggest 0.45 but caused negative readings on this board.)
+BATT2_AMP_PERVLT,50  # Analog current sensor scaling for Kore carrier board: 50 amps per volt.
+BATT2_CURR_PIN,15  # Analog current input pin for BATT2 on Kore carrier board. (Kore docs say pin 3 but pin 15 is required for CubeOrangePlus.)
+BATT2_MONITOR,3  # BATT2 = Kore carrier board analog backup monitor (voltage + current). Used for cross-check only — capacity tracking is handled by the Tattu Plus DroneCAN smart battery (BATT1).
+BATT2_SERIAL_NUM,-1  # No serial number filtering for BATT2. Accept any analog monitor reading.
+BATT2_VOLT_MULT,15.2  # Voltage divider multiplier for Kore carrier board analog voltage input.
+BATT2_VOLT_PIN,14  # Analog voltage input pin for BATT2 on Kore carrier board. (Kore docs say pin 2 but pin 14 is required for CubeOrangePlus.)
+CAN_D2_PROTOCOL,1  # CAN2 driver protocol = DroneCAN. Required for Tattu Plus smart battery connected to CAN2.
+CAN_P2_DRIVER,2  # Enable CAN physical port 2 driver. Required for Tattu Plus DroneCAN smart battery on CAN2.

@@ -1,3 +1,5 @@
+MOT_PWM_MAX,2000  # Digital ESC protocol maximum is per definition 2000
+MOT_PWM_MIN,1000  # Digital ESC protocol minimum is per definition 1000
 MOT_SPIN_ARM,0.05  # Point at which the motors start to spin expressed as a number from 0 to 1 in the entire output range. Should be lower than MOT_SPIN_MIN.
 MOT_SPIN_MAX,0.95  # Point at which the thrust saturates expressed as a number from 0 to 1 in the entire output range
 MOT_SPIN_MIN,0.09  # Point at which the thrust starts expressed as a number from 0 to 1 in the entire output range. Should be higher than MOT_SPIN_ARM.

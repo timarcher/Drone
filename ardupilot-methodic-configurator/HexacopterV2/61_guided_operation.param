@@ -1,4 +1,2 @@
-FS_GCS_ENABLE,0
-RALLY_INCL_HOME,1
-RALLY_TOTAL,0
-SYSID_MYGCS,255
+# All guided operation params (FS_GCS_ENABLE, RALLY_INCL_HOME, RALLY_TOTAL, SYSID_MYGCS)
+# are at ArduPilot firmware defaults. No changes needed for this vehicle.

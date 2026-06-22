@@ -1,5 +1,5 @@
-EK3_DRAG_BCOEF_X,0  # 0.600 kg / 0.01097 m²
-EK3_DRAG_BCOEF_Y,0  # 0.600 kg / 0.01455 m²
-EK3_DRAG_MCOEF,0
+EK3_DRAG_BCOEF_X,0  # Wind speed estimation permanently disabled. To enable: set to TOW(kg) / frontal_area_X(m²).
+EK3_DRAG_BCOEF_Y,0  # Wind speed estimation permanently disabled. To enable: set to TOW(kg) / frontal_area_Y(m²).
+EK3_DRAG_MCOEF,0  # Momentum drag coefficient. Permanently disabled.
 LOG_DISARMED,1  # allow post flight tuning with Replay
 LOG_REPLAY,1  # allow post flight tuning with Replay

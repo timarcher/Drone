@@ -1,21 +1,27 @@
-BATT2_ARM_VOLT,44.3  # Minimum battery voltage required to arm the aircraft.
-BATT2_CAPACITY,15800  # The Tattu 12s battery has 16000 mah.
-BATT2_CRT_MAH,0  # This is a redundant monitor for batt1. Battery capacity at which the critical battery failsafe is triggered. Set to 0 to disable battery remaining failsafe.
-BATT2_CRT_VOLT,42  # Battery voltage that triggers a critical battery failsafe.
-BATT2_FS_CRT_ACT,1  # Action to perform if the critical battery failsafe is hit. 1 = Land
-BATT2_FS_LOW_ACT,2  # Action to perform if the low battery failsafe is hit. 2 = RTL
-BATT2_FS_VOLTSRC,0  # This is a redundant monitor for batt1. Battery capacity at which the critical battery failsafe is triggered. Set to 0 to disable battery remaining failsafe.
-BATT2_LOW_MAH,0  # This is a redundant monitor for batt1. Battery capacity at which the low battery failsafe is triggered. Set to 0 to disable battery remaining failsafe.
-BATT2_LOW_VOLT,43.2  # Battery voltage that triggers a low battery failsafe.
 BATT_ARM_VOLT,47.3004  # Only arm above this voltage, to avoid taking off with insufficient battery capacity
 BATT_CAPACITY,15800  # Total battery capacity specified in the component editor
-BATT_CRT_MAH,0  # Battery capacity at which the critical battery failsafe is triggered. Set to 0 to disable battery remaining failsafe.
+BATT_CRT_MAH,0  # Critical MAh failsafe disabled. Voltage-based failsafe is more reliable for this battery.
 BATT_CRT_VOLT,42.6  # Critical failsafe voltage x nr. of cells
-BATT_CURR_MULT,-1  # Multiplier applied to all current related reports. Needed otherwise you get negative current readings from the Tattu battery.
+BATT_CURR_MULT,-1  # Current multiplier = -1 to invert sign. Tattu Plus DroneCAN reports current with reversed polarity on this hardware.
 BATT_FS_CRT_ACT,1  # Land ASAP
 BATT_FS_LOW_ACT,2  # Return and land at home or rally point
-BATT_FS_VOLTSRC,0  # Let the firmware handle the nasty business of variable and battery dependent internal resistance
-BATT_LOW_MAH,0  # Battery capacity at which the low battery failsafe is triggered. Set to 0 to disable battery remaining failsafe.
+BATT_FS_VOLTSRC,0  # BATT1 failsafe voltage source. 0=raw voltage from DroneCAN smart battery.
+BATT_LOW_MAH,0  # Low MAh failsafe disabled. Voltage-based failsafe is more reliable.
 BATT_LOW_VOLT,43.2  # Low failsafe voltage x nr. of cells
+BATT2_AMP_OFFSET,0.37
+BATT2_AMP_PERVLT,50
+BATT2_ARM_VOLT,44.3  # Minimum BATT2 (Kore carrier board analog) voltage to arm. 3.69V/cell × 12. Lower than BATT1 threshold due to analog measurement imprecision.
+BATT2_CAPACITY,15800  # Tattu Plus 12S nominal capacity in mAh. Used only as a reference — SoC tracking is via BATT1 (DroneCAN).
+BATT2_CRT_MAH,0  # BATT2 critical MAh failsafe disabled. Capacity tracking is handled by BATT1 (DroneCAN smart battery).
+BATT2_CRT_VOLT,42  # BATT2 critical voltage threshold. 3.5V/cell × 12. Triggers Land immediately.
+BATT2_CURR_PIN,15
+BATT2_FS_CRT_ACT,1  # BATT2 critical battery failsafe action. 1=Land immediately.
+BATT2_FS_LOW_ACT,2  # BATT2 low battery failsafe action. 2=RTL.
+BATT2_FS_VOLTSRC,0  # BATT2 failsafe voltage source. 0=raw voltage (not compensated for internal resistance).
+BATT2_LOW_MAH,0  # BATT2 low MAh failsafe disabled. Capacity tracking is handled by BATT1 (DroneCAN smart battery).
+BATT2_LOW_VOLT,43.2  # BATT2 low battery warning voltage. 3.6V/cell × 12. Triggers RTL.
+BATT2_MONITOR,3
+BATT2_VOLT_MULT,15.2
+BATT2_VOLT_PIN,14
 MOT_BAT_VOLT_MAX,50.4  # Scale the PIDs up when battery voltage is below this threshold
 MOT_BAT_VOLT_MIN,42.6  # Scale the PIDs up when battery voltage is above this threshold

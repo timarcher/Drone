@@ -1,9 +1,22 @@
 ARMING_CHECK,1  # Perform all arming checks. If you have a problem fix its source. Do NOT change this
-ATC_RAT_PIT_SMAX,0
-ATC_RAT_RLL_SMAX,0
-ATC_RAT_YAW_SMAX,0
-FENCE_TYPE,7
-FS_EKF_ACTION,1
-LAND_ALT_LOW,1000
-PSC_ACCZ_SMAX,0
-RTL_ALT,1500
+ATC_RAT_PIT_SMAX,0  # Pitch rate slew limit. Set to 0 to disable until QuickTune sets appropriate values post-tuning.
+ATC_RAT_RLL_SMAX,0  # Roll rate slew limit. Set to 0 to disable until QuickTune sets appropriate values post-tuning.
+ATC_RAT_YAW_SMAX,0  # Yaw rate slew limit. Set to 0 to disable until QuickTune sets appropriate values post-tuning.
+FENCE_TYPE,7  # Bitmask. Set to Max Altitude, Circle Centered on Home, and Inclusion/Exclusion Circles+Polygons
+FS_EKF_ACTION,1  # EKF failsafe action. 1=Land (more conservative than default 2=AltHold for a heavy aircraft).
+LAND_ALT_LOW,1000  # Altitude during Landing at which vehicle slows to LAND_SPEED. Value is centimeters.
+LAND_SPEED,30  # The descent speed for the final stage of landing in cm/s. Conservative for a 35-lb aircraft.
+LAND_SPEED_HIGH,0  # The descent speed for the first stage of landing in cm/s. If 0 then WPNAV_SPEED_DN is used.
+LOIT_ACC_MAX,420  # Default is 500. Loiter maximum correction acceleration in cm/s/s. Reduced for this large aircraft.
+LOIT_BRK_ACCEL,225  # Default is 250. Loiter braking acceleration in cm/s/s. Reduced for this large aircraft.
+LOIT_BRK_DELAY,0.1  # Default is 1. Loiter brake start delay in seconds. Reduced so the drone brakes faster when releasing sticks.
+PSC_ACCZ_SMAX,0  # Vertical accel slew limit. Set to 0 to disable until QuickTune sets appropriate values post-tuning.
+RTL_ALT,1500  # The minimum alt above home the vehicle will climb to before returning. Value is in Centimeters.
+RTL_LOIT_TIME,5000  # Time in milliseconds to loiter above home before beginning final descent.
+WPNAV_ACCEL,125  # Horizontal acceleration used in missions in cm/s/s. Slightly above default (100) for this aircraft.
+WPNAV_ACCEL_Z,75  # Vertical acceleration used in missions in cm/s/s. Conservative for a 35-lb aircraft.
+WPNAV_RADIUS,100  # Waypoint achievement radius in cm. RTK GPS allows 100cm precision vs default 200cm.
+WPNAV_SPEED,500  # Mission horizontal speed in cm/s. Conservative for this large heavy aircraft (default 1000).
+WPNAV_SPEED_DN,100  # Mission descent speed in cm/s. Conservative for a 35-lb aircraft (default 150).
+WPNAV_SPEED_UP,150  # Mission climb speed in cm/s. Conservative for heavy aircraft (default 250).
+WP_NAVALT_MIN,2  # Minimum altitude in meters for horizontal navigation in missions. Prevents lateral movement below 2m.

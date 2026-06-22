@@ -1,19 +1,12 @@
-ATC_THR_MIX_MAN,0.5  # Throttle vs attitude control prioritization used during active flight (higher values mean we prioritise attitude control over throttle)
-ATC_THR_MIX_MAX,0.5  # Throttle vs attitude control prioritization used during active flight (higher values mean we prioritise attitude control over throttle)
-BATT_ARM_VOLT,44.3  # Minimum battery voltage required to arm the aircraft. Step 8 will reset this higher, so we set it back here to allow for takeoff when battery is at a lower capacity.
-BATT_FS_LOW_ACT,2  # Action to perform if the low battery failsafe is hit. 2 = RTL
-BATT2_ARM_VOLT,44.3  # Minimum battery voltage required to arm the aircraft. Step 8 will reset this higher, so we set it back here to allow for takeoff when battery is at a lower capacity.
-BATT2_FS_LOW_ACT,2  # Action to perform if the low battery failsafe is hit. 2 = RTL
-CAM1_TYPE,5  # Camera shutter (trigger) type of MAVLink.
-LOG_BITMASK,2277374  # 2:GPS,3:System Performance,4:Control Tuning,6:RC input,7:IMU,8:Mission Commands,9:Battery Monitor,12:PID,13:Compass,17:Motors
-MNT1_DEFLT_MODE,2  # Mount default operating mode on startup and after control is returned from autopilot. 2 is MavLink targeting. 3 is RC Targeting.
-MNT1_OPTIONS,2  # Return to neutral position on RC failsafe.
-MNT1_PITCH_MAX,20  # Mount Pitch angle maximum.
-MNT1_PITCH_MIN,-90  # Mount Pitch angle minimum.
-MNT1_RC_RATE,90  # Per Air Commander Documentation. Pilot rate control's maximum rate. Deg/s.
-MNT1_TYPE,6  # For Gremsy. Reboot after changing this param.
-MNT1_YAW_MAX,90  # Mount Yaw angle maximum. Limited to avoid cable from getting pulled too tight.
-MNT1_YAW_MIN,-90  # Mount Yaw angle minimum. Limited to avoid cable from getting pulled too tight.
-QUIK_ENABLE,0  # Disable the VTOL-Quicktune lua script we used earlier, no longer needed.
-RTL_ALT,1500  # The minimum alt above home the vehicle will climb to before returning. If the vehicle is flying higher than this value it will return at its current altitude. Value is in Centimeters.
-RTL_CLIMB_MIN,0  # The vehicle will climb this many cm during the initial climb portion of the RTL. Value is in centimeters.
+BATT_ARM_VOLT,45.6  # Minimum voltage to arm. 3.8V/cell × 12 = 45.6V. Slightly below step 11's 47.3V to allow arming with a good but not fully charged pack. Do not arm below this threshold.
+CAM1_TYPE,5  # Sony A6500 camera. MAVLink camera control type.
+LOG_BITMASK,2277374  # Final everyday logging: GPS, System Performance, Control Tuning, RC input, IMU, Missions, Battery, PID, Compass, Motors.
+MNT1_DEFLT_MODE,2  # Gremsy T7 gimbal default operating mode on startup. 2=MAVLink targeting.
+MNT1_OPTIONS,2  # Return gimbal to neutral position on RC failsafe.
+MNT1_PITCH_MAX,20  # Gimbal maximum pitch angle in degrees (upward limit).
+MNT1_PITCH_MIN,-90  # Gimbal minimum pitch angle in degrees (full downward).
+MNT1_RC_RATE,90  # Gimbal pilot rate control maximum rate in deg/s. Per Air Commander documentation.
+MNT1_TYPE,6  # Gremsy T7 gimbal type. Reboot flight controller after changing this param.
+MNT1_YAW_MAX,90  # Gimbal maximum yaw angle in degrees. Limited to avoid over-rotating and damaging the cable.
+MNT1_YAW_MIN,-90  # Gimbal minimum yaw angle in degrees. Limited to avoid over-rotating and damaging the cable.
+QUIK_ENABLE,0  # Disable the VTOL-Quicktune Lua script. It was enabled in step 29 and is no longer needed post-tuning.

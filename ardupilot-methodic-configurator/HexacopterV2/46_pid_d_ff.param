@@ -1,4 +1,4 @@
-ATC_RAT_PIT_D_FF,0
-ATC_RAT_RLL_D_FF,0
-ATC_RAT_YAW_D_FF,0
-PSC_ACCZ_D_FF,0
+ATC_RAT_PIT_D_FF,0  # Pitch rate derivative feed-forward gain. Left at 0; requires careful step-response analysis to tune safely.
+ATC_RAT_RLL_D_FF,0  # Roll rate derivative feed-forward gain. Left at 0; requires careful step-response analysis to tune safely.
+ATC_RAT_YAW_D_FF,0  # Yaw rate derivative feed-forward gain. Left at 0; requires careful step-response analysis to tune safely.
+PSC_ACCZ_D_FF,0  # Vertical acceleration controller derivative feed-forward gain. Left at 0.

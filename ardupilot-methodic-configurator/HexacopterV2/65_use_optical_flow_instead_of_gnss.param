@@ -1,9 +1,3 @@
-# STUB - Template defaults. DO NOT UPLOAD without review.
-# This switches the EKF primary source from GNSS to optical flow.
-# If uploaded as-is, GNSS-based stabilization would be disabled.
-EK3_SRC_OPTIONS,1
-EK3_SRC1_POSXY,3
-EK3_SRC1_POSZ,1
-EK3_SRC1_VELXY,3
-EK3_SRC1_VELZ,3
-EK3_SRC1_YAW,1
+# SKIP — Do not upload. Optical flow as primary position source is for GPS-denied / indoor use only.
+# The hexacopter uses dual Here4 GNSS as its primary navigation source.
+# Optical flow is configured as a velocity backup (EKF SRC2) in 63_optical_flow_setup.param.
