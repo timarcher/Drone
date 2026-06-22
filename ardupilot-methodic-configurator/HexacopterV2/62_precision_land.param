@@ -1,3 +1,3 @@
 # Precision landing disabled. The hexacopter has no IR beacon or precision landing target installed.
 # PLND_ENABLED=0 is the ArduPilot firmware default — no param change needed.
-# LAND_SPEED and LAND_ALT_LOW are set in 15_general_configuration.param.
+# LAND_SPEED and LAND_ALT_LOW are set in 16_safety_setup.param.

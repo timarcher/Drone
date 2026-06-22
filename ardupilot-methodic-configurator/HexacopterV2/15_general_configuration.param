@@ -10,7 +10,6 @@ FLOW_POS_X,-0.24  # X position of the optical flow sensor focal point in body fr
 FLOW_POS_Y,-0.035  # Y position of the optical flow sensor focal point in body frame. Positive Y is to the right of the origin. Units in meters.
 FLOW_POS_Z,0.203  # Z position of the optical flow sensor focal point in body frame. Positive Z is down from the origin. Units in meters.
 FLOW_TYPE,6  # HereFlow. Enable optical flow camera.
-INS_ACCEL_FILTER,10  # Filter cutoff frequency for accelerometers. The default is 20 and that lets too much noise in.
 INS_POS1_X,0  # X position of the first IMU Accelerometer in body frame. Positive X is forward of the origin.
 INS_POS1_Y,0  # Y position of the first IMU accelerometer in body frame. Positive Y is to the right of the origin.
 INS_POS2_X,0  # X position of the second IMU accelerometer in body frame. Positive X is forward of the origin.
@@ -35,4 +34,3 @@ SERIAL2_PROTOCOL,2  # Gremsy Gimbal - Mavlink2
 SERIAL3_PROTOCOL,-1  # Disable serial 3. It defaulted to GPS. We use dual DroneCAN GPS units, not serial GPS.
 SERIAL4_BAUD,921  # 921600 baud
 SERIAL4_PROTOCOL,2  # Enable MAVLink 2 on the serial port. This is connected to the onboard computer.
-SERVO9_FUNCTION,56  # Flytron STROBON Cree v2 Lights. Configure for RC Pass thru. 56 = RCIN6 which means RC channel 6 gets output to SERVO9.

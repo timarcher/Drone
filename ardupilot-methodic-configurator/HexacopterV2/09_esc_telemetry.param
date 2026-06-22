@@ -2,5 +2,4 @@ CAN_D1_PROTOCOL,1  # CAN1 driver protocol = DroneCAN. Required for Hobbywing XRo
 CAN_D1_UC_ESC_BM,63  # DroneCAN ESC channel bitmask = 63 = 0b00111111. Enables ESC channels 1-6 (all 6 motors).
 CAN_D1_UC_OPTION,128  # DroneCAN CAN1 driver option. Bit 7 (128) enables Hobbywing-specific extended ESC status.
 CAN_P1_DRIVER,1  # Enable CAN physical port 1 driver. Required for DroneCAN peripherals on CAN1.
-MOT_HOVER_LEARN,2  # Automatically learn hover throttle in flight and save to MOT_THST_HOVER. Used in step 24.
 MOT_PWM_TYPE,0  # Motor output type = 0 (standard PWM). Hobbywing DroneCAN ESCs use CAN, not DShot or PWM.
