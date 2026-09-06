@@ -1,7 +1,0 @@
-LOG_BITMASK,145150  # Add Navigation logging
-LOIT_ACC_MAX,420  # Loiter correction accel (file 16=420; AMC standard 500)
-LOIT_BRK_ACCEL,225  # Loiter braking accel (file 16=225; moderate)
-WPNAV_ACCEL,125  # Mission horizontal accel (file 16=125; 2 m/s/s)
-WPNAV_SPEED,450  # Mission speed (file 16=450; 5 m/s)
-WPNAV_SPEED_DN,100  # Mission descent speed (file 16=100; 1.5 m/s)
-WPNAV_SPEED_UP,150  # Mission climb speed (file 16=150; 2 m/s)

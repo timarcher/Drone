@@ -1,5 +1,0 @@
-# Everyday use configuration. Finalizes operational state.
-FLTMODE4,3  # Restore Auto mode — file 14 set this to AutoTune (15)
-LOG_BITMASK,2277374  # 2:GPS,3:System Performance,4:Control Tuning,6:RC input,7:IMU,8:Mission Commands,9:Battery Monitor,12:PID,13:Compass,17:Motors
-QUIK_ENABLE,0  # Disable the VTOL-Quicktune lua script, no longer needed post-AutoTune
-SERIAL7_PROTOCOL,-1  # Disable orphaned UART; ESC uses bidirectional DShot, not UART telemetry

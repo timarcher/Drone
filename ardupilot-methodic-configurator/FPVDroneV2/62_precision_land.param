@@ -1,4 +1,0 @@
-# Precision landing disabled (PLND_ENABLED=0). Params below document the intended
-# configuration if a precision landing target and downward camera are ever installed.
-# LAND_SPEED and LAND_ALT_LOW are set in 16_safety_setup.param — not repeated here.
-PLND_ENABLED,0  # Precision landing disabled; enable only when beacon and downward camera installed

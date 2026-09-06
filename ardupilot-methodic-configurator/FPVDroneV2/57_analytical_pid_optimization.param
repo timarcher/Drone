@@ -1,3 +1,0 @@
-ARMING_CHECK,1  # Normal state for everyday use
-ATC_RATE_FF_ENAB,1  # Restore value now that system identification is done
-SID_AXIS,0  # No more system identification chip injections
