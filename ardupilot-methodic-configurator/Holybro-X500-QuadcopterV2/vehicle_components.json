@@ -56,7 +56,7 @@
                 "Chemistry": "Lipo",
                 "Volt per cell max": 4.2,
                 "Volt per cell arm": 3.9333,
-                "Volt per cell low": 3.6,
+                "Volt per cell low": 3.7,
                 "Volt per cell crit": 3.55,
                 "Volt per cell min": 3.55,
                 "Number of cells": 6,
@@ -130,7 +130,7 @@
             },
             "Firmware": {
                 "Type": "EdgeTx",
-                "Version": "2.10.5"
+                "Version": "2.12.4"
             },
             "Notes": "RadioMaster Controller with EdgeTX firmware loaded on it"
         },
@@ -143,7 +143,7 @@
             },
             "Firmware": {
                 "Type": "EdgeTx",
-                "Version": "2.10.5"
+                "Version": "2.12.4"
             },
             "Notes": "RadioMaster Controller with EdgeTX firmware loaded on it"
         },
@@ -182,5 +182,5 @@
             "Notes": "915Mhz Radio Link"
         }
     },
-    "Program version": "4.2.0"
+    "Program version": "4.4.3"
 }
